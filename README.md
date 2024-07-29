@@ -1,4 +1,4 @@
-# mlb-nsfi-model
+# MLB 1st Inning Betting Model
 Developing a model in Python that determines the probability of outcomes such as no strikeouts or no hits occurring on the top or bottom of the 1st inning in specific baseball games. The idea of this model is to deploy it against various sports betting lines to mine out positive expected value and make long-term profit.
 
 ** Statistics Used **

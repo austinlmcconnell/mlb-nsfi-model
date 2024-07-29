@@ -4,11 +4,12 @@ Developed a model in Python that determines the probability of outcomes such as 
 ** Statistics Used **
 - Pitcher strikeout, walk, single, double, triple, and home run rates
     - Vs. left- and right-handed batters
-    - Vs. the opposing team from the beginning of the 2023 season (the first time through the lineup)
-    - Vs. the opposing team from the beginning of the 2024 season (all batters faced, weighed 20% higher)
+    - From the beginning of the 2023 season (the first time through the lineup)
+    - From the beginning of the 2024 season (all batters faced, weighed 20% higher)
 - Batter strikeout, walk, single, double, triple, and home run rates
     - Vs. left- and right-handed pitchers
-    - From both the beginning of the 2023 season and 2024 season (weighing current season 20% higher)
+    - From the beginning of the 2023 season
+    - From the beginning of the 2024 season (weighed 20% higher)
 - MLB average strikeout, walk, single, double, triple, and home run rates
     - From beginning of the 2024 season
 - MLB ballpark impacts on batting rates

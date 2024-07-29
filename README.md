@@ -5,7 +5,7 @@ Developed a model in Python that determines the probability of outcomes such as 
 - Pitcher strikeout, walk, single, double, triple, and home run rates
     - Vs. left- and right-handed batters
     - Vs. the opposing team from the beginning of the 2023 season (the first time through the lineup)
-    - Vs. the opposing team from the beginning of the 2024 season (all batters faced, weighing current season 20% higher)
+    - Vs. the opposing team from the beginning of the 2024 season (all batters faced, weighed 20% higher)
 - Batter strikeout, walk, single, double, triple, and home run rates
     - Vs. left- and right-handed pitchers
     - From both the beginning of the 2023 season and 2024 season (weighing current season 20% higher)

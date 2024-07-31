@@ -19,6 +19,21 @@ Developed a model in Python that determines the probability of outcomes such as 
     - https://swishanalytics.com/mlb/mlb-park-factors
     - From beginning of 2014 season
     - For both left- and right-handed batters
+      
+** Tools Used **
+- Python
+- Streamlit
+- ngrok
+- Docker Desktop
+- Google Drive Desktop
+- Pandas
+- NumPy
+- Itertools
+- os
+- Requests
+- StringIO
+- Jupyter Notebook
+- Visual Studio Code
  
 ** Resources **
 - FanGraphs splits leaderboard (https://www.fangraphs.com/leaders/splits-leaderboards?splitArr=&splitArrPitch=&position=P&autoPt=false&splitTeams=false&statType=player&statgroup=1&startDate=2024-04-01&endDate=2024-11-30&players=&filter=&groupBy=career&sort=1,1&wxTemperature=&wxPressure=&wxAirDensity=&wxElevation=&wxWindSpeed=)

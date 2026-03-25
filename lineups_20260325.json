@@ -1,0 +1,94 @@
+{
+  "date": "2026-03-25",
+  "fetchedAt": "2026-03-25T20:07:39.315628+00:00",
+  "games": [
+    {
+      "gamePk": 823244,
+      "gameTimeUTC": "2026-03-26T00:05:00Z",
+      "gameTimeET": "8:05 PM ET",
+      "lineupDropET": "4:35 PM ET",
+      "lineupComplete": false,
+      "homeTeam": "San Francisco Giants",
+      "awayTeam": "New York Yankees",
+      "venue": "Oracle Park",
+      "ballparkKey": "Giants",
+      "topInning": {
+        "teamBatting": "New York Yankees",
+        "teamPitching": "San Francisco Giants",
+        "pitcher": {
+          "name": "Logan Webb",
+          "id": 657277,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "NYY/SF - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "San Francisco Giants",
+        "teamPitching": "New York Yankees",
+        "pitcher": {
+          "name": "Max Fried",
+          "id": 608331,
+          "pitchHand": "L"
+        },
+        "lineup": [
+          {
+            "name": "Luis Arraez",
+            "id": 650333,
+            "batSide": "L",
+            "position": "2B"
+          },
+          {
+            "name": "Matt Chapman",
+            "id": 656305,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Rafael Devers",
+            "id": 646240,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Willy Adames",
+            "id": 642715,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "Jung Hoo Lee",
+            "id": 808982,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Heliot Ramos",
+            "id": 671218,
+            "batSide": "R",
+            "position": "LF"
+          },
+          {
+            "name": "Casey Schmitt",
+            "id": 669477,
+            "batSide": "R",
+            "position": "1B"
+          },
+          {
+            "name": "Patrick Bailey",
+            "id": 672275,
+            "batSide": "S",
+            "position": "C"
+          },
+          {
+            "name": "Harrison Bader",
+            "id": 664056,
+            "batSide": "R",
+            "position": "CF"
+          }
+        ],
+        "gameId": "NYY/SF - Bot 1"
+      }
+    }
+  ]
+}

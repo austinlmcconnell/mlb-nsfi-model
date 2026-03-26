@@ -31,7 +31,9 @@ if [ ! -d "$VENV_DIR" ]; then
     python3 -m venv "$VENV_DIR"
 fi
 echo "  Installing/updating dependencies..."
-"$VENV_DIR/bin/pip" install --quiet --upgrade requests curl_cffi
+"$VENV_DIR/bin/pip" install --quiet --upgrade requests playwright
+echo "  Installing Chromium browser for Playwright..."
+"$VENV_DIR/bin/python3" -m playwright install chromium
 echo "  Installed dependencies."
 
 # ── 1. Create the fetch script ───────────────────────────────────────────────

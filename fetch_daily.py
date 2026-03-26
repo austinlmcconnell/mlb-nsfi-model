@@ -350,11 +350,41 @@ def fetch_fd_specials(state: str, fd_event_id: int) -> dict:
 
 DK_BASE = "https://sportsbook.draftkings.com/sites/US-SB/api/v5"
 DK_HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
     "Accept": "application/json, text/plain, */*",
     "Accept-Language": "en-US,en;q=0.9",
+    "Accept-Encoding": "gzip, deflate, br",
     "Referer": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
+    "Origin": "https://sportsbook.draftkings.com",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Ch-Ua": '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": '"macOS"',
 }
+
+# Persistent session to carry cookies across DK requests
+_dk_session = None
+
+def _get_dk_session():
+    """Return a requests.Session that has visited the DK sportsbook page (sets cookies)."""
+    global _dk_session
+    if _dk_session is not None:
+        return _dk_session
+    _dk_session = requests.Session()
+    _dk_session.headers.update(DK_HEADERS)
+    # Visit the main sportsbook page first to pick up cookies/tokens
+    try:
+        _dk_session.get("https://sportsbook.draftkings.com/leagues/baseball/mlb",
+                        timeout=15, headers={
+                            "User-Agent": DK_HEADERS["User-Agent"],
+                            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                            "Accept-Language": "en-US,en;q=0.9",
+                        })
+    except Exception:
+        pass  # cookies are best-effort
+    return _dk_session
 
 # DraftKings team name → canonical MLB API name
 DK_TEAM_ALIASES = {
@@ -369,9 +399,10 @@ _DK_GROUP_ID = 84240   # MLB regular season
 def _dk_get(path, params=None, retries=2):
     """GET from DraftKings API; raises RuntimeError on failure or non-JSON response."""
     url = DK_BASE + path
+    session = _get_dk_session()
     for attempt in range(retries):
         try:
-            r = requests.get(url, headers=DK_HEADERS, params=params, timeout=15)
+            r = session.get(url, params=params, timeout=15)
             if r.status_code == 403:
                 raise RuntimeError(
                     "DraftKings returned 403 — requires a US IP. "

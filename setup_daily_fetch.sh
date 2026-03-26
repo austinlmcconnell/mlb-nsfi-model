@@ -29,11 +29,10 @@ echo "  Repo: $REPO_DIR"
 if [ ! -d "$VENV_DIR" ]; then
     echo "  Creating Python virtual environment..."
     python3 -m venv "$VENV_DIR"
-    "$VENV_DIR/bin/pip" install --quiet requests
-    echo "  Installed dependencies."
-else
-    echo "  Virtual environment already exists."
 fi
+echo "  Installing/updating dependencies..."
+"$VENV_DIR/bin/pip" install --quiet --upgrade requests curl_cffi
+echo "  Installed dependencies."
 
 # ── 1. Create the fetch script ───────────────────────────────────────────────
 

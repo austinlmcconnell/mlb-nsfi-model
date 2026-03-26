@@ -397,9 +397,37 @@ _DK_GROUP_ID = 84240   # MLB regular season
 
 def _dk_get_curl(url, retries=2):
     """
-    GET from DraftKings using system curl (bypasses Python TLS fingerprinting).
-    Falls back to requests.Session if curl is unavailable.
+    GET from DraftKings using curl_cffi (impersonates Chrome's TLS fingerprint).
+    Falls back to system curl, then to requests.Session.
     """
+    # Try curl_cffi first — it impersonates Chrome's exact JA3 TLS fingerprint
+    try:
+        from curl_cffi import requests as cffi_requests
+        for attempt in range(retries):
+            try:
+                r = cffi_requests.get(url, impersonate="chrome", timeout=15, headers={
+                    "Accept": "application/json, text/plain, */*",
+                    "Accept-Language": "en-US,en;q=0.9",
+                    "Referer": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
+                })
+                if r.status_code == 403:
+                    if attempt < retries - 1:
+                        time.sleep(2)
+                        continue
+                    raise RuntimeError("DraftKings returned 403 even with curl_cffi")
+                r.raise_for_status()
+                return r.json()
+            except RuntimeError:
+                raise
+            except Exception as e:
+                if attempt < retries - 1:
+                    time.sleep(2)
+                    continue
+                raise RuntimeError(f"curl_cffi request failed: {e}") from e
+    except ImportError:
+        pass  # curl_cffi not installed, fall through
+
+    # Fallback to system curl
     import subprocess, shutil
     curl_path = shutil.which("curl")
     if curl_path:

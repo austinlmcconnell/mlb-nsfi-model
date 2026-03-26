@@ -1,6 +1,6 @@
 {
   "date": "2026-03-25",
-  "fetchedAt": "2026-03-25T20:20:53.077646+00:00",
+  "fetchedAt": "2026-03-26T13:15:50.912135+00:00",
   "games": [
     {
       "gamePk": 823244,
@@ -145,43 +145,8 @@
         "gameId": "NYY/SF - Bot 1"
       },
       "odds": {
-        "fanduel": {
-          "eventId": 35385648,
-          "top": {
-            "oddsPosted": true,
-            "strikeoutLine": -350,
-            "impliedNSFI": 0.2222,
-            "fairNSFIOdds": "+350",
-            "threeUpThreeDown": 125,
-            "allRunners": {
-              "1+ Strikeout": -350,
-              "2+ Strikeouts": 210,
-              "3+ Strikeouts": 1600,
-              "1+ Home Run": 500,
-              "1+ Stolen Base": 1500,
-              "1+ Extra Base Hit (Double/Triple/Home Run)": 210,
-              "3 Up 3 Down": 125,
-              "1+ Grand Slam": 10000
-            }
-          },
-          "bot": {
-            "oddsPosted": true,
-            "strikeoutLine": -280,
-            "impliedNSFI": 0.2632,
-            "fairNSFIOdds": "+280",
-            "threeUpThreeDown": 115,
-            "allRunners": {
-              "1+ Strikeout": -280,
-              "2+ Strikeouts": 270,
-              "3+ Strikeouts": 2200,
-              "1+ Home Run": 1000,
-              "1+ Stolen Base": 1500,
-              "1+ Extra Base Hit (Double/Triple/Home Run)": 290,
-              "3 Up 3 Down": 115,
-              "1+ Grand Slam": 10000
-            }
-          }
-        }
+        "fanduel": null,
+        "draftkings": null
       }
     }
   ]

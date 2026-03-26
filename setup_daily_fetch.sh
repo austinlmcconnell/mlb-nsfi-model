@@ -16,12 +16,24 @@
 set -e
 
 REPO_DIR="$(cd "$(dirname "$0")" && pwd)"
+VENV_DIR="$REPO_DIR/.venv"
 SCRIPT_PATH="$HOME/bin/mlb-nsfi-fetch.sh"
 PLIST_PATH="$HOME/Library/LaunchAgents/com.mlb-nsfi.fetch-daily.plist"
 LOG_PATH="$HOME/Library/Logs/mlb-nsfi-fetch.log"
 
 echo "Setting up MLB NSFI daily fetch..."
 echo "  Repo: $REPO_DIR"
+
+# ── 0. Create venv if it doesn't exist ────────────────────────────────────────
+
+if [ ! -d "$VENV_DIR" ]; then
+    echo "  Creating Python virtual environment..."
+    python3 -m venv "$VENV_DIR"
+    "$VENV_DIR/bin/pip" install --quiet requests
+    echo "  Installed dependencies."
+else
+    echo "  Virtual environment already exists."
+fi
 
 # ── 1. Create the fetch script ───────────────────────────────────────────────
 
@@ -41,8 +53,11 @@ echo "[\$(date)] Starting daily fetch for \$DATE" >> "\$LOG"
 
 cd "\$REPO" || { echo "[\$(date)] ERROR: Cannot cd to \$REPO" >> "\$LOG"; exit 1; }
 
+# Use the venv Python
+PYTHON="\$REPO/.venv/bin/python3"
+
 # Fetch data
-python3 fetch_daily.py >> "\$LOG" 2>&1
+"\$PYTHON" fetch_daily.py >> "\$LOG" 2>&1
 
 # Commit and push if the file exists and has changes
 if [ -f "daily_\${DATEFILE}.json" ]; then
@@ -103,23 +118,6 @@ cat > "$PLIST_PATH" << PLIST
     <string>${LOG_PATH}</string>
     <key>StandardErrorPath</key>
     <string>${LOG_PATH}</string>
-
-    <!-- Run missed jobs if Mac was asleep -->
-    <key>StartCalendarInterval</key>
-    <array>
-        <dict>
-            <key>Hour</key>
-            <integer>13</integer>
-            <key>Minute</key>
-            <integer>0</integer>
-        </dict>
-        <dict>
-            <key>Hour</key>
-            <integer>17</integer>
-            <key>Minute</key>
-            <integer>30</integer>
-        </dict>
-    </array>
 </dict>
 </plist>
 PLIST

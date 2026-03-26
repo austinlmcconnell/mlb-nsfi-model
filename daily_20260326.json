@@ -1,6 +1,6 @@
 {
   "date": "2026-03-26",
-  "fetchedAt": "2026-03-26T19:53:56.136760+00:00",
+  "fetchedAt": "2026-03-26T21:54:20.953453+00:00",
   "games": [
     {
       "gamePk": 823649,
@@ -145,9 +145,7 @@
         "gameId": "PIT/NYM - Bot 1"
       },
       "odds": {
-        "fanduel": {
-          "eventId": 35392672
-        },
+        "fanduel": null,
         "draftkings": null
       }
     },
@@ -294,9 +292,7 @@
         "gameId": "CWS/MIL - Bot 1"
       },
       "odds": {
-        "fanduel": {
-          "eventId": 35419409
-        },
+        "fanduel": null,
         "draftkings": null
       }
     },
@@ -443,9 +439,7 @@
         "gameId": "WSH/CHC - Bot 1"
       },
       "odds": {
-        "fanduel": {
-          "eventId": 35385715
-        },
+        "fanduel": null,
         "draftkings": null
       }
     },
@@ -592,9 +586,7 @@
         "gameId": "MIN/BAL - Bot 1"
       },
       "odds": {
-        "fanduel": {
-          "eventId": 35396537
-        },
+        "fanduel": null,
         "draftkings": null
       }
     },
@@ -742,41 +734,7 @@
       },
       "odds": {
         "fanduel": {
-          "eventId": 35385741,
-          "top": {
-            "oddsPosted": true,
-            "strikeoutLine": -370,
-            "impliedNSFI": 0.2128,
-            "fairNSFIOdds": "+370",
-            "threeUpThreeDown": 130,
-            "allRunners": {
-              "1+ Strikeout": -370,
-              "2+ Strikeouts": 195,
-              "3+ Strikeouts": 1500,
-              "1+ Home Run": 460,
-              "1+ Stolen Base": 900,
-              "1+ Extra Base Hit (Double/Triple/Home Run)": 190,
-              "3 Up 3 Down": 130,
-              "1+ Grand Slam": 10000
-            }
-          },
-          "bot": {
-            "oddsPosted": true,
-            "strikeoutLine": -750,
-            "impliedNSFI": 0.1176,
-            "fairNSFIOdds": "+750",
-            "threeUpThreeDown": -110,
-            "allRunners": {
-              "1+ Strikeout": -750,
-              "2+ Strikeouts": 105,
-              "3+ Strikeouts": 700,
-              "1+ Home Run": 750,
-              "1+ Stolen Base": 600,
-              "1+ Extra Base Hit (Double/Triple/Home Run)": 330,
-              "3 Up 3 Down": -110,
-              "1+ Grand Slam": 10000
-            }
-          }
+          "eventId": 35385741
         },
         "draftkings": null
       }
@@ -1223,41 +1181,7 @@
       },
       "odds": {
         "fanduel": {
-          "eventId": 35389286,
-          "top": {
-            "oddsPosted": true,
-            "strikeoutLine": -190,
-            "impliedNSFI": 0.3448,
-            "fairNSFIOdds": "+190",
-            "threeUpThreeDown": 145,
-            "allRunners": {
-              "1+ Strikeout": -190,
-              "2+ Strikeouts": 400,
-              "3+ Strikeouts": 3300,
-              "1+ Home Run": 490,
-              "1+ Stolen Base": 2500,
-              "1+ Extra Base Hit (Double/Triple/Home Run)": 180,
-              "3 Up 3 Down": 145,
-              "1+ Grand Slam": 10000
-            }
-          },
-          "bot": {
-            "oddsPosted": true,
-            "strikeoutLine": -250,
-            "impliedNSFI": 0.2857,
-            "fairNSFIOdds": "+250",
-            "threeUpThreeDown": 125,
-            "allRunners": {
-              "1+ Strikeout": -250,
-              "2+ Strikeouts": 290,
-              "3+ Strikeouts": 2200,
-              "1+ Home Run": 700,
-              "1+ Stolen Base": 1000,
-              "1+ Extra Base Hit (Double/Triple/Home Run)": 240,
-              "3 Up 3 Down": 125,
-              "1+ Grand Slam": 10000
-            }
-          }
+          "eventId": 35389286
         },
         "draftkings": null
       }
@@ -1406,41 +1330,7 @@
       },
       "odds": {
         "fanduel": {
-          "eventId": 35396635,
-          "top": {
-            "oddsPosted": true,
-            "strikeoutLine": -360,
-            "impliedNSFI": 0.2174,
-            "fairNSFIOdds": "+360",
-            "threeUpThreeDown": 120,
-            "allRunners": {
-              "1+ Strikeout": -360,
-              "2+ Strikeouts": 190,
-              "3+ Strikeouts": 1500,
-              "1+ Home Run": 700,
-              "1+ Stolen Base": 1600,
-              "1+ Extra Base Hit (Double/Triple/Home Run)": 260,
-              "3 Up 3 Down": 120,
-              "1+ Grand Slam": 10000
-            }
-          },
-          "bot": {
-            "oddsPosted": true,
-            "strikeoutLine": -340,
-            "impliedNSFI": 0.2273,
-            "fairNSFIOdds": "+340",
-            "threeUpThreeDown": 140,
-            "allRunners": {
-              "1+ Strikeout": -340,
-              "2+ Strikeouts": 210,
-              "3+ Strikeouts": 1700,
-              "1+ Home Run": 430,
-              "1+ Stolen Base": 850,
-              "1+ Extra Base Hit (Double/Triple/Home Run)": 195,
-              "3 Up 3 Down": 140,
-              "1+ Grand Slam": 10000
-            }
-          }
+          "eventId": 35396635
         },
         "draftkings": null
       }
@@ -1450,7 +1340,7 @@
       "gameTimeUTC": "2026-03-27T00:30:00Z",
       "gameTimeET": "8:30 PM ET",
       "lineupDropET": "5:00 PM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "Los Angeles Dodgers",
       "awayTeam": "Arizona Diamondbacks",
       "venue": "UNIQLO FIELD AT DODGER STADIUM",
@@ -1529,7 +1419,62 @@
           "id": 668678,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Shohei Ohtani",
+            "id": 660271,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Kyle Tucker",
+            "id": 663656,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Mookie Betts",
+            "id": 605141,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "Freddie Freeman",
+            "id": 518692,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Will Smith",
+            "id": 669257,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Max Muncy",
+            "id": 571970,
+            "batSide": "L",
+            "position": "3B"
+          },
+          {
+            "name": "Teoscar Hern\u00e1ndez",
+            "id": 606192,
+            "batSide": "R",
+            "position": "LF"
+          },
+          {
+            "name": "Andy Pages",
+            "id": 681624,
+            "batSide": "R",
+            "position": "CF"
+          },
+          {
+            "name": "Miguel Rojas",
+            "id": 500743,
+            "batSide": "R",
+            "position": "2B"
+          }
+        ],
         "gameId": "ARI/LAD - Bot 1"
       },
       "odds": {
@@ -1544,7 +1489,7 @@
       "gameTimeUTC": "2026-03-27T02:10:00Z",
       "gameTimeET": "10:10 PM ET",
       "lineupDropET": "6:40 PM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "Seattle Mariners",
       "awayTeam": "Cleveland Guardians",
       "venue": "T-Mobile Park",
@@ -1557,7 +1502,62 @@
           "id": 669302,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Steven Kwan",
+            "id": 680757,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Chase DeLauter",
+            "id": 800050,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Jos\u00e9 Ram\u00edrez",
+            "id": 608070,
+            "batSide": "S",
+            "position": "3B"
+          },
+          {
+            "name": "Kyle Manzardo",
+            "id": 700932,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Bo Naylor",
+            "id": 666310,
+            "batSide": "L",
+            "position": "C"
+          },
+          {
+            "name": "Rhys Hoskins",
+            "id": 656555,
+            "batSide": "R",
+            "position": "1B"
+          },
+          {
+            "name": "Daniel Schneemann",
+            "id": 682177,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Gabriel Arias",
+            "id": 672356,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "Brayan Rocchio",
+            "id": 677587,
+            "batSide": "S",
+            "position": "2B"
+          }
+        ],
         "gameId": "CLE/SEA - Top 1"
       },
       "botInning": {
@@ -1568,7 +1568,62 @@
           "id": 676440,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Brendan Donovan",
+            "id": 680977,
+            "batSide": "L",
+            "position": "3B"
+          },
+          {
+            "name": "Cal Raleigh",
+            "id": 663728,
+            "batSide": "S",
+            "position": "C"
+          },
+          {
+            "name": "Julio Rodr\u00edguez",
+            "id": 677594,
+            "batSide": "R",
+            "position": "CF"
+          },
+          {
+            "name": "Josh Naylor",
+            "id": 647304,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Randy Arozarena",
+            "id": 668227,
+            "batSide": "R",
+            "position": "LF"
+          },
+          {
+            "name": "Luke Raley",
+            "id": 670042,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Dominic Canzone",
+            "id": 686527,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Cole Young",
+            "id": 702284,
+            "batSide": "L",
+            "position": "2B"
+          },
+          {
+            "name": "Leo Rivas",
+            "id": 660844,
+            "batSide": "S",
+            "position": "SS"
+          }
+        ],
         "gameId": "CLE/SEA - Bot 1"
       },
       "odds": {

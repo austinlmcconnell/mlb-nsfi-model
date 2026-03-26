@@ -1,6 +1,6 @@
 {
   "date": "2026-03-26",
-  "fetchedAt": "2026-03-26T19:35:52.663404+00:00",
+  "fetchedAt": "2026-03-26T19:49:03.020309+00:00",
   "games": [
     {
       "gamePk": 823649,
@@ -745,14 +745,14 @@
           "eventId": 35385741,
           "top": {
             "oddsPosted": true,
-            "strikeoutLine": -380,
-            "impliedNSFI": 0.2083,
-            "fairNSFIOdds": "+380",
+            "strikeoutLine": -370,
+            "impliedNSFI": 0.2128,
+            "fairNSFIOdds": "+370",
             "threeUpThreeDown": 130,
             "allRunners": {
-              "1+ Strikeout": -380,
+              "1+ Strikeout": -370,
               "2+ Strikeouts": 195,
-              "3+ Strikeouts": 1400,
+              "3+ Strikeouts": 1500,
               "1+ Home Run": 460,
               "1+ Stolen Base": 900,
               "1+ Extra Base Hit (Double/Triple/Home Run)": 190,
@@ -1463,7 +1463,62 @@
           "id": 808967,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Ketel Marte",
+            "id": 606466,
+            "batSide": "S",
+            "position": "2B"
+          },
+          {
+            "name": "Corbin Carroll",
+            "id": 682998,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Geraldo Perdomo",
+            "id": 672695,
+            "batSide": "S",
+            "position": "SS"
+          },
+          {
+            "name": "Gabriel Moreno",
+            "id": 672515,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Pavin Smith",
+            "id": 656976,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Nolan Arenado",
+            "id": 571448,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Carlos Santana",
+            "id": 467793,
+            "batSide": "S",
+            "position": "1B"
+          },
+          {
+            "name": "Alek Thomas",
+            "id": 677950,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Jordan Lawlar",
+            "id": 691783,
+            "batSide": "R",
+            "position": "LF"
+          }
+        ],
         "gameId": "ARI/LAD - Top 1"
       },
       "botInning": {

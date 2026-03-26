@@ -374,7 +374,6 @@ def _get_dk_session():
         return _dk_session
     _dk_session = requests.Session()
     _dk_session.headers.update(DK_HEADERS)
-    # Visit the main sportsbook page first to pick up cookies/tokens
     try:
         _dk_session.get("https://sportsbook.draftkings.com/leagues/baseball/mlb",
                         timeout=15, headers={
@@ -383,7 +382,7 @@ def _get_dk_session():
                             "Accept-Language": "en-US,en;q=0.9",
                         })
     except Exception:
-        pass  # cookies are best-effort
+        pass
     return _dk_session
 
 # DraftKings team name → canonical MLB API name
@@ -396,30 +395,61 @@ DK_TEAM_ALIASES = {
 _DK_GROUP_ID = 84240   # MLB regular season
 
 
+def _dk_get_curl(url, retries=2):
+    """
+    GET from DraftKings using system curl (bypasses Python TLS fingerprinting).
+    Falls back to requests.Session if curl is unavailable.
+    """
+    import subprocess, shutil
+    curl_path = shutil.which("curl")
+    if curl_path:
+        for attempt in range(retries):
+            try:
+                result = subprocess.run([
+                    curl_path, "-s", "-L",
+                    "-H", f"User-Agent: {DK_HEADERS['User-Agent']}",
+                    "-H", "Accept: application/json, text/plain, */*",
+                    "-H", "Accept-Language: en-US,en;q=0.9",
+                    "-H", "Referer: https://sportsbook.draftkings.com/leagues/baseball/mlb",
+                    "-H", "Origin: https://sportsbook.draftkings.com",
+                    "--max-time", "15",
+                    url,
+                ], capture_output=True, text=True, timeout=20)
+                if result.returncode != 0:
+                    if attempt < retries - 1:
+                        time.sleep(2)
+                        continue
+                    raise RuntimeError(f"curl failed: {result.stderr[:200]}")
+                body = result.stdout.strip()
+                if not body or body.startswith("<!") or "<html" in body[:200].lower():
+                    raise RuntimeError("DraftKings returned HTML (likely blocked)")
+                return json.loads(body)
+            except json.JSONDecodeError:
+                if attempt < retries - 1:
+                    time.sleep(2)
+                    continue
+                raise RuntimeError(f"DraftKings returned non-JSON: {body[:100]}")
+            except subprocess.TimeoutExpired:
+                if attempt < retries - 1:
+                    time.sleep(2)
+                    continue
+                raise RuntimeError("curl timed out")
+    # Fallback to requests session
+    session = _get_dk_session()
+    r = session.get(url, timeout=15)
+    if r.status_code == 403:
+        raise RuntimeError("DraftKings returned 403 — blocked by TLS fingerprinting.")
+    r.raise_for_status()
+    return r.json()
+
+
 def _dk_get(path, params=None, retries=2):
     """GET from DraftKings API; raises RuntimeError on failure or non-JSON response."""
     url = DK_BASE + path
-    session = _get_dk_session()
-    for attempt in range(retries):
-        try:
-            r = session.get(url, params=params, timeout=15)
-            if r.status_code == 403:
-                raise RuntimeError(
-                    "DraftKings returned 403 — requires a US IP. "
-                    "Run fetch_daily.py from your local machine."
-                )
-            r.raise_for_status()
-            ct = r.headers.get("Content-Type", "")
-            if "json" not in ct:
-                raise RuntimeError(f"DraftKings returned non-JSON ({ct[:40]})")
-            return r.json()
-        except RuntimeError:
-            raise
-        except Exception as e:
-            if attempt < retries - 1:
-                time.sleep(2)
-            else:
-                raise RuntimeError(f"DraftKings request failed: {e}") from e
+    if params:
+        from urllib.parse import urlencode
+        url += "?" + urlencode(params)
+    return _dk_get_curl(url, retries=retries)
 
 
 def fetch_dk_categories() -> tuple[int | None, int | None]:

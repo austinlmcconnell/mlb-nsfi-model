@@ -58,18 +58,61 @@ def implied_to_american(prob: float) -> str:
     return f"+{round(((1 - prob) / prob) * 100)}"
 
 @st.cache_data(ttl=300)
-def fetch_dk_odds():
-    """Fetch all DraftKings NSFI odds. Returns dict keyed by team name."""
+def fetch_dk_odds(date_str: str):
+    """
+    Load DraftKings NSFI odds. Strategy:
+      1. Read from daily_YYYYMMDD.json in the repo (pre-fetched locally, geo-safe)
+      2. Fall back to direct DraftKings API (works on local machines, blocked on cloud)
+    Returns (dict keyed by team name, source_label, error_str).
+    """
+    import os
+
+    # ── 1. Try daily JSON ─────────────────────────────────────────────────────
+    json_path = os.path.join(os.path.dirname(__file__),
+                             f"daily_{date_str.replace('-', '')}.json")
+    if os.path.exists(json_path):
+        try:
+            with open(json_path) as f:
+                daily = json.load(f)
+            result = {}
+            for game in daily.get("games", []):
+                dk = (game.get("odds") or {}).get("draftkings") or {}
+                home = game.get("homeTeam", "")
+                away = game.get("awayTeam", "")
+                # top slot = away team batting, bot slot = home team batting
+                for slot, team in [("top", away), ("bot", home)]:
+                    entry = dk.get(slot, {})
+                    if not entry.get("oddsPosted"):
+                        continue
+                    no_odds = entry.get("noOdds")
+                    if no_odds is None:
+                        continue
+                    result[team] = {
+                        "noOdds": no_odds,
+                        "yesOdds": entry.get("yesOdds"),
+                        "impliedNSFI": round(american_to_implied(no_odds), 4),
+                    }
+            if result:
+                fetched_at = daily.get("fetchedAt", "")
+                return result, f"daily JSON ({fetched_at[:16].replace('T', ' ')} UTC)", None
+        except Exception as e:
+            pass  # fall through to live fetch
+
+    # ── 2. Fall back to live DraftKings API ───────────────────────────────────
     try:
         r = requests.get(f"{DK_BASE}/eventgroups/{_DK_GROUP_ID}",
                          headers=DK_HEADERS,
                          params={"includeOnly": "offerCategories"}, timeout=15)
         if r.status_code == 403:
-            return None, "DraftKings returned 403 — requires a US IP address."
+            return None, None, (
+                "DraftKings API blocked (cloud IP restriction). "
+                "Run `python3 fetch_daily.py` locally and push the resulting "
+                f"`daily_{date_str.replace('-','')}.json` to the repo."
+            )
         r.raise_for_status()
         data = r.json()
     except Exception as e:
-        return None, str(e)
+        return None, None, str(e)
 
     cats = data.get("eventGroup", {}).get("offerCategories", [])
     inning_cat = next(
@@ -84,7 +127,7 @@ def fetch_dk_odds():
                     inning_cat = c
                     break
     if not inning_cat:
-        return None, "Could not find inning props category on DraftKings."
+        return None, None, "Could not find inning props category on DraftKings."
 
     cat_id = inning_cat["id"]
     strikeout_sub = next(
@@ -103,7 +146,7 @@ def fetch_dk_odds():
         r2.raise_for_status()
         data2 = r2.json()
     except Exception as e:
-        return None, str(e)
+        return None, None, str(e)
 
     subcats = data2.get("eventGroup", {}).get("offerSubcategories", [])
     offers_all = []
@@ -112,7 +155,6 @@ def fetch_dk_odds():
             for o in offer:
                 offers_all.append(o)
 
-    # Build dict: team_name -> {noOdds, yesOdds, impliedNSFI}
     result = {}
     for o in offers_all:
         label = o.get("label", "").strip()
@@ -136,7 +178,7 @@ def fetch_dk_odds():
             "impliedNSFI": round(american_to_implied(no_odds), 4),
         }
 
-    return result, None
+    return result, "DraftKings API (live)", None
 
 
 # ── MLB lineup fetcher ────────────────────────────────────────────────────────
@@ -692,11 +734,13 @@ st.info(f"Found **{len(games)} games** today — **{complete}** with complete li
 
 # Fetch DraftKings odds
 with st.spinner("Fetching DraftKings odds..."):
-    dk_odds, dk_err = fetch_dk_odds()
+    dk_odds, dk_source, dk_err = fetch_dk_odds(today)
 
 if dk_err:
     st.warning(f"DraftKings odds unavailable: {dk_err}")
     dk_odds = {}
+elif dk_odds:
+    st.success(f"DraftKings odds loaded from **{dk_source}**.")
 
 # Run simulations + build results
 st.markdown("---")

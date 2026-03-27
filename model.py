@@ -6,62 +6,46 @@ import json
 import time
 from datetime import datetime, timezone, timedelta
 
-st.set_page_config(page_title="MLB NSFI Dashboard", layout="wide", page_icon="\u26be")
+st.set_page_config(page_title="Run the NSFI Market", layout="wide", page_icon="\u26be")
 
-# Custom CSS
 st.markdown("""
 <style>
-    .main-header {
-        font-size: 2.5rem;
-        font-weight: 700;
-        color: #ffffff;
-        margin-bottom: 0;
-    }
-    .sub-header {
-        font-size: 1.1rem;
-        color: #888;
-        margin-top: -10px;
-    }
-    .metric-card {
-        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-        border: 1px solid #2a2a4a;
-        border-radius: 12px;
-        padding: 20px;
-        text-align: center;
-    }
-    .bet-take {
-        background: linear-gradient(135deg, #0d3320 0%, #1a4a2e 100%);
-        border: 1px solid #2d6b45;
-        border-radius: 10px;
-        padding: 15px;
-        margin-bottom: 10px;
-    }
-    .bet-skip {
-        background: linear-gradient(135deg, #3a1a1a 0%, #4a2020 100%);
-        border: 1px solid #6b2d2d;
-        border-radius: 10px;
-        padding: 15px;
-        margin-bottom: 10px;
-    }
-    .bet-marginal {
-        background: linear-gradient(135deg, #3a3a1a 0%, #4a4a20 100%);
-        border: 1px solid #6b6b2d;
-        border-radius: 10px;
-        padding: 15px;
-        margin-bottom: 10px;
-    }
-    .ev-positive { color: #4ade80; font-weight: 700; }
-    .ev-negative { color: #f87171; font-weight: 700; }
-    .ev-marginal { color: #fbbf24; font-weight: 700; }
-    div[data-testid="stSidebar"] {
-        background: linear-gradient(180deg, #0f1419 0%, #1a1f2e 100%);
-    }
-    .stDataFrame { border-radius: 8px; }
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+    .block-container { padding-top: 2rem; }
+    .brand-run { font-family:'Inter',sans-serif; font-weight:400; font-size:1.1rem; color:#e63946; letter-spacing:0.6em; text-transform:uppercase; margin-bottom:-15px; }
+    .brand-nsfi { font-family:'Oswald',sans-serif; font-weight:700; font-size:4.5rem; color:#e8e0d4; letter-spacing:0.08em; line-height:1; margin-bottom:-10px; }
+    .brand-market { font-family:'Inter',sans-serif; font-weight:300; font-size:1.3rem; color:#6b7280; letter-spacing:0.5em; text-transform:uppercase; }
+    .brand-subtitle { font-family:'Inter',sans-serif; font-size:0.85rem; color:#4a5568; letter-spacing:0.15em; margin-top:5px; }
+    .live-badge { display:inline-block; border:1px solid #e63946; border-radius:20px; padding:4px 14px; color:#e63946; font-size:0.75rem; font-weight:600; letter-spacing:0.1em; }
+    div[data-testid="stMetric"] { background:linear-gradient(135deg,#1a1f2e 0%,#161b26 100%); border:1px solid #2a2f3e; border-radius:10px; padding:15px; }
+    .bet-card { border-radius:10px; padding:18px 22px; margin-bottom:12px; font-family:'Inter',sans-serif; }
+    .bet-take { background:linear-gradient(135deg,#0d2818 0%,#142e1f 100%); border-left:4px solid #22c55e; border-top:1px solid #1a3d28; border-right:1px solid #1a3d28; border-bottom:1px solid #1a3d28; border-radius:10px; padding:18px 22px; margin-bottom:12px; }
+    .bet-marginal { background:linear-gradient(135deg,#2a2510 0%,#332d15 100%); border-left:4px solid #eab308; border-top:1px solid #3d3820; border-right:1px solid #3d3820; border-bottom:1px solid #3d3820; border-radius:10px; padding:18px 22px; margin-bottom:12px; }
+    .bet-skip { background:linear-gradient(135deg,#2a1215 0%,#33181b 100%); border-left:4px solid #ef4444; border-top:1px solid #3d2022; border-right:1px solid #3d2022; border-bottom:1px solid #3d2022; border-radius:10px; padding:18px 22px; margin-bottom:12px; }
+    .bet-game { font-family:'Oswald',sans-serif; font-size:1.25rem; font-weight:600; color:#e8e0d4; letter-spacing:0.03em; }
+    .bet-time { color:#6b7280; font-size:0.85rem; }
+    .bet-pitcher { color:#9ca3af; font-size:0.9rem; margin:4px 0 8px 0; }
+    .bet-odds { font-family:'Oswald',sans-serif; font-size:1.15rem; color:#d1d5db; }
+    .ev-positive { color:#4ade80; font-weight:700; }
+    .ev-negative { color:#f87171; font-weight:700; }
+    .ev-marginal { color:#fbbf24; font-weight:700; }
+    .odds-highlight { font-family:'Oswald',sans-serif; font-weight:600; color:#ffffff; font-size:1.3rem; }
+    .section-header { font-family:'Oswald',sans-serif; font-weight:600; font-size:1.4rem; color:#e8e0d4; letter-spacing:0.05em; text-transform:uppercase; border-bottom:2px solid #e63946; padding-bottom:8px; margin-bottom:15px; }
+    div[data-testid="stSidebar"] { background:linear-gradient(180deg,#0c1015 0%,#141a24 100%); }
+    .stat-big { font-family:'Oswald',sans-serif; font-size:2.5rem; font-weight:700; line-height:1.1; }
+    .stat-label { font-family:'Inter',sans-serif; font-size:0.8rem; color:#6b7280; letter-spacing:0.1em; text-transform:uppercase; }
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown('<p class="main-header">\u26be MLB NSFI Betting Dashboard</p>', unsafe_allow_html=True)
-st.markdown(f'<p class="sub-header">DraftKings 1st Inning Strikeout Markets \u2022 {datetime.now().strftime("%B %d, %Y")}</p>', unsafe_allow_html=True)
+# ── Header ────────────────────────────────────────────────────────────────────
+col_title, col_badge = st.columns([4, 1])
+with col_title:
+    st.markdown('<p class="brand-run">R U N &nbsp; T H E</p>', unsafe_allow_html=True)
+    st.markdown('<p class="brand-nsfi">NSFI</p>', unsafe_allow_html=True)
+    st.markdown('<p class="brand-market">M A R K E T</p>', unsafe_allow_html=True)
+    st.markdown(f'<p class="brand-subtitle">NO STRIKEOUTS &middot; FIRST INNING &middot; {datetime.now().strftime("%B %d, %Y").upper()}</p>', unsafe_allow_html=True)
+with col_badge:
+    st.markdown('<br><br><span class="live-badge">LIVE ODDS</span>', unsafe_allow_html=True)
 
 # ── DraftKings odds fetcher ───────────────────────────────────────────────────
 
@@ -664,7 +648,7 @@ today = datetime.now().strftime("%Y-%m-%d")
 
 # Sidebar
 with st.sidebar:
-    st.markdown("### Settings")
+    st.markdown('<p style="font-family:Oswald,sans-serif; font-size:1.2rem; color:#e8e0d4; letter-spacing:0.1em;">SETTINGS</p>', unsafe_allow_html=True)
     n_sims = st.slider("Simulations", 1000, 20000, 10000, 1000,
                         help="Monte Carlo simulations per half-inning")
     min_ev = st.slider("Min EV threshold (%)", 0, 15, 5, 1,
@@ -675,14 +659,14 @@ with st.sidebar:
         st.cache_data.clear()
         st.rerun()
     st.markdown("---")
-    st.markdown("##### How it works")
+    st.markdown('<p style="font-family:Oswald,sans-serif; color:#e8e0d4; letter-spacing:0.05em;">HOW IT WORKS</p>', unsafe_allow_html=True)
     st.markdown(
         "The model runs **10,000 Monte Carlo simulations** per half-inning "
         "using pitcher/batter splits and park factors, then compares the "
         "predicted P(NSFI) against DraftKings implied odds to find **+EV bets**."
     )
     st.markdown("---")
-    st.caption("Built with MLB Stats API + DraftKings sportsbook-nash API")
+    st.caption("DraftKings sportsbook-nash API \u2022 MLB Stats API")
 
 # Load data
 pitchers_df, batters_df, avgs = load_model_data()
@@ -700,20 +684,21 @@ if dk_err:
     dk_odds = {}
 
 # Status bar
+st.markdown("---")
 complete = sum(1 for g in games if g["lineupComplete"])
-col1, col2, col3 = st.columns(3)
+dk_count = len(dk_odds) if dk_odds else 0
+col1, col2, col3, col4 = st.columns(4)
 with col1:
     st.metric("Games Today", len(games))
 with col2:
     st.metric("Lineups Posted", f"{complete}/{len(games)}")
 with col3:
-    dk_count = len(dk_odds) if dk_odds else 0
     st.metric("DK Markets", dk_count)
+with col4:
+    st.metric("Simulations", f"{n_sims:,}")
 
 if dk_err:
     st.warning(f"DraftKings odds unavailable: {dk_err}")
-elif dk_source:
-    st.caption(f"Odds source: {dk_source}")
 
 st.markdown("---")
 
@@ -798,21 +783,21 @@ strong = df[df["_ev_raw"] >= min_ev_dec].copy().sort_values("_ev_raw", ascending
 marginal = df[(df["_ev_raw"] >= 0) & (df["_ev_raw"] < min_ev_dec) & df["_has_odds"]].copy().sort_values("_ev_raw", ascending=False)
 avoid = df[(df["_ev_raw"] < 0) & df["_has_odds"]].copy().sort_values("_ev_raw", ascending=False)
 
-st.markdown("### Recommended Bets")
+st.markdown('<p class="section-header">Recommended Bets</p>', unsafe_allow_html=True)
 
 if not strong.empty:
-    st.markdown(f"**{len(strong)} bet(s)** with EV above {min_ev}%")
+    st.markdown(f"**{len(strong)} bet(s)** above {min_ev}% EV")
     for _, row in strong.iterrows():
         ev_val = row["_ev_raw"] * 100
         st.markdown(f"""<div class="bet-take">
-            <strong>{row['Game']}</strong> &nbsp; <span style="color:#888">{row['Time']}</span><br>
-            <span style="color:#ccc">Pitcher: {row['Pitcher']}</span><br>
-            <span style="font-size:1.3rem">
-                Model: <strong>{row['P Model']}</strong> &nbsp;|&nbsp;
-                DK Implied: {row['P Implied']} &nbsp;|&nbsp;
-                DK No: <strong>{row['DK No']}</strong> &nbsp;|&nbsp;
+            <span class="bet-game">{row['Game']}</span> &nbsp; <span class="bet-time">{row['Time']}</span>
+            <div class="bet-pitcher">Pitcher: {row['Pitcher']}</div>
+            <div class="bet-odds">
+                Model: <strong>{row['P Model']}</strong> &nbsp;&bull;&nbsp;
+                DK Implied: {row['P Implied']} &nbsp;&bull;&nbsp;
+                DK No: <span class="odds-highlight">{row['DK No']}</span> &nbsp;&bull;&nbsp;
                 EV: <span class="ev-positive">{ev_val:+.1f}%</span>
-            </span>
+            </div>
         </div>""", unsafe_allow_html=True)
 else:
     st.info(f"No bets above {min_ev}% EV right now. Try lowering the threshold or check back closer to game time.")
@@ -821,18 +806,18 @@ else:
 
 if not marginal.empty:
     st.markdown("---")
-    st.markdown("### Marginal Bets (0% to {}% EV)".format(min_ev))
+    st.markdown(f'<p class="section-header">Marginal Bets (0% to {min_ev}% EV)</p>', unsafe_allow_html=True)
     for _, row in marginal.iterrows():
         ev_val = row["_ev_raw"] * 100
         st.markdown(f"""<div class="bet-marginal">
-            <strong>{row['Game']}</strong> &nbsp; <span style="color:#888">{row['Time']}</span><br>
-            <span style="color:#ccc">Pitcher: {row['Pitcher']}</span><br>
-            <span style="font-size:1.1rem">
-                Model: <strong>{row['P Model']}</strong> &nbsp;|&nbsp;
-                DK Implied: {row['P Implied']} &nbsp;|&nbsp;
-                DK No: <strong>{row['DK No']}</strong> &nbsp;|&nbsp;
+            <span class="bet-game">{row['Game']}</span> &nbsp; <span class="bet-time">{row['Time']}</span>
+            <div class="bet-pitcher">Pitcher: {row['Pitcher']}</div>
+            <div class="bet-odds">
+                Model: <strong>{row['P Model']}</strong> &nbsp;&bull;&nbsp;
+                DK Implied: {row['P Implied']} &nbsp;&bull;&nbsp;
+                DK No: <strong>{row['DK No']}</strong> &nbsp;&bull;&nbsp;
                 EV: <span class="ev-marginal">{ev_val:+.1f}%</span>
-            </span>
+            </div>
         </div>""", unsafe_allow_html=True)
 
 # ── BETS TO AVOID ────────────────────────────────────────────────────────────
@@ -843,14 +828,14 @@ if not avoid.empty:
         for _, row in avoid.iterrows():
             ev_val = row["_ev_raw"] * 100
             st.markdown(f"""<div class="bet-skip">
-                <strong>{row['Game']}</strong> &nbsp; <span style="color:#888">{row['Time']}</span><br>
-                <span style="color:#ccc">Pitcher: {row['Pitcher']}</span><br>
-                <span style="font-size:1.1rem">
-                    Model: <strong>{row['P Model']}</strong> &nbsp;|&nbsp;
-                    DK Implied: {row['P Implied']} &nbsp;|&nbsp;
-                    DK No: {row['DK No']} &nbsp;|&nbsp;
+                <span class="bet-game">{row['Game']}</span> &nbsp; <span class="bet-time">{row['Time']}</span>
+                <div class="bet-pitcher">Pitcher: {row['Pitcher']}</div>
+                <div class="bet-odds">
+                    Model: <strong>{row['P Model']}</strong> &nbsp;&bull;&nbsp;
+                    DK Implied: {row['P Implied']} &nbsp;&bull;&nbsp;
+                    DK No: {row['DK No']} &nbsp;&bull;&nbsp;
                     EV: <span class="ev-negative">{ev_val:+.1f}%</span>
-                </span>
+                </div>
             </div>""", unsafe_allow_html=True)
 
 # ── GAMES WITHOUT ODDS ───────────────────────────────────────────────────────
@@ -865,11 +850,58 @@ if show_all and not no_odds.empty:
             hide_index=True,
         )
 
+# ── HISTORICAL RECORD ────────────────────────────────────────────────────────
+
+st.markdown("---")
+st.markdown('<p class="section-header">Historical Record</p>', unsafe_allow_html=True)
+
+import os as _os
+hist_path = _os.path.join(_os.path.dirname(__file__), "historical_results.csv")
+if _os.path.exists(hist_path):
+    hist_df = pd.read_csv(hist_path)
+    if len(hist_df) > 0 and "result" in hist_df.columns:
+        bets_taken = hist_df[hist_df["bet_taken"] == True] if "bet_taken" in hist_df.columns else hist_df
+        total_bets = len(bets_taken)
+        if total_bets > 0:
+            wins = len(bets_taken[bets_taken["result"] == "win"]) if "result" in bets_taken.columns else 0
+            losses = total_bets - wins
+            win_pct = (wins / total_bets * 100) if total_bets > 0 else 0
+            avg_ev = bets_taken["ev"].mean() * 100 if "ev" in bets_taken.columns else 0
+
+            c1, c2, c3, c4 = st.columns(4)
+            with c1:
+                color = "#4ade80" if win_pct >= 50 else "#f87171"
+                st.markdown(f'<div style="text-align:center"><span class="stat-big" style="color:{color}">{win_pct:.1f}%</span><br><span class="stat-label">Win Rate</span></div>', unsafe_allow_html=True)
+            with c2:
+                st.markdown(f'<div style="text-align:center"><span class="stat-big" style="color:#e8e0d4">{wins}-{losses}</span><br><span class="stat-label">Record (W-L)</span></div>', unsafe_allow_html=True)
+            with c3:
+                st.markdown(f'<div style="text-align:center"><span class="stat-big" style="color:#e8e0d4">{total_bets}</span><br><span class="stat-label">Total Bets</span></div>', unsafe_allow_html=True)
+            with c4:
+                ev_color = "#4ade80" if avg_ev > 0 else "#f87171"
+                st.markdown(f'<div style="text-align:center"><span class="stat-big" style="color:{ev_color}">{avg_ev:+.1f}%</span><br><span class="stat-label">Avg EV</span></div>', unsafe_allow_html=True)
+
+            # Recent results
+            with st.expander("Recent results", expanded=False):
+                display = bets_taken.tail(20).sort_values("date", ascending=False)
+                st.dataframe(
+                    display[["date", "game_id", "pitcher", "ev", "dk_no_odds", "result"]].reset_index(drop=True),
+                    use_container_width=True,
+                    hide_index=True,
+                )
+        else:
+            st.markdown("*No bets recorded yet. Results will appear here as the season progresses.*")
+    else:
+        st.markdown("*No historical data yet. Results will appear here as the season progresses.*")
+else:
+    st.markdown("*No historical data yet. Results will appear here as the season progresses.*")
+
 # ── FOOTER ───────────────────────────────────────────────────────────────────
 
 st.markdown("---")
-st.caption(
-    "Model: 10K Monte Carlo sims using 2024-25 MLB Stats API splits + Swish Analytics park factors \u2022 "
-    "Odds: DraftKings sportsbook-nash API \u2022 "
-    "Updated automatically via GitHub Actions"
-)
+st.markdown("""
+<div style="text-align:center; padding:20px 0;">
+    <span style="font-family:Inter,sans-serif; font-size:0.7rem; color:#4a5568; letter-spacing:0.2em; text-transform:uppercase;">
+        Run the NSFI Market &bull; 10K Monte Carlo Simulations &bull; DraftKings Odds &bull; Updated via GitHub Actions
+    </span>
+</div>
+""", unsafe_allow_html=True)

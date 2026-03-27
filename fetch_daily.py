@@ -263,6 +263,42 @@ DK_TEAM_MAP = {
 }
 
 
+def _fetch_via_browser(url, timeout=30):
+    """Fetch JSON from a URL using a headless browser (Edge or Chrome).
+    Used as fallback when requests is blocked by TLS fingerprinting."""
+    try:
+        from selenium import webdriver
+        from selenium.webdriver.edge.options import Options as EdgeOptions
+        opts = EdgeOptions()
+        opts.add_argument("--headless=new")
+        opts.add_argument("--disable-gpu")
+        opts.add_argument("--no-sandbox")
+        opts.add_argument("--log-level=3")
+        driver = webdriver.Edge(options=opts)
+    except Exception:
+        try:
+            from selenium import webdriver
+            from selenium.webdriver.chrome.options import Options as ChromeOptions
+            opts = ChromeOptions()
+            opts.add_argument("--headless=new")
+            opts.add_argument("--disable-gpu")
+            opts.add_argument("--no-sandbox")
+            opts.add_argument("--log-level=3")
+            driver = webdriver.Chrome(options=opts)
+        except Exception as e:
+            raise RuntimeError(f"No browser available: {e}")
+
+    try:
+        driver.set_page_load_timeout(timeout)
+        driver.get(url)
+        # The page source wraps JSON in <pre> tags
+        import re as _re
+        body = driver.find_element("tag name", "pre").text
+        return json.loads(body)
+    finally:
+        driver.quit()
+
+
 def fetch_all_dk_nsfi(max_games=0) -> dict:
     """
     Fetch DraftKings NSFI odds via the sportsbook-nash API.
@@ -278,10 +314,22 @@ def fetch_all_dk_nsfi(max_games=0) -> dict:
 
     print(f"  [DraftKings] Fetching from sportsbook-nash API…", end=" ", flush=True)
 
+    # Try requests first (works on Mac), fall back to Selenium Edge (Windows)
+    data = None
     try:
         data = api_get(url)
-    except RuntimeError as e:
-        print(f"failed: {e}")
+        print("OK (via requests).", flush=True)
+    except Exception:
+        print("requests blocked, trying browser…", end=" ", flush=True)
+        try:
+            data = _fetch_via_browser(url)
+            print("OK (via browser).", flush=True)
+        except Exception as e:
+            print(f"failed: {e}")
+            return {}
+
+    if not data:
+        print("no data returned.")
         return {}
 
     markets = {m["id"]: m for m in data.get("markets", [])}

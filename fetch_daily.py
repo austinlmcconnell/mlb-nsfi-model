@@ -331,6 +331,9 @@ def fetch_all_dk_nsfi() -> dict:
             return results
 
         # Step 2: Visit each game's 1st Inning > Strikeouts tab
+        # For the first game, log ALL response domains to find the odds API
+        all_response_domains = []
+
         for i, game_url in enumerate(unique_links):
             strikeout_url = game_url + "?category=1st-inning&subcategory=strikeouts"
             api_responses = []
@@ -338,15 +341,28 @@ def fetch_all_dk_nsfi() -> dict:
 
             def handle_response(response):
                 url = response.url
-                # Capture ALL API-like responses for debugging
-                if "api" in url.lower() or "offering" in url or "eventgroup" in url:
-                    api_urls.append(url[:150])
+                ct = response.headers.get("content-type", "")
+                # Capture any JSON response from DK domains
+                if "json" in ct and ("draftkings" in url or "dkn" in url or
+                                      "sportsbook" in url or "offering" in url or
+                                      "eventgroup" in url or "sbapi" in url or
+                                      "sbtech" in url):
+                    api_urls.append(url[:200])
                     try:
                         api_responses.append(response.json())
                     except Exception:
                         pass
 
+            # For game 1, also log every response domain
+            def debug_all_responses(response):
+                if i == 0:
+                    from urllib.parse import urlparse
+                    domain = urlparse(response.url).netloc
+                    if domain not in all_response_domains:
+                        all_response_domains.append(domain)
+
             page.on("response", handle_response)
+            page.on("response", debug_all_responses)
 
             try:
                 page.goto(strikeout_url, wait_until="domcontentloaded", timeout=20000)
@@ -354,6 +370,7 @@ def fetch_all_dk_nsfi() -> dict:
             except Exception as e:
                 print(f"    Game {i+1}/{len(unique_links)}: load failed ({e})")
                 page.remove_listener("response", handle_response)
+                page.remove_listener("response", debug_all_responses)
                 continue
 
             # Parse intercepted API responses for strikeout markets
@@ -468,6 +485,13 @@ def fetch_all_dk_nsfi() -> dict:
                     pass
 
             page.remove_listener("response", handle_response)
+            page.remove_listener("response", debug_all_responses)
+
+            # After first game, print all response domains we saw
+            if i == 0 and all_response_domains:
+                print(f"    [Debug] All response domains for game 1:")
+                for d in sorted(all_response_domains):
+                    print(f"      {d}")
 
         browser.close()
 

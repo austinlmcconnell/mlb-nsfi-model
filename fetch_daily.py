@@ -1,22 +1,21 @@
 #!/usr/bin/env python3
 """
-fetch_daily.py — Combined MLB lineup + FanDuel NSFI odds fetcher
+fetch_daily.py — MLB lineup + DraftKings NSFI odds fetcher
 
 Fetches today's (or any date's) regular season lineups from the MLB Stats API
-and first-inning strikeout odds from FanDuel, then saves structured data ready
-for the NSFI model.
+and first-inning strikeout odds from DraftKings via headless browser, then
+saves structured data ready for the NSFI model.
 
-FanDuel does not offer an explicit "No Strikeout" market, but prices
-"1+ Strikeout" per half-inning under "Specials Top/Bottom 1st". The implied
-P(NSFI) for each half-inning is derived as:
-    P(NSFI) = 1 − P(1+ Strikeout)
+DraftKings offers a "Strikeout Thrown - 1st Inning" Yes/No market per
+half-inning under each game's 1st Inning > Strikeouts tab. The "No" outcome
+gives the direct P(NSFI) for each half-inning.
 
 Usage:
   python3 fetch_daily.py                     # fetch once for today
   python3 fetch_daily.py --date 2025-03-27
   python3 fetch_daily.py --poll              # keep polling until all lineups post
   python3 fetch_daily.py --poll --interval 10
-  python3 fetch_daily.py --state nj          # use New Jersey FanDuel endpoint
+  python3 fetch_daily.py --no-dk             # skip DraftKings odds
 """
 
 import argparse
@@ -102,11 +101,6 @@ TEAM_TO_ABBREV = {
     "Atlanta Braves": "ATL",
 }
 
-# FanDuel may use shorter names; normalize to canonical MLB API names
-FD_TEAM_ALIASES = {
-    "Athletics": "Sacramento Athletics",
-    "Oakland Athletics": "Sacramento Athletics",
-}
 
 
 def api_get(url, params=None, retries=3, timeout=20):
@@ -225,23 +219,6 @@ def parse_game(game, handedness_cache):
     }
 
 
-# ── FanDuel odds helpers ─────────────────────────────────────────────────────
-
-FD_BASE = "https://sbapi.{state}.sportsbook.fanduel.com/api"
-FD_PARAMS = {
-    "betexRegion": "GBR",
-    "capiJurisdiction": "intl",
-    "currencyCode": "USD",
-    "exchangeLocale": "en_US",
-    "language": "en",
-    "regionCode": "NAMERICA",
-    "_ak": "FhMFpcPWXMeyZxOx",
-}
-
-# Regex: "Away Team (P Initial) @ Home Team (P Initial)"
-_FD_NAME_RE = re.compile(r"^(.+?)\s+\(.+?\)\s+@\s+(.+?)\s+\(.+?\)$")
-
-
 def american_to_implied(odds: int) -> float:
     """Convert American odds integer to implied probability (0–1)."""
     if odds < 0:
@@ -258,97 +235,9 @@ def implied_to_american(prob: float) -> str:
     return f"+{round(((1 - prob) / prob) * 100)}"
 
 
-def normalize_fd_name(name: str) -> str:
-    """Map FanDuel team name variants to canonical MLB API names."""
-    return FD_TEAM_ALIASES.get(name, name)
-
-
-def fetch_fd_events(state: str) -> dict:
-    """
-    Returns dict mapping (away_team_canonical, home_team_canonical) → fd_event_id
-    for today's MLB regular season games on FanDuel.
-    """
-    base = FD_BASE.format(state=state)
-    try:
-        data = api_get(base + "/content-managed-page",
-                       params={**FD_PARAMS, "page": "CUSTOM", "customPageId": "mlb"})
-    except RuntimeError as e:
-        print(f"  [FanDuel] content-managed-page failed: {e}")
-        return {}
-
-    events = data.get("attachments", {}).get("events", {})
-    result = {}
-    for eid, ev in events.items():
-        name = ev.get("name", "")
-        m = _FD_NAME_RE.match(name)
-        if not m:
-            continue
-        away = normalize_fd_name(m.group(1).strip())
-        home = normalize_fd_name(m.group(2).strip())
-        result[(away, home)] = int(eid)
-    return result
-
-
-def fetch_fd_specials(state: str, fd_event_id: int) -> dict:
-    """
-    Fetch FanDuel 'Specials Top/Bottom 1st' markets for a game.
-    Returns dict with 'top' and 'bot' keys, each containing:
-        - strikeoutLine: American odds for '1+ Strikeout'
-        - impliedNSFI:   P(0 strikeouts) = 1 − P(1+ K)
-        - fairNSFIOdds:  corresponding American odds string for the NSFI side
-        - threeUpThreeDown: American odds for '3 Up 3 Down' (if present)
-    """
-    base = FD_BASE.format(state=state)
-    try:
-        data = api_get(base + "/event-page",
-                       params={**FD_PARAMS, "includePrices": "true",
-                               "priceHistory": "1", "eventId": fd_event_id})
-    except RuntimeError as e:
-        print(f"  [FanDuel] event-page failed (eventId={fd_event_id}): {e}")
-        return {}
-
-    markets = data.get("attachments", {}).get("markets", {})
-
-    result = {}
-    for slot, mtype_suffix in [("top", "TOP_1ST"), ("bot", "BOT_1ST")]:
-        market = next(
-            (m for m in markets.values()
-             if mtype_suffix in m.get("marketType", "")),
-            None,
-        )
-        if not market:
-            continue
-
-        runners_by_name = {
-            r["runnerName"]: r.get("winRunnerOdds", {})
-                              .get("americanDisplayOdds", {})
-                              .get("americanOdds")
-            for r in market.get("runners", [])
-        }
-
-        k_line = runners_by_name.get("1+ Strikeout")
-        td_line = runners_by_name.get("3 Up 3 Down")
-
-        if k_line is None:
-            result[slot] = {"oddsPosted": False}
-            continue
-
-        implied_nsfi = round(1 - american_to_implied(k_line), 4)
-        result[slot] = {
-            "oddsPosted": True,
-            "strikeoutLine": k_line,       # "1+ K" American odds (e.g. -350)
-            "impliedNSFI": implied_nsfi,   # P(no strikeout this half-inning)
-            "fairNSFIOdds": implied_to_american(implied_nsfi),
-            "threeUpThreeDown": td_line,   # bonus context market
-            "allRunners": runners_by_name, # full market for reference
-        }
-
-    return result
-
-
 # ── DraftKings odds helpers (Playwright headless browser) ────────────────────
 
-DK_STRIKEOUTS_URL = "https://sportsbook.draftkings.com/leagues/baseball/mlb?category=1st-inning&subcategory=strikeouts"
+DK_MLB_URL = "https://sportsbook.draftkings.com/leagues/baseball/mlb"
 
 # DraftKings team name → canonical MLB API name
 DK_TEAM_ALIASES = {
@@ -360,11 +249,15 @@ DK_TEAM_ALIASES = {
 def fetch_all_dk_nsfi() -> dict:
     """
     Scrape DraftKings NSFI odds using a real headless browser (Playwright).
-    Navigates to the 1st-inning strikeouts page and intercepts the API
-    responses, or falls back to scraping the rendered page content.
 
-    Returns dict: {team_name: {noOdds, yesOdds, impliedNSFI, oddsPosted}} keyed
-    by the pitching team's full name (the team that "throws" the strikeout).
+    Strategy:
+      1. Load the DK MLB page and collect all game event links.
+      2. For each game, navigate to the 1st Inning > Strikeouts tab.
+      3. Intercept the API responses the page makes to extract structured
+         "Strikeout Thrown - 1st Inning" Yes/No odds.
+
+    Returns dict keyed by team name:
+      {team: {oddsPosted, noOdds, yesOdds, impliedNSFI, source}}
     """
     try:
         from playwright.sync_api import sync_playwright
@@ -374,139 +267,196 @@ def fetch_all_dk_nsfi() -> dict:
         )
 
     results = {}
-    api_responses = []
 
     print("  [DraftKings] Launching headless browser…", end=" ", flush=True)
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         context = browser.new_context(
-            user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+            user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                       "AppleWebKit/537.36 (KHTML, like Gecko) "
+                       "Chrome/131.0.0.0 Safari/537.36",
             viewport={"width": 1280, "height": 800},
             ignore_https_errors=True,
         )
+        page = context.new_page()
 
-        # Intercept API responses to capture structured JSON
-        def handle_response(response):
-            url = response.url
-            if "eventgroups" in url and ("categories" in url or "subcategory" in url):
+        # Step 1: Load MLB page and find all game event links
+        try:
+            page.goto(DK_MLB_URL, wait_until="networkidle", timeout=30000)
+            page.wait_for_timeout(2000)
+        except Exception as e:
+            print(f"MLB page load failed: {e}")
+            browser.close()
+            raise RuntimeError(f"Failed to load DraftKings MLB page: {e}")
+
+        page_title = page.title()
+        print(f"page: '{page_title}'…", end=" ", flush=True)
+
+        # Find game event links (pattern: /event/{slug}/{eventId})
+        game_links = page.eval_on_selector_all(
+            'a[href*="/event/"]',
+            "els => els.map(e => e.href)"
+        )
+        # Deduplicate and keep only unique event URLs
+        seen = set()
+        unique_links = []
+        for link in game_links:
+            # Normalize: strip query params and fragments
+            base_link = link.split("?")[0].split("#")[0]
+            if "/event/" in base_link and base_link not in seen:
+                seen.add(base_link)
+                unique_links.append(base_link)
+
+        print(f"found {len(unique_links)} games.", flush=True)
+
+        if not unique_links:
+            # Debug: show page content to diagnose
+            preview = page.inner_text("body")[:300]
+            print(f"  [DraftKings] No game links found. Page preview:\n  {preview}")
+            browser.close()
+            return results
+
+        # Step 2: Visit each game's 1st Inning > Strikeouts tab
+        for i, game_url in enumerate(unique_links):
+            strikeout_url = game_url + "?category=1st-inning&subcategory=strikeouts"
+            api_responses = []
+
+            def handle_response(response):
+                url = response.url
+                if ("offering" in url or "eventgroup" in url or
+                    "event-page" in url or "categories" in url):
+                    try:
+                        api_responses.append(response.json())
+                    except Exception:
+                        pass
+
+            page.on("response", handle_response)
+
+            try:
+                page.goto(strikeout_url, wait_until="networkidle", timeout=20000)
+                page.wait_for_timeout(2000)
+            except Exception as e:
+                print(f"    Game {i+1}/{len(unique_links)}: load failed ({e})")
+                page.remove_listener("response", handle_response)
+                continue
+
+            # Parse intercepted API responses for strikeout markets
+            game_found = 0
+            for data in api_responses:
+                # Handle nested structures — DK responses vary
+                offer_lists = []
+                # Try eventGroup > offerSubcategories path
+                for sc in data.get("eventGroup", {}).get("offerSubcategories", []):
+                    for og in sc.get("offerSubcategory", {}).get("offers", []):
+                        for o in og:
+                            offer_lists.append(o)
+                # Try event > offerCategories path
+                for cat in data.get("event", {}).get("offerCategories", []):
+                    for sc2 in cat.get("offerSubcategoryDescriptors", []):
+                        for og2 in sc2.get("offerSubcategory", {}).get("offers", []):
+                            for o2 in og2:
+                                offer_lists.append(o2)
+                # Try flat offers array
+                if "offers" in data:
+                    for og in data["offers"]:
+                        if isinstance(og, list):
+                            offer_lists.extend(og)
+                        elif isinstance(og, dict):
+                            offer_lists.append(og)
+
+                for offer in offer_lists:
+                    label = offer.get("label", "").strip()
+                    if "Strikeout" not in label or "1st Inning" not in label:
+                        continue
+                    team = label.replace("Strikeout Thrown - 1st Inning", "").strip()
+                    team = DK_TEAM_ALIASES.get(team, team)
+                    outcomes = {oc.get("label", "").strip(): oc
+                                for oc in offer.get("outcomes", [])}
+                    no_oc = outcomes.get("No")
+                    yes_oc = outcomes.get("Yes")
+                    if not no_oc:
+                        continue
+                    no_odds_str = no_oc.get("oddsAmerican")
+                    yes_odds_str = yes_oc.get("oddsAmerican") if yes_oc else None
+                    if not no_odds_str:
+                        continue
+                    no_odds = int(no_odds_str)
+                    results[team] = {
+                        "oddsPosted": True,
+                        "noOdds": no_odds,
+                        "yesOdds": int(yes_odds_str) if yes_odds_str else None,
+                        "impliedNSFI": round(american_to_implied(no_odds), 4),
+                        "source": "draftkings_playwright",
+                    }
+                    game_found += 1
+
+            # If no API data, try scraping visible text on the page
+            if game_found == 0:
                 try:
-                    api_responses.append(response.json())
+                    body_text = page.inner_text("body")
+                    if "Strikeout" in body_text and "1st Inning" in body_text:
+                        # Look for market rows with team names and odds
+                        elements = page.query_selector_all(
+                            '[class*="component"], [class*="market"], [class*="offer"], '
+                            '[class*="outcome-cell"], [class*="bet-button"]'
+                        )
+                        # Collect all visible text blocks
+                        for el in elements:
+                            text = el.inner_text().strip()
+                            if "Strikeout Thrown - 1st Inning" in text:
+                                lines = text.split("\n")
+                                team_name = None
+                                yes_odds = no_odds = None
+                                for line in lines:
+                                    line = line.strip().replace("−", "-")
+                                    if "Strikeout Thrown" in line:
+                                        team_name = line.replace(
+                                            "Strikeout Thrown - 1st Inning", ""
+                                        ).strip()
+                                        team_name = DK_TEAM_ALIASES.get(team_name, team_name)
+                                    elif line and (line[0] in "+-" or line[0].isdigit()):
+                                        try:
+                                            val = int(line.replace("+", ""))
+                                            if yes_odds is None:
+                                                yes_odds = val
+                                            else:
+                                                no_odds = val
+                                        except ValueError:
+                                            pass
+                                if team_name and no_odds is not None:
+                                    results[team_name] = {
+                                        "oddsPosted": True,
+                                        "noOdds": no_odds,
+                                        "yesOdds": yes_odds,
+                                        "impliedNSFI": round(
+                                            american_to_implied(no_odds), 4
+                                        ),
+                                        "source": "draftkings_playwright_scrape",
+                                    }
+                                    game_found += 1
                 except Exception:
                     pass
 
-        page = context.new_page()
-        page.on("response", handle_response)
+            status = f"{game_found} market(s)" if game_found else "no markets"
+            print(f"    Game {i+1}/{len(unique_links)}: {status} "
+                  f"({len(api_responses)} API resp)")
 
-        try:
-            page.goto(DK_STRIKEOUTS_URL, wait_until="networkidle", timeout=30000)
-            # Give extra time for dynamic content to load
-            page.wait_for_timeout(3000)
-        except Exception as e:
-            print(f"page load failed: {e}")
-            browser.close()
-            raise RuntimeError(f"Failed to load DraftKings page: {e}")
-
-        # Debug: report what we captured
-        print(f"captured {len(api_responses)} API response(s)…", end=" ", flush=True)
-        page_title = page.title()
-        print(f"page title: '{page_title}'…", end=" ", flush=True)
-
-        # Check if DK is showing a geo-block or error page
-        page_text_preview = page.inner_text("body")[:500]
-        if "not available" in page_text_preview.lower() or "location" in page_text_preview.lower():
-            print(f"\n  [DraftKings] Possible geo-block detected. Page preview:\n  {page_text_preview[:200]}")
-
-        # Strategy 1: Parse intercepted API JSON responses
-        for data in api_responses:
-            subcats = data.get("eventGroup", {}).get("offerSubcategories", [])
-            for sc in subcats:
-                for offer_group in sc.get("offerSubcategory", {}).get("offers", []):
-                    for offer in offer_group:
-                        label = offer.get("label", "").strip()
-                        if "Strikeout Thrown - 1st Inning" not in label:
-                            continue
-                        team = label.replace(" Strikeout Thrown - 1st Inning", "").strip()
-                        team = DK_TEAM_ALIASES.get(team, team)
-                        outcomes = {oc.get("label", "").strip(): oc
-                                    for oc in offer.get("outcomes", [])}
-                        no_oc = outcomes.get("No")
-                        yes_oc = outcomes.get("Yes")
-                        if not no_oc:
-                            continue
-                        no_odds_str = no_oc.get("oddsAmerican")
-                        yes_odds_str = yes_oc.get("oddsAmerican") if yes_oc else None
-                        if not no_odds_str:
-                            continue
-                        no_odds = int(no_odds_str)
-                        results[team] = {
-                            "oddsPosted": True,
-                            "noOdds": no_odds,
-                            "yesOdds": int(yes_odds_str) if yes_odds_str else None,
-                            "impliedNSFI": round(american_to_implied(no_odds), 4),
-                            "source": "draftkings_playwright",
-                        }
-
-        # Strategy 2: If no API responses captured, scrape the rendered page
-        if not results:
-            try:
-                # Look for the offer cards on the page
-                cards = page.query_selector_all('[class*="sportsbook-offer-card"], [class*="outcome"]')
-                # Try to find strikeout-related text
-                page_text = page.inner_text("body")
-                if "Strikeout Thrown" in page_text:
-                    print("found page content, parsing…", end=" ", flush=True)
-                    # Parse visible odds from the page
-                    rows = page.query_selector_all('tr, [class*="offer"], [class*="market"]')
-                    for row in rows:
-                        text = row.inner_text()
-                        if "Strikeout Thrown - 1st Inning" not in text:
-                            continue
-                        # Extract team name, Yes/No odds from row text
-                        lines = text.strip().split("\n")
-                        team_name = None
-                        yes_odds = None
-                        no_odds = None
-                        for line in lines:
-                            line = line.strip()
-                            if "Strikeout Thrown - 1st Inning" in line:
-                                team_name = line.replace("Strikeout Thrown - 1st Inning", "").strip()
-                                team_name = DK_TEAM_ALIASES.get(team_name, team_name)
-                            # Look for odds patterns like +150, -200
-                            elif line.startswith("+") or line.startswith("-") or line.startswith("−"):
-                                line = line.replace("−", "-")
-                                try:
-                                    odds_val = int(line)
-                                    if yes_odds is None:
-                                        yes_odds = odds_val
-                                    else:
-                                        no_odds = odds_val
-                                except ValueError:
-                                    pass
-                        if team_name and no_odds is not None:
-                            results[team_name] = {
-                                "oddsPosted": True,
-                                "noOdds": no_odds,
-                                "yesOdds": yes_odds,
-                                "impliedNSFI": round(american_to_implied(no_odds), 4),
-                                "source": "draftkings_playwright_scrape",
-                            }
-            except Exception as e:
-                print(f"page scrape failed: {e}", end=" ", flush=True)
+            page.remove_listener("response", handle_response)
 
         browser.close()
 
     if results:
-        print(f"got {len(results)} markets.")
+        print(f"  [DraftKings] Total: {len(results)} markets across all games.")
     else:
-        print("no markets found.")
+        print("  [DraftKings] No markets found (odds may not be posted yet).")
 
     return results
 
 
 # ── Combined run loop ────────────────────────────────────────────────────────
 
-def run(date_str, poll=False, interval_min=15, fd_state="il", use_dk=True):
+def run(date_str, poll=False, interval_min=15, use_dk=True):
     out_file = os.path.join(
         os.path.dirname(__file__), f"daily_{date_str.replace('-', '')}.json"
     )
@@ -550,28 +500,9 @@ def run(date_str, poll=False, interval_min=15, fd_state="il", use_dk=True):
         complete_count = sum(1 for g in games_data if g["lineupComplete"])
         print(f"{len(games_data)} games, {complete_count} lineups complete.")
 
-        # ── FanDuel odds ─────────────────────────────────────────────────────
-        print("  Fetching FanDuel odds…", end=" ", flush=True)
-        try:
-            fd_events = fetch_fd_events(fd_state)
-        except Exception as e:
-            print(f"WARNING: {e}")
-            fd_events = {}
-
+        # ── DraftKings odds ────────────────────────────────────────────────
         odds_found = 0
         for g in games_data:
-            key = (g["awayTeam"], g["homeTeam"])
-            fd_id = fd_events.get(key)
-            if fd_id is None:
-                away_norm = normalize_fd_name(g["awayTeam"])
-                home_norm = normalize_fd_name(g["homeTeam"])
-                fd_id = fd_events.get((away_norm, home_norm))
-
-            fd_specials = {}
-            if fd_id:
-                fd_specials = fetch_fd_specials(fd_state, fd_id)
-
-            # DraftKings: look up pre-fetched NSFI odds by pitching team
             dk_specials = {}
             if use_dk and dk_all:
                 for slot, pitching_team in [("top", g["homeTeam"]), ("bot", g["awayTeam"])]:
@@ -581,21 +512,14 @@ def run(date_str, poll=False, interval_min=15, fd_state="il", use_dk=True):
                     else:
                         dk_specials[slot] = {"oddsPosted": False}
 
-            g["odds"] = {
-                "fanduel": {"eventId": fd_id, **fd_specials} if fd_id else None,
-                "draftkings": dk_specials or None,
-            }
+            g["odds"] = {"draftkings": dk_specials or None}
 
-            # Count game as having odds if either book has the NSFI line
-            fd_ok = fd_specials.get("top", {}).get("oddsPosted") or \
-                    fd_specials.get("bot", {}).get("oddsPosted")
             dk_ok = dk_specials.get("top", {}).get("oddsPosted") or \
                     dk_specials.get("bot", {}).get("oddsPosted")
-            if fd_ok or dk_ok:
+            if dk_ok:
                 odds_found += 1
 
-        dk_label = f" | DraftKings: {sum(1 for g in games_data if g['odds'].get('draftkings'))}" if use_dk else ""
-        print(f"{odds_found}/{len(games_data)} games have odds.{dk_label}")
+        print(f"  {odds_found}/{len(games_data)} games have DraftKings odds.")
 
         # ── Save ─────────────────────────────────────────────────────────────
         with open(out_file, "w") as f:
@@ -636,11 +560,8 @@ def _print_summary(games_data, date_str):
         lu_status = "✓" if g["lineupComplete"] else f"⏳ drops ~{g['lineupDropET']}"
         print(f"\n  {g['awayTeam']} @ {g['homeTeam']}  {g['gameTimeET']}  [{lu_status}]")
 
-        fd = g.get("odds", {}).get("fanduel") or {}
-
         for slot, label in [("top", "Top 1"), ("bot", "Bot 1")]:
             half = g["topInning"] if slot == "top" else g["botInning"]
-            odds_slot = fd.get(slot, {})
             pitcher = half["pitcher"]
             hand = "RHP" if pitcher["pitchHand"] == "R" else "LHP"
 
@@ -654,7 +575,6 @@ def _print_summary(games_data, date_str):
 
             print(f"    {label}: {half['teamBatting']} vs {pitcher['name']} ({hand})")
 
-            # DraftKings direct NSFI line (preferred)
             if dk_slot.get("oddsPosted"):
                 no_odds = dk_slot["noOdds"]
                 yes_odds = dk_slot.get("yesOdds")
@@ -662,15 +582,6 @@ def _print_summary(games_data, date_str):
                 no_str = f"+{no_odds}" if no_odds > 0 else str(no_odds)
                 yes_str = (f"+{yes_odds}" if yes_odds and yes_odds > 0 else str(yes_odds)) if yes_odds else "?"
                 print(f"         DK NSFI No: {no_str}  Yes: {yes_str}  P(NSFI)={nsfi_p:.1%}")
-            # FanDuel derived NSFI (fallback)
-            elif odds_slot.get("oddsPosted"):
-                k_line = odds_slot["strikeoutLine"]
-                k_str  = f"{k_line:+d}" if k_line > 0 else str(k_line)
-                nsfi_p = odds_slot["impliedNSFI"]
-                nsfi_o = odds_slot["fairNSFIOdds"]
-                td_line = odds_slot.get("threeUpThreeDown")
-                td_str  = f" | 3up3dn {td_line:+d}" if td_line else ""
-                print(f"         FD 1+K: {k_str}  →  P(NSFI)={nsfi_p:.1%}  fair: {nsfi_o}{td_str}")
             else:
                 print(f"         [odds pending]")
 
@@ -699,15 +610,13 @@ def main():
                         help="Keep polling until all lineups are posted.")
     parser.add_argument("--interval", type=int, default=15,
                         help="Polling interval in minutes (default: 15).")
-    parser.add_argument("--state", default="il",
-                        help="US state code for FanDuel API endpoint (default: il).")
     parser.add_argument("--no-dk", action="store_true",
-                        help="Skip DraftKings odds (use FanDuel derived odds only).")
+                        help="Skip DraftKings odds.")
     args = parser.parse_args()
 
     date_str = args.date or datetime.now().strftime("%Y-%m-%d")
     run(date_str, poll=args.poll, interval_min=args.interval,
-        fd_state=args.state, use_dk=not args.no_dk)
+        use_dk=not args.no_dk)
 
 
 if __name__ == "__main__":

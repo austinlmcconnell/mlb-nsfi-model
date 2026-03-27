@@ -6,9 +6,62 @@ import json
 import time
 from datetime import datetime, timezone, timedelta
 
-st.set_page_config(page_title="MLB NSFI Betting Dashboard", layout="wide")
-st.title("MLB First Inning Betting Dashboard")
-st.caption(f"Data for {datetime.now().strftime('%B %d, %Y')} — DraftKings odds")
+st.set_page_config(page_title="MLB NSFI Dashboard", layout="wide", page_icon="\u26be")
+
+# Custom CSS
+st.markdown("""
+<style>
+    .main-header {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 0;
+    }
+    .sub-header {
+        font-size: 1.1rem;
+        color: #888;
+        margin-top: -10px;
+    }
+    .metric-card {
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        border: 1px solid #2a2a4a;
+        border-radius: 12px;
+        padding: 20px;
+        text-align: center;
+    }
+    .bet-take {
+        background: linear-gradient(135deg, #0d3320 0%, #1a4a2e 100%);
+        border: 1px solid #2d6b45;
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    .bet-skip {
+        background: linear-gradient(135deg, #3a1a1a 0%, #4a2020 100%);
+        border: 1px solid #6b2d2d;
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    .bet-marginal {
+        background: linear-gradient(135deg, #3a3a1a 0%, #4a4a20 100%);
+        border: 1px solid #6b6b2d;
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    .ev-positive { color: #4ade80; font-weight: 700; }
+    .ev-negative { color: #f87171; font-weight: 700; }
+    .ev-marginal { color: #fbbf24; font-weight: 700; }
+    div[data-testid="stSidebar"] {
+        background: linear-gradient(180deg, #0f1419 0%, #1a1f2e 100%);
+    }
+    .stDataFrame { border-radius: 8px; }
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown('<p class="main-header">\u26be MLB NSFI Betting Dashboard</p>', unsafe_allow_html=True)
+st.markdown(f'<p class="sub-header">DraftKings 1st Inning Strikeout Markets \u2022 {datetime.now().strftime("%B %d, %Y")}</p>', unsafe_allow_html=True)
 
 # ── DraftKings odds fetcher ───────────────────────────────────────────────────
 
@@ -609,51 +662,60 @@ def simulate_half_inning(pitcher_name, lineup, pitcher_hand_override,
 
 today = datetime.now().strftime("%Y-%m-%d")
 
-# Sidebar controls
+# Sidebar
 with st.sidebar:
-    st.header("Controls")
-    n_sims = st.slider("Simulations per half-inning", 1000, 20000, 10000, 1000)
-    min_ev = st.slider("Min EV to highlight (%)", 0, 15, 5, 1)
-    show_all = st.checkbox("Show all half-innings (including no odds)", value=False)
-    refresh = st.button("Refresh Data")
-    if refresh:
+    st.markdown("### Settings")
+    n_sims = st.slider("Simulations", 1000, 20000, 10000, 1000,
+                        help="Monte Carlo simulations per half-inning")
+    min_ev = st.slider("Min EV threshold (%)", 0, 15, 5, 1,
+                        help="Only highlight bets above this expected value")
+    show_all = st.checkbox("Include games without odds", value=False)
+    st.markdown("---")
+    if st.button("Refresh All Data", use_container_width=True):
         st.cache_data.clear()
+        st.rerun()
+    st.markdown("---")
+    st.markdown("##### How it works")
+    st.markdown(
+        "The model runs **10,000 Monte Carlo simulations** per half-inning "
+        "using pitcher/batter splits and park factors, then compares the "
+        "predicted P(NSFI) against DraftKings implied odds to find **+EV bets**."
+    )
+    st.markdown("---")
+    st.caption("Built with MLB Stats API + DraftKings sportsbook-nash API")
 
-st.markdown("---")
-
-# Load static model data
-with st.spinner("Loading player stat data..."):
-    pitchers_df, batters_df, avgs = load_model_data()
-st.success("Player stats loaded.")
-
-# Fetch live game data
-with st.spinner("Fetching today's MLB schedule and lineups..."):
-    games, games_err = fetch_today_games(today)
+# Load data
+pitchers_df, batters_df, avgs = load_model_data()
+games, games_err = fetch_today_games(today)
 
 if games_err:
     st.error(f"Failed to fetch games: {games_err}")
     st.stop()
-
 if not games:
     st.warning("No MLB regular season games found for today.")
     st.stop()
 
-complete = sum(1 for g in games if g["lineupComplete"])
-st.info(f"Found **{len(games)} games** today — **{complete}** with complete lineups.")
+dk_odds, dk_source, dk_err = fetch_dk_odds(today)
+if dk_err:
+    dk_odds = {}
 
-# Fetch DraftKings odds
-with st.spinner("Fetching DraftKings odds..."):
-    dk_odds, dk_source, dk_err = fetch_dk_odds(today)
+# Status bar
+complete = sum(1 for g in games if g["lineupComplete"])
+col1, col2, col3 = st.columns(3)
+with col1:
+    st.metric("Games Today", len(games))
+with col2:
+    st.metric("Lineups Posted", f"{complete}/{len(games)}")
+with col3:
+    dk_count = len(dk_odds) if dk_odds else 0
+    st.metric("DK Markets", dk_count)
 
 if dk_err:
     st.warning(f"DraftKings odds unavailable: {dk_err}")
-    dk_odds = {}
-elif dk_odds:
-    st.success(f"DraftKings odds loaded from **{dk_source}**.")
+elif dk_source:
+    st.caption(f"Odds source: {dk_source}")
 
-# Run simulations + build results
 st.markdown("---")
-st.subheader("Running simulations...")
 
 results = []
 progress = st.progress(0)
@@ -729,49 +791,85 @@ if not results:
 
 df = pd.DataFrame(results)
 
-# ── BET RECOMMENDATIONS TABLE ────────────────────────────────────────────────
-
-st.markdown("---")
-st.header("Today's Bet Recommendations (NSFI — No Strikeout First Inning)")
+# ── BET RECOMMENDATIONS ──────────────────────────────────────────────────────
 
 min_ev_dec = min_ev / 100
-strong = df[df["_ev_raw"] >= min_ev_dec].copy()
-strong = strong.sort_values("_ev_raw", ascending=False)
+strong = df[df["_ev_raw"] >= min_ev_dec].copy().sort_values("_ev_raw", ascending=False)
+marginal = df[(df["_ev_raw"] >= 0) & (df["_ev_raw"] < min_ev_dec) & df["_has_odds"]].copy().sort_values("_ev_raw", ascending=False)
+avoid = df[(df["_ev_raw"] < 0) & df["_has_odds"]].copy().sort_values("_ev_raw", ascending=False)
+
+st.markdown("### Recommended Bets")
 
 if not strong.empty:
-    st.success(f"**{len(strong)} strong bet(s)** with EV >= {min_ev}%")
-    display_cols = ["Game", "Time", "Pitcher", "Batting", "P Model", "P Implied", "EV", "DK No"]
-    st.dataframe(
-        strong[display_cols].reset_index(drop=True),
-        use_container_width=True,
-        hide_index=True,
-    )
+    st.markdown(f"**{len(strong)} bet(s)** with EV above {min_ev}%")
+    for _, row in strong.iterrows():
+        ev_val = row["_ev_raw"] * 100
+        st.markdown(f"""<div class="bet-take">
+            <strong>{row['Game']}</strong> &nbsp; <span style="color:#888">{row['Time']}</span><br>
+            <span style="color:#ccc">Pitcher: {row['Pitcher']}</span><br>
+            <span style="font-size:1.3rem">
+                Model: <strong>{row['P Model']}</strong> &nbsp;|&nbsp;
+                DK Implied: {row['P Implied']} &nbsp;|&nbsp;
+                DK No: <strong>{row['DK No']}</strong> &nbsp;|&nbsp;
+                EV: <span class="ev-positive">{ev_val:+.1f}%</span>
+            </span>
+        </div>""", unsafe_allow_html=True)
 else:
-    st.warning(f"No bets found with EV >= {min_ev}%. Try lowering the threshold in the sidebar.")
+    st.info(f"No bets above {min_ev}% EV right now. Try lowering the threshold or check back closer to game time.")
 
-# ── FULL RESULTS TABLE ───────────────────────────────────────────────────────
+# ── MARGINAL BETS ────────────────────────────────────────────────────────────
 
-st.markdown("---")
-st.subheader("All Half-Innings (with DraftKings odds)")
+if not marginal.empty:
+    st.markdown("---")
+    st.markdown("### Marginal Bets (0% to {}% EV)".format(min_ev))
+    for _, row in marginal.iterrows():
+        ev_val = row["_ev_raw"] * 100
+        st.markdown(f"""<div class="bet-marginal">
+            <strong>{row['Game']}</strong> &nbsp; <span style="color:#888">{row['Time']}</span><br>
+            <span style="color:#ccc">Pitcher: {row['Pitcher']}</span><br>
+            <span style="font-size:1.1rem">
+                Model: <strong>{row['P Model']}</strong> &nbsp;|&nbsp;
+                DK Implied: {row['P Implied']} &nbsp;|&nbsp;
+                DK No: <strong>{row['DK No']}</strong> &nbsp;|&nbsp;
+                EV: <span class="ev-marginal">{ev_val:+.1f}%</span>
+            </span>
+        </div>""", unsafe_allow_html=True)
 
-display_cols_all = ["Game", "Time", "Pitcher", "Batting", "P Model", "P Implied", "EV", "DK No", "DK Yes"]
-has_odds = df[df["_has_odds"]].copy().sort_values("_ev_raw", ascending=False)
-no_odds  = df[~df["_has_odds"]].copy()
+# ── BETS TO AVOID ────────────────────────────────────────────────────────────
 
-if not has_odds.empty:
-    st.dataframe(
-        has_odds[display_cols_all].reset_index(drop=True),
-        use_container_width=True,
-        hide_index=True,
-    )
+if not avoid.empty:
+    st.markdown("---")
+    with st.expander(f"Negative EV ({len(avoid)} half-innings) — avoid", expanded=False):
+        for _, row in avoid.iterrows():
+            ev_val = row["_ev_raw"] * 100
+            st.markdown(f"""<div class="bet-skip">
+                <strong>{row['Game']}</strong> &nbsp; <span style="color:#888">{row['Time']}</span><br>
+                <span style="color:#ccc">Pitcher: {row['Pitcher']}</span><br>
+                <span style="font-size:1.1rem">
+                    Model: <strong>{row['P Model']}</strong> &nbsp;|&nbsp;
+                    DK Implied: {row['P Implied']} &nbsp;|&nbsp;
+                    DK No: {row['DK No']} &nbsp;|&nbsp;
+                    EV: <span class="ev-negative">{ev_val:+.1f}%</span>
+                </span>
+            </div>""", unsafe_allow_html=True)
 
+# ── GAMES WITHOUT ODDS ───────────────────────────────────────────────────────
+
+no_odds = df[~df["_has_odds"]].copy()
 if show_all and not no_odds.empty:
-    st.markdown("**Half-innings without DraftKings odds:**")
-    st.dataframe(
-        no_odds[["Game", "Time", "Pitcher", "Batting", "P Model"]].reset_index(drop=True),
-        use_container_width=True,
-        hide_index=True,
-    )
+    st.markdown("---")
+    with st.expander(f"Games without DraftKings odds ({len(no_odds)})", expanded=False):
+        st.dataframe(
+            no_odds[["Game", "Time", "Pitcher", "Batting", "P Model"]].reset_index(drop=True),
+            use_container_width=True,
+            hide_index=True,
+        )
+
+# ── FOOTER ───────────────────────────────────────────────────────────────────
 
 st.markdown("---")
-st.caption("Model uses 2024-2025 MLB Stats API data · Park factors via Swish Analytics · DraftKings NSFI Yes/No markets")
+st.caption(
+    "Model: 10K Monte Carlo sims using 2024-25 MLB Stats API splits + Swish Analytics park factors \u2022 "
+    "Odds: DraftKings sportsbook-nash API \u2022 "
+    "Updated automatically via GitHub Actions"
+)

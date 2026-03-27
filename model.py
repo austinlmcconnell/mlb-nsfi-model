@@ -559,24 +559,32 @@ def simulate_half_inning(pitcher_name, lineup, pitcher_hand_override,
         hand_key = "RH" if (bh == "R" or (bh == "S" and pitcher_hand == "L")) else "LH"
         if bp_key in pf:
             if bp_key == tb_key:  # home batter
-                for stat_name, b_val_name, p_val_name in [
-                    ("1b", "b_1b", "p_1b"), ("2b", "b_2b", "p_2b"),
-                    ("3b", "b_3b", "p_3b"), ("hr", "b_hr", "p_hr")
-                ]:
-                    factor = pf[bp_key].get(f"{stat_name.upper()}_{hand_key}", 1.0)
-                    locals()[b_val_name] *= (0.5 * factor + 0.5)
-                    locals()[p_val_name] *= (0.5 * factor + 0.5)
+                for hit_type in ["1B", "2B", "3B", "HR"]:
+                    factor = pf[bp_key].get(f"{hit_type}_{hand_key}", 1.0)
+                    adj = 0.5 * factor + 0.5
+                    if hit_type == "1B": b_1b *= adj; p_1b *= adj
+                    elif hit_type == "2B": b_2b *= adj; p_2b *= adj
+                    elif hit_type == "3B": b_3b *= adj; p_3b *= adj
+                    elif hit_type == "HR": b_hr *= adj; p_hr *= adj
             else:  # away batter
                 if tb_key in pf:
-                    for stat_name, b_val_name in [("1b","b_1b"),("2b","b_2b"),("3b","b_3b"),("hr","b_hr")]:
-                        bp_f = pf[bp_key].get(f"{stat_name.upper()}_{hand_key}", 1.0)
-                        tb_f = pf[tb_key].get(f"{stat_name.upper()}_{hand_key}", 1.0)
-                        locals()[b_val_name] *= (1 + (tb_f - bp_f) * 0.5)
+                    for hit_type in ["1B", "2B", "3B", "HR"]:
+                        bp_f = pf[bp_key].get(f"{hit_type}_{hand_key}", 1.0)
+                        tb_f = pf[tb_key].get(f"{hit_type}_{hand_key}", 1.0)
+                        adj = 1 + (tb_f - bp_f) * 0.5
+                        if hit_type == "1B": b_1b *= adj
+                        elif hit_type == "2B": b_2b *= adj
+                        elif hit_type == "3B": b_3b *= adj
+                        elif hit_type == "HR": b_hr *= adj
                 if tp_key in pf:
-                    for stat_name, p_val_name in [("1b","p_1b"),("2b","p_2b"),("3b","p_3b"),("hr","p_hr")]:
-                        bp_f = pf[bp_key].get(f"{stat_name.upper()}_{hand_key}", 1.0)
-                        tp_f = pf[tp_key].get(f"{stat_name.upper()}_{hand_key}", 1.0)
-                        locals()[p_val_name] *= (1 + (tp_f - bp_f) * 0.5)
+                    for hit_type in ["1B", "2B", "3B", "HR"]:
+                        bp_f = pf[bp_key].get(f"{hit_type}_{hand_key}", 1.0)
+                        tp_f = pf[tp_key].get(f"{hit_type}_{hand_key}", 1.0)
+                        adj = 1 + (tp_f - bp_f) * 0.5
+                        if hit_type == "1B": p_1b *= adj
+                        elif hit_type == "2B": p_2b *= adj
+                        elif hit_type == "3B": p_3b *= adj
+                        elif hit_type == "HR": p_hr *= adj
 
         ck  = csf(b_k,  p_k,  avg_k)
         cbb = csf(b_bb, p_bb, avg_bb)

@@ -593,15 +593,19 @@ def simulate_half_inning(pitcher_name, lineup, pitcher_hand_override,
         c3b = csf(b_3b, p_3b, avg_3b)
         chr_ = csf(b_hr, p_hr, avg_hr)
 
-        total = ck + cbb + c1b + c2b + c3b + chr_
-        if total > 0:
-            ck /= total; cbb /= total; c1b /= total
-            c2b /= total; c3b /= total; chr_ /= total
-        else:
+        # Normalize: K + BB + in_play = 1.0 (matching notebook logic)
+        # Hit types (1B, 2B, 3B, HR) are subdivisions of in_play, not separate
+        cip = max(0, 1 - ck - cbb)
+        total_rate = ck + cbb + cip
+        if total_rate > 0 and total_rate != 1.0:
+            ck  /= total_rate
+            cbb /= total_rate
+            cip = max(0, 1 - ck - cbb)
+
+        if ck == 0 and cbb == 0 and cip == 0:
             ck = avg_k; cbb = avg_bb; c1b = avg_1b
             c2b = avg_2b; c3b = avg_3b; chr_ = avg_hr
-
-        cip = max(0, 1 - ck - cbb)
+            cip = max(0, 1 - ck - cbb)
         batter_stats_list.append((ck, cbb, cip, c1b, c2b, c3b, chr_))
 
     # Run simulations

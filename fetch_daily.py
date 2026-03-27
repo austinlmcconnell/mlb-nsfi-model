@@ -246,7 +246,7 @@ DK_TEAM_ALIASES = {
 }
 
 
-def fetch_all_dk_nsfi() -> dict:
+def fetch_all_dk_nsfi(max_games=0) -> dict:
     """
     Scrape DraftKings NSFI odds using a real headless browser (Playwright).
 
@@ -333,8 +333,9 @@ def fetch_all_dk_nsfi() -> dict:
         # Step 2: Visit each game's 1st Inning > Strikeouts tab
         # For the first game, log ALL response domains to find the odds API
         all_response_domains = []
+        games_to_process = unique_links[:max_games] if max_games > 0 else unique_links
 
-        for i, game_url in enumerate(unique_links):
+        for i, game_url in enumerate(games_to_process):
             strikeout_url = game_url + "?category=1st-inning&subcategory=strikeouts"
             api_responses = []
             api_urls = []
@@ -505,7 +506,7 @@ def fetch_all_dk_nsfi() -> dict:
 
 # ── Combined run loop ────────────────────────────────────────────────────────
 
-def run(date_str, poll=False, interval_min=15, use_dk=True):
+def run(date_str, poll=False, interval_min=15, use_dk=True, test_mode=False):
     out_file = os.path.join(
         os.path.dirname(__file__), f"daily_{date_str.replace('-', '')}.json"
     )
@@ -516,7 +517,7 @@ def run(date_str, poll=False, interval_min=15, use_dk=True):
     if use_dk:
         print("  Fetching DraftKings odds via headless browser…", flush=True)
         try:
-            dk_all = fetch_all_dk_nsfi()
+            dk_all = fetch_all_dk_nsfi(max_games=1 if test_mode else 0)
         except Exception as e:
             print(f"  [DraftKings] {e}")
             use_dk = False
@@ -661,11 +662,13 @@ def main():
                         help="Polling interval in minutes (default: 15).")
     parser.add_argument("--no-dk", action="store_true",
                         help="Skip DraftKings odds.")
+    parser.add_argument("--test", action="store_true",
+                        help="Test mode: only process the first game.")
     args = parser.parse_args()
 
     date_str = args.date or datetime.now().strftime("%Y-%m-%d")
     run(date_str, poll=args.poll, interval_min=args.interval,
-        use_dk=not args.no_dk)
+        use_dk=not args.no_dk, test_mode=args.test)
 
 
 if __name__ == "__main__":

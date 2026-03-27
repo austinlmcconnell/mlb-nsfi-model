@@ -1,13 +1,13 @@
 {
   "date": "2026-03-27",
-  "fetchedAt": "2026-03-27T16:12:07.314817+00:00",
+  "fetchedAt": "2026-03-27T18:33:20.795149+00:00",
   "games": [
     {
       "gamePk": 823243,
       "gameTimeUTC": "2026-03-27T20:35:00Z",
       "gameTimeET": "4:35 PM ET",
       "lineupDropET": "1:05 PM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "San Francisco Giants",
       "awayTeam": "New York Yankees",
       "venue": "Oracle Park",
@@ -20,7 +20,62 @@
           "id": 592662,
           "pitchHand": "L"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Paul Goldschmidt",
+            "id": 502671,
+            "batSide": "R",
+            "position": "1B"
+          },
+          {
+            "name": "Aaron Judge",
+            "id": 592450,
+            "batSide": "R",
+            "position": "RF"
+          },
+          {
+            "name": "Cody Bellinger",
+            "id": 641355,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Giancarlo Stanton",
+            "id": 519317,
+            "batSide": "R",
+            "position": "DH"
+          },
+          {
+            "name": "Amed Rosario",
+            "id": 642708,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Jazz Chisholm Jr.",
+            "id": 665862,
+            "batSide": "L",
+            "position": "2B"
+          },
+          {
+            "name": "Jos\u00e9 Caballero",
+            "id": 676609,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "Randal Grichuk",
+            "id": 545341,
+            "batSide": "R",
+            "position": "LF"
+          },
+          {
+            "name": "Austin Wells",
+            "id": 669224,
+            "batSide": "L",
+            "position": "C"
+          }
+        ],
         "gameId": "NYY/SF - Top 1"
       },
       "botInning": {
@@ -31,7 +86,62 @@
           "id": 693645,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Luis Arraez",
+            "id": 650333,
+            "batSide": "L",
+            "position": "2B"
+          },
+          {
+            "name": "Matt Chapman",
+            "id": 656305,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Rafael Devers",
+            "id": 646240,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Willy Adames",
+            "id": 642715,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "Jung Hoo Lee",
+            "id": 808982,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Heliot Ramos",
+            "id": 671218,
+            "batSide": "R",
+            "position": "LF"
+          },
+          {
+            "name": "Casey Schmitt",
+            "id": 669477,
+            "batSide": "R",
+            "position": "1B"
+          },
+          {
+            "name": "Patrick Bailey",
+            "id": 672275,
+            "batSide": "S",
+            "position": "C"
+          },
+          {
+            "name": "Harrison Bader",
+            "id": 664056,
+            "batSide": "R",
+            "position": "CF"
+          }
+        ],
         "gameId": "NYY/SF - Bot 1"
       },
       "odds": {
@@ -45,9 +155,9 @@
           },
           "bot": {
             "oddsPosted": true,
-            "noOdds": 285,
-            "yesOdds": -425,
-            "impliedNSFI": 0.2597,
+            "noOdds": 265,
+            "yesOdds": -390,
+            "impliedNSFI": 0.274,
             "source": "draftkings_nash"
           }
         }
@@ -129,7 +239,62 @@
           "id": 607536,
           "pitchHand": "L"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Austin Slater",
+            "id": 596103,
+            "batSide": "R",
+            "position": "RF"
+          },
+          {
+            "name": "Agust\u00edn Ram\u00edrez",
+            "id": 682663,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Jakob Marsee",
+            "id": 805300,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Otto Lopez",
+            "id": 672640,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "Christopher Morel",
+            "id": 666624,
+            "batSide": "R",
+            "position": "1B"
+          },
+          {
+            "name": "Connor Norby",
+            "id": 681393,
+            "batSide": "R",
+            "position": "DH"
+          },
+          {
+            "name": "Heriberto Hern\u00e1ndez",
+            "id": 681715,
+            "batSide": "R",
+            "position": "LF"
+          },
+          {
+            "name": "Xavier Edwards",
+            "id": 669364,
+            "batSide": "S",
+            "position": "2B"
+          },
+          {
+            "name": "Javier Sanoja",
+            "id": 691594,
+            "batSide": "R",
+            "position": "3B"
+          }
+        ],
         "gameId": "COL/MIA - Bot 1"
       },
       "odds": {
@@ -169,7 +334,62 @@
           "id": 519242,
           "pitchHand": "L"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Maikel Garcia",
+            "id": 672580,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Bobby Witt Jr.",
+            "id": 677951,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "Lane Thomas",
+            "id": 657041,
+            "batSide": "R",
+            "position": "CF"
+          },
+          {
+            "name": "Salvador Perez",
+            "id": 521692,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Vinnie Pasquantino",
+            "id": 686469,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Starling Marte",
+            "id": 516782,
+            "batSide": "R",
+            "position": "RF"
+          },
+          {
+            "name": "Jonathan India",
+            "id": 663697,
+            "batSide": "R",
+            "position": "2B"
+          },
+          {
+            "name": "Isaac Collins",
+            "id": 686555,
+            "batSide": "S",
+            "position": "LF"
+          },
+          {
+            "name": "Carter Jensen",
+            "id": 695600,
+            "batSide": "L",
+            "position": "DH"
+          }
+        ],
         "gameId": "KC/ATL - Top 1"
       },
       "botInning": {
@@ -187,9 +407,9 @@
         "draftkings": {
           "top": {
             "oddsPosted": true,
-            "noOdds": 225,
-            "yesOdds": -320,
-            "impliedNSFI": 0.3077,
+            "noOdds": 285,
+            "yesOdds": -425,
+            "impliedNSFI": 0.2597,
             "source": "draftkings_nash"
           },
           "bot": {
@@ -363,7 +583,7 @@
       "lineupComplete": false,
       "homeTeam": "Los Angeles Dodgers",
       "awayTeam": "Arizona Diamondbacks",
-      "venue": "UNIQLO FIELD AT DODGER STADIUM",
+      "venue": "UNIQLO Field at Dodger Stadium",
       "ballparkKey": "Dodgers",
       "topInning": {
         "teamBatting": "Arizona Diamondbacks",

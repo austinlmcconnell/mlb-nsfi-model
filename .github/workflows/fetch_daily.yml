@@ -21,8 +21,19 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install dependencies
-        run: pip install requests
+      - name: Install Chrome
+        uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: stable
+
+      - name: Install Python dependencies
+        run: pip install requests selenium
+
+      - name: Install ChromeDriver
+        run: |
+          CHROME_VERSION=$(google-chrome --version | grep -oP '\d+\.\d+\.\d+')
+          pip install chromedriver-autoinstaller
+          python -c "import chromedriver_autoinstaller; chromedriver_autoinstaller.install()"
 
       - name: Fetch today's data
         run: python3 fetch_daily.py

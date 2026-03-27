@@ -264,29 +264,42 @@ DK_TEAM_MAP = {
 
 
 def _fetch_via_browser(url, timeout=30):
-    """Fetch JSON from a URL using a headless browser (Edge or Chrome).
+    """Fetch JSON from a URL using a headless browser (Chrome or Edge).
     Used as fallback when requests is blocked by TLS fingerprinting."""
-    try:
-        from selenium import webdriver
-        from selenium.webdriver.edge.options import Options as EdgeOptions
-        opts = EdgeOptions()
-        opts.add_argument("--headless=new")
-        opts.add_argument("--disable-gpu")
-        opts.add_argument("--no-sandbox")
-        opts.add_argument("--log-level=3")
-        driver = webdriver.Edge(options=opts)
-    except Exception:
+    import platform
+    from selenium import webdriver
+
+    driver = None
+    # Try Chrome first (available on Linux/GitHub Actions), then Edge (Windows)
+    browsers = []
+    if platform.system() == "Windows":
+        browsers = ["edge", "chrome"]
+    else:
+        browsers = ["chrome", "edge"]
+
+    for browser in browsers:
         try:
-            from selenium import webdriver
-            from selenium.webdriver.chrome.options import Options as ChromeOptions
-            opts = ChromeOptions()
+            if browser == "chrome":
+                from selenium.webdriver.chrome.options import Options
+                opts = Options()
+            else:
+                from selenium.webdriver.edge.options import Options
+                opts = Options()
             opts.add_argument("--headless=new")
             opts.add_argument("--disable-gpu")
             opts.add_argument("--no-sandbox")
+            opts.add_argument("--disable-dev-shm-usage")
             opts.add_argument("--log-level=3")
-            driver = webdriver.Chrome(options=opts)
-        except Exception as e:
-            raise RuntimeError(f"No browser available: {e}")
+            if browser == "chrome":
+                driver = webdriver.Chrome(options=opts)
+            else:
+                driver = webdriver.Edge(options=opts)
+            break
+        except Exception:
+            continue
+
+    if driver is None:
+        raise RuntimeError("No browser available (install Chrome or Edge)")
 
     try:
         driver.set_page_load_timeout(timeout)

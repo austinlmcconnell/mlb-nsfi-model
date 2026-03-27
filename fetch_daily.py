@@ -283,7 +283,9 @@ def fetch_all_dk_nsfi() -> dict:
 
         # Step 1: Load MLB page and find all game event links
         try:
-            page.goto(DK_MLB_URL, wait_until="networkidle", timeout=30000)
+            page.goto(DK_MLB_URL, wait_until="domcontentloaded", timeout=30000)
+            # Wait for game links to render (don't use networkidle — DK never settles)
+            page.wait_for_selector('a[href*="/event/"]', timeout=15000)
             page.wait_for_timeout(2000)
         except Exception as e:
             print(f"MLB page load failed: {e}")
@@ -334,8 +336,8 @@ def fetch_all_dk_nsfi() -> dict:
             page.on("response", handle_response)
 
             try:
-                page.goto(strikeout_url, wait_until="networkidle", timeout=20000)
-                page.wait_for_timeout(2000)
+                page.goto(strikeout_url, wait_until="domcontentloaded", timeout=20000)
+                page.wait_for_timeout(5000)  # wait for JS to render odds
             except Exception as e:
                 print(f"    Game {i+1}/{len(unique_links)}: load failed ({e})")
                 page.remove_listener("response", handle_response)

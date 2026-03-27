@@ -2,10 +2,10 @@ name: Fetch Daily MLB Data
 
 on:
   schedule:
-    # Run at 1:00 PM ET (17:00 UTC) — most lineups posted by then
-    - cron: "0 17 * * *"
-    # Run again at 5:30 PM ET (21:30 UTC) — catch late lineups + updated odds
-    - cron: "30 21 * * *"
+    - cron: "30 15 * * *"  # 11:30 AM ET
+    - cron: "30 18 * * *"  # 2:30 PM ET
+    - cron: "30 21 * * *"  # 5:30 PM ET
+    - cron: "30 0 * * *"   # 8:30 PM ET
   workflow_dispatch: # Allow manual trigger from GitHub UI
 
 jobs:

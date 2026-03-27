@@ -622,16 +622,20 @@ def simulate_half_inning(pitcher_name, lineup, pitcher_hand_override,
                 else: r1 = True
             else:
                 ip = (outcome - ck - cbb) / cip if cip > 0 else 0
-                if ip < c1b / cip if cip > 0 else 0:
+                hit_1b = (c1b / cip) if cip > 0 else 0
+                hit_2b = ((c1b + c2b) / cip) if cip > 0 else 0
+                hit_3b = ((c1b + c2b + c3b) / cip) if cip > 0 else 0
+                hit_hr = ((c1b + c2b + c3b + chr_) / cip) if cip > 0 else 0
+                if ip < hit_1b:
                     hits += 1
                     if r1 and r2: r3 = True
                     elif r1: r2 = True
                     else: r1 = True
-                elif ip < (c1b + c2b) / cip if cip > 0 else 0:
+                elif ip < hit_2b:
                     hits += 1; r3 = True; r2 = True; r1 = False
-                elif ip < (c1b + c2b + c3b) / cip if cip > 0 else 0:
+                elif ip < hit_3b:
                     hits += 1; r3 = True; r2 = r1 = False
-                elif ip < (c1b + c2b + c3b + chr_) / cip if cip > 0 else 0:
+                elif ip < hit_hr:
                     hits += 1; r1 = r2 = r3 = False
                 else:
                     if r1 and outs < 2 and np.random.rand() < 0.064:

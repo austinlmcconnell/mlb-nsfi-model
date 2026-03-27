@@ -555,27 +555,19 @@ def simulate_half_inning(pitcher_name, lineup, pitcher_hand_override,
         b_3b = wsf(bget(f"Year_3B_Rate_{bs}"),     bget(f"Season_3B_Rate_{bs}"))
         b_hr = wsf(bget(f"Year_HR_Rate_{bs}"),     bget(f"Season_HR_Rate_{bs}"))
 
-        # Park adjustments
+        # Park adjustments (matches notebook logic exactly)
         hand_key = "RH" if (bh == "R" or (bh == "S" and pitcher_hand == "L")) else "LH"
         if bp_key in pf:
             if bp_key == tb_key:  # home batter
+                # Batter at home: half-weight their own park factor
                 for hit_type in ["1B", "2B", "3B", "HR"]:
                     factor = pf[bp_key].get(f"{hit_type}_{hand_key}", 1.0)
                     adj = 0.5 * factor + 0.5
-                    if hit_type == "1B": b_1b *= adj; p_1b *= adj
-                    elif hit_type == "2B": b_2b *= adj; p_2b *= adj
-                    elif hit_type == "3B": b_3b *= adj; p_3b *= adj
-                    elif hit_type == "HR": b_hr *= adj; p_hr *= adj
-            else:  # away batter
-                if tb_key in pf:
-                    for hit_type in ["1B", "2B", "3B", "HR"]:
-                        bp_f = pf[bp_key].get(f"{hit_type}_{hand_key}", 1.0)
-                        tb_f = pf[tb_key].get(f"{hit_type}_{hand_key}", 1.0)
-                        adj = 1 + (tb_f - bp_f) * 0.5
-                        if hit_type == "1B": b_1b *= adj
-                        elif hit_type == "2B": b_2b *= adj
-                        elif hit_type == "3B": b_3b *= adj
-                        elif hit_type == "HR": b_hr *= adj
+                    if hit_type == "1B": b_1b *= adj
+                    elif hit_type == "2B": b_2b *= adj
+                    elif hit_type == "3B": b_3b *= adj
+                    elif hit_type == "HR": b_hr *= adj
+                # Pitcher (away): differential between pitcher's home park and current ballpark
                 if tp_key in pf:
                     for hit_type in ["1B", "2B", "3B", "HR"]:
                         bp_f = pf[bp_key].get(f"{hit_type}_{hand_key}", 1.0)
@@ -585,6 +577,25 @@ def simulate_half_inning(pitcher_name, lineup, pitcher_hand_override,
                         elif hit_type == "2B": p_2b *= adj
                         elif hit_type == "3B": p_3b *= adj
                         elif hit_type == "HR": p_hr *= adj
+            else:  # away batter
+                # Batter (away): differential between batter's home park and current ballpark
+                if tb_key in pf:
+                    for hit_type in ["1B", "2B", "3B", "HR"]:
+                        bp_f = pf[bp_key].get(f"{hit_type}_{hand_key}", 1.0)
+                        tb_f = pf[tb_key].get(f"{hit_type}_{hand_key}", 1.0)
+                        adj = 1 + (tb_f - bp_f) * 0.5
+                        if hit_type == "1B": b_1b *= adj
+                        elif hit_type == "2B": b_2b *= adj
+                        elif hit_type == "3B": b_3b *= adj
+                        elif hit_type == "HR": b_hr *= adj
+                # Pitcher at home: half-weight park factor
+                for hit_type in ["1B", "2B", "3B", "HR"]:
+                    factor = pf[bp_key].get(f"{hit_type}_{hand_key}", 1.0)
+                    adj = 0.5 * factor + 0.5
+                    if hit_type == "1B": p_1b *= adj
+                    elif hit_type == "2B": p_2b *= adj
+                    elif hit_type == "3B": p_3b *= adj
+                    elif hit_type == "HR": p_hr *= adj
 
         ck  = csf(b_k,  p_k,  avg_k)
         cbb = csf(b_bb, p_bb, avg_bb)

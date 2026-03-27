@@ -1,22 +1,21 @@
 #!/usr/bin/env python3
 """
-fetch_daily.py — Combined MLB lineup + FanDuel NSFI odds fetcher
+fetch_daily.py — MLB lineup + DraftKings NSFI odds fetcher
 
 Fetches today's (or any date's) regular season lineups from the MLB Stats API
-and first-inning strikeout odds from FanDuel, then saves structured data ready
-for the NSFI model.
+and first-inning strikeout odds from DraftKings via headless browser, then
+saves structured data ready for the NSFI model.
 
-FanDuel does not offer an explicit "No Strikeout" market, but prices
-"1+ Strikeout" per half-inning under "Specials Top/Bottom 1st". The implied
-P(NSFI) for each half-inning is derived as:
-    P(NSFI) = 1 − P(1+ Strikeout)
+DraftKings offers a "Strikeout Thrown - 1st Inning" Yes/No market per
+half-inning under each game's 1st Inning > Strikeouts tab. The "No" outcome
+gives the direct P(NSFI) for each half-inning.
 
 Usage:
   python3 fetch_daily.py                     # fetch once for today
   python3 fetch_daily.py --date 2025-03-27
   python3 fetch_daily.py --poll              # keep polling until all lineups post
   python3 fetch_daily.py --poll --interval 10
-  python3 fetch_daily.py --state nj          # use New Jersey FanDuel endpoint
+  python3 fetch_daily.py --no-dk             # skip DraftKings odds
 """
 
 import argparse
@@ -102,11 +101,6 @@ TEAM_TO_ABBREV = {
     "Atlanta Braves": "ATL",
 }
 
-# FanDuel may use shorter names; normalize to canonical MLB API names
-FD_TEAM_ALIASES = {
-    "Athletics": "Sacramento Athletics",
-    "Oakland Athletics": "Sacramento Athletics",
-}
 
 
 def api_get(url, params=None, retries=3, timeout=20):
@@ -225,23 +219,6 @@ def parse_game(game, handedness_cache):
     }
 
 
-# ── FanDuel odds helpers ─────────────────────────────────────────────────────
-
-FD_BASE = "https://sbapi.{state}.sportsbook.fanduel.com/api"
-FD_PARAMS = {
-    "betexRegion": "GBR",
-    "capiJurisdiction": "intl",
-    "currencyCode": "USD",
-    "exchangeLocale": "en_US",
-    "language": "en",
-    "regionCode": "NAMERICA",
-    "_ak": "FhMFpcPWXMeyZxOx",
-}
-
-# Regex: "Away Team (P Initial) @ Home Team (P Initial)"
-_FD_NAME_RE = re.compile(r"^(.+?)\s+\(.+?\)\s+@\s+(.+?)\s+\(.+?\)$")
-
-
 def american_to_implied(odds: int) -> float:
     """Convert American odds integer to implied probability (0–1)."""
     if odds < 0:
@@ -258,272 +235,193 @@ def implied_to_american(prob: float) -> str:
     return f"+{round(((1 - prob) / prob) * 100)}"
 
 
-def normalize_fd_name(name: str) -> str:
-    """Map FanDuel team name variants to canonical MLB API names."""
-    return FD_TEAM_ALIASES.get(name, name)
+# ── DraftKings odds (sportsbook-nash API) ────────────────────────────────────
 
+DK_NASH_BASE = "https://sportsbook-nash.draftkings.com/api/sportscontent/dkusoh/v1"
+DK_LEAGUE_ID = "84240"         # MLB regular season
+DK_CATEGORY_ID = "1024"        # 1st Inning
+DK_SUBCATEGORY_ID = "12855"    # Strikeouts
 
-def fetch_fd_events(state: str) -> dict:
-    """
-    Returns dict mapping (away_team_canonical, home_team_canonical) → fd_event_id
-    for today's MLB regular season games on FanDuel.
-    """
-    base = FD_BASE.format(state=state)
-    try:
-        data = api_get(base + "/content-managed-page",
-                       params={**FD_PARAMS, "page": "CUSTOM", "customPageId": "mlb"})
-    except RuntimeError as e:
-        print(f"  [FanDuel] content-managed-page failed: {e}")
-        return {}
-
-    events = data.get("attachments", {}).get("events", {})
-    result = {}
-    for eid, ev in events.items():
-        name = ev.get("name", "")
-        m = _FD_NAME_RE.match(name)
-        if not m:
-            continue
-        away = normalize_fd_name(m.group(1).strip())
-        home = normalize_fd_name(m.group(2).strip())
-        result[(away, home)] = int(eid)
-    return result
-
-
-def fetch_fd_specials(state: str, fd_event_id: int) -> dict:
-    """
-    Fetch FanDuel 'Specials Top/Bottom 1st' markets for a game.
-    Returns dict with 'top' and 'bot' keys, each containing:
-        - strikeoutLine: American odds for '1+ Strikeout'
-        - impliedNSFI:   P(0 strikeouts) = 1 − P(1+ K)
-        - fairNSFIOdds:  corresponding American odds string for the NSFI side
-        - threeUpThreeDown: American odds for '3 Up 3 Down' (if present)
-    """
-    base = FD_BASE.format(state=state)
-    try:
-        data = api_get(base + "/event-page",
-                       params={**FD_PARAMS, "includePrices": "true",
-                               "priceHistory": "1", "eventId": fd_event_id})
-    except RuntimeError as e:
-        print(f"  [FanDuel] event-page failed (eventId={fd_event_id}): {e}")
-        return {}
-
-    markets = data.get("attachments", {}).get("markets", {})
-
-    result = {}
-    for slot, mtype_suffix in [("top", "TOP_1ST"), ("bot", "BOT_1ST")]:
-        market = next(
-            (m for m in markets.values()
-             if mtype_suffix in m.get("marketType", "")),
-            None,
-        )
-        if not market:
-            continue
-
-        runners_by_name = {
-            r["runnerName"]: r.get("winRunnerOdds", {})
-                              .get("americanDisplayOdds", {})
-                              .get("americanOdds")
-            for r in market.get("runners", [])
-        }
-
-        k_line = runners_by_name.get("1+ Strikeout")
-        td_line = runners_by_name.get("3 Up 3 Down")
-
-        if k_line is None:
-            result[slot] = {"oddsPosted": False}
-            continue
-
-        implied_nsfi = round(1 - american_to_implied(k_line), 4)
-        result[slot] = {
-            "oddsPosted": True,
-            "strikeoutLine": k_line,       # "1+ K" American odds (e.g. -350)
-            "impliedNSFI": implied_nsfi,   # P(no strikeout this half-inning)
-            "fairNSFIOdds": implied_to_american(implied_nsfi),
-            "threeUpThreeDown": td_line,   # bonus context market
-            "allRunners": runners_by_name, # full market for reference
-        }
-
-    return result
-
-
-# ── DraftKings odds helpers ──────────────────────────────────────────────────
-
-DK_BASE = "https://sportsbook.draftkings.com/sites/US-SB/api/v5"
-DK_HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-    "Accept": "application/json, text/plain, */*",
-    "Accept-Language": "en-US,en;q=0.9",
-    "Referer": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-}
-
-# DraftKings team name → canonical MLB API name
-DK_TEAM_ALIASES = {
+# DK short team names → canonical MLB API full names
+DK_TEAM_MAP = {
+    "NY Yankees": "New York Yankees", "NY Mets": "New York Mets",
+    "LA Dodgers": "Los Angeles Dodgers", "LA Angels": "Los Angeles Angels",
+    "SF Giants": "San Francisco Giants", "SD Padres": "San Diego Padres",
+    "TB Rays": "Tampa Bay Rays", "KC Royals": "Kansas City Royals",
+    "CWS White Sox": "Chicago White Sox", "CHI White Sox": "Chicago White Sox",
+    "CHI Cubs": "Chicago Cubs", "CLE Guardians": "Cleveland Guardians",
+    "CIN Reds": "Cincinnati Reds", "COL Rockies": "Colorado Rockies",
+    "DET Tigers": "Detroit Tigers", "HOU Astros": "Houston Astros",
+    "MIA Marlins": "Miami Marlins", "MIL Brewers": "Milwaukee Brewers",
+    "MIN Twins": "Minnesota Twins", "PHI Phillies": "Philadelphia Phillies",
+    "PIT Pirates": "Pittsburgh Pirates", "SEA Mariners": "Seattle Mariners",
+    "STL Cardinals": "St. Louis Cardinals", "TEX Rangers": "Texas Rangers",
+    "TOR Blue Jays": "Toronto Blue Jays", "WSH Nationals": "Washington Nationals",
+    "ATL Braves": "Atlanta Braves", "ARI Diamondbacks": "Arizona Diamondbacks",
+    "BAL Orioles": "Baltimore Orioles", "BOS Red Sox": "Boston Red Sox",
     "Athletics": "Sacramento Athletics",
-    "Oakland Athletics": "Sacramento Athletics",
 }
 
-# MLB event group IDs on DraftKings
-_DK_GROUP_ID = 84240   # MLB regular season
 
+def _fetch_via_browser(url, timeout=30):
+    """Fetch JSON from a URL using a headless browser (Chrome or Edge).
+    Used as fallback when requests is blocked by TLS fingerprinting."""
+    import platform
+    from selenium import webdriver
 
-def _dk_get(path, params=None, retries=2):
-    """GET from DraftKings API; raises RuntimeError on failure or non-JSON response."""
-    url = DK_BASE + path
-    for attempt in range(retries):
+    driver = None
+    # Try Chrome first (available on Linux/GitHub Actions), then Edge (Windows)
+    browsers = []
+    if platform.system() == "Windows":
+        browsers = ["edge", "chrome"]
+    else:
+        browsers = ["chrome", "edge"]
+
+    for browser in browsers:
         try:
-            r = requests.get(url, headers=DK_HEADERS, params=params, timeout=15)
-            if r.status_code == 403:
-                raise RuntimeError(
-                    "DraftKings returned 403 — requires a US IP. "
-                    "Run fetch_daily.py from your local machine."
-                )
-            r.raise_for_status()
-            ct = r.headers.get("Content-Type", "")
-            if "json" not in ct:
-                raise RuntimeError(f"DraftKings returned non-JSON ({ct[:40]})")
-            return r.json()
-        except RuntimeError:
-            raise
-        except Exception as e:
-            if attempt < retries - 1:
-                time.sleep(2)
+            if browser == "chrome":
+                from selenium.webdriver.chrome.options import Options
+                opts = Options()
             else:
-                raise RuntimeError(f"DraftKings request failed: {e}") from e
+                from selenium.webdriver.edge.options import Options
+                opts = Options()
+            opts.add_argument("--headless=new")
+            opts.add_argument("--disable-gpu")
+            opts.add_argument("--no-sandbox")
+            opts.add_argument("--disable-dev-shm-usage")
+            opts.add_argument("--log-level=3")
+            if browser == "chrome":
+                driver = webdriver.Chrome(options=opts)
+            else:
+                driver = webdriver.Edge(options=opts)
+            break
+        except Exception:
+            continue
 
-
-def fetch_dk_categories() -> tuple[int | None, int | None]:
-    """
-    Return (inning_props_category_id, strikeouts_subcategory_id) from the
-    MLB event group. Returns (None, None) if the structure can't be found.
-    """
-    try:
-        data = _dk_get(f"/eventgroups/{_DK_GROUP_ID}", params={"includeOnly": "offerCategories"})
-    except RuntimeError as e:
-        print(f"  [DraftKings] {e}")
-        return None, None
-
-    cats = data.get("eventGroup", {}).get("offerCategories", [])
-    # Look for "Inning Props", "Game Props", or "1st Inning" category
-    inning_cat = next(
-        (c for c in cats if any(kw in c.get("name", "").lower()
-                                for kw in ["inning prop", "1st inning", "inning lines"])),
-        None,
-    )
-    if not inning_cat:
-        # Fall back to any category whose subcategories mention strikeout
-        for c in cats:
-            for sub in c.get("offerSubcategoryDescriptors", []):
-                if "strikeout" in sub.get("name", "").lower():
-                    inning_cat = c
-                    break
-    if not inning_cat:
-        return None, None
-
-    cat_id = inning_cat["id"]
-    strikeout_sub = next(
-        (s for s in inning_cat.get("offerSubcategoryDescriptors", [])
-         if "strikeout" in s.get("name", "").lower()),
-        None,
-    )
-    sub_id = strikeout_sub["id"] if strikeout_sub else None
-    return cat_id, sub_id
-
-
-def fetch_dk_nsfi(home_team: str, away_team: str,
-                  cat_id: int, sub_id: int | None) -> dict:
-    """
-    Fetch DraftKings '{TEAM} Strikeout Thrown - 1st Inning' Yes/No markets
-    for a specific game. Returns dict with 'top'/'bot' keys, each containing:
-        - noOdds:       American odds for 'No' outcome (= NSFI side)
-        - yesOdds:      American odds for 'Yes' outcome
-        - impliedNSFI:  P(No strikeout)
-        - source:       'draftkings_direct'
-    """
-    params = {}
-    if sub_id:
-        params["subcategoryId"] = sub_id
+    if driver is None:
+        raise RuntimeError("No browser available (install Chrome or Edge)")
 
     try:
-        data = _dk_get(f"/eventgroups/{_DK_GROUP_ID}/categories/{cat_id}", params=params)
-    except RuntimeError as e:
-        print(f"  [DraftKings] {e}")
+        driver.set_page_load_timeout(timeout)
+        driver.get(url)
+        # The page source wraps JSON in <pre> tags
+        import re as _re
+        body = driver.find_element("tag name", "pre").text
+        return json.loads(body)
+    finally:
+        driver.quit()
+
+
+def fetch_all_dk_nsfi(max_games=0) -> dict:
+    """
+    Fetch DraftKings NSFI odds via the sportsbook-nash API.
+
+    Single request returns all "Strikeout Thrown - 1st Inning" Yes/No markets
+    for every MLB game. No browser or auth required.
+
+    Returns dict keyed by canonical team name:
+      {team: {oddsPosted, noOdds, yesOdds, impliedNSFI, source}}
+    """
+    url = (f"{DK_NASH_BASE}/leagues/{DK_LEAGUE_ID}"
+           f"/categories/{DK_CATEGORY_ID}/subcategories/{DK_SUBCATEGORY_ID}")
+
+    print(f"  [DraftKings] Fetching from sportsbook-nash API…", end=" ", flush=True)
+
+    # Try requests first (works on Mac), fall back to Selenium Edge (Windows)
+    data = None
+    try:
+        data = api_get(url)
+        print("OK (via requests).", flush=True)
+    except Exception:
+        print("requests blocked, trying browser…", end=" ", flush=True)
+        try:
+            data = _fetch_via_browser(url)
+            print("OK (via browser).", flush=True)
+        except Exception as e:
+            print(f"failed: {e}")
+            return {}
+
+    if not data:
+        print("no data returned.")
         return {}
 
-    # Navigate: data → eventGroup → offerSubcategories → subcategory.offers
-    subcats = data.get("eventGroup", {}).get("offerSubcategories", [])
-    offers_all = []
-    for sc in subcats:
-        for offer in sc.get("offerSubcategory", {}).get("offers", []):
-            for o in offer:
-                offers_all.append(o)
+    markets = {m["id"]: m for m in data.get("markets", [])}
+    selections = data.get("selections", [])
 
-    # Match offers: "{TEAM} Strikeout Thrown - 1st Inning"
-    result = {}
-    for slot, team in [("top", away_team), ("bot", home_team)]:
-        # DraftKings may use aliases
-        dk_team = DK_TEAM_ALIASES.get(team, team)
-        target_name = f"{dk_team} Strikeout Thrown - 1st Inning"
-
-        offer = next(
-            (o for o in offers_all
-             if o.get("label", "").strip().lower() == target_name.lower()),
-            None,
-        )
-        if not offer:
-            result[slot] = {"oddsPosted": False}
+    # Build a map: marketId → {yes_odds, no_odds, team_name}
+    market_odds = {}
+    for sel in selections:
+        mid = sel.get("marketId")
+        if mid not in markets:
+            continue
+        market = markets[mid]
+        name = market.get("name", "")
+        if "Strikeout Thrown - 1st Inning" not in name:
             continue
 
-        outcomes = {oc.get("label", "").strip(): oc for oc in offer.get("outcomes", [])}
-        no_oc  = outcomes.get("No")
-        yes_oc = outcomes.get("Yes")
-
-        def _dk_odds(oc):
-            if not oc:
-                return None
-            return oc.get("oddsAmerican")  # string like "-115" or "+105"
-
-        no_odds_str  = _dk_odds(no_oc)
-        yes_odds_str = _dk_odds(yes_oc)
-
-        if no_odds_str is None:
-            result[slot] = {"oddsPosted": False}
+        label = sel.get("label", "")
+        odds_str = sel.get("displayOdds", {}).get("american", "")
+        if not odds_str:
+            continue
+        # DK uses unicode minus "−" not ASCII "-"
+        odds_str = odds_str.replace("\u2212", "-").replace("−", "-")
+        try:
+            odds_val = int(odds_str)
+        except ValueError:
             continue
 
-        no_odds = int(no_odds_str)
-        implied_nsfi = round(american_to_implied(no_odds), 4)
+        if mid not in market_odds:
+            # Extract team name from market name
+            team_dk = name.replace("Strikeout Thrown - 1st Inning", "").strip()
+            market_odds[mid] = {"team": team_dk, "yes": None, "no": None}
 
-        result[slot] = {
+        if label == "Yes":
+            market_odds[mid]["yes"] = odds_val
+        elif label == "No":
+            market_odds[mid]["no"] = odds_val
+
+    # Convert to results dict keyed by canonical team name
+    results = {}
+    for mid, info in market_odds.items():
+        if info["no"] is None:
+            continue
+        # Map DK short name to canonical full name
+        team = DK_TEAM_MAP.get(info["team"], info["team"])
+        results[team] = {
             "oddsPosted": True,
-            "noOdds": no_odds,            # Direct NSFI price (e.g. +115)
-            "yesOdds": int(yes_odds_str) if yes_odds_str else None,
-            "impliedNSFI": implied_nsfi,
-            "source": "draftkings_direct",
+            "noOdds": info["no"],
+            "yesOdds": info["yes"],
+            "impliedNSFI": round(american_to_implied(info["no"]), 4),
+            "source": "draftkings_nash",
         }
 
-    return result
+    if results:
+        print(f"got {len(results)} markets.")
+        for team, info in sorted(results.items()):
+            no_str = f"+{info['noOdds']}" if info['noOdds'] > 0 else str(info['noOdds'])
+            print(f"    {team}: No {no_str}  P(NSFI)={info['impliedNSFI']:.1%}")
+    else:
+        print("no markets found (odds may not be posted yet).")
+
+    return results
 
 
 # ── Combined run loop ────────────────────────────────────────────────────────
 
-def run(date_str, poll=False, interval_min=15, fd_state="il", use_dk=True):
+def run(date_str, poll=False, interval_min=15, use_dk=True, test_mode=False):
     out_file = os.path.join(
         os.path.dirname(__file__), f"daily_{date_str.replace('-', '')}.json"
     )
     handedness_cache = {}
 
-    # Discover DraftKings category/subcategory IDs once per session
-    dk_cat_id, dk_sub_id = None, None
+    # Fetch all DraftKings NSFI odds at once via headless browser
+    dk_all = {}
     if use_dk:
-        print("  Discovering DraftKings market structure…", end=" ", flush=True)
+        print("  Fetching DraftKings odds…", flush=True)
         try:
-            dk_cat_id, dk_sub_id = fetch_dk_categories()
-            if dk_cat_id:
-                print(f"found (cat={dk_cat_id}, sub={dk_sub_id})")
-            else:
-                print("not available (will use FanDuel derived odds)")
-                use_dk = False
+            dk_all = fetch_all_dk_nsfi(max_games=1 if test_mode else 0)
         except Exception as e:
-            print(f"skipped ({e})")
+            print(f"  [DraftKings] {e}")
             use_dk = False
 
     attempt = 0
@@ -554,49 +452,26 @@ def run(date_str, poll=False, interval_min=15, fd_state="il", use_dk=True):
         complete_count = sum(1 for g in games_data if g["lineupComplete"])
         print(f"{len(games_data)} games, {complete_count} lineups complete.")
 
-        # ── FanDuel odds ─────────────────────────────────────────────────────
-        print("  Fetching FanDuel odds…", end=" ", flush=True)
-        try:
-            fd_events = fetch_fd_events(fd_state)
-        except Exception as e:
-            print(f"WARNING: {e}")
-            fd_events = {}
-
+        # ── DraftKings odds ────────────────────────────────────────────────
         odds_found = 0
         for g in games_data:
-            key = (g["awayTeam"], g["homeTeam"])
-            fd_id = fd_events.get(key)
-            if fd_id is None:
-                away_norm = normalize_fd_name(g["awayTeam"])
-                home_norm = normalize_fd_name(g["homeTeam"])
-                fd_id = fd_events.get((away_norm, home_norm))
-
-            fd_specials = {}
-            if fd_id:
-                fd_specials = fetch_fd_specials(fd_state, fd_id)
-
-            # DraftKings: direct NSFI Yes/No odds
             dk_specials = {}
-            if use_dk and dk_cat_id:
-                dk_specials = fetch_dk_nsfi(
-                    g["homeTeam"], g["awayTeam"], dk_cat_id, dk_sub_id
-                )
+            if use_dk and dk_all:
+                for slot, pitching_team in [("top", g["homeTeam"]), ("bot", g["awayTeam"])]:
+                    entry = dk_all.get(pitching_team)
+                    if entry and entry.get("oddsPosted"):
+                        dk_specials[slot] = entry
+                    else:
+                        dk_specials[slot] = {"oddsPosted": False}
 
-            g["odds"] = {
-                "fanduel": {"eventId": fd_id, **fd_specials} if fd_id else None,
-                "draftkings": dk_specials or None,
-            }
+            g["odds"] = {"draftkings": dk_specials or None}
 
-            # Count game as having odds if either book has the NSFI line
-            fd_ok = fd_specials.get("top", {}).get("oddsPosted") or \
-                    fd_specials.get("bot", {}).get("oddsPosted")
             dk_ok = dk_specials.get("top", {}).get("oddsPosted") or \
                     dk_specials.get("bot", {}).get("oddsPosted")
-            if fd_ok or dk_ok:
+            if dk_ok:
                 odds_found += 1
 
-        dk_label = f" | DraftKings: {sum(1 for g in games_data if g['odds'].get('draftkings'))}" if use_dk else ""
-        print(f"{odds_found}/{len(games_data)} games have odds.{dk_label}")
+        print(f"  {odds_found}/{len(games_data)} games have DraftKings odds.")
 
         # ── Save ─────────────────────────────────────────────────────────────
         with open(out_file, "w") as f:
@@ -637,11 +512,8 @@ def _print_summary(games_data, date_str):
         lu_status = "✓" if g["lineupComplete"] else f"⏳ drops ~{g['lineupDropET']}"
         print(f"\n  {g['awayTeam']} @ {g['homeTeam']}  {g['gameTimeET']}  [{lu_status}]")
 
-        fd = g.get("odds", {}).get("fanduel") or {}
-
         for slot, label in [("top", "Top 1"), ("bot", "Bot 1")]:
             half = g["topInning"] if slot == "top" else g["botInning"]
-            odds_slot = fd.get(slot, {})
             pitcher = half["pitcher"]
             hand = "RHP" if pitcher["pitchHand"] == "R" else "LHP"
 
@@ -655,7 +527,6 @@ def _print_summary(games_data, date_str):
 
             print(f"    {label}: {half['teamBatting']} vs {pitcher['name']} ({hand})")
 
-            # DraftKings direct NSFI line (preferred)
             if dk_slot.get("oddsPosted"):
                 no_odds = dk_slot["noOdds"]
                 yes_odds = dk_slot.get("yesOdds")
@@ -663,15 +534,6 @@ def _print_summary(games_data, date_str):
                 no_str = f"+{no_odds}" if no_odds > 0 else str(no_odds)
                 yes_str = (f"+{yes_odds}" if yes_odds and yes_odds > 0 else str(yes_odds)) if yes_odds else "?"
                 print(f"         DK NSFI No: {no_str}  Yes: {yes_str}  P(NSFI)={nsfi_p:.1%}")
-            # FanDuel derived NSFI (fallback)
-            elif odds_slot.get("oddsPosted"):
-                k_line = odds_slot["strikeoutLine"]
-                k_str  = f"{k_line:+d}" if k_line > 0 else str(k_line)
-                nsfi_p = odds_slot["impliedNSFI"]
-                nsfi_o = odds_slot["fairNSFIOdds"]
-                td_line = odds_slot.get("threeUpThreeDown")
-                td_str  = f" | 3up3dn {td_line:+d}" if td_line else ""
-                print(f"         FD 1+K: {k_str}  →  P(NSFI)={nsfi_p:.1%}  fair: {nsfi_o}{td_str}")
             else:
                 print(f"         [odds pending]")
 
@@ -700,15 +562,15 @@ def main():
                         help="Keep polling until all lineups are posted.")
     parser.add_argument("--interval", type=int, default=15,
                         help="Polling interval in minutes (default: 15).")
-    parser.add_argument("--state", default="il",
-                        help="US state code for FanDuel API endpoint (default: il).")
     parser.add_argument("--no-dk", action="store_true",
-                        help="Skip DraftKings odds (use FanDuel derived odds only).")
+                        help="Skip DraftKings odds.")
+    parser.add_argument("--test", action="store_true",
+                        help="Test mode: only process the first game.")
     args = parser.parse_args()
 
     date_str = args.date or datetime.now().strftime("%Y-%m-%d")
     run(date_str, poll=args.poll, interval_min=args.interval,
-        fd_state=args.state, use_dk=not args.no_dk)
+        use_dk=not args.no_dk, test_mode=args.test)
 
 
 if __name__ == "__main__":

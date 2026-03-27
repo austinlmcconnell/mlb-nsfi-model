@@ -12,20 +12,6 @@ st.caption(f"Data for {datetime.now().strftime('%B %d, %Y')} — DraftKings odds
 
 # ── DraftKings odds fetcher ───────────────────────────────────────────────────
 
-DK_BASE = "https://sportsbook.draftkings.com/sites/US-SB/api/v5"
-DK_HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-    "Accept": "application/json, text/plain, */*",
-    "Accept-Language": "en-US,en;q=0.9",
-    "Referer": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-}
-_DK_GROUP_ID = 84240
-
-DK_TEAM_ALIASES = {
-    "Athletics": "Sacramento Athletics",
-    "Oakland Athletics": "Sacramento Athletics",
-}
-
 TEAM_TO_ABBREV = {
     "Los Angeles Angels": "LAA", "Arizona Diamondbacks": "ARI",
     "Baltimore Orioles": "BAL", "Boston Red Sox": "BOS",
@@ -79,8 +65,8 @@ def fetch_dk_odds(date_str: str):
                 dk = (game.get("odds") or {}).get("draftkings") or {}
                 home = game.get("homeTeam", "")
                 away = game.get("awayTeam", "")
-                # top slot = away team batting, bot slot = home team batting
-                for slot, team in [("top", away), ("bot", home)]:
+                # top slot = home team pitching, bot slot = away team pitching
+                for slot, team in [("top", home), ("bot", away)]:
                     entry = dk.get(slot, {})
                     if not entry.get("oddsPosted"):
                         continue
@@ -96,89 +82,12 @@ def fetch_dk_odds(date_str: str):
                 fetched_at = daily.get("fetchedAt", "")
                 return result, f"daily JSON ({fetched_at[:16].replace('T', ' ')} UTC)", None
         except Exception as e:
-            pass  # fall through to live fetch
+            pass
 
-    # ── 2. Fall back to live DraftKings API ───────────────────────────────────
-    try:
-        r = requests.get(f"{DK_BASE}/eventgroups/{_DK_GROUP_ID}",
-                         headers=DK_HEADERS,
-                         params={"includeOnly": "offerCategories"}, timeout=15)
-        if r.status_code == 403:
-            return None, None, (
-                "DraftKings API blocked (cloud IP restriction). "
-                "Run `python3 fetch_daily.py` locally and push the resulting "
-                f"`daily_{date_str.replace('-','')}.json` to the repo."
-            )
-        r.raise_for_status()
-        data = r.json()
-    except Exception as e:
-        return None, None, str(e)
-
-    cats = data.get("eventGroup", {}).get("offerCategories", [])
-    inning_cat = next(
-        (c for c in cats if any(kw in c.get("name", "").lower()
-                                for kw in ["inning prop", "1st inning", "inning lines"])),
-        None,
+    return None, None, (
+        f"No daily data found. Run `python fetch_daily.py` locally "
+        f"and push `daily_{date_str.replace('-','')}.json` to the repo."
     )
-    if not inning_cat:
-        for c in cats:
-            for sub in c.get("offerSubcategoryDescriptors", []):
-                if "strikeout" in sub.get("name", "").lower():
-                    inning_cat = c
-                    break
-    if not inning_cat:
-        return None, None, "Could not find inning props category on DraftKings."
-
-    cat_id = inning_cat["id"]
-    strikeout_sub = next(
-        (s for s in inning_cat.get("offerSubcategoryDescriptors", [])
-         if "strikeout" in s.get("name", "").lower()), None,
-    )
-    sub_id = strikeout_sub["id"] if strikeout_sub else None
-
-    params = {}
-    if sub_id:
-        params["subcategoryId"] = sub_id
-
-    try:
-        r2 = requests.get(f"{DK_BASE}/eventgroups/{_DK_GROUP_ID}/categories/{cat_id}",
-                          headers=DK_HEADERS, params=params, timeout=15)
-        r2.raise_for_status()
-        data2 = r2.json()
-    except Exception as e:
-        return None, None, str(e)
-
-    subcats = data2.get("eventGroup", {}).get("offerSubcategories", [])
-    offers_all = []
-    for sc in subcats:
-        for offer in sc.get("offerSubcategory", {}).get("offers", []):
-            for o in offer:
-                offers_all.append(o)
-
-    result = {}
-    for o in offers_all:
-        label = o.get("label", "").strip()
-        if "Strikeout Thrown - 1st Inning" not in label:
-            continue
-        team = label.replace(" Strikeout Thrown - 1st Inning", "").strip()
-        team = DK_TEAM_ALIASES.get(team, team)
-        outcomes = {oc.get("label", "").strip(): oc for oc in o.get("outcomes", [])}
-        no_oc = outcomes.get("No")
-        yes_oc = outcomes.get("Yes")
-        if not no_oc:
-            continue
-        no_odds_str = no_oc.get("oddsAmerican")
-        yes_odds_str = yes_oc.get("oddsAmerican") if yes_oc else None
-        if not no_odds_str:
-            continue
-        no_odds = int(no_odds_str)
-        result[team] = {
-            "noOdds": no_odds,
-            "yesOdds": int(yes_odds_str) if yes_odds_str else None,
-            "impliedNSFI": round(american_to_implied(no_odds), 4),
-        }
-
-    return result, "DraftKings API (live)", None
 
 
 # ── MLB lineup fetcher ────────────────────────────────────────────────────────
@@ -766,7 +675,8 @@ for idx, (game, slot) in enumerate(half_innings):
     batter_sides = [p["batSide"] for p in lineup_players]
 
     batting_team = half["teamBatting"]
-    dk_entry = dk_odds.get(batting_team) if dk_odds else None
+    pitching_team = half["teamPitching"]
+    dk_entry = dk_odds.get(pitching_team) if dk_odds else None
     implied_nsfi = dk_entry["impliedNSFI"] if dk_entry else None
     dk_no_odds   = dk_entry["noOdds"]      if dk_entry else None
     dk_yes_odds  = dk_entry["yesOdds"]     if dk_entry else None

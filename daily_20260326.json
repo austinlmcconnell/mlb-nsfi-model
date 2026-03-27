@@ -1,6 +1,6 @@
 {
   "date": "2026-03-26",
-  "fetchedAt": "2026-03-26T21:54:20.953453+00:00",
+  "fetchedAt": "2026-03-26T20:29:14.658994+00:00",
   "games": [
     {
       "gamePk": 823649,
@@ -145,7 +145,9 @@
         "gameId": "PIT/NYM - Bot 1"
       },
       "odds": {
-        "fanduel": null,
+        "fanduel": {
+          "eventId": 35392672
+        },
         "draftkings": null
       }
     },
@@ -292,7 +294,9 @@
         "gameId": "CWS/MIL - Bot 1"
       },
       "odds": {
-        "fanduel": null,
+        "fanduel": {
+          "eventId": 35419409
+        },
         "draftkings": null
       }
     },
@@ -439,7 +443,9 @@
         "gameId": "WSH/CHC - Bot 1"
       },
       "odds": {
-        "fanduel": null,
+        "fanduel": {
+          "eventId": 35385715
+        },
         "draftkings": null
       }
     },
@@ -586,7 +592,9 @@
         "gameId": "MIN/BAL - Bot 1"
       },
       "odds": {
-        "fanduel": null,
+        "fanduel": {
+          "eventId": 35396537
+        },
         "draftkings": null
       }
     },
@@ -1489,7 +1497,7 @@
       "gameTimeUTC": "2026-03-27T02:10:00Z",
       "gameTimeET": "10:10 PM ET",
       "lineupDropET": "6:40 PM ET",
-      "lineupComplete": true,
+      "lineupComplete": false,
       "homeTeam": "Seattle Mariners",
       "awayTeam": "Cleveland Guardians",
       "venue": "T-Mobile Park",
@@ -1502,62 +1510,7 @@
           "id": 669302,
           "pitchHand": "R"
         },
-        "lineup": [
-          {
-            "name": "Steven Kwan",
-            "id": 680757,
-            "batSide": "L",
-            "position": "LF"
-          },
-          {
-            "name": "Chase DeLauter",
-            "id": 800050,
-            "batSide": "L",
-            "position": "RF"
-          },
-          {
-            "name": "Jos\u00e9 Ram\u00edrez",
-            "id": 608070,
-            "batSide": "S",
-            "position": "3B"
-          },
-          {
-            "name": "Kyle Manzardo",
-            "id": 700932,
-            "batSide": "L",
-            "position": "DH"
-          },
-          {
-            "name": "Bo Naylor",
-            "id": 666310,
-            "batSide": "L",
-            "position": "C"
-          },
-          {
-            "name": "Rhys Hoskins",
-            "id": 656555,
-            "batSide": "R",
-            "position": "1B"
-          },
-          {
-            "name": "Daniel Schneemann",
-            "id": 682177,
-            "batSide": "L",
-            "position": "CF"
-          },
-          {
-            "name": "Gabriel Arias",
-            "id": 672356,
-            "batSide": "R",
-            "position": "SS"
-          },
-          {
-            "name": "Brayan Rocchio",
-            "id": 677587,
-            "batSide": "S",
-            "position": "2B"
-          }
-        ],
+        "lineup": [],
         "gameId": "CLE/SEA - Top 1"
       },
       "botInning": {

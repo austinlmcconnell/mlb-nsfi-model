@@ -407,6 +407,16 @@ def fetch_all_dk_nsfi() -> dict:
             browser.close()
             raise RuntimeError(f"Failed to load DraftKings page: {e}")
 
+        # Debug: report what we captured
+        print(f"captured {len(api_responses)} API response(s)…", end=" ", flush=True)
+        page_title = page.title()
+        print(f"page title: '{page_title}'…", end=" ", flush=True)
+
+        # Check if DK is showing a geo-block or error page
+        page_text_preview = page.inner_text("body")[:500]
+        if "not available" in page_text_preview.lower() or "location" in page_text_preview.lower():
+            print(f"\n  [DraftKings] Possible geo-block detected. Page preview:\n  {page_text_preview[:200]}")
+
         # Strategy 1: Parse intercepted API JSON responses
         for data in api_responses:
             subcats = data.get("eventGroup", {}).get("offerSubcategories", [])

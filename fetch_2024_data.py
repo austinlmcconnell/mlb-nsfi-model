@@ -16,7 +16,7 @@ import pandas as pd
 import time
 
 BASE = "https://statsapi.mlb.com/api/v1"
-SEASON = 2024
+SEASON = 2025
 
 # Team ID → abbreviation mapping
 TEAM_ABBREV = {

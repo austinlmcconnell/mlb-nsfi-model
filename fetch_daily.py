@@ -311,11 +311,22 @@ def fetch_all_dk_nsfi() -> dict:
                 unique_links.append(base_link)
 
         print(f"found {len(unique_links)} games.", flush=True)
+        if unique_links:
+            for ul in unique_links[:3]:
+                print(f"    sample: {ul}")
 
         if not unique_links:
-            # Debug: show page content to diagnose
-            preview = page.inner_text("body")[:300]
-            print(f"  [DraftKings] No game links found. Page preview:\n  {preview}")
+            # Try broader link search
+            all_links = page.eval_on_selector_all('a', "els => els.map(e => e.href)")
+            event_links = [l for l in all_links if "/event" in l.lower()]
+            preview = page.inner_text("body")[:500]
+            print(f"  [DraftKings] No /event/ links found.")
+            print(f"    Total links on page: {len(all_links)}")
+            print(f"    Links containing 'event': {len(event_links)}")
+            if event_links:
+                for el in event_links[:5]:
+                    print(f"      {el}")
+            print(f"    Page preview:\n    {preview[:300]}")
             browser.close()
             return results
 
@@ -323,11 +334,13 @@ def fetch_all_dk_nsfi() -> dict:
         for i, game_url in enumerate(unique_links):
             strikeout_url = game_url + "?category=1st-inning&subcategory=strikeouts"
             api_responses = []
+            api_urls = []
 
             def handle_response(response):
                 url = response.url
-                if ("offering" in url or "eventgroup" in url or
-                    "event-page" in url or "categories" in url):
+                # Capture ALL API-like responses for debugging
+                if "api" in url.lower() or "offering" in url or "eventgroup" in url:
+                    api_urls.append(url[:150])
                     try:
                         api_responses.append(response.json())
                     except Exception:
@@ -442,7 +455,17 @@ def fetch_all_dk_nsfi() -> dict:
 
             status = f"{game_found} market(s)" if game_found else "no markets"
             print(f"    Game {i+1}/{len(unique_links)}: {status} "
-                  f"({len(api_responses)} API resp)")
+                  f"({len(api_responses)} API resp, {len(api_urls)} API calls)")
+            if not game_found and api_urls:
+                for au in api_urls[:3]:
+                    print(f"      API: {au}")
+            if not game_found and not api_urls:
+                # Show what we see on the page
+                try:
+                    body_preview = page.inner_text("body")[:200]
+                    print(f"      Page: {body_preview}"[:120])
+                except Exception:
+                    pass
 
             page.remove_listener("response", handle_response)
 

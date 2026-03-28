@@ -1,0 +1,91 @@
+{
+  "date": "2026-03-27",
+  "generatedAt": "2026-03-28T02:45:00.106789",
+  "simulations": 5000,
+  "predictions": [
+    {
+      "game_id": "ATH/TOR - Top 1",
+      "half": "top",
+      "pitcher": "Kevin Gausman",
+      "batting_team": "Athletics",
+      "pitching_team": "Toronto Blue Jays",
+      "model_prob": 0.2938,
+      "implied_prob": 0.3077,
+      "ev": -0.0139,
+      "ev_category": "negative",
+      "dk_no_odds": 225
+    },
+    {
+      "game_id": "COL/MIA - Top 1",
+      "half": "top",
+      "pitcher": "Sandy Alcantara",
+      "batting_team": "Colorado Rockies",
+      "pitching_team": "Miami Marlins",
+      "model_prob": 0.351,
+      "implied_prob": 0.3279,
+      "ev": 0.0231,
+      "ev_category": "marginal",
+      "dk_no_odds": 205
+    },
+    {
+      "game_id": "COL/MIA - Bot 1",
+      "half": "bot",
+      "pitcher": "Kyle Freeland",
+      "batting_team": "Miami Marlins",
+      "pitching_team": "Colorado Rockies",
+      "model_prob": 0.3374,
+      "implied_prob": 0.4167,
+      "ev": -0.0793,
+      "ev_category": "negative",
+      "dk_no_odds": 140
+    },
+    {
+      "game_id": "KC/ATL - Top 1",
+      "half": "top",
+      "pitcher": "Chris Sale",
+      "batting_team": "Kansas City Royals",
+      "pitching_team": "Atlanta Braves",
+      "model_prob": 0.2448,
+      "implied_prob": 0.2597,
+      "ev": -0.0149,
+      "ev_category": "negative",
+      "dk_no_odds": 285
+    },
+    {
+      "game_id": "KC/ATL - Bot 1",
+      "half": "bot",
+      "pitcher": "Cole Ragans",
+      "batting_team": "Atlanta Braves",
+      "pitching_team": "Kansas City Royals",
+      "model_prob": 0.1824,
+      "implied_prob": 0.2381,
+      "ev": -0.0557,
+      "ev_category": "negative",
+      "dk_no_odds": 320
+    },
+    {
+      "game_id": "LAA/HOU - Top 1",
+      "half": "top",
+      "pitcher": "Mike Burrows",
+      "batting_team": "Los Angeles Angels",
+      "pitching_team": "Houston Astros",
+      "model_prob": 0.2956,
+      "implied_prob": 0.2899,
+      "ev": 0.0057,
+      "ev_category": "marginal",
+      "dk_no_odds": 245
+    },
+    {
+      "game_id": "LAA/HOU - Bot 1",
+      "half": "bot",
+      "pitcher": "Yusei Kikuchi",
+      "batting_team": "Houston Astros",
+      "pitching_team": "Los Angeles Angels",
+      "model_prob": 0.3632,
+      "implied_prob": 0.4167,
+      "ev": -0.0535,
+      "ev_category": "negative",
+      "dk_no_odds": 140
+    }
+  ]
+}

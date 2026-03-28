@@ -92,6 +92,18 @@ def load_daily_json(date_str):
         return json.load(f)
 
 
+def load_model_predictions(date_str):
+    """Load model predictions for the given date."""
+    pred_path = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                             f"model_predictions_{date_str.replace('-', '')}.json")
+    if not os.path.exists(pred_path):
+        return {}
+    with open(pred_path) as f:
+        data = json.load(f)
+    # Build lookup: game_id|half -> prediction
+    return {f"{p['game_id']}|{p['half']}": p for p in data.get("predictions", [])}
+
+
 def load_existing_results():
     """Load existing historical results to avoid duplicates."""
     base_dir = os.path.dirname(os.path.abspath(__file__))
@@ -118,6 +130,9 @@ def run(date_str):
 
     # Load existing results to skip duplicates
     existing = load_existing_results()
+
+    # Load model predictions for EV categorization
+    model_preds = load_model_predictions(date_str)
 
     # Get completed games from MLB API
     schedule = api_get(f"{MLB_BASE}/schedule", params={
@@ -190,12 +205,12 @@ def run(date_str):
             had_strikeout = k_results.get(slot, True)
             nsfi_result = "win" if not had_strikeout else "loss"
 
-            # Determine EV category
-            # We need model probability — recalculate or use a placeholder
-            # For now, use implied probability as baseline since we don't store model prob in daily JSON
-            # The EV category is determined by the model, but we can approximate
-            # by checking the daily JSON doesn't store model output...
-            # So we'll record what we have and let the dashboard compute categories
+            # Look up model prediction for EV category
+            pred_key = f"{game_id}|{slot}"
+            pred = model_preds.get(pred_key, {})
+            model_prob = pred.get("model_prob", "")
+            ev = pred.get("ev", "")
+            ev_category = pred.get("ev_category", "")
 
             row = {
                 "date": date_str,
@@ -204,10 +219,12 @@ def run(date_str):
                 "pitcher": pitcher,
                 "batting_team": batting_team,
                 "pitching_team": pitching_team,
+                "model_prob": model_prob,
                 "implied_prob": implied_nsfi,
+                "ev": ev,
                 "dk_no_odds": no_odds,
                 "result": nsfi_result,
-                "ev_category": "",  # filled in below if model output exists
+                "ev_category": ev_category,
             }
             new_rows.append(row)
 
@@ -222,7 +239,7 @@ def run(date_str):
 
     # Write to CSV
     fieldnames = ["date", "game_id", "half", "pitcher", "batting_team", "pitching_team",
-                  "implied_prob", "dk_no_odds", "result", "ev_category"]
+                  "model_prob", "implied_prob", "ev", "dk_no_odds", "result", "ev_category"]
 
     file_exists = os.path.exists(csv_path) and os.path.getsize(csv_path) > 0
     # Check if existing file has the right headers

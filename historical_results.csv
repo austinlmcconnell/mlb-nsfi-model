@@ -1,6 +1,6 @@
-date,game_id,half,pitcher,batting_team,pitching_team,implied_prob,dk_no_odds,result,ev_category
-2026-03-27,ATH/TOR - Top 1,top,Kevin Gausman,Athletics,Toronto Blue Jays,0.3077,225,loss,
-2026-03-27,COL/MIA - Top 1,top,Sandy Alcantara,Colorado Rockies,Miami Marlins,0.3279,205,loss,
-2026-03-27,COL/MIA - Bot 1,bot,Kyle Freeland,Miami Marlins,Colorado Rockies,0.4167,140,win,
-2026-03-27,KC/ATL - Top 1,top,Chris Sale,Kansas City Royals,Atlanta Braves,0.2597,285,loss,
-2026-03-27,KC/ATL - Bot 1,bot,Cole Ragans,Atlanta Braves,Kansas City Royals,0.2381,320,win,
+date,game_id,half,pitcher,batting_team,pitching_team,model_prob,implied_prob,ev,dk_no_odds,result,ev_category
+2026-03-27,ATH/TOR - Top 1,top,Kevin Gausman,Athletics,Toronto Blue Jays,0.2938,0.3077,-0.0139,225,loss,negative
+2026-03-27,COL/MIA - Top 1,top,Sandy Alcantara,Colorado Rockies,Miami Marlins,0.351,0.3279,0.0231,205,loss,marginal
+2026-03-27,COL/MIA - Bot 1,bot,Kyle Freeland,Miami Marlins,Colorado Rockies,0.3374,0.4167,-0.0793,140,win,negative
+2026-03-27,KC/ATL - Top 1,top,Chris Sale,Kansas City Royals,Atlanta Braves,0.2448,0.2597,-0.0149,285,loss,negative
+2026-03-27,KC/ATL - Bot 1,bot,Cole Ragans,Atlanta Braves,Kansas City Royals,0.1824,0.2381,-0.0557,320,win,negative

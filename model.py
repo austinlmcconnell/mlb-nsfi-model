@@ -891,31 +891,68 @@ hist_path = _os.path.join(_os.path.dirname(__file__), "historical_results.csv")
 if _os.path.exists(hist_path):
     hist_df = pd.read_csv(hist_path)
     if len(hist_df) > 0 and "result" in hist_df.columns:
-        total_bets = len(hist_df)
-        wins = len(hist_df[hist_df["result"] == "win"])
-        losses = total_bets - wins
-        win_pct = (wins / total_bets * 100) if total_bets > 0 else 0
+
+        def tier_stats(df_tier, label, color):
+            """Compute and display W-L for an EV tier."""
+            total = len(df_tier)
+            if total == 0:
+                return
+            w = len(df_tier[df_tier["result"] == "win"])
+            l = total - w
+            pct = w / total * 100
+            pct_color = "#4ade80" if pct >= 50 else ("#fbbf24" if pct >= 40 else "#f87171")
+            st.markdown(f"""<div style="background:linear-gradient(135deg,#1a1f2e,#161b26);
+                border:1px solid #2a2f3e; border-radius:10px; padding:15px; text-align:center;">
+                <span style="font-family:Inter,sans-serif; font-size:0.75rem; color:{color};
+                    letter-spacing:0.1em; text-transform:uppercase;">{label}</span><br>
+                <span class="stat-big" style="color:{pct_color}">{pct:.0f}%</span><br>
+                <span style="font-family:Oswald,sans-serif; font-size:1.3rem; color:#e8e0d4;">{w}-{l}</span>
+                <span style="color:#6b7280; font-size:0.8rem;"> ({total} bets)</span>
+            </div>""", unsafe_allow_html=True)
+
+        # Split by EV category
+        strong_h = hist_df[hist_df["ev_category"] == "strong"]
+        marginal_h = hist_df[hist_df["ev_category"] == "marginal"]
+        negative_h = hist_df[hist_df["ev_category"] == "negative"]
+        uncategorized = hist_df[~hist_df["ev_category"].isin(["strong", "marginal", "negative"])]
 
         c1, c2, c3 = st.columns(3)
         with c1:
-            color = "#4ade80" if win_pct >= 50 else "#f87171"
-            st.markdown(f'<div style="text-align:center"><span class="stat-big" style="color:{color}">{win_pct:.1f}%</span><br><span class="stat-label">Overall Win Rate</span></div>', unsafe_allow_html=True)
+            tier_stats(strong_h, "Recommended (5%+ EV)", "#22c55e")
         with c2:
-            st.markdown(f'<div style="text-align:center"><span class="stat-big" style="color:#e8e0d4">{wins}-{losses}</span><br><span class="stat-label">Record (W-L)</span></div>', unsafe_allow_html=True)
+            tier_stats(marginal_h, "Marginal (0-5% EV)", "#eab308")
         with c3:
-            st.markdown(f'<div style="text-align:center"><span class="stat-big" style="color:#e8e0d4">{total_bets}</span><br><span class="stat-label">Total Half-Innings</span></div>', unsafe_allow_html=True)
+            tier_stats(negative_h, "Negative EV", "#ef4444")
+
+        # Overall summary
+        total_all = len(hist_df)
+        wins_all = len(hist_df[hist_df["result"] == "win"])
+        st.markdown(f"""<div style="text-align:center; margin-top:15px; color:#6b7280; font-size:0.85rem;">
+            Overall: {wins_all}-{total_all - wins_all} ({wins_all/total_all*100:.0f}%) across {total_all} half-innings tracked
+        </div>""", unsafe_allow_html=True)
 
         # Recent results table
         st.markdown("")
-        with st.expander("Recent results", expanded=True):
+        with st.expander("Recent results", expanded=False):
             display = hist_df.sort_values("date", ascending=False).head(30).copy()
             display["DK No"] = display["dk_no_odds"].apply(
-                lambda x: f"+{int(x)}" if x > 0 else str(int(x))
+                lambda x: f"+{int(x)}" if pd.notna(x) and x > 0 else (str(int(x)) if pd.notna(x) else "—")
             )
-            display["Implied"] = display["implied_prob"].apply(lambda x: f"{x*100:.1f}%")
+            display["Implied"] = display["implied_prob"].apply(
+                lambda x: f"{x*100:.1f}%" if pd.notna(x) else "—"
+            )
+            display["Model"] = display["model_prob"].apply(
+                lambda x: f"{x*100:.1f}%" if pd.notna(x) and x != "" else "—"
+            )
+            display["EV"] = display["ev"].apply(
+                lambda x: f"{x*100:+.1f}%" if pd.notna(x) and x != "" else "—"
+            )
             display["Result"] = display["result"].str.upper()
+            display["Tier"] = display["ev_category"].apply(
+                lambda x: {"strong": "TAKE", "marginal": "WATCH", "negative": "SKIP"}.get(x, "—")
+            )
             st.dataframe(
-                display[["date", "game_id", "pitcher", "DK No", "Implied", "Result"]].rename(
+                display[["date", "game_id", "pitcher", "Model", "Implied", "EV", "DK No", "Result", "Tier"]].rename(
                     columns={"date": "Date", "game_id": "Game", "pitcher": "Pitcher"}
                 ).reset_index(drop=True),
                 use_container_width=True,

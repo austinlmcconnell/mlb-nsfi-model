@@ -887,36 +887,36 @@ hist_path = _os.path.join(_os.path.dirname(__file__), "historical_results.csv")
 if _os.path.exists(hist_path):
     hist_df = pd.read_csv(hist_path)
     if len(hist_df) > 0 and "result" in hist_df.columns:
-        bets_taken = hist_df[hist_df["bet_taken"] == True] if "bet_taken" in hist_df.columns else hist_df
-        total_bets = len(bets_taken)
-        if total_bets > 0:
-            wins = len(bets_taken[bets_taken["result"] == "win"]) if "result" in bets_taken.columns else 0
-            losses = total_bets - wins
-            win_pct = (wins / total_bets * 100) if total_bets > 0 else 0
-            avg_ev = bets_taken["ev"].mean() * 100 if "ev" in bets_taken.columns else 0
+        total_bets = len(hist_df)
+        wins = len(hist_df[hist_df["result"] == "win"])
+        losses = total_bets - wins
+        win_pct = (wins / total_bets * 100) if total_bets > 0 else 0
 
-            c1, c2, c3, c4 = st.columns(4)
-            with c1:
-                color = "#4ade80" if win_pct >= 50 else "#f87171"
-                st.markdown(f'<div style="text-align:center"><span class="stat-big" style="color:{color}">{win_pct:.1f}%</span><br><span class="stat-label">Win Rate</span></div>', unsafe_allow_html=True)
-            with c2:
-                st.markdown(f'<div style="text-align:center"><span class="stat-big" style="color:#e8e0d4">{wins}-{losses}</span><br><span class="stat-label">Record (W-L)</span></div>', unsafe_allow_html=True)
-            with c3:
-                st.markdown(f'<div style="text-align:center"><span class="stat-big" style="color:#e8e0d4">{total_bets}</span><br><span class="stat-label">Total Bets</span></div>', unsafe_allow_html=True)
-            with c4:
-                ev_color = "#4ade80" if avg_ev > 0 else "#f87171"
-                st.markdown(f'<div style="text-align:center"><span class="stat-big" style="color:{ev_color}">{avg_ev:+.1f}%</span><br><span class="stat-label">Avg EV</span></div>', unsafe_allow_html=True)
+        c1, c2, c3 = st.columns(3)
+        with c1:
+            color = "#4ade80" if win_pct >= 50 else "#f87171"
+            st.markdown(f'<div style="text-align:center"><span class="stat-big" style="color:{color}">{win_pct:.1f}%</span><br><span class="stat-label">Overall Win Rate</span></div>', unsafe_allow_html=True)
+        with c2:
+            st.markdown(f'<div style="text-align:center"><span class="stat-big" style="color:#e8e0d4">{wins}-{losses}</span><br><span class="stat-label">Record (W-L)</span></div>', unsafe_allow_html=True)
+        with c3:
+            st.markdown(f'<div style="text-align:center"><span class="stat-big" style="color:#e8e0d4">{total_bets}</span><br><span class="stat-label">Total Half-Innings</span></div>', unsafe_allow_html=True)
 
-            # Recent results
-            with st.expander("Recent results", expanded=False):
-                display = bets_taken.tail(20).sort_values("date", ascending=False)
-                st.dataframe(
-                    display[["date", "game_id", "pitcher", "ev", "dk_no_odds", "result"]].reset_index(drop=True),
-                    use_container_width=True,
-                    hide_index=True,
-                )
-        else:
-            st.markdown("*No bets recorded yet. Results will appear here as the season progresses.*")
+        # Recent results table
+        st.markdown("")
+        with st.expander("Recent results", expanded=True):
+            display = hist_df.sort_values("date", ascending=False).head(30).copy()
+            display["DK No"] = display["dk_no_odds"].apply(
+                lambda x: f"+{int(x)}" if x > 0 else str(int(x))
+            )
+            display["Implied"] = display["implied_prob"].apply(lambda x: f"{x*100:.1f}%")
+            display["Result"] = display["result"].str.upper()
+            st.dataframe(
+                display[["date", "game_id", "pitcher", "DK No", "Implied", "Result"]].rename(
+                    columns={"date": "Date", "game_id": "Game", "pitcher": "Pitcher"}
+                ).reset_index(drop=True),
+                use_container_width=True,
+                hide_index=True,
+            )
     else:
         st.markdown("*No historical data yet. Results will appear here as the season progresses.*")
 else:

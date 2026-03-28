@@ -799,16 +799,20 @@ progress.empty()
 
 if not results:
     st.warning("No results to display. DraftKings odds may not be posted yet, or no lineups are complete.")
-    st.stop()
-
-df = pd.DataFrame(results)
+    df = pd.DataFrame()
+else:
+    df = pd.DataFrame(results)
 
 # ── BET RECOMMENDATIONS ──────────────────────────────────────────────────────
 
+has_results = not df.empty
 min_ev_dec = min_ev / 100
-strong = df[df["_ev_raw"] >= min_ev_dec].copy().sort_values("_ev_raw", ascending=False)
-marginal = df[(df["_ev_raw"] >= 0) & (df["_ev_raw"] < min_ev_dec) & df["_has_odds"]].copy().sort_values("_ev_raw", ascending=False)
-avoid = df[(df["_ev_raw"] < 0) & df["_has_odds"]].copy().sort_values("_ev_raw", ascending=False)
+if has_results:
+    strong = df[df["_ev_raw"] >= min_ev_dec].copy().sort_values("_ev_raw", ascending=False)
+    marginal = df[(df["_ev_raw"] >= 0) & (df["_ev_raw"] < min_ev_dec) & df["_has_odds"]].copy().sort_values("_ev_raw", ascending=False)
+    avoid = df[(df["_ev_raw"] < 0) & df["_has_odds"]].copy().sort_values("_ev_raw", ascending=False)
+else:
+    strong = marginal = avoid = pd.DataFrame()
 
 st.markdown('<p class="section-header">Recommended Bets</p>', unsafe_allow_html=True)
 
@@ -867,7 +871,7 @@ if not avoid.empty:
 
 # ── GAMES WITHOUT ODDS ───────────────────────────────────────────────────────
 
-no_odds = df[~df["_has_odds"]].copy()
+no_odds = df[~df["_has_odds"]].copy() if has_results else pd.DataFrame()
 if show_all and not no_odds.empty:
     st.markdown("---")
     with st.expander(f"Games without DraftKings odds ({len(no_odds)})", expanded=False):

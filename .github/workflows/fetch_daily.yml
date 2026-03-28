@@ -6,6 +6,7 @@ on:
     - cron: "30 18 * * *"  # 2:30 PM ET
     - cron: "30 21 * * *"  # 5:30 PM ET
     - cron: "30 0 * * *"   # 8:30 PM ET
+    - cron: "0 5 * * *"    # 1:00 AM ET — track yesterday's results
   workflow_dispatch: # Allow manual trigger from GitHub UI
 
 jobs:
@@ -38,15 +39,23 @@ jobs:
       - name: Fetch today's data
         run: python3 fetch_daily.py
 
+      - name: Track yesterday's results
+        run: |
+          YESTERDAY=$(date -u -d "yesterday" +%Y-%m-%d 2>/dev/null || date -u -v-1d +%Y-%m-%d)
+          python3 track_results.py --date "$YESTERDAY"
+
+      - name: Track today's results (completed games)
+        run: python3 track_results.py
+
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add daily_*.json
+          git add daily_*.json historical_results.csv
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
             DATE=$(date -u +%Y-%m-%d)
-            git commit -m "Auto-fetch daily data for ${DATE}"
+            git commit -m "Auto-fetch data and track results for ${DATE}"
             git push
           fi

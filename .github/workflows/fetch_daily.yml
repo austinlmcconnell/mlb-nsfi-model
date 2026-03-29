@@ -28,7 +28,7 @@ jobs:
           chrome-version: stable
 
       - name: Install Python dependencies
-        run: pip install requests selenium
+        run: pip install requests selenium numpy pandas
 
       - name: Install ChromeDriver
         run: |
@@ -38,6 +38,9 @@ jobs:
 
       - name: Fetch today's data
         run: python3 fetch_daily.py
+
+      - name: Run model predictions
+        run: python3 run_model.py
 
       - name: Track yesterday's results
         run: |
@@ -51,7 +54,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add daily_*.json historical_results.csv
+          git add daily_*.json model_predictions_*.json historical_results.csv
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else

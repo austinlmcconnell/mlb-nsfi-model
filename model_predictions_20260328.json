@@ -1,0 +1,163 @@
+{
+  "date": "2026-03-28",
+  "generatedAt": "2026-03-29T18:25:46.228554",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "TB/STL - Top 1",
+      "half": "top",
+      "pitcher": "Michael McGreevy",
+      "batting_team": "Tampa Bay Rays",
+      "pitching_team": "St. Louis Cardinals",
+      "model_prob": 0.4,
+      "implied_prob": 0.3922,
+      "ev": 0.0078,
+      "ev_category": "marginal",
+      "dk_no_odds": 155
+    },
+    {
+      "game_id": "TB/STL - Bot 1",
+      "half": "bot",
+      "pitcher": "Joe Boyle",
+      "batting_team": "St. Louis Cardinals",
+      "pitching_team": "Tampa Bay Rays",
+      "model_prob": 0.2962,
+      "implied_prob": 0.4762,
+      "ev": -0.18,
+      "ev_category": "negative",
+      "dk_no_odds": 110
+    },
+    {
+      "game_id": "WSH/CHC - Top 1",
+      "half": "top",
+      "pitcher": "Cade Horton",
+      "batting_team": "Washington Nationals",
+      "pitching_team": "Chicago Cubs",
+      "model_prob": 0.3167,
+      "implied_prob": 0.303,
+      "ev": 0.0137,
+      "ev_category": "marginal",
+      "dk_no_odds": 230
+    },
+    {
+      "game_id": "LAA/HOU - Top 1",
+      "half": "top",
+      "pitcher": "Cristian Javier",
+      "batting_team": "Los Angeles Angels",
+      "pitching_team": "Houston Astros",
+      "model_prob": 0.3143,
+      "implied_prob": 0.3333,
+      "ev": -0.019,
+      "ev_category": "negative",
+      "dk_no_odds": 200
+    },
+    {
+      "game_id": "LAA/HOU - Bot 1",
+      "half": "bot",
+      "pitcher": "Reid Detmers",
+      "batting_team": "Houston Astros",
+      "pitching_team": "Los Angeles Angels",
+      "model_prob": 0.2734,
+      "implied_prob": 0.2857,
+      "ev": -0.0123,
+      "ev_category": "negative",
+      "dk_no_odds": 250
+    },
+    {
+      "game_id": "CWS/MIL - Top 1",
+      "half": "top",
+      "pitcher": "Chad Patrick",
+      "batting_team": "Chicago White Sox",
+      "pitching_team": "Milwaukee Brewers",
+      "model_prob": 0.2999,
+      "implied_prob": 0.2703,
+      "ev": 0.0296,
+      "ev_category": "marginal",
+      "dk_no_odds": 270
+    },
+    {
+      "game_id": "CWS/MIL - Bot 1",
+      "half": "bot",
+      "pitcher": "Sean Burke",
+      "batting_team": "Milwaukee Brewers",
+      "pitching_team": "Chicago White Sox",
+      "model_prob": 0.2761,
+      "implied_prob": 0.2632,
+      "ev": 0.0129,
+      "ev_category": "marginal",
+      "dk_no_odds": 280
+    },
+    {
+      "game_id": "KC/ATL - Top 1",
+      "half": "top",
+      "pitcher": "Reynaldo L\u00f3pez",
+      "batting_team": "Kansas City Royals",
+      "pitching_team": "Atlanta Braves",
+      "model_prob": 0.5625,
+      "implied_prob": 0.3704,
+      "ev": 0.1921,
+      "ev_category": "strong",
+      "dk_no_odds": 170
+    },
+    {
+      "game_id": "KC/ATL - Bot 1",
+      "half": "bot",
+      "pitcher": "Michael Wacha",
+      "batting_team": "Atlanta Braves",
+      "pitching_team": "Kansas City Royals",
+      "model_prob": 0.3631,
+      "implied_prob": 0.3846,
+      "ev": -0.0215,
+      "ev_category": "negative",
+      "dk_no_odds": 160
+    },
+    {
+      "game_id": "NYY/SF - Top 1",
+      "half": "top",
+      "pitcher": "Tyler Mahle",
+      "batting_team": "New York Yankees",
+      "pitching_team": "San Francisco Giants",
+      "model_prob": 0.3416,
+      "implied_prob": 0.3704,
+      "ev": -0.0288,
+      "ev_category": "negative",
+      "dk_no_odds": 170
+    },
+    {
+      "game_id": "NYY/SF - Bot 1",
+      "half": "bot",
+      "pitcher": "Will Warren",
+      "batting_team": "San Francisco Giants",
+      "pitching_team": "New York Yankees",
+      "model_prob": 0.3529,
+      "implied_prob": 0.4878,
+      "ev": -0.1349,
+      "ev_category": "negative",
+      "dk_no_odds": 105
+    },
+    {
+      "game_id": "DET/SD - Top 1",
+      "half": "top",
+      "pitcher": "Randy V\u00e1squez",
+      "batting_team": "Detroit Tigers",
+      "pitching_team": "San Diego Padres",
+      "model_prob": 0.3919,
+      "implied_prob": 0.4255,
+      "ev": -0.0336,
+      "ev_category": "negative",
+      "dk_no_odds": 135
+    },
+    {
+      "game_id": "DET/SD - Bot 1",
+      "half": "bot",
+      "pitcher": "Jack Flaherty",
+      "batting_team": "San Diego Padres",
+      "pitching_team": "Detroit Tigers",
+      "model_prob": 0.2683,
+      "implied_prob": 0.2985,
+      "ev": -0.0302,
+      "ev_category": "negative",
+      "dk_no_odds": 235
+    }
+  ]
+}

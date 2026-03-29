@@ -40,12 +40,14 @@ st.markdown("""
 # ── Header ────────────────────────────────────────────────────────────────────
 col_title, col_badge = st.columns([4, 1])
 with col_title:
-    st.markdown('<p class="brand-run">R U N &nbsp; T H E</p>', unsafe_allow_html=True)
-    st.markdown('<p class="brand-nsfi">NSFI</p>', unsafe_allow_html=True)
-    st.markdown('<p class="brand-market">M A R K E T</p>', unsafe_allow_html=True)
-    st.markdown(f'<p class="brand-subtitle">NO STRIKEOUTS &middot; FIRST INNING &middot; {datetime.now().strftime("%B %d, %Y").upper()}</p>', unsafe_allow_html=True)
+    st.markdown(f"""<div style="line-height:1.1;">
+        <p class="brand-run" style="margin:0 0 5px 0;">R U N &nbsp; T H E</p>
+        <p class="brand-nsfi" style="margin:0; font-size:3.5rem;">NSFI</p>
+        <p class="brand-market" style="margin:2px 0 0 0;">M A R K E T</p>
+        <p class="brand-subtitle" style="margin:8px 0 0 0;">NO STRIKEOUTS &middot; FIRST INNING &middot; {datetime.now().strftime("%B %d, %Y").upper()}</p>
+    </div>""", unsafe_allow_html=True)
 with col_badge:
-    st.markdown('<br><br><span class="live-badge">LIVE ODDS</span>', unsafe_allow_html=True)
+    st.markdown('<div style="text-align:right; padding-top:20px;"><span class="live-badge">LIVE ODDS</span></div>', unsafe_allow_html=True)
 
 # ── DraftKings odds fetcher ───────────────────────────────────────────────────
 
@@ -895,17 +897,20 @@ if _os.path.exists(hist_path):
         def tier_stats(df_tier, label, color):
             """Compute and display W-L for an EV tier."""
             total = len(df_tier)
-            if total == 0:
-                return
-            w = len(df_tier[df_tier["result"] == "win"])
+            w = len(df_tier[df_tier["result"] == "win"]) if total > 0 else 0
             l = total - w
-            pct = w / total * 100
-            pct_color = "#4ade80" if pct >= 50 else ("#fbbf24" if pct >= 40 else "#f87171")
+            if total > 0:
+                pct = w / total * 100
+                pct_str = f"{pct:.0f}%"
+                pct_color = "#4ade80" if pct >= 50 else ("#fbbf24" if pct >= 40 else "#f87171")
+            else:
+                pct_str = "—"
+                pct_color = "#6b7280"
             st.markdown(f"""<div style="background:linear-gradient(135deg,#1a1f2e,#161b26);
                 border:1px solid #2a2f3e; border-radius:10px; padding:15px; text-align:center;">
                 <span style="font-family:Inter,sans-serif; font-size:0.75rem; color:{color};
                     letter-spacing:0.1em; text-transform:uppercase;">{label}</span><br>
-                <span class="stat-big" style="color:{pct_color}">{pct:.0f}%</span><br>
+                <span class="stat-big" style="color:{pct_color}">{pct_str}</span><br>
                 <span style="font-family:Oswald,sans-serif; font-size:1.3rem; color:#e8e0d4;">{w}-{l}</span>
                 <span style="color:#6b7280; font-size:0.8rem;"> ({total} bets)</span>
             </div>""", unsafe_allow_html=True)

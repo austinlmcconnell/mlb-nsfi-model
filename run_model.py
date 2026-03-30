@@ -101,7 +101,7 @@ def load_model_data():
     })
     keep2 = [c for c in p.columns if c == "Name" or c.startswith(("Year_","Season_"))]
     p = p[keep2]
-    p["Handedness"] = np.nan
+    p["Handedness"] = pd.Series([np.nan] * len(p), dtype="object")
 
     # Merge batters
     b = pd.merge(bvly, bvry, on="Name", how="outer", suffixes=("_bvly","_bvry"))
@@ -131,7 +131,7 @@ def load_model_data():
     })
     keep_b2 = [c for c in b.columns if c == "Name" or c.startswith(("Year_","Season_"))]
     b = b[keep_b2]
-    b["Handedness"] = np.nan
+    b["Handedness"] = pd.Series([np.nan] * len(b), dtype="object")
 
     # Handedness
     for name in pd.read_csv(os.path.join(BASE_DIR, "RHP_data.csv"))["Name"]:

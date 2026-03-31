@@ -1,0 +1,79 @@
+{
+  "date": "2026-03-31",
+  "generatedAt": "2026-03-31T19:34:11.498402",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "WSH/PHI - Top 1",
+      "half": "top",
+      "pitcher": "Andrew Painter",
+      "batting_team": "Washington Nationals",
+      "pitching_team": "Philadelphia Phillies",
+      "model_prob": 0.3256,
+      "implied_prob": 0.3571,
+      "ev": -0.0315,
+      "ev_category": "negative",
+      "dk_no_odds": 180
+    },
+    {
+      "game_id": "CWS/MIA - Top 1",
+      "half": "top",
+      "pitcher": "Janson Junk",
+      "batting_team": "Chicago White Sox",
+      "pitching_team": "Miami Marlins",
+      "model_prob": 0.41,
+      "implied_prob": 0.4255,
+      "ev": -0.0155,
+      "ev_category": "negative",
+      "dk_no_odds": 135
+    },
+    {
+      "game_id": "CWS/MIA - Bot 1",
+      "half": "bot",
+      "pitcher": "Erick Fedde",
+      "batting_team": "Miami Marlins",
+      "pitching_team": "Chicago White Sox",
+      "model_prob": 0.4631,
+      "implied_prob": 0.5122,
+      "ev": -0.0491,
+      "ev_category": "negative",
+      "dk_no_odds": -105
+    },
+    {
+      "game_id": "COL/TOR - Top 1",
+      "half": "top",
+      "pitcher": "Max Scherzer",
+      "batting_team": "Colorado Rockies",
+      "pitching_team": "Toronto Blue Jays",
+      "model_prob": 0.3149,
+      "implied_prob": 0.3077,
+      "ev": 0.0072,
+      "ev_category": "marginal",
+      "dk_no_odds": 225
+    },
+    {
+      "game_id": "COL/TOR - Bot 1",
+      "half": "bot",
+      "pitcher": "Ryan Feltner",
+      "batting_team": "Toronto Blue Jays",
+      "pitching_team": "Colorado Rockies",
+      "model_prob": 0.3921,
+      "implied_prob": 0.4444,
+      "ev": -0.0523,
+      "ev_category": "negative",
+      "dk_no_odds": 125
+    },
+    {
+      "game_id": "ATH/ATL - Top 1",
+      "half": "top",
+      "pitcher": "Jos\u00e9 Suarez",
+      "batting_team": "Athletics",
+      "pitching_team": "Atlanta Braves",
+      "model_prob": 0.3608,
+      "implied_prob": 0.3077,
+      "ev": 0.0531,
+      "ev_category": "strong",
+      "dk_no_odds": 225
+    }
+  ]
+}

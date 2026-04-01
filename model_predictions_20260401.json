@@ -1,89 +1,17 @@
 {
   "date": "2026-04-01",
-  "generatedAt": "2026-04-01T19:36:58.624821",
+  "generatedAt": "2026-04-01T22:05:56.271343",
   "simulations": 10000,
   "predictions": [
-    {
-      "game_id": "DET/ARI - Top 1",
-      "half": "top",
-      "pitcher": "Zac Gallen",
-      "batting_team": "Detroit Tigers",
-      "pitching_team": "Arizona Diamondbacks",
-      "model_prob": 0.3304,
-      "implied_prob": 0.3448,
-      "ev": -0.0144,
-      "ev_category": "negative",
-      "dk_no_odds": 190
-    },
-    {
-      "game_id": "DET/ARI - Bot 1",
-      "half": "bot",
-      "pitcher": "Tarik Skubal",
-      "batting_team": "Arizona Diamondbacks",
-      "pitching_team": "Detroit Tigers",
-      "model_prob": 0.2876,
-      "implied_prob": 0.274,
-      "ev": 0.0136,
-      "ev_category": "marginal",
-      "dk_no_odds": 265
-    },
-    {
-      "game_id": "SF/SD - Top 1",
-      "half": "top",
-      "pitcher": "Nick Pivetta",
-      "batting_team": "San Francisco Giants",
-      "pitching_team": "San Diego Padres",
-      "model_prob": 0.2949,
-      "implied_prob": 0.25,
-      "ev": 0.0449,
-      "ev_category": "marginal",
-      "dk_no_odds": 300
-    },
-    {
-      "game_id": "SF/SD - Bot 1",
-      "half": "bot",
-      "pitcher": "Adrian Houser",
-      "batting_team": "San Diego Padres",
-      "pitching_team": "San Francisco Giants",
-      "model_prob": 0.3874,
-      "implied_prob": 0.4444,
-      "ev": -0.057,
-      "ev_category": "negative",
-      "dk_no_odds": 125
-    },
-    {
-      "game_id": "NYY/SEA - Top 1",
-      "half": "top",
-      "pitcher": "George Kirby",
-      "batting_team": "New York Yankees",
-      "pitching_team": "Seattle Mariners",
-      "model_prob": 0.2846,
-      "implied_prob": 0.2817,
-      "ev": 0.0029,
-      "ev_category": "marginal",
-      "dk_no_odds": 255
-    },
-    {
-      "game_id": "NYY/SEA - Bot 1",
-      "half": "bot",
-      "pitcher": "Cam Schlittler",
-      "batting_team": "Seattle Mariners",
-      "pitching_team": "New York Yankees",
-      "model_prob": 0.2745,
-      "implied_prob": 0.2326,
-      "ev": 0.0419,
-      "ev_category": "marginal",
-      "dk_no_odds": 330
-    },
     {
       "game_id": "MIN/KC - Top 1",
       "half": "top",
       "pitcher": "Noah Cameron",
       "batting_team": "Minnesota Twins",
       "pitching_team": "Kansas City Royals",
-      "model_prob": 0.3705,
+      "model_prob": 0.3797,
       "implied_prob": 0.3704,
-      "ev": 0.0001,
+      "ev": 0.0093,
       "ev_category": "marginal",
       "dk_no_odds": 170
     },
@@ -93,11 +21,35 @@
       "pitcher": "Joe Ryan",
       "batting_team": "Kansas City Royals",
       "pitching_team": "Minnesota Twins",
-      "model_prob": 0.3126,
+      "model_prob": 0.3209,
       "implied_prob": 0.3846,
-      "ev": -0.072,
+      "ev": -0.0637,
       "ev_category": "negative",
       "dk_no_odds": 160
+    },
+    {
+      "game_id": "CLE/LAD - Top 1",
+      "half": "top",
+      "pitcher": "Yoshinobu Yamamoto",
+      "batting_team": "Cleveland Guardians",
+      "pitching_team": "Los Angeles Dodgers",
+      "model_prob": 0.3237,
+      "implied_prob": 0.3077,
+      "ev": 0.016,
+      "ev_category": "marginal",
+      "dk_no_odds": 225
+    },
+    {
+      "game_id": "CLE/LAD - Bot 1",
+      "half": "bot",
+      "pitcher": "Gavin Williams",
+      "batting_team": "Los Angeles Dodgers",
+      "pitching_team": "Cleveland Guardians",
+      "model_prob": 0.321,
+      "implied_prob": 0.2817,
+      "ev": 0.0393,
+      "ev_category": "marginal",
+      "dk_no_odds": 255
     }
   ]
 }

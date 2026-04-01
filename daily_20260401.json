@@ -1,6 +1,6 @@
 {
   "date": "2026-04-01",
-  "fetchedAt": "2026-04-01T19:36:57.250849+00:00",
+  "fetchedAt": "2026-04-01T22:05:55.152035+00:00",
   "games": [
     {
       "gamePk": 824940,
@@ -1677,18 +1677,10 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": true,
-            "noOdds": 190,
-            "yesOdds": -265,
-            "impliedNSFI": 0.3448,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           },
           "bot": {
-            "oddsPosted": true,
-            "noOdds": 265,
-            "yesOdds": -400,
-            "impliedNSFI": 0.274,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           }
         }
       }
@@ -1838,18 +1830,10 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": true,
-            "noOdds": 300,
-            "yesOdds": -475,
-            "impliedNSFI": 0.25,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           },
           "bot": {
-            "oddsPosted": true,
-            "noOdds": 125,
-            "yesOdds": -170,
-            "impliedNSFI": 0.4444,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           }
         }
       }
@@ -1999,18 +1983,10 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": true,
-            "noOdds": 255,
-            "yesOdds": -380,
-            "impliedNSFI": 0.2817,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           },
           "bot": {
-            "oddsPosted": true,
-            "noOdds": 330,
-            "yesOdds": -525,
-            "impliedNSFI": 0.2326,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           }
         }
       }
@@ -2181,7 +2157,7 @@
       "gameTimeUTC": "2026-04-02T00:20:00Z",
       "gameTimeET": "8:20 PM ET",
       "lineupDropET": "4:50 PM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "Los Angeles Dodgers",
       "awayTeam": "Cleveland Guardians",
       "venue": "UNIQLO Field at Dodger Stadium",
@@ -2194,7 +2170,62 @@
           "id": 808967,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Steven Kwan",
+            "id": 680757,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Angel Mart\u00ednez",
+            "id": 682657,
+            "batSide": "S",
+            "position": "RF"
+          },
+          {
+            "name": "Jos\u00e9 Ram\u00edrez",
+            "id": 608070,
+            "batSide": "S",
+            "position": "3B"
+          },
+          {
+            "name": "Kyle Manzardo",
+            "id": 700932,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Rhys Hoskins",
+            "id": 656555,
+            "batSide": "R",
+            "position": "1B"
+          },
+          {
+            "name": "Bo Naylor",
+            "id": 666310,
+            "batSide": "L",
+            "position": "C"
+          },
+          {
+            "name": "Daniel Schneemann",
+            "id": 682177,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Gabriel Arias",
+            "id": 672356,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "Brayan Rocchio",
+            "id": 677587,
+            "batSide": "S",
+            "position": "2B"
+          }
+        ],
         "gameId": "CLE/LAD - Top 1"
       },
       "botInning": {
@@ -2205,16 +2236,71 @@
           "id": 668909,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Shohei Ohtani",
+            "id": 660271,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Kyle Tucker",
+            "id": 663656,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Mookie Betts",
+            "id": 605141,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "Freddie Freeman",
+            "id": 518692,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Will Smith",
+            "id": 669257,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Max Muncy",
+            "id": 571970,
+            "batSide": "L",
+            "position": "3B"
+          },
+          {
+            "name": "Teoscar Hern\u00e1ndez",
+            "id": 606192,
+            "batSide": "R",
+            "position": "LF"
+          },
+          {
+            "name": "Andy Pages",
+            "id": 681624,
+            "batSide": "R",
+            "position": "CF"
+          },
+          {
+            "name": "Alex Freeland",
+            "id": 690976,
+            "batSide": "S",
+            "position": "2B"
+          }
+        ],
         "gameId": "CLE/LAD - Bot 1"
       },
       "odds": {
         "draftkings": {
           "top": {
             "oddsPosted": true,
-            "noOdds": 240,
-            "yesOdds": -350,
-            "impliedNSFI": 0.2941,
+            "noOdds": 225,
+            "yesOdds": -330,
+            "impliedNSFI": 0.3077,
             "source": "draftkings_nash"
           },
           "bot": {

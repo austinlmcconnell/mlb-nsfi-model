@@ -1,6 +1,6 @@
 {
   "date": "2026-04-02",
-  "fetchedAt": "2026-04-02T16:16:58.103971+00:00",
+  "fetchedAt": "2026-04-02T19:29:52.188708+00:00",
   "games": [
     {
       "gamePk": 824133,
@@ -109,13 +109,13 @@
             "name": "Salvador Perez",
             "id": 521692,
             "batSide": "R",
-            "position": "DH"
+            "position": "C"
           },
           {
-            "name": "Carter Jensen",
-            "id": 695600,
+            "name": "Jac Caglianone",
+            "id": 695506,
             "batSide": "L",
-            "position": "C"
+            "position": "DH"
           },
           {
             "name": "Jonathan India",
@@ -124,16 +124,16 @@
             "position": "2B"
           },
           {
-            "name": "Jac Caglianone",
-            "id": 695506,
-            "batSide": "L",
-            "position": "RF"
-          },
-          {
             "name": "Isaac Collins",
             "id": 686555,
             "batSide": "S",
             "position": "LF"
+          },
+          {
+            "name": "Lane Thomas",
+            "id": 657041,
+            "batSide": "R",
+            "position": "RF"
           },
           {
             "name": "Kyle Isbel",
@@ -147,18 +147,10 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": true,
-            "noOdds": 310,
-            "yesOdds": -500,
-            "impliedNSFI": 0.2439,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           },
           "bot": {
-            "oddsPosted": true,
-            "noOdds": 125,
-            "yesOdds": -170,
-            "impliedNSFI": 0.4444,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           }
         }
       }

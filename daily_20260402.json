@@ -1,6 +1,6 @@
 {
   "date": "2026-04-02",
-  "fetchedAt": "2026-04-02T19:29:52.188708+00:00",
+  "fetchedAt": "2026-04-02T22:03:32.341266+00:00",
   "games": [
     {
       "gamePk": 824133,
@@ -147,10 +147,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 170,
+            "yesOdds": -235,
+            "impliedNSFI": 0.3704,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 160,
+            "yesOdds": -220,
+            "impliedNSFI": 0.3846,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -160,7 +168,7 @@
       "gameTimeUTC": "2026-04-03T01:40:00Z",
       "gameTimeET": "9:40 PM ET",
       "lineupDropET": "6:10 PM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "Arizona Diamondbacks",
       "awayTeam": "Atlanta Braves",
       "venue": "Chase Field",
@@ -173,7 +181,62 @@
           "id": 669194,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Ronald Acu\u00f1a Jr.",
+            "id": 660670,
+            "batSide": "R",
+            "position": "RF"
+          },
+          {
+            "name": "Drake Baldwin",
+            "id": 686948,
+            "batSide": "L",
+            "position": "C"
+          },
+          {
+            "name": "Matt Olson",
+            "id": 621566,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Austin Riley",
+            "id": 663586,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Mike Yastrzemski",
+            "id": 573262,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Ozzie Albies",
+            "id": 645277,
+            "batSide": "S",
+            "position": "2B"
+          },
+          {
+            "name": "Michael Harris II",
+            "id": 671739,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Dominic Smith",
+            "id": 642086,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Mauricio Dub\u00f3n",
+            "id": 643289,
+            "batSide": "R",
+            "position": "SS"
+          }
+        ],
         "gameId": "ATL/ARI - Top 1"
       },
       "botInning": {
@@ -184,7 +247,62 @@
           "id": 625643,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Ketel Marte",
+            "id": 606466,
+            "batSide": "S",
+            "position": "2B"
+          },
+          {
+            "name": "Corbin Carroll",
+            "id": 682998,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Geraldo Perdomo",
+            "id": 672695,
+            "batSide": "S",
+            "position": "SS"
+          },
+          {
+            "name": "Gabriel Moreno",
+            "id": 672515,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Alek Thomas",
+            "id": 677950,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Nolan Arenado",
+            "id": 571448,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Carlos Santana",
+            "id": 467793,
+            "batSide": "S",
+            "position": "1B"
+          },
+          {
+            "name": "Jordan Lawlar",
+            "id": 691783,
+            "batSide": "R",
+            "position": "LF"
+          },
+          {
+            "name": "Jorge Barrosa",
+            "id": 678489,
+            "batSide": "S",
+            "position": "RF"
+          }
+        ],
         "gameId": "ATL/ARI - Bot 1"
       },
       "odds": {
@@ -292,10 +410,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 225,
+            "yesOdds": -320,
+            "impliedNSFI": 0.3077,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 340,
+            "yesOdds": -550,
+            "impliedNSFI": 0.2273,
+            "source": "draftkings_nash"
           }
         }
       }

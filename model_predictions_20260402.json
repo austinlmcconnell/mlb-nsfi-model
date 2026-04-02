@@ -1,6 +1,6 @@
 {
   "date": "2026-04-02",
-  "generatedAt": "2026-04-02T16:16:59.064272",
+  "generatedAt": "2026-04-02T22:03:33.455858",
   "simulations": 10000,
   "predictions": [
     {
@@ -9,11 +9,11 @@
       "pitcher": "Cole Ragans",
       "batting_team": "Minnesota Twins",
       "pitching_team": "Kansas City Royals",
-      "model_prob": 0.208,
-      "implied_prob": 0.2439,
-      "ev": -0.0359,
+      "model_prob": 0.2054,
+      "implied_prob": 0.3704,
+      "ev": -0.165,
       "ev_category": "negative",
-      "dk_no_odds": 310
+      "dk_no_odds": 170
     },
     {
       "game_id": "MIN/KC - Bot 1",
@@ -21,11 +21,35 @@
       "pitcher": "Taj Bradley",
       "batting_team": "Kansas City Royals",
       "pitching_team": "Minnesota Twins",
-      "model_prob": 0.3918,
-      "implied_prob": 0.4444,
-      "ev": -0.0526,
-      "ev_category": "negative",
-      "dk_no_odds": 125
+      "model_prob": 0.3986,
+      "implied_prob": 0.3846,
+      "ev": 0.014,
+      "ev_category": "marginal",
+      "dk_no_odds": 160
+    },
+    {
+      "game_id": "ATL/ARI - Top 1",
+      "half": "top",
+      "pitcher": "Ryne Nelson",
+      "batting_team": "Atlanta Braves",
+      "pitching_team": "Arizona Diamondbacks",
+      "model_prob": 0.3492,
+      "implied_prob": 0.3175,
+      "ev": 0.0317,
+      "ev_category": "marginal",
+      "dk_no_odds": 215
+    },
+    {
+      "game_id": "ATL/ARI - Bot 1",
+      "half": "bot",
+      "pitcher": "Reynaldo L\u00f3pez",
+      "batting_team": "Arizona Diamondbacks",
+      "pitching_team": "Atlanta Braves",
+      "model_prob": 0.5899,
+      "implied_prob": 0.4,
+      "ev": 0.1899,
+      "ev_category": "strong",
+      "dk_no_odds": 150
     }
   ]
 }

@@ -1,0 +1,194 @@
+{
+  "date": "2026-04-02",
+  "fetchedAt": "2026-04-02T03:32:23.914003+00:00",
+  "games": [
+    {
+      "gamePk": 824133,
+      "gameTimeUTC": "2026-04-02T18:10:00Z",
+      "gameTimeET": "2:10 PM ET",
+      "lineupDropET": "10:40 AM ET",
+      "lineupComplete": false,
+      "homeTeam": "Kansas City Royals",
+      "awayTeam": "Minnesota Twins",
+      "venue": "Kauffman Stadium",
+      "ballparkKey": "Royals",
+      "topInning": {
+        "teamBatting": "Minnesota Twins",
+        "teamPitching": "Kansas City Royals",
+        "pitcher": {
+          "name": "Cole Ragans",
+          "id": 666142,
+          "pitchHand": "L"
+        },
+        "lineup": [],
+        "gameId": "MIN/KC - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "Kansas City Royals",
+        "teamPitching": "Minnesota Twins",
+        "pitcher": {
+          "name": "Taj Bradley",
+          "id": 671737,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "MIN/KC - Bot 1"
+      },
+      "odds": {
+        "draftkings": {
+          "top": {
+            "oddsPosted": true,
+            "noOdds": 310,
+            "yesOdds": -475,
+            "impliedNSFI": 0.2439,
+            "source": "draftkings_nash"
+          },
+          "bot": {
+            "oddsPosted": true,
+            "noOdds": 125,
+            "yesOdds": -170,
+            "impliedNSFI": 0.4444,
+            "source": "draftkings_nash"
+          }
+        }
+      }
+    },
+    {
+      "gamePk": 825105,
+      "gameTimeUTC": "2026-04-03T01:40:00Z",
+      "gameTimeET": "9:40 PM ET",
+      "lineupDropET": "6:10 PM ET",
+      "lineupComplete": false,
+      "homeTeam": "Arizona Diamondbacks",
+      "awayTeam": "Atlanta Braves",
+      "venue": "Chase Field",
+      "ballparkKey": "Diamondbacks",
+      "topInning": {
+        "teamBatting": "Atlanta Braves",
+        "teamPitching": "Arizona Diamondbacks",
+        "pitcher": {
+          "name": "Ryne Nelson",
+          "id": 669194,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "ATL/ARI - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "Arizona Diamondbacks",
+        "teamPitching": "Atlanta Braves",
+        "pitcher": {
+          "name": "Reynaldo L\u00f3pez",
+          "id": 625643,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "ATL/ARI - Bot 1"
+      },
+      "odds": {
+        "draftkings": {
+          "top": {
+            "oddsPosted": true,
+            "noOdds": 210,
+            "yesOdds": -300,
+            "impliedNSFI": 0.3226,
+            "source": "draftkings_nash"
+          },
+          "bot": {
+            "oddsPosted": true,
+            "noOdds": 150,
+            "yesOdds": -205,
+            "impliedNSFI": 0.4,
+            "source": "draftkings_nash"
+          }
+        }
+      }
+    },
+    {
+      "gamePk": 823242,
+      "gameTimeUTC": "2026-04-03T01:45:00Z",
+      "gameTimeET": "9:45 PM ET",
+      "lineupDropET": "6:15 PM ET",
+      "lineupComplete": false,
+      "homeTeam": "San Francisco Giants",
+      "awayTeam": "New York Mets",
+      "venue": "Oracle Park",
+      "ballparkKey": "Giants",
+      "topInning": {
+        "teamBatting": "New York Mets",
+        "teamPitching": "San Francisco Giants",
+        "pitcher": {
+          "name": "Robbie Ray",
+          "id": 592662,
+          "pitchHand": "L"
+        },
+        "lineup": [],
+        "gameId": "NYM/SF - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "San Francisco Giants",
+        "teamPitching": "New York Mets",
+        "pitcher": {
+          "name": "David Peterson",
+          "id": 656849,
+          "pitchHand": "L"
+        },
+        "lineup": [],
+        "gameId": "NYM/SF - Bot 1"
+      },
+      "odds": {
+        "draftkings": {
+          "top": {
+            "oddsPosted": false
+          },
+          "bot": {
+            "oddsPosted": false
+          }
+        }
+      }
+    },
+    {
+      "gamePk": 824621,
+      "gameTimeUTC": "2026-04-02T20:10:00Z",
+      "gameTimeET": "4:10 PM ET",
+      "lineupDropET": "12:40 PM ET",
+      "lineupComplete": false,
+      "homeTeam": "Chicago White Sox",
+      "awayTeam": "Toronto Blue Jays",
+      "venue": "Rate Field",
+      "ballparkKey": "White Sox",
+      "topInning": {
+        "teamBatting": "Toronto Blue Jays",
+        "teamPitching": "Chicago White Sox",
+        "pitcher": {
+          "name": "Sean Burke",
+          "id": 680732,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "TOR/CWS - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "Chicago White Sox",
+        "teamPitching": "Toronto Blue Jays",
+        "pitcher": {
+          "name": "Dylan Cease",
+          "id": 656302,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "TOR/CWS - Bot 1"
+      },
+      "odds": {
+        "draftkings": {
+          "top": {
+            "oddsPosted": false
+          },
+          "bot": {
+            "oddsPosted": false
+          }
+        }
+      }
+    }
+  ]
+}

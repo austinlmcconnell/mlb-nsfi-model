@@ -1,0 +1,31 @@
+{
+  "date": "2026-04-02",
+  "generatedAt": "2026-04-02T16:16:59.064272",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "MIN/KC - Top 1",
+      "half": "top",
+      "pitcher": "Cole Ragans",
+      "batting_team": "Minnesota Twins",
+      "pitching_team": "Kansas City Royals",
+      "model_prob": 0.208,
+      "implied_prob": 0.2439,
+      "ev": -0.0359,
+      "ev_category": "negative",
+      "dk_no_odds": 310
+    },
+    {
+      "game_id": "MIN/KC - Bot 1",
+      "half": "bot",
+      "pitcher": "Taj Bradley",
+      "batting_team": "Kansas City Royals",
+      "pitching_team": "Minnesota Twins",
+      "model_prob": 0.3918,
+      "implied_prob": 0.4444,
+      "ev": -0.0526,
+      "ev_category": "negative",
+      "dk_no_odds": 125
+    }
+  ]
+}

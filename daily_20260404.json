@@ -1,0 +1,746 @@
+{
+  "date": "2026-04-04",
+  "fetchedAt": "2026-04-04T03:22:12.680828+00:00",
+  "games": [
+    {
+      "gamePk": 824295,
+      "gameTimeUTC": "2026-04-04T17:10:00Z",
+      "gameTimeET": "1:10 PM ET",
+      "lineupDropET": "9:40 AM ET",
+      "lineupComplete": false,
+      "homeTeam": "Detroit Tigers",
+      "awayTeam": "St. Louis Cardinals",
+      "venue": "Comerica Park",
+      "ballparkKey": "Tigers",
+      "topInning": {
+        "teamBatting": "St. Louis Cardinals",
+        "teamPitching": "Detroit Tigers",
+        "pitcher": {
+          "name": "Jack Flaherty",
+          "id": 656427,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "STL/DET - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "Detroit Tigers",
+        "teamPitching": "St. Louis Cardinals",
+        "pitcher": {
+          "name": "Dustin May",
+          "id": 669160,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "STL/DET - Bot 1"
+      },
+      "odds": {
+        "draftkings": {
+          "top": {
+            "oddsPosted": true,
+            "noOdds": 185,
+            "yesOdds": -260,
+            "impliedNSFI": 0.3509,
+            "source": "draftkings_nash"
+          },
+          "bot": {
+            "oddsPosted": true,
+            "noOdds": 160,
+            "yesOdds": -225,
+            "impliedNSFI": 0.3846,
+            "source": "draftkings_nash"
+          }
+        }
+      }
+    },
+    {
+      "gamePk": 824622,
+      "gameTimeUTC": "2026-04-04T18:10:00Z",
+      "gameTimeET": "2:10 PM ET",
+      "lineupDropET": "10:40 AM ET",
+      "lineupComplete": false,
+      "homeTeam": "Chicago White Sox",
+      "awayTeam": "Toronto Blue Jays",
+      "venue": "Rate Field",
+      "ballparkKey": "White Sox",
+      "topInning": {
+        "teamBatting": "Toronto Blue Jays",
+        "teamPitching": "Chicago White Sox",
+        "pitcher": {
+          "name": "Grant Taylor",
+          "id": 691799,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "TOR/CWS - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "Chicago White Sox",
+        "teamPitching": "Toronto Blue Jays",
+        "pitcher": {
+          "name": "Mason Fluharty",
+          "id": 689254,
+          "pitchHand": "L"
+        },
+        "lineup": [],
+        "gameId": "TOR/CWS - Bot 1"
+      },
+      "odds": {
+        "draftkings": {
+          "top": {
+            "oddsPosted": false
+          },
+          "bot": {
+            "oddsPosted": false
+          }
+        }
+      }
+    },
+    {
+      "gamePk": 824132,
+      "gameTimeUTC": "2026-04-04T18:10:00Z",
+      "gameTimeET": "2:10 PM ET",
+      "lineupDropET": "10:40 AM ET",
+      "lineupComplete": false,
+      "homeTeam": "Kansas City Royals",
+      "awayTeam": "Milwaukee Brewers",
+      "venue": "Kauffman Stadium",
+      "ballparkKey": "Royals",
+      "topInning": {
+        "teamBatting": "Milwaukee Brewers",
+        "teamPitching": "Kansas City Royals",
+        "pitcher": {
+          "name": "Luinder Avila",
+          "id": 679883,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "MIL/KC - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "Kansas City Royals",
+        "teamPitching": "Milwaukee Brewers",
+        "pitcher": {
+          "name": "Chad Patrick",
+          "id": 694477,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "MIL/KC - Bot 1"
+      },
+      "odds": {
+        "draftkings": {
+          "top": {
+            "oddsPosted": false
+          },
+          "bot": {
+            "oddsPosted": false
+          }
+        }
+      }
+    },
+    {
+      "gamePk": 824134,
+      "gameTimeUTC": "2026-04-04T23:10:00Z",
+      "gameTimeET": "7:10 PM ET",
+      "lineupDropET": "3:40 PM ET",
+      "lineupComplete": false,
+      "homeTeam": "Kansas City Royals",
+      "awayTeam": "Milwaukee Brewers",
+      "venue": "Kauffman Stadium",
+      "ballparkKey": "Royals",
+      "topInning": {
+        "teamBatting": "Milwaukee Brewers",
+        "teamPitching": "Kansas City Royals",
+        "pitcher": {
+          "name": "Seth Lugo",
+          "id": 607625,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "MIL/KC - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "Kansas City Royals",
+        "teamPitching": "Milwaukee Brewers",
+        "pitcher": {
+          "name": "Brandon Sproat",
+          "id": 687075,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "MIL/KC - Bot 1"
+      },
+      "odds": {
+        "draftkings": {
+          "top": {
+            "oddsPosted": false
+          },
+          "bot": {
+            "oddsPosted": false
+          }
+        }
+      }
+    },
+    {
+      "gamePk": 822757,
+      "gameTimeUTC": "2026-04-04T20:05:00Z",
+      "gameTimeET": "4:05 PM ET",
+      "lineupDropET": "12:35 PM ET",
+      "lineupComplete": false,
+      "homeTeam": "Washington Nationals",
+      "awayTeam": "Los Angeles Dodgers",
+      "venue": "Nationals Park",
+      "ballparkKey": "Nationals",
+      "topInning": {
+        "teamBatting": "Los Angeles Dodgers",
+        "teamPitching": "Washington Nationals",
+        "pitcher": {
+          "name": "Jake Irvin",
+          "id": 663623,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "LAD/WSH - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "Washington Nationals",
+        "teamPitching": "Los Angeles Dodgers",
+        "pitcher": {
+          "name": "Tyler Glasnow",
+          "id": 607192,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "LAD/WSH - Bot 1"
+      },
+      "odds": {
+        "draftkings": {
+          "top": {
+            "oddsPosted": false
+          },
+          "bot": {
+            "oddsPosted": true,
+            "noOdds": 320,
+            "yesOdds": -525,
+            "impliedNSFI": 0.2381,
+            "source": "draftkings_nash"
+          }
+        }
+      }
+    },
+    {
+      "gamePk": 825027,
+      "gameTimeUTC": "2026-04-04T20:05:00Z",
+      "gameTimeET": "4:05 PM ET",
+      "lineupDropET": "12:35 PM ET",
+      "lineupComplete": false,
+      "homeTeam": "Athletics",
+      "awayTeam": "Houston Astros",
+      "venue": "Sutter Health Park",
+      "ballparkKey": "Athletics",
+      "topInning": {
+        "teamBatting": "Houston Astros",
+        "teamPitching": "Athletics",
+        "pitcher": {
+          "name": "Luis Morales",
+          "id": 806960,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "HOU/ATH - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "Athletics",
+        "teamPitching": "Houston Astros",
+        "pitcher": {
+          "name": "Tatsuya Imai",
+          "id": 837227,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "HOU/ATH - Bot 1"
+      },
+      "odds": {
+        "draftkings": {
+          "top": {
+            "oddsPosted": false
+          },
+          "bot": {
+            "oddsPosted": false
+          }
+        }
+      }
+    },
+    {
+      "gamePk": 823404,
+      "gameTimeUTC": "2026-04-04T20:05:00Z",
+      "gameTimeET": "4:05 PM ET",
+      "lineupDropET": "12:35 PM ET",
+      "lineupComplete": false,
+      "homeTeam": "Pittsburgh Pirates",
+      "awayTeam": "Baltimore Orioles",
+      "venue": "PNC Park",
+      "ballparkKey": "Pirates",
+      "topInning": {
+        "teamBatting": "Baltimore Orioles",
+        "teamPitching": "Pittsburgh Pirates",
+        "pitcher": {
+          "name": "Carmen Mlodzinski",
+          "id": 669387,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "BAL/PIT - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "Pittsburgh Pirates",
+        "teamPitching": "Baltimore Orioles",
+        "pitcher": {
+          "name": "Shane Baz",
+          "id": 669358,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "BAL/PIT - Bot 1"
+      },
+      "odds": {
+        "draftkings": {
+          "top": {
+            "oddsPosted": true,
+            "noOdds": 240,
+            "yesOdds": -350,
+            "impliedNSFI": 0.2941,
+            "source": "draftkings_nash"
+          },
+          "bot": {
+            "oddsPosted": true,
+            "noOdds": 330,
+            "yesOdds": -525,
+            "impliedNSFI": 0.2326,
+            "source": "draftkings_nash"
+          }
+        }
+      }
+    },
+    {
+      "gamePk": 824782,
+      "gameTimeUTC": "2026-04-04T20:10:00Z",
+      "gameTimeET": "4:10 PM ET",
+      "lineupDropET": "12:40 PM ET",
+      "lineupComplete": false,
+      "homeTeam": "Boston Red Sox",
+      "awayTeam": "San Diego Padres",
+      "venue": "Fenway Park",
+      "ballparkKey": "Red Sox",
+      "topInning": {
+        "teamBatting": "San Diego Padres",
+        "teamPitching": "Boston Red Sox",
+        "pitcher": {
+          "name": "Connelly Early",
+          "id": 813349,
+          "pitchHand": "L"
+        },
+        "lineup": [],
+        "gameId": "SD/BOS - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "Boston Red Sox",
+        "teamPitching": "San Diego Padres",
+        "pitcher": {
+          "name": "Randy V\u00e1squez",
+          "id": 681190,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "SD/BOS - Bot 1"
+      },
+      "odds": {
+        "draftkings": {
+          "top": {
+            "oddsPosted": false
+          },
+          "bot": {
+            "oddsPosted": false
+          }
+        }
+      }
+    },
+    {
+      "gamePk": 822920,
+      "gameTimeUTC": "2026-04-04T23:05:00Z",
+      "gameTimeET": "7:05 PM ET",
+      "lineupDropET": "3:35 PM ET",
+      "lineupComplete": false,
+      "homeTeam": "Texas Rangers",
+      "awayTeam": "Cincinnati Reds",
+      "venue": "Globe Life Field",
+      "ballparkKey": "Rangers",
+      "topInning": {
+        "teamBatting": "Cincinnati Reds",
+        "teamPitching": "Texas Rangers",
+        "pitcher": {
+          "name": "Kumar Rocker",
+          "id": 677958,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "CIN/TEX - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "Texas Rangers",
+        "teamPitching": "Cincinnati Reds",
+        "pitcher": {
+          "name": "Rhett Lowder",
+          "id": 695076,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "CIN/TEX - Bot 1"
+      },
+      "odds": {
+        "draftkings": {
+          "top": {
+            "oddsPosted": false
+          },
+          "bot": {
+            "oddsPosted": false
+          }
+        }
+      }
+    },
+    {
+      "gamePk": 823569,
+      "gameTimeUTC": "2026-04-04T23:05:00Z",
+      "gameTimeET": "7:05 PM ET",
+      "lineupDropET": "3:35 PM ET",
+      "lineupComplete": false,
+      "homeTeam": "New York Yankees",
+      "awayTeam": "Miami Marlins",
+      "venue": "Yankee Stadium",
+      "ballparkKey": "Yankees",
+      "topInning": {
+        "teamBatting": "Miami Marlins",
+        "teamPitching": "New York Yankees",
+        "pitcher": {
+          "name": "Ryan Weathers",
+          "id": 677960,
+          "pitchHand": "L"
+        },
+        "lineup": [],
+        "gameId": "MIA/NYY - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "New York Yankees",
+        "teamPitching": "Miami Marlins",
+        "pitcher": {
+          "name": "Max Meyer",
+          "id": 676974,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "MIA/NYY - Bot 1"
+      },
+      "odds": {
+        "draftkings": {
+          "top": {
+            "oddsPosted": true,
+            "noOdds": 225,
+            "yesOdds": -330,
+            "impliedNSFI": 0.3077,
+            "source": "draftkings_nash"
+          },
+          "bot": {
+            "oddsPosted": true,
+            "noOdds": 190,
+            "yesOdds": -265,
+            "impliedNSFI": 0.3448,
+            "source": "draftkings_nash"
+          }
+        }
+      }
+    },
+    {
+      "gamePk": 823730,
+      "gameTimeUTC": "2026-04-04T23:10:00Z",
+      "gameTimeET": "7:10 PM ET",
+      "lineupDropET": "3:40 PM ET",
+      "lineupComplete": false,
+      "homeTeam": "Minnesota Twins",
+      "awayTeam": "Tampa Bay Rays",
+      "venue": "Target Field",
+      "ballparkKey": "Twins",
+      "topInning": {
+        "teamBatting": "Tampa Bay Rays",
+        "teamPitching": "Minnesota Twins",
+        "pitcher": {
+          "name": "Mick Abel",
+          "id": 690953,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "TB/MIN - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "Minnesota Twins",
+        "teamPitching": "Tampa Bay Rays",
+        "pitcher": {
+          "name": "Steven Matz",
+          "id": 571927,
+          "pitchHand": "L"
+        },
+        "lineup": [],
+        "gameId": "TB/MIN - Bot 1"
+      },
+      "odds": {
+        "draftkings": {
+          "top": {
+            "oddsPosted": true,
+            "noOdds": 210,
+            "yesOdds": -300,
+            "impliedNSFI": 0.3226,
+            "source": "draftkings_nash"
+          },
+          "bot": {
+            "oddsPosted": true,
+            "noOdds": 140,
+            "yesOdds": -195,
+            "impliedNSFI": 0.4167,
+            "source": "draftkings_nash"
+          }
+        }
+      }
+    },
+    {
+      "gamePk": 824460,
+      "gameTimeUTC": "2026-04-04T23:15:00Z",
+      "gameTimeET": "7:15 PM ET",
+      "lineupDropET": "3:45 PM ET",
+      "lineupComplete": false,
+      "homeTeam": "Cleveland Guardians",
+      "awayTeam": "Chicago Cubs",
+      "venue": "Progressive Field",
+      "ballparkKey": "Guardians",
+      "topInning": {
+        "teamBatting": "Chicago Cubs",
+        "teamPitching": "Cleveland Guardians",
+        "pitcher": {
+          "name": "Slade Cecconi",
+          "id": 677944,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "CHC/CLE - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "Cleveland Guardians",
+        "teamPitching": "Chicago Cubs",
+        "pitcher": {
+          "name": "Shota Imanaga",
+          "id": 684007,
+          "pitchHand": "L"
+        },
+        "lineup": [],
+        "gameId": "CHC/CLE - Bot 1"
+      },
+      "odds": {
+        "draftkings": {
+          "top": {
+            "oddsPosted": true,
+            "noOdds": 155,
+            "yesOdds": -210,
+            "impliedNSFI": 0.3922,
+            "source": "draftkings_nash"
+          },
+          "bot": {
+            "oddsPosted": true,
+            "noOdds": 125,
+            "yesOdds": -170,
+            "impliedNSFI": 0.4444,
+            "source": "draftkings_nash"
+          }
+        }
+      }
+    },
+    {
+      "gamePk": 825104,
+      "gameTimeUTC": "2026-04-04T23:15:00Z",
+      "gameTimeET": "7:15 PM ET",
+      "lineupDropET": "3:45 PM ET",
+      "lineupComplete": false,
+      "homeTeam": "Arizona Diamondbacks",
+      "awayTeam": "Atlanta Braves",
+      "venue": "Chase Field",
+      "ballparkKey": "Diamondbacks",
+      "topInning": {
+        "teamBatting": "Atlanta Braves",
+        "teamPitching": "Arizona Diamondbacks",
+        "pitcher": {
+          "name": "Michael Soroka",
+          "id": 647336,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "ATL/ARI - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "Arizona Diamondbacks",
+        "teamPitching": "Atlanta Braves",
+        "pitcher": {
+          "name": "Bryce Elder",
+          "id": 693821,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "ATL/ARI - Bot 1"
+      },
+      "odds": {
+        "draftkings": {
+          "top": {
+            "oddsPosted": false
+          },
+          "bot": {
+            "oddsPosted": false
+          }
+        }
+      }
+    },
+    {
+      "gamePk": 824378,
+      "gameTimeUTC": "2026-04-05T00:10:00Z",
+      "gameTimeET": "8:10 PM ET",
+      "lineupDropET": "4:40 PM ET",
+      "lineupComplete": false,
+      "homeTeam": "Colorado Rockies",
+      "awayTeam": "Philadelphia Phillies",
+      "venue": "Coors Field",
+      "ballparkKey": "Rockies",
+      "topInning": {
+        "teamBatting": "Philadelphia Phillies",
+        "teamPitching": "Colorado Rockies",
+        "pitcher": {
+          "name": "TBD",
+          "id": null,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "PHI/COL - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "Colorado Rockies",
+        "teamPitching": "Philadelphia Phillies",
+        "pitcher": {
+          "name": "Jes\u00fas Luzardo",
+          "id": 666200,
+          "pitchHand": "L"
+        },
+        "lineup": [],
+        "gameId": "PHI/COL - Bot 1"
+      },
+      "odds": {
+        "draftkings": {
+          "top": {
+            "oddsPosted": true,
+            "noOdds": 200,
+            "yesOdds": -285,
+            "impliedNSFI": 0.3333,
+            "source": "draftkings_nash"
+          },
+          "bot": {
+            "oddsPosted": true,
+            "noOdds": 370,
+            "yesOdds": -600,
+            "impliedNSFI": 0.2128,
+            "source": "draftkings_nash"
+          }
+        }
+      }
+    },
+    {
+      "gamePk": 823239,
+      "gameTimeUTC": "2026-04-05T01:05:00Z",
+      "gameTimeET": "9:05 PM ET",
+      "lineupDropET": "5:35 PM ET",
+      "lineupComplete": false,
+      "homeTeam": "San Francisco Giants",
+      "awayTeam": "New York Mets",
+      "venue": "Oracle Park",
+      "ballparkKey": "Giants",
+      "topInning": {
+        "teamBatting": "New York Mets",
+        "teamPitching": "San Francisco Giants",
+        "pitcher": {
+          "name": "Landen Roupp",
+          "id": 694738,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "NYM/SF - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "San Francisco Giants",
+        "teamPitching": "New York Mets",
+        "pitcher": {
+          "name": "Clay Holmes",
+          "id": 605280,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "NYM/SF - Bot 1"
+      },
+      "odds": {
+        "draftkings": {
+          "top": {
+            "oddsPosted": false
+          },
+          "bot": {
+            "oddsPosted": false
+          }
+        }
+      }
+    },
+    {
+      "gamePk": 824054,
+      "gameTimeUTC": "2026-04-05T01:38:00Z",
+      "gameTimeET": "9:38 PM ET",
+      "lineupDropET": "6:08 PM ET",
+      "lineupComplete": false,
+      "homeTeam": "Los Angeles Angels",
+      "awayTeam": "Seattle Mariners",
+      "venue": "Angel Stadium",
+      "ballparkKey": "Angels",
+      "topInning": {
+        "teamBatting": "Seattle Mariners",
+        "teamPitching": "Los Angeles Angels",
+        "pitcher": {
+          "name": "Jack Kochanowicz",
+          "id": 686799,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "SEA/LAA - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "Los Angeles Angels",
+        "teamPitching": "Seattle Mariners",
+        "pitcher": {
+          "name": "Emerson Hancock",
+          "id": 676106,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "SEA/LAA - Bot 1"
+      },
+      "odds": {
+        "draftkings": {
+          "top": {
+            "oddsPosted": false
+          },
+          "bot": {
+            "oddsPosted": false
+          }
+        }
+      }
+    }
+  ]
+}

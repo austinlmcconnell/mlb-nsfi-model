@@ -1,0 +1,55 @@
+{
+  "date": "2026-04-04",
+  "generatedAt": "2026-04-04T15:53:24.913791",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "STL/DET - Top 1",
+      "half": "top",
+      "pitcher": "Jack Flaherty",
+      "batting_team": "St. Louis Cardinals",
+      "pitching_team": "Detroit Tigers",
+      "model_prob": 0.2654,
+      "implied_prob": 0.3571,
+      "ev": -0.0917,
+      "ev_category": "negative",
+      "dk_no_odds": 180
+    },
+    {
+      "game_id": "STL/DET - Bot 1",
+      "half": "bot",
+      "pitcher": "Dustin May",
+      "batting_team": "Detroit Tigers",
+      "pitching_team": "St. Louis Cardinals",
+      "model_prob": 0.3115,
+      "implied_prob": 0.3922,
+      "ev": -0.0807,
+      "ev_category": "negative",
+      "dk_no_odds": 155
+    },
+    {
+      "game_id": "TOR/CWS - Top 1",
+      "half": "top",
+      "pitcher": "Grant Taylor",
+      "batting_team": "Toronto Blue Jays",
+      "pitching_team": "Chicago White Sox",
+      "model_prob": 0.2022,
+      "implied_prob": 0.2326,
+      "ev": -0.0304,
+      "ev_category": "negative",
+      "dk_no_odds": 330
+    },
+    {
+      "game_id": "TOR/CWS - Bot 1",
+      "half": "bot",
+      "pitcher": "Mason Fluharty",
+      "batting_team": "Chicago White Sox",
+      "pitching_team": "Toronto Blue Jays",
+      "model_prob": 0.3469,
+      "implied_prob": 0.3509,
+      "ev": -0.004,
+      "ev_category": "negative",
+      "dk_no_odds": 185
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "date": "2026-04-07",
+  "generatedAt": "2026-04-07T16:34:31.667298",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "KC/CLE - Top 1",
+      "half": "top",
+      "pitcher": "Gavin Williams",
+      "batting_team": "Kansas City Royals",
+      "pitching_team": "Cleveland Guardians",
+      "model_prob": 0.3557,
+      "implied_prob": 0.339,
+      "ev": 0.0167,
+      "ev_category": "marginal",
+      "dk_no_odds": 195
+    },
+    {
+      "game_id": "KC/CLE - Bot 1",
+      "half": "bot",
+      "pitcher": "Noah Cameron",
+      "batting_team": "Cleveland Guardians",
+      "pitching_team": "Kansas City Royals",
+      "model_prob": 0.3818,
+      "implied_prob": 0.4651,
+      "ev": -0.0833,
+      "ev_category": "negative",
+      "dk_no_odds": 115
+    }
+  ]
+}

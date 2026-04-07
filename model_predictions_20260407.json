@@ -1,31 +1,103 @@
 {
   "date": "2026-04-07",
-  "generatedAt": "2026-04-07T16:34:31.667298",
+  "generatedAt": "2026-04-07T19:37:13.889497",
   "simulations": 10000,
   "predictions": [
     {
-      "game_id": "KC/CLE - Top 1",
+      "game_id": "ARI/NYM - Top 1",
       "half": "top",
-      "pitcher": "Gavin Williams",
-      "batting_team": "Kansas City Royals",
-      "pitching_team": "Cleveland Guardians",
-      "model_prob": 0.3557,
-      "implied_prob": 0.339,
-      "ev": 0.0167,
+      "pitcher": "Freddy Peralta",
+      "batting_team": "Arizona Diamondbacks",
+      "pitching_team": "New York Mets",
+      "model_prob": 0.3179,
+      "implied_prob": 0.2817,
+      "ev": 0.0362,
       "ev_category": "marginal",
-      "dk_no_odds": 195
+      "dk_no_odds": 255
     },
     {
-      "game_id": "KC/CLE - Bot 1",
+      "game_id": "ARI/NYM - Bot 1",
       "half": "bot",
-      "pitcher": "Noah Cameron",
-      "batting_team": "Cleveland Guardians",
-      "pitching_team": "Kansas City Royals",
-      "model_prob": 0.3818,
-      "implied_prob": 0.4651,
-      "ev": -0.0833,
+      "pitcher": "Zac Gallen",
+      "batting_team": "New York Mets",
+      "pitching_team": "Arizona Diamondbacks",
+      "model_prob": 0.3592,
+      "implied_prob": 0.4348,
+      "ev": -0.0756,
       "ev_category": "negative",
-      "dk_no_odds": 115
+      "dk_no_odds": 130
+    },
+    {
+      "game_id": "CIN/MIA - Top 1",
+      "half": "top",
+      "pitcher": "Sandy Alcantara",
+      "batting_team": "Cincinnati Reds",
+      "pitching_team": "Miami Marlins",
+      "model_prob": 0.3145,
+      "implied_prob": 0.303,
+      "ev": 0.0115,
+      "ev_category": "marginal",
+      "dk_no_odds": 230
+    },
+    {
+      "game_id": "CIN/MIA - Bot 1",
+      "half": "bot",
+      "pitcher": "Andrew Abbott",
+      "batting_team": "Miami Marlins",
+      "pitching_team": "Cincinnati Reds",
+      "model_prob": 0.3089,
+      "implied_prob": 0.3509,
+      "ev": -0.042,
+      "ev_category": "negative",
+      "dk_no_odds": 185
+    },
+    {
+      "game_id": "STL/WSH - Bot 1",
+      "half": "bot",
+      "pitcher": "Matthew Liberatore",
+      "batting_team": "Washington Nationals",
+      "pitching_team": "St. Louis Cardinals",
+      "model_prob": 0.3142,
+      "implied_prob": 0.3509,
+      "ev": -0.0367,
+      "ev_category": "negative",
+      "dk_no_odds": 185
+    },
+    {
+      "game_id": "MIL/BOS - Top 1",
+      "half": "top",
+      "pitcher": "Garrett Crochet",
+      "batting_team": "Milwaukee Brewers",
+      "pitching_team": "Boston Red Sox",
+      "model_prob": 0.2667,
+      "implied_prob": 0.2326,
+      "ev": 0.0341,
+      "ev_category": "marginal",
+      "dk_no_odds": 330
+    },
+    {
+      "game_id": "MIL/BOS - Bot 1",
+      "half": "bot",
+      "pitcher": "Jacob Misiorowski",
+      "batting_team": "Boston Red Sox",
+      "pitching_team": "Milwaukee Brewers",
+      "model_prob": 0.191,
+      "implied_prob": 0.2,
+      "ev": -0.009,
+      "ev_category": "negative",
+      "dk_no_odds": 400
+    },
+    {
+      "game_id": "ATH/NYY - Top 1",
+      "half": "top",
+      "pitcher": "Cam Schlittler",
+      "batting_team": "Athletics",
+      "pitching_team": "New York Yankees",
+      "model_prob": 0.2729,
+      "implied_prob": 0.2273,
+      "ev": 0.0456,
+      "ev_category": "marginal",
+      "dk_no_odds": 340
     }
   ]
 }

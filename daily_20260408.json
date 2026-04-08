@@ -1,6 +1,6 @@
 {
   "date": "2026-04-08",
-  "fetchedAt": "2026-04-08T19:46:48.279810+00:00",
+  "fetchedAt": "2026-04-08T22:09:34.404562+00:00",
   "games": [
     {
       "gamePk": 823403,
@@ -1374,11 +1374,7 @@
             "oddsPosted": false
           },
           "bot": {
-            "oddsPosted": true,
-            "noOdds": 130,
-            "yesOdds": -175,
-            "impliedNSFI": 0.4348,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           }
         }
       }
@@ -1528,18 +1524,10 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": true,
-            "noOdds": 245,
-            "yesOdds": -360,
-            "impliedNSFI": 0.2899,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           },
           "bot": {
-            "oddsPosted": true,
-            "noOdds": 240,
-            "yesOdds": -350,
-            "impliedNSFI": 0.2941,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           }
         }
       }
@@ -1702,7 +1690,7 @@
       "gameTimeUTC": "2026-04-08T22:40:00Z",
       "gameTimeET": "6:40 PM ET",
       "lineupDropET": "3:10 PM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "Tampa Bay Rays",
       "awayTeam": "Chicago Cubs",
       "venue": "Tropicana Field",
@@ -1715,7 +1703,62 @@
           "id": 671212,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Nico Hoerner",
+            "id": 663538,
+            "batSide": "R",
+            "position": "2B"
+          },
+          {
+            "name": "Michael Busch",
+            "id": 683737,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Alex Bregman",
+            "id": 608324,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Pete Crow-Armstrong",
+            "id": 691718,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Carson Kelly",
+            "id": 608348,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Mois\u00e9s Ballesteros",
+            "id": 694208,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Dansby Swanson",
+            "id": 621020,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "Michael Conforto",
+            "id": 624424,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Matt Shaw",
+            "id": 807713,
+            "batSide": "R",
+            "position": "RF"
+          }
+        ],
         "gameId": "CHC/TB - Top 1"
       },
       "botInning": {
@@ -1787,7 +1830,11 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 185,
+            "yesOdds": -255,
+            "impliedNSFI": 0.3509,
+            "source": "draftkings_nash"
           },
           "bot": {
             "oddsPosted": false
@@ -1905,10 +1952,10 @@
             "position": "C"
           },
           {
-            "name": "Otto Lopez",
-            "id": 672640,
+            "name": "Connor Norby",
+            "id": 681393,
             "batSide": "R",
-            "position": "SS"
+            "position": "1B"
           },
           {
             "name": "Owen Caissie",
@@ -1917,16 +1964,16 @@
             "position": "RF"
           },
           {
-            "name": "Connor Norby",
-            "id": 681393,
-            "batSide": "R",
-            "position": "1B"
-          },
-          {
             "name": "Griffin Conine",
             "id": 665052,
             "batSide": "L",
             "position": "LF"
+          },
+          {
+            "name": "Leo Jim\u00e9nez",
+            "id": 677870,
+            "batSide": "R",
+            "position": "SS"
           },
           {
             "name": "Graham Pauley",
@@ -2102,9 +2149,9 @@
         "draftkings": {
           "top": {
             "oddsPosted": true,
-            "noOdds": 200,
+            "noOdds": 205,
             "yesOdds": -285,
-            "impliedNSFI": 0.3333,
+            "impliedNSFI": 0.3279,
             "source": "draftkings_nash"
           },
           "bot": {
@@ -2118,7 +2165,7 @@
       "gameTimeUTC": "2026-04-08T23:40:00Z",
       "gameTimeET": "7:40 PM ET",
       "lineupDropET": "4:10 PM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "Minnesota Twins",
       "awayTeam": "Detroit Tigers",
       "venue": "Target Field",
@@ -2131,7 +2178,62 @@
           "id": 641927,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Colt Keith",
+            "id": 690993,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Kevin McGonigle",
+            "id": 805808,
+            "batSide": "L",
+            "position": "3B"
+          },
+          {
+            "name": "Gleyber Torres",
+            "id": 650402,
+            "batSide": "R",
+            "position": "DH"
+          },
+          {
+            "name": "Kerry Carpenter",
+            "id": 681481,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Riley Greene",
+            "id": 682985,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Dillon Dingler",
+            "id": 693307,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Matt Vierling",
+            "id": 663837,
+            "batSide": "R",
+            "position": "CF"
+          },
+          {
+            "name": "Zach McKinstry",
+            "id": 656716,
+            "batSide": "L",
+            "position": "2B"
+          },
+          {
+            "name": "Javier B\u00e1ez",
+            "id": 595879,
+            "batSide": "R",
+            "position": "SS"
+          }
+        ],
         "gameId": "DET/MIN - Top 1"
       },
       "botInning": {
@@ -2204,9 +2306,9 @@
         "draftkings": {
           "top": {
             "oddsPosted": true,
-            "noOdds": 170,
-            "yesOdds": -240,
-            "impliedNSFI": 0.3704,
+            "noOdds": 165,
+            "yesOdds": -230,
+            "impliedNSFI": 0.3774,
             "source": "draftkings_nash"
           },
           "bot": {

@@ -1,0 +1,43 @@
+{
+  "date": "2026-04-09",
+  "generatedAt": "2026-04-09T16:46:50.008468",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "ATH/NYY - Top 1",
+      "half": "top",
+      "pitcher": "Ryan Weathers",
+      "batting_team": "Athletics",
+      "pitching_team": "New York Yankees",
+      "model_prob": 0.3306,
+      "implied_prob": 0.303,
+      "ev": 0.0276,
+      "ev_category": "marginal",
+      "dk_no_odds": 230
+    },
+    {
+      "game_id": "DET/MIN - Top 1",
+      "half": "top",
+      "pitcher": "Mick Abel",
+      "batting_team": "Detroit Tigers",
+      "pitching_team": "Minnesota Twins",
+      "model_prob": 0.2841,
+      "implied_prob": 0.3125,
+      "ev": -0.0284,
+      "ev_category": "negative",
+      "dk_no_odds": 220
+    },
+    {
+      "game_id": "DET/MIN - Bot 1",
+      "half": "bot",
+      "pitcher": "Jack Flaherty",
+      "batting_team": "Minnesota Twins",
+      "pitching_team": "Detroit Tigers",
+      "model_prob": 0.2585,
+      "implied_prob": 0.3125,
+      "ev": -0.054,
+      "ev_category": "negative",
+      "dk_no_odds": 220
+    }
+  ]
+}

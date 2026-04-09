@@ -1,43 +1,67 @@
 {
   "date": "2026-04-09",
-  "generatedAt": "2026-04-09T16:46:50.008468",
+  "generatedAt": "2026-04-09T19:45:57.472765",
   "simulations": 10000,
   "predictions": [
     {
-      "game_id": "ATH/NYY - Top 1",
-      "half": "top",
-      "pitcher": "Ryan Weathers",
-      "batting_team": "Athletics",
-      "pitching_team": "New York Yankees",
-      "model_prob": 0.3306,
-      "implied_prob": 0.303,
-      "ev": 0.0276,
-      "ev_category": "marginal",
-      "dk_no_odds": 230
-    },
-    {
-      "game_id": "DET/MIN - Top 1",
-      "half": "top",
-      "pitcher": "Mick Abel",
-      "batting_team": "Detroit Tigers",
-      "pitching_team": "Minnesota Twins",
-      "model_prob": 0.2841,
-      "implied_prob": 0.3125,
-      "ev": -0.0284,
-      "ev_category": "negative",
-      "dk_no_odds": 220
-    },
-    {
-      "game_id": "DET/MIN - Bot 1",
+      "game_id": "CIN/MIA - Bot 1",
       "half": "bot",
-      "pitcher": "Jack Flaherty",
-      "batting_team": "Minnesota Twins",
-      "pitching_team": "Detroit Tigers",
-      "model_prob": 0.2585,
-      "implied_prob": 0.3125,
-      "ev": -0.054,
+      "pitcher": "Rhett Lowder",
+      "batting_team": "Miami Marlins",
+      "pitching_team": "Cincinnati Reds",
+      "model_prob": 0.3638,
+      "implied_prob": 0.2174,
+      "ev": 0.1464,
+      "ev_category": "strong",
+      "dk_no_odds": 360
+    },
+    {
+      "game_id": "ARI/NYM - Top 1",
+      "half": "top",
+      "pitcher": "Nolan McLean",
+      "batting_team": "Arizona Diamondbacks",
+      "pitching_team": "New York Mets",
+      "model_prob": 0.2933,
+      "implied_prob": 0.3774,
+      "ev": -0.0841,
       "ev_category": "negative",
-      "dk_no_odds": 220
+      "dk_no_odds": 165
+    },
+    {
+      "game_id": "ARI/NYM - Bot 1",
+      "half": "bot",
+      "pitcher": "Eduardo Rodriguez",
+      "batting_team": "New York Mets",
+      "pitching_team": "Arizona Diamondbacks",
+      "model_prob": 0.3619,
+      "implied_prob": 0.4348,
+      "ev": -0.0729,
+      "ev_category": "negative",
+      "dk_no_odds": 130
+    },
+    {
+      "game_id": "CWS/KC - Top 1",
+      "half": "top",
+      "pitcher": "Seth Lugo",
+      "batting_team": "Chicago White Sox",
+      "pitching_team": "Kansas City Royals",
+      "model_prob": 0.3674,
+      "implied_prob": 0.4082,
+      "ev": -0.0408,
+      "ev_category": "negative",
+      "dk_no_odds": 145
+    },
+    {
+      "game_id": "CWS/KC - Bot 1",
+      "half": "bot",
+      "pitcher": "Anthony Kay",
+      "batting_team": "Kansas City Royals",
+      "pitching_team": "Chicago White Sox",
+      "model_prob": 0.3369,
+      "implied_prob": 0.5122,
+      "ev": -0.1753,
+      "ev_category": "negative",
+      "dk_no_odds": -105
     }
   ]
 }

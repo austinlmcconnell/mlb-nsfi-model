@@ -1,0 +1,103 @@
+{
+  "date": "2026-04-10",
+  "generatedAt": "2026-04-10T19:27:14.494880",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "ARI/PHI - Top 1",
+      "half": "top",
+      "pitcher": "Jes\u00fas Luzardo",
+      "batting_team": "Arizona Diamondbacks",
+      "pitching_team": "Philadelphia Phillies",
+      "model_prob": 0.3561,
+      "implied_prob": 0.3226,
+      "ev": 0.0335,
+      "ev_category": "marginal",
+      "dk_no_odds": 210
+    },
+    {
+      "game_id": "ARI/PHI - Bot 1",
+      "half": "bot",
+      "pitcher": "Michael Soroka",
+      "batting_team": "Philadelphia Phillies",
+      "pitching_team": "Arizona Diamondbacks",
+      "model_prob": 0.2957,
+      "implied_prob": 0.2857,
+      "ev": 0.01,
+      "ev_category": "marginal",
+      "dk_no_odds": 250
+    },
+    {
+      "game_id": "LAA/CIN - Top 1",
+      "half": "top",
+      "pitcher": "Chase Burns",
+      "batting_team": "Los Angeles Angels",
+      "pitching_team": "Cincinnati Reds",
+      "model_prob": 0.1921,
+      "implied_prob": 0.2128,
+      "ev": -0.0207,
+      "ev_category": "negative",
+      "dk_no_odds": 370
+    },
+    {
+      "game_id": "LAA/CIN - Bot 1",
+      "half": "bot",
+      "pitcher": "Jack Kochanowicz",
+      "batting_team": "Cincinnati Reds",
+      "pitching_team": "Los Angeles Angels",
+      "model_prob": 0.3569,
+      "implied_prob": 0.3509,
+      "ev": 0.006,
+      "ev_category": "marginal",
+      "dk_no_odds": 185
+    },
+    {
+      "game_id": "MIN/TOR - Top 1",
+      "half": "top",
+      "pitcher": "Patrick Corbin",
+      "batting_team": "Minnesota Twins",
+      "pitching_team": "Toronto Blue Jays",
+      "model_prob": 0.3716,
+      "implied_prob": 0.4167,
+      "ev": -0.0451,
+      "ev_category": "negative",
+      "dk_no_odds": 140
+    },
+    {
+      "game_id": "MIN/TOR - Bot 1",
+      "half": "bot",
+      "pitcher": "Simeon Woods Richardson",
+      "batting_team": "Toronto Blue Jays",
+      "pitching_team": "Minnesota Twins",
+      "model_prob": 0.3258,
+      "implied_prob": 0.4082,
+      "ev": -0.0824,
+      "ev_category": "negative",
+      "dk_no_odds": 145
+    },
+    {
+      "game_id": "SF/BAL - Top 1",
+      "half": "top",
+      "pitcher": "Shane Baz",
+      "batting_team": "San Francisco Giants",
+      "pitching_team": "Baltimore Orioles",
+      "model_prob": 0.3105,
+      "implied_prob": 0.3279,
+      "ev": -0.0174,
+      "ev_category": "negative",
+      "dk_no_odds": 205
+    },
+    {
+      "game_id": "SF/BAL - Bot 1",
+      "half": "bot",
+      "pitcher": "Landen Roupp",
+      "batting_team": "Baltimore Orioles",
+      "pitching_team": "San Francisco Giants",
+      "model_prob": 0.3258,
+      "implied_prob": 0.3333,
+      "ev": -0.0075,
+      "ev_category": "negative",
+      "dk_no_odds": 200
+    }
+  ]
+}

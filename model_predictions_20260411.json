@@ -1,0 +1,79 @@
+{
+  "date": "2026-04-11",
+  "generatedAt": "2026-04-11T15:54:05.225463",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "ARI/PHI - Top 1",
+      "half": "top",
+      "pitcher": "Taijuan Walker",
+      "batting_team": "Arizona Diamondbacks",
+      "pitching_team": "Philadelphia Phillies",
+      "model_prob": 0.391,
+      "implied_prob": 0.4878,
+      "ev": -0.0968,
+      "ev_category": "negative",
+      "dk_no_odds": 105
+    },
+    {
+      "game_id": "ARI/PHI - Bot 1",
+      "half": "bot",
+      "pitcher": "Brandon Pfaadt",
+      "batting_team": "Philadelphia Phillies",
+      "pitching_team": "Arizona Diamondbacks",
+      "model_prob": 0.3528,
+      "implied_prob": 0.3922,
+      "ev": -0.0394,
+      "ev_category": "negative",
+      "dk_no_odds": 155
+    },
+    {
+      "game_id": "MIA/DET - Top 1",
+      "half": "top",
+      "pitcher": "Casey Mize",
+      "batting_team": "Miami Marlins",
+      "pitching_team": "Detroit Tigers",
+      "model_prob": 0.3655,
+      "implied_prob": 0.3704,
+      "ev": -0.0049,
+      "ev_category": "negative",
+      "dk_no_odds": 170
+    },
+    {
+      "game_id": "MIA/DET - Bot 1",
+      "half": "bot",
+      "pitcher": "Janson Junk",
+      "batting_team": "Detroit Tigers",
+      "pitching_team": "Miami Marlins",
+      "model_prob": 0.382,
+      "implied_prob": 0.4167,
+      "ev": -0.0347,
+      "ev_category": "negative",
+      "dk_no_odds": 140
+    },
+    {
+      "game_id": "MIN/TOR - Top 1",
+      "half": "top",
+      "pitcher": "Eric Lauer",
+      "batting_team": "Minnesota Twins",
+      "pitching_team": "Toronto Blue Jays",
+      "model_prob": 0.3166,
+      "implied_prob": 0.3704,
+      "ev": -0.0538,
+      "ev_category": "negative",
+      "dk_no_odds": 170
+    },
+    {
+      "game_id": "MIN/TOR - Bot 1",
+      "half": "bot",
+      "pitcher": "Joe Ryan",
+      "batting_team": "Toronto Blue Jays",
+      "pitching_team": "Minnesota Twins",
+      "model_prob": 0.2822,
+      "implied_prob": 0.3279,
+      "ev": -0.0457,
+      "ev_category": "negative",
+      "dk_no_odds": 205
+    }
+  ]
+}

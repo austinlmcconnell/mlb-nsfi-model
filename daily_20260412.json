@@ -1,6 +1,6 @@
 {
   "date": "2026-04-12",
-  "fetchedAt": "2026-04-12T19:13:09.535949+00:00",
+  "fetchedAt": "2026-04-12T22:00:28.249299+00:00",
   "games": [
     {
       "gamePk": 824859,
@@ -300,7 +300,11 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 200,
+            "yesOdds": -285,
+            "impliedNSFI": 0.3333,
+            "source": "draftkings_nash"
           },
           "bot": {
             "oddsPosted": false
@@ -456,7 +460,11 @@
             "oddsPosted": false
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 160,
+            "yesOdds": -220,
+            "impliedNSFI": 0.3846,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -609,7 +617,11 @@
             "oddsPosted": false
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 185,
+            "yesOdds": -260,
+            "impliedNSFI": 0.3509,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -1068,7 +1080,11 @@
             "oddsPosted": false
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 190,
+            "yesOdds": -270,
+            "impliedNSFI": 0.3448,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -1218,18 +1234,10 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": true,
-            "noOdds": 155,
-            "yesOdds": -215,
-            "impliedNSFI": 0.3922,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           },
           "bot": {
-            "oddsPosted": true,
-            "noOdds": 195,
-            "yesOdds": -275,
-            "impliedNSFI": 0.339,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           }
         }
       }
@@ -1535,7 +1543,11 @@
             "oddsPosted": false
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 295,
+            "yesOdds": -450,
+            "impliedNSFI": 0.2532,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -1685,7 +1697,11 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 150,
+            "yesOdds": -205,
+            "impliedNSFI": 0.4,
+            "source": "draftkings_nash"
           },
           "bot": {
             "oddsPosted": false
@@ -1838,18 +1854,10 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": true,
-            "noOdds": 280,
-            "yesOdds": -425,
-            "impliedNSFI": 0.2632,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           },
           "bot": {
-            "oddsPosted": true,
-            "noOdds": 135,
-            "yesOdds": -185,
-            "impliedNSFI": 0.4255,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           }
         }
       }
@@ -1999,18 +2007,10 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": true,
-            "noOdds": 195,
-            "yesOdds": -280,
-            "impliedNSFI": 0.339,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           },
           "bot": {
-            "oddsPosted": true,
-            "noOdds": 230,
-            "yesOdds": -330,
-            "impliedNSFI": 0.303,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           }
         }
       }
@@ -2160,18 +2160,10 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": true,
-            "noOdds": 190,
-            "yesOdds": -270,
-            "impliedNSFI": 0.3448,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           },
           "bot": {
-            "oddsPosted": true,
-            "noOdds": 320,
-            "yesOdds": -500,
-            "impliedNSFI": 0.2381,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           }
         }
       }
@@ -2181,7 +2173,7 @@
       "gameTimeUTC": "2026-04-12T23:20:00Z",
       "gameTimeET": "7:20 PM ET",
       "lineupDropET": "3:50 PM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "Atlanta Braves",
       "awayTeam": "Cleveland Guardians",
       "venue": "Truist Park",
@@ -2194,7 +2186,62 @@
           "id": 519242,
           "pitchHand": "L"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Angel Mart\u00ednez",
+            "id": 682657,
+            "batSide": "S",
+            "position": "LF"
+          },
+          {
+            "name": "Chase DeLauter",
+            "id": 800050,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Jos\u00e9 Ram\u00edrez",
+            "id": 608070,
+            "batSide": "S",
+            "position": "3B"
+          },
+          {
+            "name": "David Fry",
+            "id": 681807,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Rhys Hoskins",
+            "id": 656555,
+            "batSide": "R",
+            "position": "1B"
+          },
+          {
+            "name": "Kyle Manzardo",
+            "id": 700932,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Juan Brito",
+            "id": 682877,
+            "batSide": "S",
+            "position": "2B"
+          },
+          {
+            "name": "Daniel Schneemann",
+            "id": 682177,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Brayan Rocchio",
+            "id": 677587,
+            "batSide": "S",
+            "position": "SS"
+          }
+        ],
         "gameId": "CLE/ATL - Top 1"
       },
       "botInning": {
@@ -2205,16 +2252,71 @@
           "id": 676440,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Ronald Acu\u00f1a Jr.",
+            "id": 660670,
+            "batSide": "R",
+            "position": "RF"
+          },
+          {
+            "name": "Drake Baldwin",
+            "id": 686948,
+            "batSide": "L",
+            "position": "C"
+          },
+          {
+            "name": "Matt Olson",
+            "id": 621566,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Austin Riley",
+            "id": 663586,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Mike Yastrzemski",
+            "id": 573262,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Ozzie Albies",
+            "id": 645277,
+            "batSide": "S",
+            "position": "2B"
+          },
+          {
+            "name": "Dominic Smith",
+            "id": 642086,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Mauricio Dub\u00f3n",
+            "id": 643289,
+            "batSide": "R",
+            "position": "CF"
+          },
+          {
+            "name": "Jorge Mateo",
+            "id": 622761,
+            "batSide": "R",
+            "position": "SS"
+          }
+        ],
         "gameId": "CLE/ATL - Bot 1"
       },
       "odds": {
         "draftkings": {
           "top": {
             "oddsPosted": true,
-            "noOdds": 240,
-            "yesOdds": -350,
-            "impliedNSFI": 0.2941,
+            "noOdds": 295,
+            "yesOdds": -450,
+            "impliedNSFI": 0.2532,
             "source": "draftkings_nash"
           },
           "bot": {

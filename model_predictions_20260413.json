@@ -1,0 +1,79 @@
+{
+  "date": "2026-04-13",
+  "generatedAt": "2026-04-13T19:47:21.872212",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "HOU/SEA - Top 1",
+      "half": "top",
+      "pitcher": "George Kirby",
+      "batting_team": "Houston Astros",
+      "pitching_team": "Seattle Mariners",
+      "model_prob": 0.3074,
+      "implied_prob": 0.3774,
+      "ev": -0.07,
+      "ev_category": "negative",
+      "dk_no_odds": 165
+    },
+    {
+      "game_id": "HOU/SEA - Bot 1",
+      "half": "bot",
+      "pitcher": "Mike Burrows",
+      "batting_team": "Seattle Mariners",
+      "pitching_team": "Houston Astros",
+      "model_prob": 0.3102,
+      "implied_prob": 0.3279,
+      "ev": -0.0177,
+      "ev_category": "negative",
+      "dk_no_odds": 205
+    },
+    {
+      "game_id": "ARI/BAL - Top 1",
+      "half": "top",
+      "pitcher": "Dean Kremer",
+      "batting_team": "Arizona Diamondbacks",
+      "pitching_team": "Baltimore Orioles",
+      "model_prob": 0.3761,
+      "implied_prob": 0.4082,
+      "ev": -0.0321,
+      "ev_category": "negative",
+      "dk_no_odds": 145
+    },
+    {
+      "game_id": "ARI/BAL - Bot 1",
+      "half": "bot",
+      "pitcher": "Ryne Nelson",
+      "batting_team": "Baltimore Orioles",
+      "pitching_team": "Arizona Diamondbacks",
+      "model_prob": 0.3251,
+      "implied_prob": 0.3571,
+      "ev": -0.032,
+      "ev_category": "negative",
+      "dk_no_odds": 180
+    },
+    {
+      "game_id": "LAA/NYY - Top 1",
+      "half": "top",
+      "pitcher": "Will Warren",
+      "batting_team": "Los Angeles Angels",
+      "pitching_team": "New York Yankees",
+      "model_prob": 0.2685,
+      "implied_prob": 0.3448,
+      "ev": -0.0763,
+      "ev_category": "negative",
+      "dk_no_odds": 190
+    },
+    {
+      "game_id": "LAA/NYY - Bot 1",
+      "half": "bot",
+      "pitcher": "Yusei Kikuchi",
+      "batting_team": "New York Yankees",
+      "pitching_team": "Los Angeles Angels",
+      "model_prob": 0.3163,
+      "implied_prob": 0.3509,
+      "ev": -0.0346,
+      "ev_category": "negative",
+      "dk_no_odds": 185
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "date": "2026-04-14",
-  "fetchedAt": "2026-04-14T03:49:37.327609+00:00",
+  "fetchedAt": "2026-04-14T06:53:44.843368+00:00",
   "games": [
     {
       "gamePk": 824853,
@@ -390,10 +390,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 210,
+            "yesOdds": -300,
+            "impliedNSFI": 0.3226,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 170,
+            "yesOdds": -235,
+            "impliedNSFI": 0.3704,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -683,7 +691,11 @@
             "oddsPosted": false
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 310,
+            "yesOdds": -475,
+            "impliedNSFI": 0.2439,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -723,10 +735,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 220,
+            "yesOdds": -310,
+            "impliedNSFI": 0.3125,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 310,
+            "yesOdds": -475,
+            "impliedNSFI": 0.2439,
+            "source": "draftkings_nash"
           }
         }
       }

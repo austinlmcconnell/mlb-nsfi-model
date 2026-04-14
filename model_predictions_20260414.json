@@ -1,0 +1,103 @@
+{
+  "date": "2026-04-14",
+  "generatedAt": "2026-04-14T19:48:54.485123",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "KC/DET - Top 1",
+      "half": "top",
+      "pitcher": "Framber Valdez",
+      "batting_team": "Kansas City Royals",
+      "pitching_team": "Detroit Tigers",
+      "model_prob": 0.3244,
+      "implied_prob": 0.4255,
+      "ev": -0.1011,
+      "ev_category": "negative",
+      "dk_no_odds": 135
+    },
+    {
+      "game_id": "KC/DET - Bot 1",
+      "half": "bot",
+      "pitcher": "Cole Ragans",
+      "batting_team": "Detroit Tigers",
+      "pitching_team": "Kansas City Royals",
+      "model_prob": 0.1793,
+      "implied_prob": 0.2326,
+      "ev": -0.0533,
+      "ev_category": "negative",
+      "dk_no_odds": 330
+    },
+    {
+      "game_id": "SF/CIN - Top 1",
+      "half": "top",
+      "pitcher": "Brady Singer",
+      "batting_team": "San Francisco Giants",
+      "pitching_team": "Cincinnati Reds",
+      "model_prob": 0.3423,
+      "implied_prob": 0.3636,
+      "ev": -0.0213,
+      "ev_category": "negative",
+      "dk_no_odds": 175
+    },
+    {
+      "game_id": "SF/CIN - Bot 1",
+      "half": "bot",
+      "pitcher": "Robbie Ray",
+      "batting_team": "Cincinnati Reds",
+      "pitching_team": "San Francisco Giants",
+      "model_prob": 0.261,
+      "implied_prob": 0.2667,
+      "ev": -0.0057,
+      "ev_category": "negative",
+      "dk_no_odds": 275
+    },
+    {
+      "game_id": "LAA/NYY - Top 1",
+      "half": "top",
+      "pitcher": "Ryan Weathers",
+      "batting_team": "Los Angeles Angels",
+      "pitching_team": "New York Yankees",
+      "model_prob": 0.2581,
+      "implied_prob": 0.2778,
+      "ev": -0.0197,
+      "ev_category": "negative",
+      "dk_no_odds": 260
+    },
+    {
+      "game_id": "LAA/NYY - Bot 1",
+      "half": "bot",
+      "pitcher": "Reid Detmers",
+      "batting_team": "New York Yankees",
+      "pitching_team": "Los Angeles Angels",
+      "model_prob": 0.2368,
+      "implied_prob": 0.2597,
+      "ev": -0.0229,
+      "ev_category": "negative",
+      "dk_no_odds": 285
+    },
+    {
+      "game_id": "TB/CWS - Top 1",
+      "half": "top",
+      "pitcher": "Noah Schultz",
+      "batting_team": "Tampa Bay Rays",
+      "pitching_team": "Chicago White Sox",
+      "model_prob": 0.3373,
+      "implied_prob": 0.4,
+      "ev": -0.0627,
+      "ev_category": "negative",
+      "dk_no_odds": 150
+    },
+    {
+      "game_id": "TB/CWS - Bot 1",
+      "half": "bot",
+      "pitcher": "Shane McClanahan",
+      "batting_team": "Chicago White Sox",
+      "pitching_team": "Tampa Bay Rays",
+      "model_prob": 0.3087,
+      "implied_prob": 0.303,
+      "ev": 0.0057,
+      "ev_category": "marginal",
+      "dk_no_odds": 230
+    }
+  ]
+}

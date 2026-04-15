@@ -1,0 +1,55 @@
+{
+  "date": "2026-04-15",
+  "generatedAt": "2026-04-15T16:35:46.401392",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "CLE/STL - Top 1",
+      "half": "top",
+      "pitcher": "Dustin May",
+      "batting_team": "Cleveland Guardians",
+      "pitching_team": "St. Louis Cardinals",
+      "model_prob": 0.3226,
+      "implied_prob": 0.4545,
+      "ev": -0.1319,
+      "ev_category": "negative",
+      "dk_no_odds": 120
+    },
+    {
+      "game_id": "CLE/STL - Bot 1",
+      "half": "bot",
+      "pitcher": "Slade Cecconi",
+      "batting_team": "St. Louis Cardinals",
+      "pitching_team": "Cleveland Guardians",
+      "model_prob": 0.3409,
+      "implied_prob": 0.4651,
+      "ev": -0.1242,
+      "ev_category": "negative",
+      "dk_no_odds": 115
+    },
+    {
+      "game_id": "BOS/MIN - Top 1",
+      "half": "top",
+      "pitcher": "Simeon Woods Richardson",
+      "batting_team": "Boston Red Sox",
+      "pitching_team": "Minnesota Twins",
+      "model_prob": 0.3308,
+      "implied_prob": 0.3774,
+      "ev": -0.0466,
+      "ev_category": "negative",
+      "dk_no_odds": 165
+    },
+    {
+      "game_id": "BOS/MIN - Bot 1",
+      "half": "bot",
+      "pitcher": "Connelly Early",
+      "batting_team": "Minnesota Twins",
+      "pitching_team": "Boston Red Sox",
+      "model_prob": 0.281,
+      "implied_prob": 0.3077,
+      "ev": -0.0267,
+      "ev_category": "negative",
+      "dk_no_odds": 225
+    }
+  ]
+}

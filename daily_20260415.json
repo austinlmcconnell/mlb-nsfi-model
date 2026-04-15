@@ -1,6 +1,6 @@
 {
   "date": "2026-04-15",
-  "fetchedAt": "2026-04-15T03:48:31.127309+00:00",
+  "fetchedAt": "2026-04-15T06:55:13.748669+00:00",
   "games": [
     {
       "gamePk": 824855,
@@ -190,10 +190,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 155,
+            "yesOdds": -210,
+            "impliedNSFI": 0.3922,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 135,
+            "yesOdds": -185,
+            "impliedNSFI": 0.4255,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -382,10 +390,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 190,
+            "yesOdds": -265,
+            "impliedNSFI": 0.3448,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 125,
+            "yesOdds": -170,
+            "impliedNSFI": 0.4444,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -527,10 +543,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 165,
+            "yesOdds": -230,
+            "impliedNSFI": 0.3774,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 380,
+            "yesOdds": -650,
+            "impliedNSFI": 0.2083,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -549,8 +573,8 @@
         "teamBatting": "Colorado Rockies",
         "teamPitching": "Houston Astros",
         "pitcher": {
-          "name": "TBD",
-          "id": null,
+          "name": "Spencer Arrighetti",
+          "id": 681293,
           "pitchHand": "R"
         },
         "lineup": [],
@@ -560,9 +584,9 @@
         "teamBatting": "Houston Astros",
         "teamPitching": "Colorado Rockies",
         "pitcher": {
-          "name": "TBD",
-          "id": null,
-          "pitchHand": "R"
+          "name": "Jose Quintana",
+          "id": 500779,
+          "pitchHand": "L"
         },
         "lineup": [],
         "gameId": "COL/HOU - Bot 1"
@@ -570,10 +594,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 250,
+            "yesOdds": -360,
+            "impliedNSFI": 0.2857,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": -105,
+            "yesOdds": -125,
+            "impliedNSFI": 0.5122,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -613,10 +645,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 170,
+            "yesOdds": -235,
+            "impliedNSFI": 0.3704,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 180,
+            "yesOdds": -250,
+            "impliedNSFI": 0.3571,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -659,7 +699,11 @@
             "oddsPosted": false
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 245,
+            "yesOdds": -360,
+            "impliedNSFI": 0.2899,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -699,10 +743,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 270,
+            "yesOdds": -400,
+            "impliedNSFI": 0.2703,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 165,
+            "yesOdds": -230,
+            "impliedNSFI": 0.3774,
+            "source": "draftkings_nash"
           }
         }
       }

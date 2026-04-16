@@ -1,6 +1,6 @@
 {
   "date": "2026-04-16",
-  "fetchedAt": "2026-04-16T03:54:07.694936+00:00",
+  "fetchedAt": "2026-04-16T06:57:43.116095+00:00",
   "games": [
     {
       "gamePk": 823396,
@@ -37,7 +37,11 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 265,
+            "yesOdds": -400,
+            "impliedNSFI": 0.274,
+            "source": "draftkings_nash"
           },
           "bot": {
             "oddsPosted": false
@@ -131,10 +135,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 115,
+            "yesOdds": -160,
+            "impliedNSFI": 0.4651,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 230,
+            "yesOdds": -330,
+            "impliedNSFI": 0.303,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -174,10 +186,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 215,
+            "yesOdds": -310,
+            "impliedNSFI": 0.3175,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 215,
+            "yesOdds": -310,
+            "impliedNSFI": 0.3175,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -217,10 +237,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 145,
+            "yesOdds": -200,
+            "impliedNSFI": 0.4082,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 185,
+            "yesOdds": -255,
+            "impliedNSFI": 0.3509,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -239,9 +267,9 @@
         "teamBatting": "Tampa Bay Rays",
         "teamPitching": "Chicago White Sox",
         "pitcher": {
-          "name": "Anthony Kay",
-          "id": 641743,
-          "pitchHand": "L"
+          "name": "Jordan Leasure",
+          "id": 673929,
+          "pitchHand": "R"
         },
         "lineup": [],
         "gameId": "TB/CWS - Top 1"
@@ -260,10 +288,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 185,
+            "yesOdds": -255,
+            "impliedNSFI": 0.3509,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 180,
+            "yesOdds": -250,
+            "impliedNSFI": 0.3571,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -306,7 +342,11 @@
             "oddsPosted": false
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 380,
+            "yesOdds": -650,
+            "impliedNSFI": 0.2083,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -387,8 +427,8 @@
         "teamBatting": "Houston Astros",
         "teamPitching": "Colorado Rockies",
         "pitcher": {
-          "name": "TBD",
-          "id": null,
+          "name": "Juan Mejia",
+          "id": 675848,
           "pitchHand": "R"
         },
         "lineup": [],
@@ -397,10 +437,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 255,
+            "yesOdds": -380,
+            "impliedNSFI": 0.2817,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 100,
+            "yesOdds": -135,
+            "impliedNSFI": 0.5,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -440,10 +488,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 145,
+            "yesOdds": -195,
+            "impliedNSFI": 0.4082,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 220,
+            "yesOdds": -310,
+            "impliedNSFI": 0.3125,
+            "source": "draftkings_nash"
           }
         }
       }

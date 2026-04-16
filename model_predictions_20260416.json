@@ -1,0 +1,115 @@
+{
+  "date": "2026-04-16",
+  "generatedAt": "2026-04-16T16:53:58.842041",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "KC/DET - Top 1",
+      "half": "top",
+      "pitcher": "Keider Montero",
+      "batting_team": "Kansas City Royals",
+      "pitching_team": "Detroit Tigers",
+      "model_prob": 0.3977,
+      "implied_prob": 0.4651,
+      "ev": -0.0674,
+      "ev_category": "negative",
+      "dk_no_odds": 115
+    },
+    {
+      "game_id": "KC/DET - Bot 1",
+      "half": "bot",
+      "pitcher": "Kris Bubic",
+      "batting_team": "Detroit Tigers",
+      "pitching_team": "Kansas City Royals",
+      "model_prob": 0.3088,
+      "implied_prob": 0.3448,
+      "ev": -0.036,
+      "ev_category": "negative",
+      "dk_no_odds": 190
+    },
+    {
+      "game_id": "LAA/NYY - Top 1",
+      "half": "top",
+      "pitcher": "Max Fried",
+      "batting_team": "Los Angeles Angels",
+      "pitching_team": "New York Yankees",
+      "model_prob": 0.2614,
+      "implied_prob": 0.3175,
+      "ev": -0.0561,
+      "ev_category": "negative",
+      "dk_no_odds": 215
+    },
+    {
+      "game_id": "LAA/NYY - Bot 1",
+      "half": "bot",
+      "pitcher": "Brent Suter",
+      "batting_team": "New York Yankees",
+      "pitching_team": "Los Angeles Angels",
+      "model_prob": 0.3474,
+      "implied_prob": 0.3922,
+      "ev": -0.0448,
+      "ev_category": "negative",
+      "dk_no_odds": 155
+    },
+    {
+      "game_id": "TOR/MIL - Top 1",
+      "half": "top",
+      "pitcher": "Brandon Sproat",
+      "batting_team": "Toronto Blue Jays",
+      "pitching_team": "Milwaukee Brewers",
+      "model_prob": 0.345,
+      "implied_prob": 0.3704,
+      "ev": -0.0254,
+      "ev_category": "negative",
+      "dk_no_odds": 170
+    },
+    {
+      "game_id": "TOR/MIL - Bot 1",
+      "half": "bot",
+      "pitcher": "Patrick Corbin",
+      "batting_team": "Milwaukee Brewers",
+      "pitching_team": "Toronto Blue Jays",
+      "model_prob": 0.3247,
+      "implied_prob": 0.3774,
+      "ev": -0.0527,
+      "ev_category": "negative",
+      "dk_no_odds": 165
+    },
+    {
+      "game_id": "TB/CWS - Top 1",
+      "half": "top",
+      "pitcher": "Jordan Leasure",
+      "batting_team": "Tampa Bay Rays",
+      "pitching_team": "Chicago White Sox",
+      "model_prob": 0.2765,
+      "implied_prob": 0.2985,
+      "ev": -0.022,
+      "ev_category": "negative",
+      "dk_no_odds": 235
+    },
+    {
+      "game_id": "TB/CWS - Bot 1",
+      "half": "bot",
+      "pitcher": "Steven Matz",
+      "batting_team": "Chicago White Sox",
+      "pitching_team": "Tampa Bay Rays",
+      "model_prob": 0.3413,
+      "implied_prob": 0.3636,
+      "ev": -0.0223,
+      "ev_category": "negative",
+      "dk_no_odds": 175
+    },
+    {
+      "game_id": "TEX/ATH - Bot 1",
+      "half": "bot",
+      "pitcher": "Jack Leiter",
+      "batting_team": "Athletics",
+      "pitching_team": "Texas Rangers",
+      "model_prob": 0.3259,
+      "implied_prob": 0.2439,
+      "ev": 0.082,
+      "ev_category": "strong",
+      "dk_no_odds": 310
+    }
+  ]
+}

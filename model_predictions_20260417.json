@@ -1,0 +1,31 @@
+{
+  "date": "2026-04-17",
+  "generatedAt": "2026-04-17T16:33:39.904397",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "NYM/CHC - Top 1",
+      "half": "top",
+      "pitcher": "Edward Cabrera",
+      "batting_team": "New York Mets",
+      "pitching_team": "Chicago Cubs",
+      "model_prob": 0.3153,
+      "implied_prob": 0.339,
+      "ev": -0.0237,
+      "ev_category": "negative",
+      "dk_no_odds": 195
+    },
+    {
+      "game_id": "NYM/CHC - Bot 1",
+      "half": "bot",
+      "pitcher": "Kodai Senga",
+      "batting_team": "Chicago Cubs",
+      "pitching_team": "New York Mets",
+      "model_prob": 0.3613,
+      "implied_prob": 0.3922,
+      "ev": -0.0309,
+      "ev_category": "negative",
+      "dk_no_odds": 155
+    }
+  ]
+}

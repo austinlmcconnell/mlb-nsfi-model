@@ -1,31 +1,79 @@
 {
   "date": "2026-04-17",
-  "generatedAt": "2026-04-17T16:33:39.904397",
+  "generatedAt": "2026-04-17T19:37:15.413885",
   "simulations": 10000,
   "predictions": [
     {
-      "game_id": "NYM/CHC - Top 1",
+      "game_id": "BAL/CLE - Top 1",
       "half": "top",
-      "pitcher": "Edward Cabrera",
-      "batting_team": "New York Mets",
-      "pitching_team": "Chicago Cubs",
-      "model_prob": 0.3153,
-      "implied_prob": 0.339,
-      "ev": -0.0237,
+      "pitcher": "Tanner Bibee",
+      "batting_team": "Baltimore Orioles",
+      "pitching_team": "Cleveland Guardians",
+      "model_prob": 0.3056,
+      "implied_prob": 0.3226,
+      "ev": -0.017,
       "ev_category": "negative",
-      "dk_no_odds": 195
+      "dk_no_odds": 210
     },
     {
-      "game_id": "NYM/CHC - Bot 1",
+      "game_id": "BAL/CLE - Bot 1",
       "half": "bot",
-      "pitcher": "Kodai Senga",
-      "batting_team": "Chicago Cubs",
-      "pitching_team": "New York Mets",
-      "model_prob": 0.3613,
-      "implied_prob": 0.3922,
-      "ev": -0.0309,
+      "pitcher": "Chris Bassitt",
+      "batting_team": "Cleveland Guardians",
+      "pitching_team": "Baltimore Orioles",
+      "model_prob": 0.3635,
+      "implied_prob": 0.4878,
+      "ev": -0.1243,
       "ev_category": "negative",
-      "dk_no_odds": 155
+      "dk_no_odds": 105
+    },
+    {
+      "game_id": "ATL/PHI - Top 1",
+      "half": "top",
+      "pitcher": "Taijuan Walker",
+      "batting_team": "Atlanta Braves",
+      "pitching_team": "Philadelphia Phillies",
+      "model_prob": 0.3757,
+      "implied_prob": 0.4444,
+      "ev": -0.0687,
+      "ev_category": "negative",
+      "dk_no_odds": 125
+    },
+    {
+      "game_id": "ATL/PHI - Bot 1",
+      "half": "bot",
+      "pitcher": "Mart\u00edn P\u00e9rez",
+      "batting_team": "Philadelphia Phillies",
+      "pitching_team": "Atlanta Braves",
+      "model_prob": 0.3274,
+      "implied_prob": 0.4167,
+      "ev": -0.0893,
+      "ev_category": "negative",
+      "dk_no_odds": 140
+    },
+    {
+      "game_id": "TB/PIT - Top 1",
+      "half": "top",
+      "pitcher": "Bubba Chandler",
+      "batting_team": "Tampa Bay Rays",
+      "pitching_team": "Pittsburgh Pirates",
+      "model_prob": 0.3363,
+      "implied_prob": 0.3509,
+      "ev": -0.0146,
+      "ev_category": "negative",
+      "dk_no_odds": 185
+    },
+    {
+      "game_id": "TB/PIT - Bot 1",
+      "half": "bot",
+      "pitcher": "Nick Martinez",
+      "batting_team": "Pittsburgh Pirates",
+      "pitching_team": "Tampa Bay Rays",
+      "model_prob": 0.2999,
+      "implied_prob": 0.3704,
+      "ev": -0.0705,
+      "ev_category": "negative",
+      "dk_no_odds": 170
     }
   ]
 }

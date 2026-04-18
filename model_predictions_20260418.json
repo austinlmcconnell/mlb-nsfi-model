@@ -1,0 +1,79 @@
+{
+  "date": "2026-04-18",
+  "generatedAt": "2026-04-18T15:59:22.904812",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "KC/NYY - Top 1",
+      "half": "top",
+      "pitcher": "Will Warren",
+      "batting_team": "Kansas City Royals",
+      "pitching_team": "New York Yankees",
+      "model_prob": 0.3548,
+      "implied_prob": 0.4255,
+      "ev": -0.0707,
+      "ev_category": "negative",
+      "dk_no_odds": 135
+    },
+    {
+      "game_id": "KC/NYY - Bot 1",
+      "half": "bot",
+      "pitcher": "Noah Cameron",
+      "batting_team": "New York Yankees",
+      "pitching_team": "Kansas City Royals",
+      "model_prob": 0.3584,
+      "implied_prob": 0.4082,
+      "ev": -0.0498,
+      "ev_category": "negative",
+      "dk_no_odds": 145
+    },
+    {
+      "game_id": "CIN/MIN - Top 1",
+      "half": "top",
+      "pitcher": "Taj Bradley",
+      "batting_team": "Cincinnati Reds",
+      "pitching_team": "Minnesota Twins",
+      "model_prob": 0.2986,
+      "implied_prob": 0.2439,
+      "ev": 0.0547,
+      "ev_category": "strong",
+      "dk_no_odds": 310
+    },
+    {
+      "game_id": "CIN/MIN - Bot 1",
+      "half": "bot",
+      "pitcher": "Andrew Abbott",
+      "batting_team": "Minnesota Twins",
+      "pitching_team": "Cincinnati Reds",
+      "model_prob": 0.371,
+      "implied_prob": 0.4348,
+      "ev": -0.0638,
+      "ev_category": "negative",
+      "dk_no_odds": 130
+    },
+    {
+      "game_id": "NYM/CHC - Top 1",
+      "half": "top",
+      "pitcher": "Jameson Taillon",
+      "batting_team": "New York Mets",
+      "pitching_team": "Chicago Cubs",
+      "model_prob": 0.3893,
+      "implied_prob": 0.4082,
+      "ev": -0.0189,
+      "ev_category": "negative",
+      "dk_no_odds": 145
+    },
+    {
+      "game_id": "NYM/CHC - Bot 1",
+      "half": "bot",
+      "pitcher": "Freddy Peralta",
+      "batting_team": "Chicago Cubs",
+      "pitching_team": "New York Mets",
+      "model_prob": 0.3171,
+      "implied_prob": 0.3175,
+      "ev": -0.0004,
+      "ev_category": "negative",
+      "dk_no_odds": 215
+    }
+  ]
+}

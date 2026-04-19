@@ -1,6 +1,6 @@
 {
   "date": "2026-04-19",
-  "fetchedAt": "2026-04-19T03:55:53.607192+00:00",
+  "fetchedAt": "2026-04-19T06:29:13.799907+00:00",
   "games": [
     {
       "gamePk": 822750,
@@ -539,10 +539,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 310,
+            "yesOdds": -475,
+            "impliedNSFI": 0.2439,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 225,
+            "yesOdds": -330,
+            "impliedNSFI": 0.3077,
+            "source": "draftkings_nash"
           }
         }
       }

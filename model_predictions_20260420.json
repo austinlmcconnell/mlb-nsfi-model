@@ -1,0 +1,91 @@
+{
+  "date": "2026-04-20",
+  "generatedAt": "2026-04-20T19:39:48.027606",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "HOU/CLE - Top 1",
+      "half": "top",
+      "pitcher": "Slade Cecconi",
+      "batting_team": "Houston Astros",
+      "pitching_team": "Cleveland Guardians",
+      "model_prob": 0.3692,
+      "implied_prob": 0.4545,
+      "ev": -0.0853,
+      "ev_category": "negative",
+      "dk_no_odds": 120
+    },
+    {
+      "game_id": "HOU/CLE - Bot 1",
+      "half": "bot",
+      "pitcher": "Spencer Arrighetti",
+      "batting_team": "Cleveland Guardians",
+      "pitching_team": "Houston Astros",
+      "model_prob": 0.3702,
+      "implied_prob": 0.4082,
+      "ev": -0.038,
+      "ev_category": "negative",
+      "dk_no_odds": 145
+    },
+    {
+      "game_id": "CIN/TB - Top 1",
+      "half": "top",
+      "pitcher": "Jesse Scholtens",
+      "batting_team": "Cincinnati Reds",
+      "pitching_team": "Tampa Bay Rays",
+      "model_prob": 0.2114,
+      "implied_prob": 0.3279,
+      "ev": -0.1165,
+      "ev_category": "negative",
+      "dk_no_odds": 205
+    },
+    {
+      "game_id": "CIN/TB - Bot 1",
+      "half": "bot",
+      "pitcher": "Rhett Lowder",
+      "batting_team": "Tampa Bay Rays",
+      "pitching_team": "Cincinnati Reds",
+      "model_prob": 0.344,
+      "implied_prob": 0.4762,
+      "ev": -0.1322,
+      "ev_category": "negative",
+      "dk_no_odds": 110
+    },
+    {
+      "game_id": "STL/MIA - Top 1",
+      "half": "top",
+      "pitcher": "Max Meyer",
+      "batting_team": "St. Louis Cardinals",
+      "pitching_team": "Miami Marlins",
+      "model_prob": 0.2917,
+      "implied_prob": 0.4082,
+      "ev": -0.1165,
+      "ev_category": "negative",
+      "dk_no_odds": 145
+    },
+    {
+      "game_id": "STL/MIA - Bot 1",
+      "half": "bot",
+      "pitcher": "Michael McGreevy",
+      "batting_team": "Miami Marlins",
+      "pitching_team": "St. Louis Cardinals",
+      "model_prob": 0.4263,
+      "implied_prob": 0.5122,
+      "ev": -0.0859,
+      "ev_category": "negative",
+      "dk_no_odds": -105
+    },
+    {
+      "game_id": "ATL/WSH - Bot 1",
+      "half": "bot",
+      "pitcher": "Bryce Elder",
+      "batting_team": "Washington Nationals",
+      "pitching_team": "Atlanta Braves",
+      "model_prob": 0.3392,
+      "implied_prob": 0.3448,
+      "ev": -0.0056,
+      "ev_category": "negative",
+      "dk_no_odds": 190
+    }
+  ]
+}

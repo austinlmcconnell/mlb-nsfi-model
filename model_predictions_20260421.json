@@ -1,0 +1,115 @@
+{
+  "date": "2026-04-21",
+  "generatedAt": "2026-04-21T19:44:48.808574",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "HOU/CLE - Top 1",
+      "half": "top",
+      "pitcher": "Parker Messick",
+      "batting_team": "Houston Astros",
+      "pitching_team": "Cleveland Guardians",
+      "model_prob": 0.3152,
+      "implied_prob": 0.4082,
+      "ev": -0.093,
+      "ev_category": "negative",
+      "dk_no_odds": 145
+    },
+    {
+      "game_id": "HOU/CLE - Bot 1",
+      "half": "bot",
+      "pitcher": "Ryan Weiss",
+      "batting_team": "Cleveland Guardians",
+      "pitching_team": "Houston Astros",
+      "model_prob": 0.3652,
+      "implied_prob": 0.4255,
+      "ev": -0.0603,
+      "ev_category": "negative",
+      "dk_no_odds": 135
+    },
+    {
+      "game_id": "CIN/TB - Top 1",
+      "half": "top",
+      "pitcher": "Steven Matz",
+      "batting_team": "Cincinnati Reds",
+      "pitching_team": "Tampa Bay Rays",
+      "model_prob": 0.3211,
+      "implied_prob": 0.3175,
+      "ev": 0.0036,
+      "ev_category": "marginal",
+      "dk_no_odds": 215
+    },
+    {
+      "game_id": "CIN/TB - Bot 1",
+      "half": "bot",
+      "pitcher": "Chase Burns",
+      "batting_team": "Tampa Bay Rays",
+      "pitching_team": "Cincinnati Reds",
+      "model_prob": 0.2124,
+      "implied_prob": 0.2941,
+      "ev": -0.0817,
+      "ev_category": "negative",
+      "dk_no_odds": 240
+    },
+    {
+      "game_id": "STL/MIA - Top 1",
+      "half": "top",
+      "pitcher": "Chris Paddack",
+      "batting_team": "St. Louis Cardinals",
+      "pitching_team": "Miami Marlins",
+      "model_prob": 0.3828,
+      "implied_prob": 0.4444,
+      "ev": -0.0616,
+      "ev_category": "negative",
+      "dk_no_odds": 125
+    },
+    {
+      "game_id": "STL/MIA - Bot 1",
+      "half": "bot",
+      "pitcher": "Dustin May",
+      "batting_team": "Miami Marlins",
+      "pitching_team": "St. Louis Cardinals",
+      "model_prob": 0.3312,
+      "implied_prob": 0.4,
+      "ev": -0.0688,
+      "ev_category": "negative",
+      "dk_no_odds": 150
+    },
+    {
+      "game_id": "ATL/WSH - Bot 1",
+      "half": "bot",
+      "pitcher": "Reynaldo L\u00f3pez",
+      "batting_team": "Washington Nationals",
+      "pitching_team": "Atlanta Braves",
+      "model_prob": 0.5597,
+      "implied_prob": 0.3333,
+      "ev": 0.2264,
+      "ev_category": "strong",
+      "dk_no_odds": 200
+    },
+    {
+      "game_id": "MIN/NYM - Top 1",
+      "half": "top",
+      "pitcher": "Nolan McLean",
+      "batting_team": "Minnesota Twins",
+      "pitching_team": "New York Mets",
+      "model_prob": 0.2508,
+      "implied_prob": 0.2778,
+      "ev": -0.027,
+      "ev_category": "negative",
+      "dk_no_odds": 260
+    },
+    {
+      "game_id": "MIN/NYM - Bot 1",
+      "half": "bot",
+      "pitcher": "Simeon Woods Richardson",
+      "batting_team": "New York Mets",
+      "pitching_team": "Minnesota Twins",
+      "model_prob": 0.3302,
+      "implied_prob": 0.4082,
+      "ev": -0.078,
+      "ev_category": "negative",
+      "dk_no_odds": 145
+    }
+  ]
+}

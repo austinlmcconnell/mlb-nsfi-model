@@ -1,0 +1,55 @@
+{
+  "date": "2026-04-22",
+  "generatedAt": "2026-04-22T16:37:33.396813",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "HOU/CLE - Top 1",
+      "half": "top",
+      "pitcher": "Tanner Bibee",
+      "batting_team": "Houston Astros",
+      "pitching_team": "Cleveland Guardians",
+      "model_prob": 0.3467,
+      "implied_prob": 0.4167,
+      "ev": -0.07,
+      "ev_category": "negative",
+      "dk_no_odds": 140
+    },
+    {
+      "game_id": "HOU/CLE - Bot 1",
+      "half": "bot",
+      "pitcher": "Peter Lambert",
+      "batting_team": "Cleveland Guardians",
+      "pitching_team": "Houston Astros",
+      "model_prob": 0.3613,
+      "implied_prob": 0.4762,
+      "ev": -0.1149,
+      "ev_category": "negative",
+      "dk_no_odds": 110
+    },
+    {
+      "game_id": "CIN/TB - Top 1",
+      "half": "top",
+      "pitcher": "Nick Martinez",
+      "batting_team": "Cincinnati Reds",
+      "pitching_team": "Tampa Bay Rays",
+      "model_prob": 0.3448,
+      "implied_prob": 0.4,
+      "ev": -0.0552,
+      "ev_category": "negative",
+      "dk_no_odds": 150
+    },
+    {
+      "game_id": "CIN/TB - Bot 1",
+      "half": "bot",
+      "pitcher": "Brandon Williamson",
+      "batting_team": "Tampa Bay Rays",
+      "pitching_team": "Cincinnati Reds",
+      "model_prob": 0.3372,
+      "implied_prob": 0.4255,
+      "ev": -0.0883,
+      "ev_category": "negative",
+      "dk_no_odds": 135
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "date": "2026-04-23",
+  "generatedAt": "2026-04-23T16:57:49.018785",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "ATL/WSH - Bot 1",
+      "half": "bot",
+      "pitcher": "JR Ritchie",
+      "batting_team": "Washington Nationals",
+      "pitching_team": "Atlanta Braves",
+      "model_prob": 0.3304,
+      "implied_prob": 0.3922,
+      "ev": -0.0618,
+      "ev_category": "negative",
+      "dk_no_odds": 155
+    },
+    {
+      "game_id": "MIL/DET - Top 1",
+      "half": "top",
+      "pitcher": "Tarik Skubal",
+      "batting_team": "Milwaukee Brewers",
+      "pitching_team": "Detroit Tigers",
+      "model_prob": 0.2638,
+      "implied_prob": 0.2381,
+      "ev": 0.0257,
+      "ev_category": "marginal",
+      "dk_no_odds": 320
+    },
+    {
+      "game_id": "MIL/DET - Bot 1",
+      "half": "bot",
+      "pitcher": "Brandon Sproat",
+      "batting_team": "Detroit Tigers",
+      "pitching_team": "Milwaukee Brewers",
+      "model_prob": 0.3422,
+      "implied_prob": 0.3922,
+      "ev": -0.05,
+      "ev_category": "negative",
+      "dk_no_odds": 155
+    },
+    {
+      "game_id": "PHI/CHC - Top 1",
+      "half": "top",
+      "pitcher": "Edward Cabrera",
+      "batting_team": "Philadelphia Phillies",
+      "pitching_team": "Chicago Cubs",
+      "model_prob": 0.2908,
+      "implied_prob": 0.3125,
+      "ev": -0.0217,
+      "ev_category": "negative",
+      "dk_no_odds": 220
+    },
+    {
+      "game_id": "PHI/CHC - Bot 1",
+      "half": "bot",
+      "pitcher": "Cristopher S\u00e1nchez",
+      "batting_team": "Chicago Cubs",
+      "pitching_team": "Philadelphia Phillies",
+      "model_prob": 0.3258,
+      "implied_prob": 0.3448,
+      "ev": -0.019,
+      "ev_category": "negative",
+      "dk_no_odds": 190
+    },
+    {
+      "game_id": "SD/COL - Top 1",
+      "half": "top",
+      "pitcher": "Ryan Feltner",
+      "batting_team": "San Diego Padres",
+      "pitching_team": "Colorado Rockies",
+      "model_prob": 0.3675,
+      "implied_prob": 0.3774,
+      "ev": -0.0099,
+      "ev_category": "negative",
+      "dk_no_odds": 165
+    },
+    {
+      "game_id": "SD/COL - Bot 1",
+      "half": "bot",
+      "pitcher": "Matt Waldron",
+      "batting_team": "Colorado Rockies",
+      "pitching_team": "San Diego Padres",
+      "model_prob": 0.3443,
+      "implied_prob": 0.3922,
+      "ev": -0.0479,
+      "ev_category": "negative",
+      "dk_no_odds": 155
+    }
+  ]
+}

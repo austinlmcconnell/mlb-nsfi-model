@@ -1,6 +1,6 @@
 {
   "date": "2026-04-23",
-  "fetchedAt": "2026-04-23T03:54:34.872916+00:00",
+  "fetchedAt": "2026-04-23T07:02:34.979103+00:00",
   "games": [
     {
       "gamePk": 822745,
@@ -237,10 +237,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 260,
+            "yesOdds": -390,
+            "impliedNSFI": 0.2778,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 105,
+            "yesOdds": -145,
+            "impliedNSFI": 0.4878,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -280,10 +288,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 180,
+            "yesOdds": -250,
+            "impliedNSFI": 0.3571,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 250,
+            "yesOdds": -370,
+            "impliedNSFI": 0.2857,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -302,9 +318,9 @@
         "teamBatting": "New York Yankees",
         "teamPitching": "Boston Red Sox",
         "pitcher": {
-          "name": "TBD",
-          "id": null,
-          "pitchHand": "R"
+          "name": "Payton Tolle",
+          "id": 801139,
+          "pitchHand": "L"
         },
         "lineup": [],
         "gameId": "NYY/BOS - Top 1"

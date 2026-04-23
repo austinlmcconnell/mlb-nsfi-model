@@ -1,31 +1,31 @@
 {
   "date": "2026-04-23",
-  "generatedAt": "2026-04-23T19:49:45.282866",
+  "generatedAt": "2026-04-23T22:10:46.197460",
   "simulations": 10000,
   "predictions": [
     {
-      "game_id": "NYY/BOS - Top 1",
+      "game_id": "MIL/DET - Top 1",
       "half": "top",
-      "pitcher": "Payton Tolle",
-      "batting_team": "New York Yankees",
-      "pitching_team": "Boston Red Sox",
-      "model_prob": 0.2446,
-      "implied_prob": 0.303,
-      "ev": -0.0584,
+      "pitcher": "Tarik Skubal",
+      "batting_team": "Milwaukee Brewers",
+      "pitching_team": "Detroit Tigers",
+      "model_prob": 0.2561,
+      "implied_prob": 0.339,
+      "ev": -0.0829,
       "ev_category": "negative",
-      "dk_no_odds": 230
+      "dk_no_odds": 195
     },
     {
-      "game_id": "NYY/BOS - Bot 1",
-      "half": "bot",
-      "pitcher": "Cam Schlittler",
-      "batting_team": "Boston Red Sox",
-      "pitching_team": "New York Yankees",
-      "model_prob": 0.2835,
-      "implied_prob": 0.274,
-      "ev": 0.0095,
-      "ev_category": "marginal",
-      "dk_no_odds": 265
+      "game_id": "LAD/SF - Top 1",
+      "half": "top",
+      "pitcher": "Logan Webb",
+      "batting_team": "Los Angeles Dodgers",
+      "pitching_team": "San Francisco Giants",
+      "model_prob": 0.2715,
+      "implied_prob": 0.4651,
+      "ev": -0.1936,
+      "ev_category": "negative",
+      "dk_no_odds": 115
     },
     {
       "game_id": "MIN/NYM - Top 1",
@@ -33,9 +33,9 @@
       "pitcher": "Christian Scott",
       "batting_team": "Minnesota Twins",
       "pitching_team": "New York Mets",
-      "model_prob": 0.3145,
+      "model_prob": 0.3125,
       "implied_prob": 0.3636,
-      "ev": -0.0491,
+      "ev": -0.0511,
       "ev_category": "negative",
       "dk_no_odds": 175
     },
@@ -45,11 +45,35 @@
       "pitcher": "Joe Ryan",
       "batting_team": "New York Mets",
       "pitching_team": "Minnesota Twins",
-      "model_prob": 0.256,
-      "implied_prob": 0.3333,
-      "ev": -0.0773,
+      "model_prob": 0.2566,
+      "implied_prob": 0.3279,
+      "ev": -0.0713,
       "ev_category": "negative",
-      "dk_no_odds": 200
+      "dk_no_odds": 205
+    },
+    {
+      "game_id": "PIT/TEX - Top 1",
+      "half": "top",
+      "pitcher": "Jacob deGrom",
+      "batting_team": "Pittsburgh Pirates",
+      "pitching_team": "Texas Rangers",
+      "model_prob": 0.2267,
+      "implied_prob": 0.2083,
+      "ev": 0.0184,
+      "ev_category": "marginal",
+      "dk_no_odds": 380
+    },
+    {
+      "game_id": "PIT/TEX - Bot 1",
+      "half": "bot",
+      "pitcher": "Bubba Chandler",
+      "batting_team": "Texas Rangers",
+      "pitching_team": "Pittsburgh Pirates",
+      "model_prob": 0.3201,
+      "implied_prob": 0.303,
+      "ev": 0.0171,
+      "ev_category": "marginal",
+      "dk_no_odds": 230
     }
   ]
 }

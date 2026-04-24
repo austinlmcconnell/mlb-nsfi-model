@@ -1,0 +1,31 @@
+{
+  "date": "2026-04-24",
+  "generatedAt": "2026-04-24T19:27:35.509238",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "MIN/TB - Top 1",
+      "half": "top",
+      "pitcher": "Drew Rasmussen",
+      "batting_team": "Minnesota Twins",
+      "pitching_team": "Tampa Bay Rays",
+      "model_prob": 0.3299,
+      "implied_prob": 0.3448,
+      "ev": -0.0149,
+      "ev_category": "negative",
+      "dk_no_odds": 190
+    },
+    {
+      "game_id": "MIN/TB - Bot 1",
+      "half": "bot",
+      "pitcher": "Taj Bradley",
+      "batting_team": "Tampa Bay Rays",
+      "pitching_team": "Minnesota Twins",
+      "model_prob": 0.356,
+      "implied_prob": 0.339,
+      "ev": 0.017,
+      "ev_category": "marginal",
+      "dk_no_odds": 195
+    }
+  ]
+}

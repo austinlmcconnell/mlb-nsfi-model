@@ -1,0 +1,79 @@
+{
+  "date": "2026-04-25",
+  "generatedAt": "2026-04-25T16:01:40.316534",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "BOS/BAL - Top 1",
+      "half": "top",
+      "pitcher": "Trevor Rogers",
+      "batting_team": "Boston Red Sox",
+      "pitching_team": "Baltimore Orioles",
+      "model_prob": 0.3188,
+      "implied_prob": 0.3175,
+      "ev": 0.0013,
+      "ev_category": "marginal",
+      "dk_no_odds": 215
+    },
+    {
+      "game_id": "BOS/BAL - Bot 1",
+      "half": "bot",
+      "pitcher": "Garrett Crochet",
+      "batting_team": "Baltimore Orioles",
+      "pitching_team": "Boston Red Sox",
+      "model_prob": 0.2287,
+      "implied_prob": 0.2597,
+      "ev": -0.031,
+      "ev_category": "negative",
+      "dk_no_odds": 285
+    },
+    {
+      "game_id": "SEA/STL - Top 1",
+      "half": "top",
+      "pitcher": "Matthew Liberatore",
+      "batting_team": "Seattle Mariners",
+      "pitching_team": "St. Louis Cardinals",
+      "model_prob": 0.345,
+      "implied_prob": 0.3704,
+      "ev": -0.0254,
+      "ev_category": "negative",
+      "dk_no_odds": 170
+    },
+    {
+      "game_id": "SEA/STL - Bot 1",
+      "half": "bot",
+      "pitcher": "Bryan Woo",
+      "batting_team": "St. Louis Cardinals",
+      "pitching_team": "Seattle Mariners",
+      "model_prob": 0.3031,
+      "implied_prob": 0.3333,
+      "ev": -0.0302,
+      "ev_category": "negative",
+      "dk_no_odds": 200
+    },
+    {
+      "game_id": "CLE/TOR - Top 1",
+      "half": "top",
+      "pitcher": "Kevin Gausman",
+      "batting_team": "Cleveland Guardians",
+      "pitching_team": "Toronto Blue Jays",
+      "model_prob": 0.369,
+      "implied_prob": 0.3636,
+      "ev": 0.0054,
+      "ev_category": "marginal",
+      "dk_no_odds": 175
+    },
+    {
+      "game_id": "CLE/TOR - Bot 1",
+      "half": "bot",
+      "pitcher": "Joey Cantillo",
+      "batting_team": "Toronto Blue Jays",
+      "pitching_team": "Cleveland Guardians",
+      "model_prob": 0.3097,
+      "implied_prob": 0.4082,
+      "ev": -0.0985,
+      "ev_category": "negative",
+      "dk_no_odds": 145
+    }
+  ]
+}

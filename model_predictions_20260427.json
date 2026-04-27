@@ -1,41 +1,17 @@
 {
   "date": "2026-04-27",
-  "generatedAt": "2026-04-27T19:54:28.877669",
+  "generatedAt": "2026-04-27T22:28:02.225753",
   "simulations": 10000,
   "predictions": [
-    {
-      "game_id": "TB/CLE - Top 1",
-      "half": "top",
-      "pitcher": "Parker Messick",
-      "batting_team": "Tampa Bay Rays",
-      "pitching_team": "Cleveland Guardians",
-      "model_prob": 0.3262,
-      "implied_prob": 0.3774,
-      "ev": -0.0512,
-      "ev_category": "negative",
-      "dk_no_odds": 165
-    },
-    {
-      "game_id": "TB/CLE - Bot 1",
-      "half": "bot",
-      "pitcher": "Steven Matz",
-      "batting_team": "Cleveland Guardians",
-      "pitching_team": "Tampa Bay Rays",
-      "model_prob": 0.401,
-      "implied_prob": 0.4651,
-      "ev": -0.0641,
-      "ev_category": "negative",
-      "dk_no_odds": 115
-    },
     {
       "game_id": "STL/PIT - Top 1",
       "half": "top",
       "pitcher": "Mason Montgomery",
       "batting_team": "St. Louis Cardinals",
       "pitching_team": "Pittsburgh Pirates",
-      "model_prob": 0.2387,
+      "model_prob": 0.2333,
       "implied_prob": 0.274,
-      "ev": -0.0353,
+      "ev": -0.0407,
       "ev_category": "negative",
       "dk_no_odds": 265
     },
@@ -45,11 +21,11 @@
       "pitcher": "Dustin May",
       "batting_team": "Pittsburgh Pirates",
       "pitching_team": "St. Louis Cardinals",
-      "model_prob": 0.2571,
-      "implied_prob": 0.2857,
-      "ev": -0.0286,
+      "model_prob": 0.29,
+      "implied_prob": 0.3333,
+      "ev": -0.0433,
       "ev_category": "negative",
-      "dk_no_odds": 250
+      "dk_no_odds": 200
     },
     {
       "game_id": "BOS/TOR - Top 1",
@@ -57,9 +33,9 @@
       "pitcher": "Dylan Cease",
       "batting_team": "Boston Red Sox",
       "pitching_team": "Toronto Blue Jays",
-      "model_prob": 0.2198,
+      "model_prob": 0.2226,
       "implied_prob": 0.1905,
-      "ev": 0.0293,
+      "ev": 0.0321,
       "ev_category": "marginal",
       "dk_no_odds": 425
     },
@@ -69,11 +45,11 @@
       "pitcher": "Ranger Suarez",
       "batting_team": "Toronto Blue Jays",
       "pitching_team": "Boston Red Sox",
-      "model_prob": 0.3813,
-      "implied_prob": 0.4444,
-      "ev": -0.0631,
+      "model_prob": 0.3697,
+      "implied_prob": 0.5238,
+      "ev": -0.1541,
       "ev_category": "negative",
-      "dk_no_odds": 125
+      "dk_no_odds": -110
     },
     {
       "game_id": "SEA/MIN - Top 1",
@@ -81,9 +57,9 @@
       "pitcher": "Connor Prielipp",
       "batting_team": "Seattle Mariners",
       "pitching_team": "Minnesota Twins",
-      "model_prob": 0.3085,
+      "model_prob": 0.3028,
       "implied_prob": 0.2857,
-      "ev": 0.0228,
+      "ev": 0.0171,
       "ev_category": "marginal",
       "dk_no_odds": 250
     },
@@ -93,11 +69,59 @@
       "pitcher": "Luis Castillo",
       "batting_team": "Minnesota Twins",
       "pitching_team": "Seattle Mariners",
-      "model_prob": 0.3317,
+      "model_prob": 0.3291,
       "implied_prob": 0.3333,
-      "ev": -0.0016,
+      "ev": -0.0042,
       "ev_category": "negative",
       "dk_no_odds": 200
+    },
+    {
+      "game_id": "LAA/CWS - Top 1",
+      "half": "top",
+      "pitcher": "Anthony Kay",
+      "batting_team": "Los Angeles Angels",
+      "pitching_team": "Chicago White Sox",
+      "model_prob": 0.2553,
+      "implied_prob": 0.3922,
+      "ev": -0.1369,
+      "ev_category": "negative",
+      "dk_no_odds": 155
+    },
+    {
+      "game_id": "LAA/CWS - Bot 1",
+      "half": "bot",
+      "pitcher": "Jack Kochanowicz",
+      "batting_team": "Chicago White Sox",
+      "pitching_team": "Los Angeles Angels",
+      "model_prob": 0.3866,
+      "implied_prob": 0.4167,
+      "ev": -0.0301,
+      "ev_category": "negative",
+      "dk_no_odds": 140
+    },
+    {
+      "game_id": "NYY/TEX - Top 1",
+      "half": "top",
+      "pitcher": "Jack Leiter",
+      "batting_team": "New York Yankees",
+      "pitching_team": "Texas Rangers",
+      "model_prob": 0.3049,
+      "implied_prob": 0.2667,
+      "ev": 0.0382,
+      "ev_category": "marginal",
+      "dk_no_odds": 275
+    },
+    {
+      "game_id": "NYY/TEX - Bot 1",
+      "half": "bot",
+      "pitcher": "Max Fried",
+      "batting_team": "Texas Rangers",
+      "pitching_team": "New York Yankees",
+      "model_prob": 0.2941,
+      "implied_prob": 0.3448,
+      "ev": -0.0507,
+      "ev_category": "negative",
+      "dk_no_odds": 190
     }
   ]
 }

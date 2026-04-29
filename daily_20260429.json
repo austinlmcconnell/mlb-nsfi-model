@@ -1,6 +1,6 @@
 {
   "date": "2026-04-29",
-  "fetchedAt": "2026-04-29T19:59:42.242422+00:00",
+  "fetchedAt": "2026-04-29T22:33:37.328617+00:00",
   "games": [
     {
       "gamePk": 824445,
@@ -1065,179 +1065,10 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": true,
-            "noOdds": 110,
-            "yesOdds": -150,
-            "impliedNSFI": 0.4762,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           },
           "bot": {
-            "oddsPosted": true,
-            "noOdds": 160,
-            "yesOdds": -220,
-            "impliedNSFI": 0.3846,
-            "source": "draftkings_nash"
-          }
-        }
-      }
-    },
-    {
-      "gamePk": 823471,
-      "gameTimeUTC": "2026-04-29T22:10:00Z",
-      "gameTimeET": "6:10 PM ET",
-      "lineupDropET": "2:40 PM ET",
-      "lineupComplete": true,
-      "homeTeam": "Philadelphia Phillies",
-      "awayTeam": "San Francisco Giants",
-      "venue": "Citizens Bank Park",
-      "ballparkKey": "Phillies",
-      "topInning": {
-        "teamBatting": "San Francisco Giants",
-        "teamPitching": "Philadelphia Phillies",
-        "pitcher": {
-          "name": "Cristopher S\u00e1nchez",
-          "id": 650911,
-          "pitchHand": "L"
-        },
-        "lineup": [
-          {
-            "name": "Heliot Ramos",
-            "id": 671218,
-            "batSide": "R",
-            "position": "LF"
-          },
-          {
-            "name": "Matt Chapman",
-            "id": 656305,
-            "batSide": "R",
-            "position": "3B"
-          },
-          {
-            "name": "Luis Arraez",
-            "id": 650333,
-            "batSide": "L",
-            "position": "2B"
-          },
-          {
-            "name": "Casey Schmitt",
-            "id": 669477,
-            "batSide": "R",
-            "position": "DH"
-          },
-          {
-            "name": "Rafael Devers",
-            "id": 646240,
-            "batSide": "L",
-            "position": "1B"
-          },
-          {
-            "name": "Willy Adames",
-            "id": 642715,
-            "batSide": "R",
-            "position": "SS"
-          },
-          {
-            "name": "Jung Hoo Lee",
-            "id": 808982,
-            "batSide": "L",
-            "position": "CF"
-          },
-          {
-            "name": "Jerar Encarnacion",
-            "id": 666464,
-            "batSide": "R",
-            "position": "RF"
-          },
-          {
-            "name": "Patrick Bailey",
-            "id": 672275,
-            "batSide": "S",
-            "position": "C"
-          }
-        ],
-        "gameId": "SF/PHI - Top 1"
-      },
-      "botInning": {
-        "teamBatting": "Philadelphia Phillies",
-        "teamPitching": "San Francisco Giants",
-        "pitcher": {
-          "name": "Logan Webb",
-          "id": 657277,
-          "pitchHand": "R"
-        },
-        "lineup": [
-          {
-            "name": "Trea Turner",
-            "id": 607208,
-            "batSide": "R",
-            "position": "SS"
-          },
-          {
-            "name": "Kyle Schwarber",
-            "id": 656941,
-            "batSide": "L",
-            "position": "DH"
-          },
-          {
-            "name": "Bryce Harper",
-            "id": 547180,
-            "batSide": "L",
-            "position": "1B"
-          },
-          {
-            "name": "Adolis Garc\u00eda",
-            "id": 666969,
-            "batSide": "R",
-            "position": "RF"
-          },
-          {
-            "name": "Brandon Marsh",
-            "id": 669016,
-            "batSide": "L",
-            "position": "LF"
-          },
-          {
-            "name": "Bryson Stott",
-            "id": 681082,
-            "batSide": "L",
-            "position": "2B"
-          },
-          {
-            "name": "Alec Bohm",
-            "id": 664761,
-            "batSide": "R",
-            "position": "3B"
-          },
-          {
-            "name": "Justin Crawford",
-            "id": 702222,
-            "batSide": "L",
-            "position": "CF"
-          },
-          {
-            "name": "Rafael March\u00e1n",
-            "id": 665561,
-            "batSide": "S",
-            "position": "C"
-          }
-        ],
-        "gameId": "SF/PHI - Bot 1"
-      },
-      "odds": {
-        "draftkings": {
-          "top": {
-            "oddsPosted": true,
-            "noOdds": 200,
-            "yesOdds": -285,
-            "impliedNSFI": 0.3333,
-            "source": "draftkings_nash"
-          },
-          "bot": {
-            "oddsPosted": true,
-            "noOdds": 195,
-            "yesOdds": -275,
-            "impliedNSFI": 0.339,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           }
         }
       }
@@ -1395,9 +1226,9 @@
           },
           "bot": {
             "oddsPosted": true,
-            "noOdds": 145,
+            "noOdds": 140,
             "yesOdds": -195,
-            "impliedNSFI": 0.4082,
+            "impliedNSFI": 0.4167,
             "source": "draftkings_nash"
           }
         }
@@ -1550,14 +1381,14 @@
           "top": {
             "oddsPosted": true,
             "noOdds": 145,
-            "yesOdds": -200,
+            "yesOdds": -195,
             "impliedNSFI": 0.4082,
             "source": "draftkings_nash"
           },
           "bot": {
             "oddsPosted": true,
             "noOdds": 200,
-            "yesOdds": -285,
+            "yesOdds": -280,
             "impliedNSFI": 0.3333,
             "source": "draftkings_nash"
           }
@@ -1726,7 +1557,7 @@
       "gameTimeUTC": "2026-04-29T23:15:00Z",
       "gameTimeET": "7:15 PM ET",
       "lineupDropET": "3:45 PM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "Atlanta Braves",
       "awayTeam": "Detroit Tigers",
       "venue": "Truist Park",
@@ -1739,7 +1570,62 @@
           "id": 702275,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Kevin McGonigle",
+            "id": 805808,
+            "batSide": "L",
+            "position": "SS"
+          },
+          {
+            "name": "Gleyber Torres",
+            "id": 650402,
+            "batSide": "R",
+            "position": "2B"
+          },
+          {
+            "name": "Colt Keith",
+            "id": 690993,
+            "batSide": "L",
+            "position": "3B"
+          },
+          {
+            "name": "Riley Greene",
+            "id": 682985,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Dillon Dingler",
+            "id": 693307,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Kerry Carpenter",
+            "id": 681481,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Spencer Torkelson",
+            "id": 679529,
+            "batSide": "R",
+            "position": "1B"
+          },
+          {
+            "name": "Wenceel P\u00e9rez",
+            "id": 672761,
+            "batSide": "S",
+            "position": "CF"
+          },
+          {
+            "name": "Jace Jung",
+            "id": 690291,
+            "batSide": "L",
+            "position": "DH"
+          }
+        ],
         "gameId": "DET/ATL - Top 1"
       },
       "botInning": {
@@ -1832,7 +1718,7 @@
       "gameTimeUTC": "2026-04-29T23:40:00Z",
       "gameTimeET": "7:40 PM ET",
       "lineupDropET": "4:10 PM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "Milwaukee Brewers",
       "awayTeam": "Arizona Diamondbacks",
       "venue": "American Family Field",
@@ -1911,7 +1797,62 @@
           "id": 593958,
           "pitchHand": "L"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Brandon Lockridge",
+            "id": 663604,
+            "batSide": "R",
+            "position": "LF"
+          },
+          {
+            "name": "Brice Turang",
+            "id": 668930,
+            "batSide": "L",
+            "position": "2B"
+          },
+          {
+            "name": "William Contreras",
+            "id": 661388,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Jake Bauers",
+            "id": 641343,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Gary S\u00e1nchez",
+            "id": 596142,
+            "batSide": "R",
+            "position": "DH"
+          },
+          {
+            "name": "Luis Rengifo",
+            "id": 650859,
+            "batSide": "S",
+            "position": "3B"
+          },
+          {
+            "name": "Greg Jones",
+            "id": 675659,
+            "batSide": "S",
+            "position": "RF"
+          },
+          {
+            "name": "Blake Perkins",
+            "id": 663368,
+            "batSide": "S",
+            "position": "CF"
+          },
+          {
+            "name": "Joey Ortiz",
+            "id": 687401,
+            "batSide": "R",
+            "position": "SS"
+          }
+        ],
         "gameId": "ARI/MIL - Bot 1"
       },
       "odds": {
@@ -1919,7 +1860,7 @@
           "top": {
             "oddsPosted": true,
             "noOdds": 150,
-            "yesOdds": -210,
+            "yesOdds": -205,
             "impliedNSFI": 0.4,
             "source": "draftkings_nash"
           },
@@ -1938,7 +1879,7 @@
       "gameTimeUTC": "2026-04-30T01:40:00Z",
       "gameTimeET": "9:40 PM ET",
       "lineupDropET": "6:10 PM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "Athletics",
       "awayTeam": "Kansas City Royals",
       "venue": "Sutter Health Park",
@@ -1951,7 +1892,62 @@
           "id": 622663,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Maikel Garcia",
+            "id": 672580,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Bobby Witt Jr.",
+            "id": 677951,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "Carter Jensen",
+            "id": 695600,
+            "batSide": "L",
+            "position": "C"
+          },
+          {
+            "name": "Salvador Perez",
+            "id": 521692,
+            "batSide": "R",
+            "position": "1B"
+          },
+          {
+            "name": "Michael Massey",
+            "id": 686681,
+            "batSide": "L",
+            "position": "2B"
+          },
+          {
+            "name": "Isaac Collins",
+            "id": 686555,
+            "batSide": "S",
+            "position": "LF"
+          },
+          {
+            "name": "Jac Caglianone",
+            "id": 695506,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Lane Thomas",
+            "id": 657041,
+            "batSide": "R",
+            "position": "RF"
+          },
+          {
+            "name": "Kyle Isbel",
+            "id": 664728,
+            "batSide": "L",
+            "position": "CF"
+          }
+        ],
         "gameId": "KC/ATH - Top 1"
       },
       "botInning": {
@@ -1962,7 +1958,62 @@
           "id": 608379,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Nick Kurtz",
+            "id": 701762,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Shea Langeliers",
+            "id": 669127,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Carlos Cortes",
+            "id": 666126,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Brent Rooker",
+            "id": 667670,
+            "batSide": "R",
+            "position": "DH"
+          },
+          {
+            "name": "Jacob Wilson",
+            "id": 805779,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "Jeff McNeil",
+            "id": 643446,
+            "batSide": "L",
+            "position": "2B"
+          },
+          {
+            "name": "Zack Gelof",
+            "id": 680869,
+            "batSide": "R",
+            "position": "CF"
+          },
+          {
+            "name": "Lawrence Butler",
+            "id": 671732,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Darell Hernaiz",
+            "id": 687231,
+            "batSide": "R",
+            "position": "3B"
+          }
+        ],
         "gameId": "KC/ATH - Bot 1"
       },
       "odds": {
@@ -1972,10 +2023,53 @@
           },
           "bot": {
             "oddsPosted": true,
-            "noOdds": 185,
-            "yesOdds": -255,
-            "impliedNSFI": 0.3509,
+            "noOdds": 170,
+            "yesOdds": -240,
+            "impliedNSFI": 0.3704,
             "source": "draftkings_nash"
+          }
+        }
+      }
+    },
+    {
+      "gamePk": 823471,
+      "gameTimeUTC": "2026-04-29T22:10:00Z",
+      "gameTimeET": "6:10 PM ET",
+      "lineupDropET": "2:40 PM ET",
+      "lineupComplete": false,
+      "homeTeam": "Philadelphia Phillies",
+      "awayTeam": "San Francisco Giants",
+      "venue": "Citizens Bank Park",
+      "ballparkKey": "Phillies",
+      "topInning": {
+        "teamBatting": "San Francisco Giants",
+        "teamPitching": "Philadelphia Phillies",
+        "pitcher": {
+          "name": "Cristopher S\u00e1nchez",
+          "id": 650911,
+          "pitchHand": "L"
+        },
+        "lineup": [],
+        "gameId": "SF/PHI - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "Philadelphia Phillies",
+        "teamPitching": "San Francisco Giants",
+        "pitcher": {
+          "name": "Logan Webb",
+          "id": 657277,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "SF/PHI - Bot 1"
+      },
+      "odds": {
+        "draftkings": {
+          "top": {
+            "oddsPosted": false
+          },
+          "bot": {
+            "oddsPosted": false
           }
         }
       }

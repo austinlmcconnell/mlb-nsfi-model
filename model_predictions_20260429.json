@@ -1,0 +1,151 @@
+{
+  "date": "2026-04-29",
+  "generatedAt": "2026-04-29T16:58:54.920766",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "TB/CLE - Top 1",
+      "half": "top",
+      "pitcher": "Gavin Williams",
+      "batting_team": "Tampa Bay Rays",
+      "pitching_team": "Cleveland Guardians",
+      "model_prob": 0.3207,
+      "implied_prob": 0.2985,
+      "ev": 0.0222,
+      "ev_category": "marginal",
+      "dk_no_odds": 235
+    },
+    {
+      "game_id": "TB/CLE - Bot 1",
+      "half": "bot",
+      "pitcher": "Drew Rasmussen",
+      "batting_team": "Cleveland Guardians",
+      "pitching_team": "Tampa Bay Rays",
+      "model_prob": 0.3555,
+      "implied_prob": 0.4545,
+      "ev": -0.099,
+      "ev_category": "negative",
+      "dk_no_odds": 120
+    },
+    {
+      "game_id": "LAA/CWS - Top 1",
+      "half": "top",
+      "pitcher": "Erick Fedde",
+      "batting_team": "Los Angeles Angels",
+      "pitching_team": "Chicago White Sox",
+      "model_prob": 0.3605,
+      "implied_prob": 0.4167,
+      "ev": -0.0562,
+      "ev_category": "negative",
+      "dk_no_odds": 140
+    },
+    {
+      "game_id": "LAA/CWS - Bot 1",
+      "half": "bot",
+      "pitcher": "Yusei Kikuchi",
+      "batting_team": "Chicago White Sox",
+      "pitching_team": "Los Angeles Angels",
+      "model_prob": 0.3176,
+      "implied_prob": 0.3175,
+      "ev": 0.0001,
+      "ev_category": "marginal",
+      "dk_no_odds": 215
+    },
+    {
+      "game_id": "SEA/MIN - Top 1",
+      "half": "top",
+      "pitcher": "Taj Bradley",
+      "batting_team": "Seattle Mariners",
+      "pitching_team": "Minnesota Twins",
+      "model_prob": 0.3239,
+      "implied_prob": 0.2985,
+      "ev": 0.0254,
+      "ev_category": "marginal",
+      "dk_no_odds": 235
+    },
+    {
+      "game_id": "SEA/MIN - Bot 1",
+      "half": "bot",
+      "pitcher": "George Kirby",
+      "batting_team": "Minnesota Twins",
+      "pitching_team": "Seattle Mariners",
+      "model_prob": 0.2775,
+      "implied_prob": 0.3571,
+      "ev": -0.0796,
+      "ev_category": "negative",
+      "dk_no_odds": 180
+    },
+    {
+      "game_id": "NYY/TEX - Top 1",
+      "half": "top",
+      "pitcher": "Nathan Eovaldi",
+      "batting_team": "New York Yankees",
+      "pitching_team": "Texas Rangers",
+      "model_prob": 0.3121,
+      "implied_prob": 0.303,
+      "ev": 0.0091,
+      "ev_category": "marginal",
+      "dk_no_odds": 230
+    },
+    {
+      "game_id": "NYY/TEX - Bot 1",
+      "half": "bot",
+      "pitcher": "Elmer Rodr\u00edguez",
+      "batting_team": "Texas Rangers",
+      "pitching_team": "New York Yankees",
+      "model_prob": 0.3224,
+      "implied_prob": 0.4,
+      "ev": -0.0776,
+      "ev_category": "negative",
+      "dk_no_odds": 150
+    },
+    {
+      "game_id": "MIA/LAD - Top 1",
+      "half": "top",
+      "pitcher": "Tyler Glasnow",
+      "batting_team": "Miami Marlins",
+      "pitching_team": "Los Angeles Dodgers",
+      "model_prob": 0.2934,
+      "implied_prob": 0.274,
+      "ev": 0.0194,
+      "ev_category": "marginal",
+      "dk_no_odds": 265
+    },
+    {
+      "game_id": "MIA/LAD - Bot 1",
+      "half": "bot",
+      "pitcher": "Sandy Alcantara",
+      "batting_team": "Los Angeles Dodgers",
+      "pitching_team": "Miami Marlins",
+      "model_prob": 0.3681,
+      "implied_prob": 0.3774,
+      "ev": -0.0093,
+      "ev_category": "negative",
+      "dk_no_odds": 165
+    },
+    {
+      "game_id": "CHC/SD - Top 1",
+      "half": "top",
+      "pitcher": "Matt Waldron",
+      "batting_team": "Chicago Cubs",
+      "pitching_team": "San Diego Padres",
+      "model_prob": 0.4527,
+      "implied_prob": 0.4651,
+      "ev": -0.0124,
+      "ev_category": "negative",
+      "dk_no_odds": 115
+    },
+    {
+      "game_id": "CHC/SD - Bot 1",
+      "half": "bot",
+      "pitcher": "Jameson Taillon",
+      "batting_team": "San Diego Padres",
+      "pitching_team": "Chicago Cubs",
+      "model_prob": 0.4024,
+      "implied_prob": 0.3846,
+      "ev": 0.0178,
+      "ev_category": "marginal",
+      "dk_no_odds": 160
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "date": "2026-04-30",
+  "generatedAt": "2026-04-30T16:54:40.882683",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "WSH/NYM - Top 1",
+      "half": "top",
+      "pitcher": "Freddy Peralta",
+      "batting_team": "Washington Nationals",
+      "pitching_team": "New York Mets",
+      "model_prob": 0.3017,
+      "implied_prob": 0.274,
+      "ev": 0.0277,
+      "ev_category": "marginal",
+      "dk_no_odds": 265
+    },
+    {
+      "game_id": "ARI/MIL - Top 1",
+      "half": "top",
+      "pitcher": "Brandon Woodruff",
+      "batting_team": "Arizona Diamondbacks",
+      "pitching_team": "Milwaukee Brewers",
+      "model_prob": 0.3066,
+      "implied_prob": 0.3509,
+      "ev": -0.0443,
+      "ev_category": "negative",
+      "dk_no_odds": 185
+    },
+    {
+      "game_id": "ARI/MIL - Bot 1",
+      "half": "bot",
+      "pitcher": "Michael Soroka",
+      "batting_team": "Milwaukee Brewers",
+      "pitching_team": "Arizona Diamondbacks",
+      "model_prob": 0.2658,
+      "implied_prob": 0.2532,
+      "ev": 0.0126,
+      "ev_category": "marginal",
+      "dk_no_odds": 295
+    },
+    {
+      "game_id": "KC/ATH - Bot 1",
+      "half": "bot",
+      "pitcher": "Noah Cameron",
+      "batting_team": "Athletics",
+      "pitching_team": "Kansas City Royals",
+      "model_prob": 0.3407,
+      "implied_prob": 0.3922,
+      "ev": -0.0515,
+      "ev_category": "negative",
+      "dk_no_odds": 155
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "date": "2026-05-01",
+  "generatedAt": "2026-05-01T16:31:05.848337",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "ARI/CHC - Top 1",
+      "half": "top",
+      "pitcher": "Colin Rea",
+      "batting_team": "Arizona Diamondbacks",
+      "pitching_team": "Chicago Cubs",
+      "model_prob": 0.3777,
+      "implied_prob": 0.4348,
+      "ev": -0.0571,
+      "ev_category": "negative",
+      "dk_no_odds": 130
+    },
+    {
+      "game_id": "ARI/CHC - Bot 1",
+      "half": "bot",
+      "pitcher": "Zac Gallen",
+      "batting_team": "Chicago Cubs",
+      "pitching_team": "Arizona Diamondbacks",
+      "model_prob": 0.3904,
+      "implied_prob": 0.4878,
+      "ev": -0.0974,
+      "ev_category": "negative",
+      "dk_no_odds": 105
+    }
+  ]
+}

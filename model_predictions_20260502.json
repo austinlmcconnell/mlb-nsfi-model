@@ -1,0 +1,79 @@
+{
+  "date": "2026-05-02",
+  "generatedAt": "2026-05-02T16:06:54.822296",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "BAL/NYY - Top 1",
+      "half": "top",
+      "pitcher": "Ryan Weathers",
+      "batting_team": "Baltimore Orioles",
+      "pitching_team": "New York Yankees",
+      "model_prob": 0.3002,
+      "implied_prob": 0.3279,
+      "ev": -0.0277,
+      "ev_category": "negative",
+      "dk_no_odds": 205
+    },
+    {
+      "game_id": "BAL/NYY - Bot 1",
+      "half": "bot",
+      "pitcher": "Kyle Bradish",
+      "batting_team": "New York Yankees",
+      "pitching_team": "Baltimore Orioles",
+      "model_prob": 0.194,
+      "implied_prob": 0.2632,
+      "ev": -0.0692,
+      "ev_category": "negative",
+      "dk_no_odds": 280
+    },
+    {
+      "game_id": "TOR/MIN - Top 1",
+      "half": "top",
+      "pitcher": "Connor Prielipp",
+      "batting_team": "Toronto Blue Jays",
+      "pitching_team": "Minnesota Twins",
+      "model_prob": 0.365,
+      "implied_prob": 0.3922,
+      "ev": -0.0272,
+      "ev_category": "negative",
+      "dk_no_odds": 155
+    },
+    {
+      "game_id": "TOR/MIN - Bot 1",
+      "half": "bot",
+      "pitcher": "Dylan Cease",
+      "batting_team": "Minnesota Twins",
+      "pitching_team": "Toronto Blue Jays",
+      "model_prob": 0.2398,
+      "implied_prob": 0.2326,
+      "ev": 0.0072,
+      "ev_category": "marginal",
+      "dk_no_odds": 330
+    },
+    {
+      "game_id": "ARI/CHC - Top 1",
+      "half": "top",
+      "pitcher": "Shota Imanaga",
+      "batting_team": "Arizona Diamondbacks",
+      "pitching_team": "Chicago Cubs",
+      "model_prob": 0.4071,
+      "implied_prob": 0.3509,
+      "ev": 0.0562,
+      "ev_category": "strong",
+      "dk_no_odds": 185
+    },
+    {
+      "game_id": "ARI/CHC - Bot 1",
+      "half": "bot",
+      "pitcher": "Ryne Nelson",
+      "batting_team": "Chicago Cubs",
+      "pitching_team": "Arizona Diamondbacks",
+      "model_prob": 0.3723,
+      "implied_prob": 0.4,
+      "ev": -0.0277,
+      "ev_category": "negative",
+      "dk_no_odds": 150
+    }
+  ]
+}

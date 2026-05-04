@@ -1,0 +1,103 @@
+{
+  "date": "2026-05-04",
+  "generatedAt": "2026-05-04T20:01:31.706646",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "NYM/COL - Top 1",
+      "half": "top",
+      "pitcher": "Tomoyuki Sugano",
+      "batting_team": "New York Mets",
+      "pitching_team": "Colorado Rockies",
+      "model_prob": 0.3755,
+      "implied_prob": 0.4545,
+      "ev": -0.079,
+      "ev_category": "negative",
+      "dk_no_odds": 120
+    },
+    {
+      "game_id": "NYM/COL - Bot 1",
+      "half": "bot",
+      "pitcher": "Huascar Brazob\u00e1n",
+      "batting_team": "Colorado Rockies",
+      "pitching_team": "New York Mets",
+      "model_prob": 0.341,
+      "implied_prob": 0.3704,
+      "ev": -0.0294,
+      "ev_category": "negative",
+      "dk_no_odds": 170
+    },
+    {
+      "game_id": "BOS/DET - Top 1",
+      "half": "top",
+      "pitcher": "Tyler Holton",
+      "batting_team": "Boston Red Sox",
+      "pitching_team": "Detroit Tigers",
+      "model_prob": 0.2834,
+      "implied_prob": 0.3922,
+      "ev": -0.1088,
+      "ev_category": "negative",
+      "dk_no_odds": 155
+    },
+    {
+      "game_id": "BOS/DET - Bot 1",
+      "half": "bot",
+      "pitcher": "Payton Tolle",
+      "batting_team": "Detroit Tigers",
+      "pitching_team": "Boston Red Sox",
+      "model_prob": 0.2335,
+      "implied_prob": 0.2985,
+      "ev": -0.065,
+      "ev_category": "negative",
+      "dk_no_odds": 235
+    },
+    {
+      "game_id": "TOR/TB - Top 1",
+      "half": "top",
+      "pitcher": "Nick Martinez",
+      "batting_team": "Toronto Blue Jays",
+      "pitching_team": "Tampa Bay Rays",
+      "model_prob": 0.4053,
+      "implied_prob": 0.4255,
+      "ev": -0.0202,
+      "ev_category": "negative",
+      "dk_no_odds": 135
+    },
+    {
+      "game_id": "TOR/TB - Bot 1",
+      "half": "bot",
+      "pitcher": "Eric Lauer",
+      "batting_team": "Tampa Bay Rays",
+      "pitching_team": "Toronto Blue Jays",
+      "model_prob": 0.3497,
+      "implied_prob": 0.4545,
+      "ev": -0.1048,
+      "ev_category": "negative",
+      "dk_no_odds": 120
+    },
+    {
+      "game_id": "BAL/NYY - Top 1",
+      "half": "top",
+      "pitcher": "Cam Schlittler",
+      "batting_team": "Baltimore Orioles",
+      "pitching_team": "New York Yankees",
+      "model_prob": 0.2471,
+      "implied_prob": 0.2564,
+      "ev": -0.0093,
+      "ev_category": "negative",
+      "dk_no_odds": 290
+    },
+    {
+      "game_id": "BAL/NYY - Bot 1",
+      "half": "bot",
+      "pitcher": "Shane Baz",
+      "batting_team": "New York Yankees",
+      "pitching_team": "Baltimore Orioles",
+      "model_prob": 0.2498,
+      "implied_prob": 0.3333,
+      "ev": -0.0835,
+      "ev_category": "negative",
+      "dk_no_odds": 200
+    }
+  ]
+}

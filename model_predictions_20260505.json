@@ -1,0 +1,103 @@
+{
+  "date": "2026-05-05",
+  "generatedAt": "2026-05-05T19:57:59.061798",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "BOS/DET - Top 1",
+      "half": "top",
+      "pitcher": "Framber Valdez",
+      "batting_team": "Boston Red Sox",
+      "pitching_team": "Detroit Tigers",
+      "model_prob": 0.296,
+      "implied_prob": 0.3509,
+      "ev": -0.0549,
+      "ev_category": "negative",
+      "dk_no_odds": 185
+    },
+    {
+      "game_id": "BOS/DET - Bot 1",
+      "half": "bot",
+      "pitcher": "Jovani Mor\u00e1n",
+      "batting_team": "Detroit Tigers",
+      "pitching_team": "Boston Red Sox",
+      "model_prob": 0.1987,
+      "implied_prob": 0.3571,
+      "ev": -0.1584,
+      "ev_category": "negative",
+      "dk_no_odds": 180
+    },
+    {
+      "game_id": "TOR/TB - Top 1",
+      "half": "top",
+      "pitcher": "Drew Rasmussen",
+      "batting_team": "Toronto Blue Jays",
+      "pitching_team": "Tampa Bay Rays",
+      "model_prob": 0.3469,
+      "implied_prob": 0.3077,
+      "ev": 0.0392,
+      "ev_category": "marginal",
+      "dk_no_odds": 225
+    },
+    {
+      "game_id": "TOR/TB - Bot 1",
+      "half": "bot",
+      "pitcher": "Kevin Gausman",
+      "batting_team": "Tampa Bay Rays",
+      "pitching_team": "Toronto Blue Jays",
+      "model_prob": 0.3466,
+      "implied_prob": 0.4255,
+      "ev": -0.0789,
+      "ev_category": "negative",
+      "dk_no_odds": 135
+    },
+    {
+      "game_id": "ATH/PHI - Top 1",
+      "half": "top",
+      "pitcher": "Cristopher S\u00e1nchez",
+      "batting_team": "Athletics",
+      "pitching_team": "Philadelphia Phillies",
+      "model_prob": 0.2647,
+      "implied_prob": 0.2941,
+      "ev": -0.0294,
+      "ev_category": "negative",
+      "dk_no_odds": 240
+    },
+    {
+      "game_id": "MIN/WSH - Bot 1",
+      "half": "bot",
+      "pitcher": "Taj Bradley",
+      "batting_team": "Washington Nationals",
+      "pitching_team": "Minnesota Twins",
+      "model_prob": 0.3189,
+      "implied_prob": 0.2857,
+      "ev": 0.0332,
+      "ev_category": "marginal",
+      "dk_no_odds": 250
+    },
+    {
+      "game_id": "TEX/NYY - Top 1",
+      "half": "top",
+      "pitcher": "Elmer Rodr\u00edguez",
+      "batting_team": "Texas Rangers",
+      "pitching_team": "New York Yankees",
+      "model_prob": 0.3312,
+      "implied_prob": 0.3704,
+      "ev": -0.0392,
+      "ev_category": "negative",
+      "dk_no_odds": 170
+    },
+    {
+      "game_id": "TEX/NYY - Bot 1",
+      "half": "bot",
+      "pitcher": "Jacob deGrom",
+      "batting_team": "New York Yankees",
+      "pitching_team": "Texas Rangers",
+      "model_prob": 0.2552,
+      "implied_prob": 0.2597,
+      "ev": -0.0045,
+      "ev_category": "negative",
+      "dk_no_odds": 285
+    }
+  ]
+}

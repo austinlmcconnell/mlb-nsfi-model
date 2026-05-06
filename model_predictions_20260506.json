@@ -1,0 +1,79 @@
+{
+  "date": "2026-05-06",
+  "generatedAt": "2026-05-06T16:58:45.950189",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "TOR/TB - Top 1",
+      "half": "top",
+      "pitcher": "Shane McClanahan",
+      "batting_team": "Toronto Blue Jays",
+      "pitching_team": "Tampa Bay Rays",
+      "model_prob": 0.358,
+      "implied_prob": 0.3125,
+      "ev": 0.0455,
+      "ev_category": "marginal",
+      "dk_no_odds": 220
+    },
+    {
+      "game_id": "TOR/TB - Bot 1",
+      "half": "bot",
+      "pitcher": "Patrick Corbin",
+      "batting_team": "Tampa Bay Rays",
+      "pitching_team": "Toronto Blue Jays",
+      "model_prob": 0.3566,
+      "implied_prob": 0.4545,
+      "ev": -0.0979,
+      "ev_category": "negative",
+      "dk_no_odds": 120
+    },
+    {
+      "game_id": "MIL/STL - Top 1",
+      "half": "top",
+      "pitcher": "Andre Pallante",
+      "batting_team": "Milwaukee Brewers",
+      "pitching_team": "St. Louis Cardinals",
+      "model_prob": 0.4149,
+      "implied_prob": 0.4545,
+      "ev": -0.0396,
+      "ev_category": "negative",
+      "dk_no_odds": 120
+    },
+    {
+      "game_id": "MIL/STL - Bot 1",
+      "half": "bot",
+      "pitcher": "Brandon Sproat",
+      "batting_team": "St. Louis Cardinals",
+      "pitching_team": "Milwaukee Brewers",
+      "model_prob": 0.3413,
+      "implied_prob": 0.3704,
+      "ev": -0.0291,
+      "ev_category": "negative",
+      "dk_no_odds": 170
+    },
+    {
+      "game_id": "LAD/HOU - Top 1",
+      "half": "top",
+      "pitcher": "Lance McCullers Jr.",
+      "batting_team": "Los Angeles Dodgers",
+      "pitching_team": "Houston Astros",
+      "model_prob": 0.2889,
+      "implied_prob": 0.3279,
+      "ev": -0.039,
+      "ev_category": "negative",
+      "dk_no_odds": 205
+    },
+    {
+      "game_id": "LAD/HOU - Bot 1",
+      "half": "bot",
+      "pitcher": "Tyler Glasnow",
+      "batting_team": "Houston Astros",
+      "pitching_team": "Los Angeles Dodgers",
+      "model_prob": 0.2203,
+      "implied_prob": 0.2273,
+      "ev": -0.007,
+      "ev_category": "negative",
+      "dk_no_odds": 340
+    }
+  ]
+}

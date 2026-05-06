@@ -1,6 +1,6 @@
 {
   "date": "2026-05-06",
-  "fetchedAt": "2026-05-06T04:13:10.051640+00:00",
+  "fetchedAt": "2026-05-06T07:35:54.540553+00:00",
   "games": [
     {
       "gamePk": 822985,
@@ -190,10 +190,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 135,
+            "yesOdds": -185,
+            "impliedNSFI": 0.4255,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 105,
+            "yesOdds": -145,
+            "impliedNSFI": 0.4878,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -233,10 +241,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 200,
+            "yesOdds": -280,
+            "impliedNSFI": 0.3333,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 260,
+            "yesOdds": -380,
+            "impliedNSFI": 0.2778,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -266,9 +282,9 @@
         "teamBatting": "Seattle Mariners",
         "teamPitching": "Atlanta Braves",
         "pitcher": {
-          "name": "Grant Holmes",
-          "id": 656550,
-          "pitchHand": "R"
+          "name": "Mart\u00edn P\u00e9rez",
+          "id": 527048,
+          "pitchHand": "L"
         },
         "lineup": [],
         "gameId": "ATL/SEA - Bot 1"
@@ -727,10 +743,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 285,
+            "yesOdds": -425,
+            "impliedNSFI": 0.2597,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 230,
+            "yesOdds": -340,
+            "impliedNSFI": 0.303,
+            "source": "draftkings_nash"
           }
         }
       }

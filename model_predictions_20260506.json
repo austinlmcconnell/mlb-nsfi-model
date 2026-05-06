@@ -1,43 +1,19 @@
 {
   "date": "2026-05-06",
-  "generatedAt": "2026-05-06T20:09:22.406333",
+  "generatedAt": "2026-05-06T22:26:43.330959",
   "simulations": 10000,
   "predictions": [
-    {
-      "game_id": "ATL/SEA - Top 1",
-      "half": "top",
-      "pitcher": "Bryan Woo",
-      "batting_team": "Atlanta Braves",
-      "pitching_team": "Seattle Mariners",
-      "model_prob": 0.3629,
-      "implied_prob": 0.3846,
-      "ev": -0.0217,
-      "ev_category": "negative",
-      "dk_no_odds": 160
-    },
-    {
-      "game_id": "ATL/SEA - Bot 1",
-      "half": "bot",
-      "pitcher": "Mart\u00edn P\u00e9rez",
-      "batting_team": "Seattle Mariners",
-      "pitching_team": "Atlanta Braves",
-      "model_prob": 0.3503,
-      "implied_prob": 0.4255,
-      "ev": -0.0752,
-      "ev_category": "negative",
-      "dk_no_odds": 135
-    },
     {
       "game_id": "BOS/DET - Top 1",
       "half": "top",
       "pitcher": "Jack Flaherty",
       "batting_team": "Boston Red Sox",
       "pitching_team": "Detroit Tigers",
-      "model_prob": 0.2515,
-      "implied_prob": 0.2857,
-      "ev": -0.0342,
+      "model_prob": 0.2475,
+      "implied_prob": 0.2899,
+      "ev": -0.0424,
       "ev_category": "negative",
-      "dk_no_odds": 250
+      "dk_no_odds": 245
     },
     {
       "game_id": "BOS/DET - Bot 1",
@@ -45,9 +21,9 @@
       "pitcher": "Sonny Gray",
       "batting_team": "Detroit Tigers",
       "pitching_team": "Boston Red Sox",
-      "model_prob": 0.2588,
+      "model_prob": 0.2604,
       "implied_prob": 0.4255,
-      "ev": -0.1667,
+      "ev": -0.1651,
       "ev_category": "negative",
       "dk_no_odds": 135
     },
@@ -57,11 +33,35 @@
       "pitcher": "Zack Wheeler",
       "batting_team": "Athletics",
       "pitching_team": "Philadelphia Phillies",
-      "model_prob": 0.2413,
-      "implied_prob": 0.2381,
-      "ev": 0.0032,
-      "ev_category": "marginal",
-      "dk_no_odds": 320
+      "model_prob": 0.235,
+      "implied_prob": 0.2439,
+      "ev": -0.0089,
+      "ev_category": "negative",
+      "dk_no_odds": 310
+    },
+    {
+      "game_id": "BAL/MIA - Top 1",
+      "half": "top",
+      "pitcher": "Eury P\u00e9rez",
+      "batting_team": "Baltimore Orioles",
+      "pitching_team": "Miami Marlins",
+      "model_prob": 0.2897,
+      "implied_prob": 0.2985,
+      "ev": -0.0088,
+      "ev_category": "negative",
+      "dk_no_odds": 235
+    },
+    {
+      "game_id": "BAL/MIA - Bot 1",
+      "half": "bot",
+      "pitcher": "Brandon Young",
+      "batting_team": "Miami Marlins",
+      "pitching_team": "Baltimore Orioles",
+      "model_prob": 0.3559,
+      "implied_prob": 0.4651,
+      "ev": -0.1092,
+      "ev_category": "negative",
+      "dk_no_odds": 115
     },
     {
       "game_id": "MIN/WSH - Bot 1",
@@ -69,9 +69,9 @@
       "pitcher": "Bailey Ober",
       "batting_team": "Washington Nationals",
       "pitching_team": "Minnesota Twins",
-      "model_prob": 0.3403,
+      "model_prob": 0.3423,
       "implied_prob": 0.4082,
-      "ev": -0.0679,
+      "ev": -0.0659,
       "ev_category": "negative",
       "dk_no_odds": 145
     },
@@ -81,9 +81,9 @@
       "pitcher": "Will Warren",
       "batting_team": "Texas Rangers",
       "pitching_team": "New York Yankees",
-      "model_prob": 0.3055,
+      "model_prob": 0.309,
       "implied_prob": 0.3125,
-      "ev": -0.007,
+      "ev": -0.0035,
       "ev_category": "negative",
       "dk_no_odds": 220
     },
@@ -93,11 +93,59 @@
       "pitcher": "Nathan Eovaldi",
       "batting_team": "New York Yankees",
       "pitching_team": "Texas Rangers",
-      "model_prob": 0.2857,
+      "model_prob": 0.29,
       "implied_prob": 0.3509,
-      "ev": -0.0652,
+      "ev": -0.0609,
       "ev_category": "negative",
       "dk_no_odds": 185
+    },
+    {
+      "game_id": "CIN/CHC - Top 1",
+      "half": "top",
+      "pitcher": "Colin Rea",
+      "batting_team": "Cincinnati Reds",
+      "pitching_team": "Chicago Cubs",
+      "model_prob": 0.3179,
+      "implied_prob": 0.3636,
+      "ev": -0.0457,
+      "ev_category": "negative",
+      "dk_no_odds": 175
+    },
+    {
+      "game_id": "CIN/CHC - Bot 1",
+      "half": "bot",
+      "pitcher": "Brady Singer",
+      "batting_team": "Chicago Cubs",
+      "pitching_team": "Cincinnati Reds",
+      "model_prob": 0.3762,
+      "implied_prob": 0.4878,
+      "ev": -0.1116,
+      "ev_category": "negative",
+      "dk_no_odds": 105
+    },
+    {
+      "game_id": "CLE/KC - Top 1",
+      "half": "top",
+      "pitcher": "Cole Ragans",
+      "batting_team": "Cleveland Guardians",
+      "pitching_team": "Kansas City Royals",
+      "model_prob": 0.1916,
+      "implied_prob": 0.2857,
+      "ev": -0.0941,
+      "ev_category": "negative",
+      "dk_no_odds": 250
+    },
+    {
+      "game_id": "CLE/KC - Bot 1",
+      "half": "bot",
+      "pitcher": "Joey Cantillo",
+      "batting_team": "Kansas City Royals",
+      "pitching_team": "Cleveland Guardians",
+      "model_prob": 0.283,
+      "implied_prob": 0.3922,
+      "ev": -0.1092,
+      "ev_category": "negative",
+      "dk_no_odds": 155
     }
   ]
 }

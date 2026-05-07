@@ -1,19 +1,139 @@
 {
   "date": "2026-05-07",
-  "generatedAt": "2026-05-07T19:59:41.951391",
+  "generatedAt": "2026-05-07T22:37:12.099517",
   "simulations": 10000,
   "predictions": [
+    {
+      "game_id": "TEX/NYY - Top 1",
+      "half": "top",
+      "pitcher": "Paul Blackburn",
+      "batting_team": "Texas Rangers",
+      "pitching_team": "New York Yankees",
+      "model_prob": 0.3492,
+      "implied_prob": 0.3774,
+      "ev": -0.0282,
+      "ev_category": "negative",
+      "dk_no_odds": 165
+    },
+    {
+      "game_id": "CIN/CHC - Bot 1",
+      "half": "bot",
+      "pitcher": "Rhett Lowder",
+      "batting_team": "Chicago Cubs",
+      "pitching_team": "Cincinnati Reds",
+      "model_prob": 0.3838,
+      "implied_prob": 0.3571,
+      "ev": 0.0267,
+      "ev_category": "marginal",
+      "dk_no_odds": 180
+    },
+    {
+      "game_id": "NYM/COL - Bot 1",
+      "half": "bot",
+      "pitcher": "Christian Scott",
+      "batting_team": "Colorado Rockies",
+      "pitching_team": "New York Mets",
+      "model_prob": 0.3268,
+      "implied_prob": 0.2703,
+      "ev": 0.0565,
+      "ev_category": "strong",
+      "dk_no_odds": 270
+    },
+    {
+      "game_id": "PIT/ARI - Top 1",
+      "half": "top",
+      "pitcher": "Zac Gallen",
+      "batting_team": "Pittsburgh Pirates",
+      "pitching_team": "Arizona Diamondbacks",
+      "model_prob": 0.3008,
+      "implied_prob": 0.3448,
+      "ev": -0.044,
+      "ev_category": "negative",
+      "dk_no_odds": 190
+    },
     {
       "game_id": "ATH/PHI - Top 1",
       "half": "top",
       "pitcher": "Andrew Painter",
       "batting_team": "Athletics",
       "pitching_team": "Philadelphia Phillies",
-      "model_prob": 0.3018,
-      "implied_prob": 0.339,
-      "ev": -0.0372,
+      "model_prob": 0.3107,
+      "implied_prob": 0.3333,
+      "ev": -0.0226,
       "ev_category": "negative",
-      "dk_no_odds": 195
+      "dk_no_odds": 200
+    },
+    {
+      "game_id": "BAL/MIA - Top 1",
+      "half": "top",
+      "pitcher": "Max Meyer",
+      "batting_team": "Baltimore Orioles",
+      "pitching_team": "Miami Marlins",
+      "model_prob": 0.2678,
+      "implied_prob": 0.3125,
+      "ev": -0.0447,
+      "ev_category": "negative",
+      "dk_no_odds": 220
+    },
+    {
+      "game_id": "BAL/MIA - Bot 1",
+      "half": "bot",
+      "pitcher": "Cade Povich",
+      "batting_team": "Miami Marlins",
+      "pitching_team": "Baltimore Orioles",
+      "model_prob": 0.287,
+      "implied_prob": 0.3704,
+      "ev": -0.0834,
+      "ev_category": "negative",
+      "dk_no_odds": 170
+    },
+    {
+      "game_id": "TB/BOS - Top 1",
+      "half": "top",
+      "pitcher": "Jake Bennett",
+      "batting_team": "Tampa Bay Rays",
+      "pitching_team": "Boston Red Sox",
+      "model_prob": 0.3377,
+      "implied_prob": 0.4167,
+      "ev": -0.079,
+      "ev_category": "negative",
+      "dk_no_odds": 140
+    },
+    {
+      "game_id": "TB/BOS - Bot 1",
+      "half": "bot",
+      "pitcher": "Griffin Jax",
+      "batting_team": "Boston Red Sox",
+      "pitching_team": "Tampa Bay Rays",
+      "model_prob": 0.1995,
+      "implied_prob": 0.2273,
+      "ev": -0.0278,
+      "ev_category": "negative",
+      "dk_no_odds": 340
+    },
+    {
+      "game_id": "STL/SD - Top 1",
+      "half": "top",
+      "pitcher": "Michael King",
+      "batting_team": "St. Louis Cardinals",
+      "pitching_team": "San Diego Padres",
+      "model_prob": 0.3044,
+      "implied_prob": 0.3636,
+      "ev": -0.0592,
+      "ev_category": "negative",
+      "dk_no_odds": 175
+    },
+    {
+      "game_id": "STL/SD - Bot 1",
+      "half": "bot",
+      "pitcher": "Matthew Liberatore",
+      "batting_team": "San Diego Padres",
+      "pitching_team": "St. Louis Cardinals",
+      "model_prob": 0.3887,
+      "implied_prob": 0.4082,
+      "ev": -0.0195,
+      "ev_category": "negative",
+      "dk_no_odds": 145
     }
   ]
 }

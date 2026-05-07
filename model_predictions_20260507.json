@@ -1,0 +1,79 @@
+{
+  "date": "2026-05-07",
+  "generatedAt": "2026-05-07T17:14:24.326872",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "CLE/KC - Top 1",
+      "half": "top",
+      "pitcher": "Seth Lugo",
+      "batting_team": "Cleveland Guardians",
+      "pitching_team": "Kansas City Royals",
+      "model_prob": 0.4047,
+      "implied_prob": 0.4545,
+      "ev": -0.0498,
+      "ev_category": "negative",
+      "dk_no_odds": 120
+    },
+    {
+      "game_id": "CLE/KC - Bot 1",
+      "half": "bot",
+      "pitcher": "Slade Cecconi",
+      "batting_team": "Kansas City Royals",
+      "pitching_team": "Cleveland Guardians",
+      "model_prob": 0.4182,
+      "implied_prob": 0.5122,
+      "ev": -0.094,
+      "ev_category": "negative",
+      "dk_no_odds": -105
+    },
+    {
+      "game_id": "CIN/CHC - Top 1",
+      "half": "top",
+      "pitcher": "Shota Imanaga",
+      "batting_team": "Cincinnati Reds",
+      "pitching_team": "Chicago Cubs",
+      "model_prob": 0.356,
+      "implied_prob": 0.2817,
+      "ev": 0.0743,
+      "ev_category": "strong",
+      "dk_no_odds": 255
+    },
+    {
+      "game_id": "CIN/CHC - Bot 1",
+      "half": "bot",
+      "pitcher": "Rhett Lowder",
+      "batting_team": "Chicago Cubs",
+      "pitching_team": "Cincinnati Reds",
+      "model_prob": 0.3793,
+      "implied_prob": 0.5,
+      "ev": -0.1207,
+      "ev_category": "negative",
+      "dk_no_odds": 100
+    },
+    {
+      "game_id": "NYM/COL - Top 1",
+      "half": "top",
+      "pitcher": "Jose Quintana",
+      "batting_team": "New York Mets",
+      "pitching_team": "Colorado Rockies",
+      "model_prob": 0.4121,
+      "implied_prob": 0.4878,
+      "ev": -0.0757,
+      "ev_category": "negative",
+      "dk_no_odds": 105
+    },
+    {
+      "game_id": "NYM/COL - Bot 1",
+      "half": "bot",
+      "pitcher": "Christian Scott",
+      "batting_team": "Colorado Rockies",
+      "pitching_team": "New York Mets",
+      "model_prob": 0.3239,
+      "implied_prob": 0.3704,
+      "ev": -0.0465,
+      "ev_category": "negative",
+      "dk_no_odds": 170
+    }
+  ]
+}

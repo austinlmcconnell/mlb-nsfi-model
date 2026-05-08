@@ -1,0 +1,139 @@
+{
+  "date": "2026-05-08",
+  "generatedAt": "2026-05-08T19:53:04.282689",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "HOU/CIN - Top 1",
+      "half": "top",
+      "pitcher": "Nick Lodolo",
+      "batting_team": "Houston Astros",
+      "pitching_team": "Cincinnati Reds",
+      "model_prob": 0.3297,
+      "implied_prob": 0.3571,
+      "ev": -0.0274,
+      "ev_category": "negative",
+      "dk_no_odds": 180
+    },
+    {
+      "game_id": "HOU/CIN - Bot 1",
+      "half": "bot",
+      "pitcher": "Mike Burrows",
+      "batting_team": "Cincinnati Reds",
+      "pitching_team": "Houston Astros",
+      "model_prob": 0.2846,
+      "implied_prob": 0.2985,
+      "ev": -0.0139,
+      "ev_category": "negative",
+      "dk_no_odds": 235
+    },
+    {
+      "game_id": "COL/PHI - Top 1",
+      "half": "top",
+      "pitcher": "Jes\u00fas Luzardo",
+      "batting_team": "Colorado Rockies",
+      "pitching_team": "Philadelphia Phillies",
+      "model_prob": 0.2567,
+      "implied_prob": 0.2857,
+      "ev": -0.029,
+      "ev_category": "negative",
+      "dk_no_odds": 250
+    },
+    {
+      "game_id": "COL/PHI - Bot 1",
+      "half": "bot",
+      "pitcher": "Chase Dollander",
+      "batting_team": "Philadelphia Phillies",
+      "pitching_team": "Colorado Rockies",
+      "model_prob": 0.3376,
+      "implied_prob": 0.2564,
+      "ev": 0.0812,
+      "ev_category": "strong",
+      "dk_no_odds": 290
+    },
+    {
+      "game_id": "LAA/TOR - Top 1",
+      "half": "top",
+      "pitcher": "Dylan Cease",
+      "batting_team": "Los Angeles Angels",
+      "pitching_team": "Toronto Blue Jays",
+      "model_prob": 0.231,
+      "implied_prob": 0.2174,
+      "ev": 0.0136,
+      "ev_category": "marginal",
+      "dk_no_odds": 360
+    },
+    {
+      "game_id": "LAA/TOR - Bot 1",
+      "half": "bot",
+      "pitcher": "Reid Detmers",
+      "batting_team": "Toronto Blue Jays",
+      "pitching_team": "Los Angeles Angels",
+      "model_prob": 0.2568,
+      "implied_prob": 0.3333,
+      "ev": -0.0765,
+      "ev_category": "negative",
+      "dk_no_odds": 200
+    },
+    {
+      "game_id": "WSH/MIA - Top 1",
+      "half": "top",
+      "pitcher": "Robby Snelling",
+      "batting_team": "Washington Nationals",
+      "pitching_team": "Miami Marlins",
+      "model_prob": 0.2951,
+      "implied_prob": 0.339,
+      "ev": -0.0439,
+      "ev_category": "negative",
+      "dk_no_odds": 195
+    },
+    {
+      "game_id": "MIN/CLE - Top 1",
+      "half": "top",
+      "pitcher": "Parker Messick",
+      "batting_team": "Minnesota Twins",
+      "pitching_team": "Cleveland Guardians",
+      "model_prob": 0.3277,
+      "implied_prob": 0.3509,
+      "ev": -0.0232,
+      "ev_category": "negative",
+      "dk_no_odds": 185
+    },
+    {
+      "game_id": "MIN/CLE - Bot 1",
+      "half": "bot",
+      "pitcher": "Connor Prielipp",
+      "batting_team": "Cleveland Guardians",
+      "pitching_team": "Minnesota Twins",
+      "model_prob": 0.3681,
+      "implied_prob": 0.3704,
+      "ev": -0.0023,
+      "ev_category": "negative",
+      "dk_no_odds": 170
+    },
+    {
+      "game_id": "SEA/CWS - Top 1",
+      "half": "top",
+      "pitcher": "Sean Burke",
+      "batting_team": "Seattle Mariners",
+      "pitching_team": "Chicago White Sox",
+      "model_prob": 0.3191,
+      "implied_prob": 0.3175,
+      "ev": 0.0016,
+      "ev_category": "marginal",
+      "dk_no_odds": 215
+    },
+    {
+      "game_id": "SEA/CWS - Bot 1",
+      "half": "bot",
+      "pitcher": "Emerson Hancock",
+      "batting_team": "Chicago White Sox",
+      "pitching_team": "Seattle Mariners",
+      "model_prob": 0.3674,
+      "implied_prob": 0.303,
+      "ev": 0.0644,
+      "ev_category": "strong",
+      "dk_no_odds": 230
+    }
+  ]
+}

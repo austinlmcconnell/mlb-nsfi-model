@@ -1,0 +1,31 @@
+{
+  "date": "2026-05-09",
+  "generatedAt": "2026-05-09T16:13:59.505425",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "LAA/TOR - Top 1",
+      "half": "top",
+      "pitcher": "Trey Yesavage",
+      "batting_team": "Los Angeles Angels",
+      "pitching_team": "Toronto Blue Jays",
+      "model_prob": 0.2862,
+      "implied_prob": 0.2564,
+      "ev": 0.0298,
+      "ev_category": "marginal",
+      "dk_no_odds": 290
+    },
+    {
+      "game_id": "LAA/TOR - Bot 1",
+      "half": "bot",
+      "pitcher": "Jack Kochanowicz",
+      "batting_team": "Toronto Blue Jays",
+      "pitching_team": "Los Angeles Angels",
+      "model_prob": 0.4078,
+      "implied_prob": 0.4545,
+      "ev": -0.0467,
+      "ev_category": "negative",
+      "dk_no_odds": 120
+    }
+  ]
+}

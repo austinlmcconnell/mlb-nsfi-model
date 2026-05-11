@@ -1,43 +1,19 @@
 {
   "date": "2026-05-11",
-  "generatedAt": "2026-05-11T20:15:05.569674",
+  "generatedAt": "2026-05-11T22:34:31.256493",
   "simulations": 10000,
   "predictions": [
-    {
-      "game_id": "LAA/CLE - Top 1",
-      "half": "top",
-      "pitcher": "Joey Cantillo",
-      "batting_team": "Los Angeles Angels",
-      "pitching_team": "Cleveland Guardians",
-      "model_prob": 0.2211,
-      "implied_prob": 0.3125,
-      "ev": -0.0914,
-      "ev_category": "negative",
-      "dk_no_odds": 220
-    },
-    {
-      "game_id": "LAA/CLE - Bot 1",
-      "half": "bot",
-      "pitcher": "Brent Suter",
-      "batting_team": "Cleveland Guardians",
-      "pitching_team": "Los Angeles Angels",
-      "model_prob": 0.4161,
-      "implied_prob": 0.4651,
-      "ev": -0.049,
-      "ev_category": "negative",
-      "dk_no_odds": 115
-    },
     {
       "game_id": "NYY/BAL - Top 1",
       "half": "top",
       "pitcher": "Brandon Young",
       "batting_team": "New York Yankees",
       "pitching_team": "Baltimore Orioles",
-      "model_prob": 0.3426,
-      "implied_prob": 0.4,
-      "ev": -0.0574,
+      "model_prob": 0.345,
+      "implied_prob": 0.4082,
+      "ev": -0.0632,
       "ev_category": "negative",
-      "dk_no_odds": 150
+      "dk_no_odds": 145
     },
     {
       "game_id": "NYY/BAL - Bot 1",
@@ -45,11 +21,11 @@
       "pitcher": "Ryan Weathers",
       "batting_team": "Baltimore Orioles",
       "pitching_team": "New York Yankees",
-      "model_prob": 0.3063,
-      "implied_prob": 0.3279,
-      "ev": -0.0216,
+      "model_prob": 0.3065,
+      "implied_prob": 0.3333,
+      "ev": -0.0268,
       "ev_category": "negative",
-      "dk_no_odds": 205
+      "dk_no_odds": 200
     },
     {
       "game_id": "TB/TOR - Top 1",
@@ -57,9 +33,9 @@
       "pitcher": "Kevin Gausman",
       "batting_team": "Tampa Bay Rays",
       "pitching_team": "Toronto Blue Jays",
-      "model_prob": 0.3347,
+      "model_prob": 0.3353,
       "implied_prob": 0.3922,
-      "ev": -0.0575,
+      "ev": -0.0569,
       "ev_category": "negative",
       "dk_no_odds": 155
     },
@@ -69,11 +45,83 @@
       "pitcher": "Drew Rasmussen",
       "batting_team": "Toronto Blue Jays",
       "pitching_team": "Tampa Bay Rays",
-      "model_prob": 0.3737,
+      "model_prob": 0.3733,
       "implied_prob": 0.3846,
-      "ev": -0.0109,
+      "ev": -0.0113,
       "ev_category": "negative",
       "dk_no_odds": 160
+    },
+    {
+      "game_id": "ARI/TEX - Top 1",
+      "half": "top",
+      "pitcher": "Jakob Junis",
+      "batting_team": "Arizona Diamondbacks",
+      "pitching_team": "Texas Rangers",
+      "model_prob": 0.4121,
+      "implied_prob": 0.4545,
+      "ev": -0.0424,
+      "ev_category": "negative",
+      "dk_no_odds": 120
+    },
+    {
+      "game_id": "ARI/TEX - Bot 1",
+      "half": "bot",
+      "pitcher": "Michael Soroka",
+      "batting_team": "Texas Rangers",
+      "pitching_team": "Arizona Diamondbacks",
+      "model_prob": 0.31,
+      "implied_prob": 0.3175,
+      "ev": -0.0075,
+      "ev_category": "negative",
+      "dk_no_odds": 215
+    },
+    {
+      "game_id": "SEA/HOU - Top 1",
+      "half": "top",
+      "pitcher": "Peter Lambert",
+      "batting_team": "Seattle Mariners",
+      "pitching_team": "Houston Astros",
+      "model_prob": 0.3424,
+      "implied_prob": 0.3846,
+      "ev": -0.0422,
+      "ev_category": "negative",
+      "dk_no_odds": 160
+    },
+    {
+      "game_id": "SEA/HOU - Bot 1",
+      "half": "bot",
+      "pitcher": "George Kirby",
+      "batting_team": "Houston Astros",
+      "pitching_team": "Seattle Mariners",
+      "model_prob": 0.2953,
+      "implied_prob": 0.3922,
+      "ev": -0.0969,
+      "ev_category": "negative",
+      "dk_no_odds": 155
+    },
+    {
+      "game_id": "SF/LAD - Top 1",
+      "half": "top",
+      "pitcher": "Roki Sasaki",
+      "batting_team": "San Francisco Giants",
+      "pitching_team": "Los Angeles Dodgers",
+      "model_prob": 0.4363,
+      "implied_prob": 0.4444,
+      "ev": -0.0081,
+      "ev_category": "negative",
+      "dk_no_odds": 125
+    },
+    {
+      "game_id": "SF/LAD - Bot 1",
+      "half": "bot",
+      "pitcher": "Trevor McDonald",
+      "batting_team": "Los Angeles Dodgers",
+      "pitching_team": "San Francisco Giants",
+      "model_prob": 0.364,
+      "implied_prob": 0.4082,
+      "ev": -0.0442,
+      "ev_category": "negative",
+      "dk_no_odds": 145
     }
   ]
 }

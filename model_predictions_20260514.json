@@ -1,0 +1,91 @@
+{
+  "date": "2026-05-14",
+  "generatedAt": "2026-05-14T17:18:25.684170",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "MIA/MIN - Top 1",
+      "half": "top",
+      "pitcher": "Zebby Matthews",
+      "batting_team": "Miami Marlins",
+      "pitching_team": "Minnesota Twins",
+      "model_prob": 0.3215,
+      "implied_prob": 0.4082,
+      "ev": -0.0867,
+      "ev_category": "negative",
+      "dk_no_odds": 145
+    },
+    {
+      "game_id": "MIA/MIN - Bot 1",
+      "half": "bot",
+      "pitcher": "Braxton Garrett",
+      "batting_team": "Minnesota Twins",
+      "pitching_team": "Miami Marlins",
+      "model_prob": 0.3573,
+      "implied_prob": 0.4651,
+      "ev": -0.1078,
+      "ev_category": "negative",
+      "dk_no_odds": 115
+    },
+    {
+      "game_id": "SD/MIL - Top 1",
+      "half": "top",
+      "pitcher": "Kyle Harrison",
+      "batting_team": "San Diego Padres",
+      "pitching_team": "Milwaukee Brewers",
+      "model_prob": 0.3161,
+      "implied_prob": 0.2941,
+      "ev": 0.022,
+      "ev_category": "marginal",
+      "dk_no_odds": 240
+    },
+    {
+      "game_id": "SD/MIL - Bot 1",
+      "half": "bot",
+      "pitcher": "Griffin Canning",
+      "batting_team": "Milwaukee Brewers",
+      "pitching_team": "San Diego Padres",
+      "model_prob": 0.3529,
+      "implied_prob": 0.3636,
+      "ev": -0.0107,
+      "ev_category": "negative",
+      "dk_no_odds": 175
+    },
+    {
+      "game_id": "SEA/HOU - Top 1",
+      "half": "top",
+      "pitcher": "Mike Burrows",
+      "batting_team": "Seattle Mariners",
+      "pitching_team": "Houston Astros",
+      "model_prob": 0.3367,
+      "implied_prob": 0.3704,
+      "ev": -0.0337,
+      "ev_category": "negative",
+      "dk_no_odds": 170
+    },
+    {
+      "game_id": "SEA/HOU - Bot 1",
+      "half": "bot",
+      "pitcher": "Luis Castillo",
+      "batting_team": "Houston Astros",
+      "pitching_team": "Seattle Mariners",
+      "model_prob": 0.3121,
+      "implied_prob": 0.3333,
+      "ev": -0.0212,
+      "ev_category": "negative",
+      "dk_no_odds": 200
+    },
+    {
+      "game_id": "STL/ATH - Bot 1",
+      "half": "bot",
+      "pitcher": "Michael McGreevy",
+      "batting_team": "Athletics",
+      "pitching_team": "St. Louis Cardinals",
+      "model_prob": 0.371,
+      "implied_prob": 0.3922,
+      "ev": -0.0212,
+      "ev_category": "negative",
+      "dk_no_odds": 155
+    }
+  ]
+}

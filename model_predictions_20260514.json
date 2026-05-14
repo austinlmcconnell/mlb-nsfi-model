@@ -1,17 +1,77 @@
 {
   "date": "2026-05-14",
-  "generatedAt": "2026-05-14T20:13:16.076743",
+  "generatedAt": "2026-05-14T22:38:33.434922",
   "simulations": 10000,
   "predictions": [
+    {
+      "game_id": "WSH/CIN - Top 1",
+      "half": "top",
+      "pitcher": "Chase Burns",
+      "batting_team": "Washington Nationals",
+      "pitching_team": "Cincinnati Reds",
+      "model_prob": 0.1981,
+      "implied_prob": 0.5,
+      "ev": -0.3019,
+      "ev_category": "negative",
+      "dk_no_odds": 100
+    },
+    {
+      "game_id": "MIA/MIN - Bot 1",
+      "half": "bot",
+      "pitcher": "Braxton Garrett",
+      "batting_team": "Minnesota Twins",
+      "pitching_team": "Miami Marlins",
+      "model_prob": 0.3742,
+      "implied_prob": 0.4762,
+      "ev": -0.102,
+      "ev_category": "negative",
+      "dk_no_odds": 110
+    },
+    {
+      "game_id": "SD/MIL - Bot 1",
+      "half": "bot",
+      "pitcher": "Griffin Canning",
+      "batting_team": "Milwaukee Brewers",
+      "pitching_team": "San Diego Padres",
+      "model_prob": 0.3395,
+      "implied_prob": 0.4545,
+      "ev": -0.115,
+      "ev_category": "negative",
+      "dk_no_odds": 120
+    },
+    {
+      "game_id": "SEA/HOU - Top 1",
+      "half": "top",
+      "pitcher": "Mike Burrows",
+      "batting_team": "Seattle Mariners",
+      "pitching_team": "Houston Astros",
+      "model_prob": 0.3328,
+      "implied_prob": 0.3125,
+      "ev": 0.0203,
+      "ev_category": "marginal",
+      "dk_no_odds": 220
+    },
+    {
+      "game_id": "SEA/HOU - Bot 1",
+      "half": "bot",
+      "pitcher": "Luis Castillo",
+      "batting_team": "Houston Astros",
+      "pitching_team": "Seattle Mariners",
+      "model_prob": 0.3133,
+      "implied_prob": 0.3125,
+      "ev": 0.0008,
+      "ev_category": "marginal",
+      "dk_no_odds": 220
+    },
     {
       "game_id": "PHI/BOS - Top 1",
       "half": "top",
       "pitcher": "Ranger Suarez",
       "batting_team": "Philadelphia Phillies",
       "pitching_team": "Boston Red Sox",
-      "model_prob": 0.2738,
+      "model_prob": 0.2829,
       "implied_prob": 0.3333,
-      "ev": -0.0595,
+      "ev": -0.0504,
       "ev_category": "negative",
       "dk_no_odds": 200
     },
@@ -21,11 +81,35 @@
       "pitcher": "Jes\u00fas Luzardo",
       "batting_team": "Boston Red Sox",
       "pitching_team": "Philadelphia Phillies",
-      "model_prob": 0.2388,
-      "implied_prob": 0.2222,
-      "ev": 0.0166,
+      "model_prob": 0.2415,
+      "implied_prob": 0.2273,
+      "ev": 0.0142,
       "ev_category": "marginal",
-      "dk_no_odds": 350
+      "dk_no_odds": 340
+    },
+    {
+      "game_id": "CHC/ATL - Top 1",
+      "half": "top",
+      "pitcher": "Chris Sale",
+      "batting_team": "Chicago Cubs",
+      "pitching_team": "Atlanta Braves",
+      "model_prob": 0.2683,
+      "implied_prob": 0.2778,
+      "ev": -0.0095,
+      "ev_category": "negative",
+      "dk_no_odds": 260
+    },
+    {
+      "game_id": "CHC/ATL - Bot 1",
+      "half": "bot",
+      "pitcher": "Ben Brown",
+      "batting_team": "Atlanta Braves",
+      "pitching_team": "Chicago Cubs",
+      "model_prob": 0.3069,
+      "implied_prob": 0.3636,
+      "ev": -0.0567,
+      "ev_category": "negative",
+      "dk_no_odds": 175
     },
     {
       "game_id": "KC/CWS - Top 1",
@@ -33,9 +117,9 @@
       "pitcher": "Anthony Kay",
       "batting_team": "Kansas City Royals",
       "pitching_team": "Chicago White Sox",
-      "model_prob": 0.3322,
+      "model_prob": 0.3388,
       "implied_prob": 0.4348,
-      "ev": -0.1026,
+      "ev": -0.096,
       "ev_category": "negative",
       "dk_no_odds": 130
     },
@@ -45,11 +129,35 @@
       "pitcher": "Kris Bubic",
       "batting_team": "Chicago White Sox",
       "pitching_team": "Kansas City Royals",
-      "model_prob": 0.3273,
+      "model_prob": 0.3233,
       "implied_prob": 0.2817,
-      "ev": 0.0456,
+      "ev": 0.0416,
       "ev_category": "marginal",
       "dk_no_odds": 255
+    },
+    {
+      "game_id": "SF/LAD - Top 1",
+      "half": "top",
+      "pitcher": "Emmet Sheehan",
+      "batting_team": "San Francisco Giants",
+      "pitching_team": "Los Angeles Dodgers",
+      "model_prob": 0.3098,
+      "implied_prob": 0.3226,
+      "ev": -0.0128,
+      "ev_category": "negative",
+      "dk_no_odds": 210
+    },
+    {
+      "game_id": "SF/LAD - Bot 1",
+      "half": "bot",
+      "pitcher": "Landen Roupp",
+      "batting_team": "Los Angeles Dodgers",
+      "pitching_team": "San Francisco Giants",
+      "model_prob": 0.3368,
+      "implied_prob": 0.339,
+      "ev": -0.0022,
+      "ev_category": "negative",
+      "dk_no_odds": 195
     }
   ]
 }

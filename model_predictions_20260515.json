@@ -1,0 +1,127 @@
+{
+  "date": "2026-05-15",
+  "generatedAt": "2026-05-15T20:00:05.909928",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "PHI/PIT - Top 1",
+      "half": "top",
+      "pitcher": "Braxton Ashcraft",
+      "batting_team": "Philadelphia Phillies",
+      "pitching_team": "Pittsburgh Pirates",
+      "model_prob": 0.303,
+      "implied_prob": 0.2941,
+      "ev": 0.0089,
+      "ev_category": "marginal",
+      "dk_no_odds": 240
+    },
+    {
+      "game_id": "PHI/PIT - Bot 1",
+      "half": "bot",
+      "pitcher": "Aaron Nola",
+      "batting_team": "Pittsburgh Pirates",
+      "pitching_team": "Philadelphia Phillies",
+      "model_prob": 0.2688,
+      "implied_prob": 0.303,
+      "ev": -0.0342,
+      "ev_category": "negative",
+      "dk_no_odds": 230
+    },
+    {
+      "game_id": "CIN/CLE - Top 1",
+      "half": "top",
+      "pitcher": "Tanner Bibee",
+      "batting_team": "Cincinnati Reds",
+      "pitching_team": "Cleveland Guardians",
+      "model_prob": 0.2918,
+      "implied_prob": 0.2941,
+      "ev": -0.0023,
+      "ev_category": "negative",
+      "dk_no_odds": 240
+    },
+    {
+      "game_id": "CIN/CLE - Bot 1",
+      "half": "bot",
+      "pitcher": "Andrew Abbott",
+      "batting_team": "Cleveland Guardians",
+      "pitching_team": "Cincinnati Reds",
+      "model_prob": 0.367,
+      "implied_prob": 0.4762,
+      "ev": -0.1092,
+      "ev_category": "negative",
+      "dk_no_odds": 110
+    },
+    {
+      "game_id": "MIA/TB - Top 1",
+      "half": "top",
+      "pitcher": "Jesse Scholtens",
+      "batting_team": "Miami Marlins",
+      "pitching_team": "Tampa Bay Rays",
+      "model_prob": 0.2624,
+      "implied_prob": 0.3846,
+      "ev": -0.1222,
+      "ev_category": "negative",
+      "dk_no_odds": 160
+    },
+    {
+      "game_id": "MIA/TB - Bot 1",
+      "half": "bot",
+      "pitcher": "Janson Junk",
+      "batting_team": "Tampa Bay Rays",
+      "pitching_team": "Miami Marlins",
+      "model_prob": 0.4122,
+      "implied_prob": 0.4651,
+      "ev": -0.0529,
+      "ev_category": "negative",
+      "dk_no_odds": 115
+    },
+    {
+      "game_id": "MIL/MIN - Top 1",
+      "half": "top",
+      "pitcher": "Joe Ryan",
+      "batting_team": "Milwaukee Brewers",
+      "pitching_team": "Minnesota Twins",
+      "model_prob": 0.2654,
+      "implied_prob": 0.2941,
+      "ev": -0.0287,
+      "ev_category": "negative",
+      "dk_no_odds": 240
+    },
+    {
+      "game_id": "MIL/MIN - Bot 1",
+      "half": "bot",
+      "pitcher": "Coleman Crow",
+      "batting_team": "Minnesota Twins",
+      "pitching_team": "Milwaukee Brewers",
+      "model_prob": 0.3403,
+      "implied_prob": 0.4167,
+      "ev": -0.0764,
+      "ev_category": "negative",
+      "dk_no_odds": 140
+    },
+    {
+      "game_id": "BOS/ATL - Top 1",
+      "half": "top",
+      "pitcher": "Spencer Strider",
+      "batting_team": "Boston Red Sox",
+      "pitching_team": "Atlanta Braves",
+      "model_prob": 0.2831,
+      "implied_prob": 0.2941,
+      "ev": -0.011,
+      "ev_category": "negative",
+      "dk_no_odds": 240
+    },
+    {
+      "game_id": "BOS/ATL - Bot 1",
+      "half": "bot",
+      "pitcher": "Connelly Early",
+      "batting_team": "Atlanta Braves",
+      "pitching_team": "Boston Red Sox",
+      "model_prob": 0.2135,
+      "implied_prob": 0.4255,
+      "ev": -0.212,
+      "ev_category": "negative",
+      "dk_no_odds": 135
+    }
+  ]
+}

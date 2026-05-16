@@ -1,0 +1,55 @@
+{
+  "date": "2026-05-16",
+  "generatedAt": "2026-05-16T16:16:21.436008",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "TOR/DET - Top 1",
+      "half": "top",
+      "pitcher": "Casey Mize",
+      "batting_team": "Toronto Blue Jays",
+      "pitching_team": "Detroit Tigers",
+      "model_prob": 0.3457,
+      "implied_prob": 0.3448,
+      "ev": 0.0009,
+      "ev_category": "marginal",
+      "dk_no_odds": 190
+    },
+    {
+      "game_id": "TOR/DET - Bot 1",
+      "half": "bot",
+      "pitcher": "Mason Fluharty",
+      "batting_team": "Detroit Tigers",
+      "pitching_team": "Toronto Blue Jays",
+      "model_prob": 0.2924,
+      "implied_prob": 0.3333,
+      "ev": -0.0409,
+      "ev_category": "negative",
+      "dk_no_odds": 200
+    },
+    {
+      "game_id": "KC/STL - Top 1",
+      "half": "top",
+      "pitcher": "Kyle Leahy",
+      "batting_team": "Kansas City Royals",
+      "pitching_team": "St. Louis Cardinals",
+      "model_prob": 0.3883,
+      "implied_prob": 0.4545,
+      "ev": -0.0662,
+      "ev_category": "negative",
+      "dk_no_odds": 120
+    },
+    {
+      "game_id": "KC/STL - Bot 1",
+      "half": "bot",
+      "pitcher": "Noah Cameron",
+      "batting_team": "St. Louis Cardinals",
+      "pitching_team": "Kansas City Royals",
+      "model_prob": 0.3512,
+      "implied_prob": 0.4444,
+      "ev": -0.0932,
+      "ev_category": "negative",
+      "dk_no_odds": 125
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "date": "2026-05-16",
-  "fetchedAt": "2026-05-16T04:09:57.612323+00:00",
+  "fetchedAt": "2026-05-16T07:15:00.658964+00:00",
   "games": [
     {
       "gamePk": 824278,
@@ -193,7 +193,11 @@
             "oddsPosted": false
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 150,
+            "yesOdds": -210,
+            "impliedNSFI": 0.4,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -531,10 +535,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 265,
+            "yesOdds": -400,
+            "impliedNSFI": 0.274,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 115,
+            "yesOdds": -160,
+            "impliedNSFI": 0.4651,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -625,10 +637,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 180,
+            "yesOdds": -255,
+            "impliedNSFI": 0.3571,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 195,
+            "yesOdds": -275,
+            "impliedNSFI": 0.339,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -668,10 +688,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 185,
+            "yesOdds": -260,
+            "impliedNSFI": 0.3509,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 170,
+            "yesOdds": -235,
+            "impliedNSFI": 0.3704,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -714,7 +742,11 @@
             "oddsPosted": false
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 220,
+            "yesOdds": -320,
+            "impliedNSFI": 0.3125,
+            "source": "draftkings_nash"
           }
         }
       }

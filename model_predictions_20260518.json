@@ -1,0 +1,163 @@
+{
+  "date": "2026-05-18",
+  "generatedAt": "2026-05-18T20:11:27.665656",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "CLE/DET - Top 1",
+      "half": "top",
+      "pitcher": "Framber Valdez",
+      "batting_team": "Cleveland Guardians",
+      "pitching_team": "Detroit Tigers",
+      "model_prob": 0.3283,
+      "implied_prob": 0.4082,
+      "ev": -0.0799,
+      "ev_category": "negative",
+      "dk_no_odds": 145
+    },
+    {
+      "game_id": "CLE/DET - Bot 1",
+      "half": "bot",
+      "pitcher": "Slade Cecconi",
+      "batting_team": "Detroit Tigers",
+      "pitching_team": "Cleveland Guardians",
+      "model_prob": 0.3255,
+      "implied_prob": 0.4082,
+      "ev": -0.0827,
+      "ev_category": "negative",
+      "dk_no_odds": 145
+    },
+    {
+      "game_id": "BAL/TB - Top 1",
+      "half": "top",
+      "pitcher": "Shane McClanahan",
+      "batting_team": "Baltimore Orioles",
+      "pitching_team": "Tampa Bay Rays",
+      "model_prob": 0.3015,
+      "implied_prob": 0.3175,
+      "ev": -0.016,
+      "ev_category": "negative",
+      "dk_no_odds": 215
+    },
+    {
+      "game_id": "BAL/TB - Bot 1",
+      "half": "bot",
+      "pitcher": "Trevor Rogers",
+      "batting_team": "Tampa Bay Rays",
+      "pitching_team": "Baltimore Orioles",
+      "model_prob": 0.3299,
+      "implied_prob": 0.4255,
+      "ev": -0.0956,
+      "ev_category": "negative",
+      "dk_no_odds": 135
+    },
+    {
+      "game_id": "CIN/PHI - Top 1",
+      "half": "top",
+      "pitcher": "Andrew Painter",
+      "batting_team": "Cincinnati Reds",
+      "pitching_team": "Philadelphia Phillies",
+      "model_prob": 0.2761,
+      "implied_prob": 0.339,
+      "ev": -0.0629,
+      "ev_category": "negative",
+      "dk_no_odds": 195
+    },
+    {
+      "game_id": "CIN/PHI - Bot 1",
+      "half": "bot",
+      "pitcher": "Nick Lodolo",
+      "batting_team": "Philadelphia Phillies",
+      "pitching_team": "Cincinnati Reds",
+      "model_prob": 0.323,
+      "implied_prob": 0.3704,
+      "ev": -0.0474,
+      "ev_category": "negative",
+      "dk_no_odds": 170
+    },
+    {
+      "game_id": "ATL/MIA - Top 1",
+      "half": "top",
+      "pitcher": "Max Meyer",
+      "batting_team": "Atlanta Braves",
+      "pitching_team": "Miami Marlins",
+      "model_prob": 0.3232,
+      "implied_prob": 0.3279,
+      "ev": -0.0047,
+      "ev_category": "negative",
+      "dk_no_odds": 205
+    },
+    {
+      "game_id": "ATL/MIA - Bot 1",
+      "half": "bot",
+      "pitcher": "JR Ritchie",
+      "batting_team": "Miami Marlins",
+      "pitching_team": "Atlanta Braves",
+      "model_prob": 0.3518,
+      "implied_prob": 0.5,
+      "ev": -0.1482,
+      "ev_category": "negative",
+      "dk_no_odds": 100
+    },
+    {
+      "game_id": "NYM/WSH - Bot 1",
+      "half": "bot",
+      "pitcher": "Christian Scott",
+      "batting_team": "Washington Nationals",
+      "pitching_team": "New York Mets",
+      "model_prob": 0.3189,
+      "implied_prob": 0.3175,
+      "ev": 0.0014,
+      "ev_category": "marginal",
+      "dk_no_odds": 215
+    },
+    {
+      "game_id": "TOR/NYY - Top 1",
+      "half": "top",
+      "pitcher": "Ryan Weathers",
+      "batting_team": "Toronto Blue Jays",
+      "pitching_team": "New York Yankees",
+      "model_prob": 0.3561,
+      "implied_prob": 0.3279,
+      "ev": 0.0282,
+      "ev_category": "marginal",
+      "dk_no_odds": 205
+    },
+    {
+      "game_id": "TOR/NYY - Bot 1",
+      "half": "bot",
+      "pitcher": "Patrick Corbin",
+      "batting_team": "New York Yankees",
+      "pitching_team": "Toronto Blue Jays",
+      "model_prob": 0.3586,
+      "implied_prob": 0.4167,
+      "ev": -0.0581,
+      "ev_category": "negative",
+      "dk_no_odds": 140
+    },
+    {
+      "game_id": "BOS/KC - Top 1",
+      "half": "top",
+      "pitcher": "Seth Lugo",
+      "batting_team": "Boston Red Sox",
+      "pitching_team": "Kansas City Royals",
+      "model_prob": 0.3407,
+      "implied_prob": 0.3922,
+      "ev": -0.0515,
+      "ev_category": "negative",
+      "dk_no_odds": 155
+    },
+    {
+      "game_id": "BOS/KC - Bot 1",
+      "half": "bot",
+      "pitcher": "Sonny Gray",
+      "batting_team": "Kansas City Royals",
+      "pitching_team": "Boston Red Sox",
+      "model_prob": 0.3392,
+      "implied_prob": 0.5122,
+      "ev": -0.173,
+      "ev_category": "negative",
+      "dk_no_odds": -105
+    }
+  ]
+}

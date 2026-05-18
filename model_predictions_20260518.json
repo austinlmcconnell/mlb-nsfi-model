@@ -1,6 +1,6 @@
 {
   "date": "2026-05-18",
-  "generatedAt": "2026-05-18T20:11:27.665656",
+  "generatedAt": "2026-05-18T22:33:56.421979",
   "simulations": 10000,
   "predictions": [
     {
@@ -9,11 +9,11 @@
       "pitcher": "Framber Valdez",
       "batting_team": "Cleveland Guardians",
       "pitching_team": "Detroit Tigers",
-      "model_prob": 0.3283,
-      "implied_prob": 0.4082,
-      "ev": -0.0799,
+      "model_prob": 0.3224,
+      "implied_prob": 0.4167,
+      "ev": -0.0943,
       "ev_category": "negative",
-      "dk_no_odds": 145
+      "dk_no_odds": 140
     },
     {
       "game_id": "CLE/DET - Bot 1",
@@ -21,11 +21,11 @@
       "pitcher": "Slade Cecconi",
       "batting_team": "Detroit Tigers",
       "pitching_team": "Cleveland Guardians",
-      "model_prob": 0.3255,
-      "implied_prob": 0.4082,
-      "ev": -0.0827,
+      "model_prob": 0.3245,
+      "implied_prob": 0.4167,
+      "ev": -0.0922,
       "ev_category": "negative",
-      "dk_no_odds": 145
+      "dk_no_odds": 140
     },
     {
       "game_id": "BAL/TB - Top 1",
@@ -33,9 +33,9 @@
       "pitcher": "Shane McClanahan",
       "batting_team": "Baltimore Orioles",
       "pitching_team": "Tampa Bay Rays",
-      "model_prob": 0.3015,
+      "model_prob": 0.2967,
       "implied_prob": 0.3175,
-      "ev": -0.016,
+      "ev": -0.0208,
       "ev_category": "negative",
       "dk_no_odds": 215
     },
@@ -45,9 +45,9 @@
       "pitcher": "Trevor Rogers",
       "batting_team": "Tampa Bay Rays",
       "pitching_team": "Baltimore Orioles",
-      "model_prob": 0.3299,
+      "model_prob": 0.3314,
       "implied_prob": 0.4255,
-      "ev": -0.0956,
+      "ev": -0.0941,
       "ev_category": "negative",
       "dk_no_odds": 135
     },
@@ -57,9 +57,9 @@
       "pitcher": "Andrew Painter",
       "batting_team": "Cincinnati Reds",
       "pitching_team": "Philadelphia Phillies",
-      "model_prob": 0.2761,
+      "model_prob": 0.2823,
       "implied_prob": 0.339,
-      "ev": -0.0629,
+      "ev": -0.0567,
       "ev_category": "negative",
       "dk_no_odds": 195
     },
@@ -69,9 +69,9 @@
       "pitcher": "Nick Lodolo",
       "batting_team": "Philadelphia Phillies",
       "pitching_team": "Cincinnati Reds",
-      "model_prob": 0.323,
+      "model_prob": 0.3315,
       "implied_prob": 0.3704,
-      "ev": -0.0474,
+      "ev": -0.0389,
       "ev_category": "negative",
       "dk_no_odds": 170
     },
@@ -81,11 +81,11 @@
       "pitcher": "Max Meyer",
       "batting_team": "Atlanta Braves",
       "pitching_team": "Miami Marlins",
-      "model_prob": 0.3232,
-      "implied_prob": 0.3279,
-      "ev": -0.0047,
-      "ev_category": "negative",
-      "dk_no_odds": 205
+      "model_prob": 0.3251,
+      "implied_prob": 0.3226,
+      "ev": 0.0025,
+      "ev_category": "marginal",
+      "dk_no_odds": 210
     },
     {
       "game_id": "ATL/MIA - Bot 1",
@@ -93,9 +93,9 @@
       "pitcher": "JR Ritchie",
       "batting_team": "Miami Marlins",
       "pitching_team": "Atlanta Braves",
-      "model_prob": 0.3518,
+      "model_prob": 0.3497,
       "implied_prob": 0.5,
-      "ev": -0.1482,
+      "ev": -0.1503,
       "ev_category": "negative",
       "dk_no_odds": 100
     },
@@ -105,11 +105,11 @@
       "pitcher": "Christian Scott",
       "batting_team": "Washington Nationals",
       "pitching_team": "New York Mets",
-      "model_prob": 0.3189,
-      "implied_prob": 0.3175,
-      "ev": 0.0014,
-      "ev_category": "marginal",
-      "dk_no_odds": 215
+      "model_prob": 0.3131,
+      "implied_prob": 0.3226,
+      "ev": -0.0095,
+      "ev_category": "negative",
+      "dk_no_odds": 210
     },
     {
       "game_id": "TOR/NYY - Top 1",
@@ -117,11 +117,11 @@
       "pitcher": "Ryan Weathers",
       "batting_team": "Toronto Blue Jays",
       "pitching_team": "New York Yankees",
-      "model_prob": 0.3561,
-      "implied_prob": 0.3279,
-      "ev": 0.0282,
+      "model_prob": 0.3514,
+      "implied_prob": 0.3125,
+      "ev": 0.0389,
       "ev_category": "marginal",
-      "dk_no_odds": 205
+      "dk_no_odds": 220
     },
     {
       "game_id": "TOR/NYY - Bot 1",
@@ -129,9 +129,9 @@
       "pitcher": "Patrick Corbin",
       "batting_team": "New York Yankees",
       "pitching_team": "Toronto Blue Jays",
-      "model_prob": 0.3586,
+      "model_prob": 0.3631,
       "implied_prob": 0.4167,
-      "ev": -0.0581,
+      "ev": -0.0536,
       "ev_category": "negative",
       "dk_no_odds": 140
     },
@@ -141,9 +141,9 @@
       "pitcher": "Seth Lugo",
       "batting_team": "Boston Red Sox",
       "pitching_team": "Kansas City Royals",
-      "model_prob": 0.3407,
+      "model_prob": 0.3306,
       "implied_prob": 0.3922,
-      "ev": -0.0515,
+      "ev": -0.0616,
       "ev_category": "negative",
       "dk_no_odds": 155
     },
@@ -153,11 +153,143 @@
       "pitcher": "Sonny Gray",
       "batting_team": "Kansas City Royals",
       "pitching_team": "Boston Red Sox",
-      "model_prob": 0.3392,
+      "model_prob": 0.3346,
       "implied_prob": 0.5122,
-      "ev": -0.173,
+      "ev": -0.1776,
       "ev_category": "negative",
       "dk_no_odds": -105
+    },
+    {
+      "game_id": "HOU/MIN - Top 1",
+      "half": "top",
+      "pitcher": "Kendry Rojas",
+      "batting_team": "Houston Astros",
+      "pitching_team": "Minnesota Twins",
+      "model_prob": 0.3651,
+      "implied_prob": 0.4167,
+      "ev": -0.0516,
+      "ev_category": "negative",
+      "dk_no_odds": 140
+    },
+    {
+      "game_id": "HOU/MIN - Bot 1",
+      "half": "bot",
+      "pitcher": "Tatsuya Imai",
+      "batting_team": "Minnesota Twins",
+      "pitching_team": "Houston Astros",
+      "model_prob": 0.3371,
+      "implied_prob": 0.3571,
+      "ev": -0.02,
+      "ev_category": "negative",
+      "dk_no_odds": 180
+    },
+    {
+      "game_id": "MIL/CHC - Top 1",
+      "half": "top",
+      "pitcher": "Shota Imanaga",
+      "batting_team": "Milwaukee Brewers",
+      "pitching_team": "Chicago Cubs",
+      "model_prob": 0.3336,
+      "implied_prob": 0.3175,
+      "ev": 0.0161,
+      "ev_category": "marginal",
+      "dk_no_odds": 215
+    },
+    {
+      "game_id": "MIL/CHC - Bot 1",
+      "half": "bot",
+      "pitcher": "Brandon Sproat",
+      "batting_team": "Chicago Cubs",
+      "pitching_team": "Milwaukee Brewers",
+      "model_prob": 0.3956,
+      "implied_prob": 0.3509,
+      "ev": 0.0447,
+      "ev_category": "marginal",
+      "dk_no_odds": 185
+    },
+    {
+      "game_id": "ATH/LAA - Top 1",
+      "half": "top",
+      "pitcher": "Walbert Ure\u00f1a",
+      "batting_team": "Athletics",
+      "pitching_team": "Los Angeles Angels",
+      "model_prob": 0.2974,
+      "implied_prob": 0.339,
+      "ev": -0.0416,
+      "ev_category": "negative",
+      "dk_no_odds": 195
+    },
+    {
+      "game_id": "LAD/SD - Top 1",
+      "half": "top",
+      "pitcher": "Michael King",
+      "batting_team": "Los Angeles Dodgers",
+      "pitching_team": "San Diego Padres",
+      "model_prob": 0.3168,
+      "implied_prob": 0.3636,
+      "ev": -0.0468,
+      "ev_category": "negative",
+      "dk_no_odds": 175
+    },
+    {
+      "game_id": "LAD/SD - Bot 1",
+      "half": "bot",
+      "pitcher": "Yoshinobu Yamamoto",
+      "batting_team": "San Diego Padres",
+      "pitching_team": "Los Angeles Dodgers",
+      "model_prob": 0.2933,
+      "implied_prob": 0.3333,
+      "ev": -0.04,
+      "ev_category": "negative",
+      "dk_no_odds": 200
+    },
+    {
+      "game_id": "SF/ARI - Top 1",
+      "half": "top",
+      "pitcher": "Zac Gallen",
+      "batting_team": "San Francisco Giants",
+      "pitching_team": "Arizona Diamondbacks",
+      "model_prob": 0.3907,
+      "implied_prob": 0.4651,
+      "ev": -0.0744,
+      "ev_category": "negative",
+      "dk_no_odds": 115
+    },
+    {
+      "game_id": "SF/ARI - Bot 1",
+      "half": "bot",
+      "pitcher": "Robbie Ray",
+      "batting_team": "Arizona Diamondbacks",
+      "pitching_team": "San Francisco Giants",
+      "model_prob": 0.3609,
+      "implied_prob": 0.4167,
+      "ev": -0.0558,
+      "ev_category": "negative",
+      "dk_no_odds": 140
+    },
+    {
+      "game_id": "CWS/SEA - Top 1",
+      "half": "top",
+      "pitcher": "Bryan Woo",
+      "batting_team": "Chicago White Sox",
+      "pitching_team": "Seattle Mariners",
+      "model_prob": 0.299,
+      "implied_prob": 0.303,
+      "ev": -0.004,
+      "ev_category": "negative",
+      "dk_no_odds": 230
+    },
+    {
+      "game_id": "CWS/SEA - Bot 1",
+      "half": "bot",
+      "pitcher": "Noah Schultz",
+      "batting_team": "Seattle Mariners",
+      "pitching_team": "Chicago White Sox",
+      "model_prob": 0.3342,
+      "implied_prob": 0.3279,
+      "ev": 0.0063,
+      "ev_category": "marginal",
+      "dk_no_odds": 205
     }
   ]
 }

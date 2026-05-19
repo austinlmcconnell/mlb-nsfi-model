@@ -1,6 +1,6 @@
 {
   "date": "2026-05-19",
-  "fetchedAt": "2026-05-19T04:42:18.380907+00:00",
+  "fetchedAt": "2026-05-19T08:28:18.223407+00:00",
   "games": [
     {
       "gamePk": 823865,
@@ -96,9 +96,9 @@
           },
           "bot": {
             "oddsPosted": true,
-            "noOdds": 210,
-            "yesOdds": -300,
-            "impliedNSFI": 0.3226,
+            "noOdds": 215,
+            "yesOdds": -310,
+            "impliedNSFI": 0.3175,
             "source": "draftkings_nash"
           }
         }
@@ -318,9 +318,9 @@
         "teamBatting": "Boston Red Sox",
         "teamPitching": "Kansas City Royals",
         "pitcher": {
-          "name": "TBD",
-          "id": null,
-          "pitchHand": "R"
+          "name": "Bailey Falter",
+          "id": 663559,
+          "pitchHand": "L"
         },
         "lineup": [],
         "gameId": "BOS/KC - Top 1"
@@ -494,7 +494,7 @@
           "top": {
             "oddsPosted": true,
             "noOdds": 190,
-            "yesOdds": -265,
+            "yesOdds": -270,
             "impliedNSFI": 0.3448,
             "source": "draftkings_nash"
           },
@@ -543,10 +543,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 180,
+            "yesOdds": -255,
+            "impliedNSFI": 0.3571,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 160,
+            "yesOdds": -225,
+            "impliedNSFI": 0.3846,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -685,16 +693,16 @@
         "draftkings": {
           "top": {
             "oddsPosted": true,
-            "noOdds": 155,
-            "yesOdds": -215,
-            "impliedNSFI": 0.3922,
+            "noOdds": 160,
+            "yesOdds": -220,
+            "impliedNSFI": 0.3846,
             "source": "draftkings_nash"
           },
           "bot": {
             "oddsPosted": true,
-            "noOdds": 145,
-            "yesOdds": -200,
-            "impliedNSFI": 0.4082,
+            "noOdds": 150,
+            "yesOdds": -205,
+            "impliedNSFI": 0.4,
             "source": "draftkings_nash"
           }
         }

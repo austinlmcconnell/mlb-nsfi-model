@@ -1,0 +1,31 @@
+{
+  "date": "2026-05-19",
+  "generatedAt": "2026-05-19T17:44:14.470769",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "ATL/MIA - Top 1",
+      "half": "top",
+      "pitcher": "Braxton Garrett",
+      "batting_team": "Atlanta Braves",
+      "pitching_team": "Miami Marlins",
+      "model_prob": 0.3204,
+      "implied_prob": 0.3636,
+      "ev": -0.0432,
+      "ev_category": "negative",
+      "dk_no_odds": 175
+    },
+    {
+      "game_id": "ATL/MIA - Bot 1",
+      "half": "bot",
+      "pitcher": "Mart\u00edn P\u00e9rez",
+      "batting_team": "Miami Marlins",
+      "pitching_team": "Atlanta Braves",
+      "model_prob": 0.3485,
+      "implied_prob": 0.4762,
+      "ev": -0.1277,
+      "ev_category": "negative",
+      "dk_no_odds": 110
+    }
+  ]
+}

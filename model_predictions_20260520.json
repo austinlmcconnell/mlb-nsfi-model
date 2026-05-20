@@ -1,79 +1,19 @@
 {
   "date": "2026-05-20",
-  "generatedAt": "2026-05-20T20:34:40.444049",
+  "generatedAt": "2026-05-20T22:55:01.312769",
   "simulations": 10000,
   "predictions": [
-    {
-      "game_id": "CLE/DET - Top 1",
-      "half": "top",
-      "pitcher": "TBD",
-      "batting_team": "Cleveland Guardians",
-      "pitching_team": "Detroit Tigers",
-      "model_prob": 0.333,
-      "implied_prob": 0.339,
-      "ev": -0.006,
-      "ev_category": "negative",
-      "dk_no_odds": 195
-    },
-    {
-      "game_id": "CLE/DET - Bot 1",
-      "half": "bot",
-      "pitcher": "Tanner Bibee",
-      "batting_team": "Detroit Tigers",
-      "pitching_team": "Cleveland Guardians",
-      "model_prob": 0.3046,
-      "implied_prob": 0.3922,
-      "ev": -0.0876,
-      "ev_category": "negative",
-      "dk_no_odds": 155
-    },
-    {
-      "game_id": "ATL/MIA - Top 1",
-      "half": "top",
-      "pitcher": "Janson Junk",
-      "batting_team": "Atlanta Braves",
-      "pitching_team": "Miami Marlins",
-      "model_prob": 0.406,
-      "implied_prob": 0.4255,
-      "ev": -0.0195,
-      "ev_category": "negative",
-      "dk_no_odds": 135
-    },
-    {
-      "game_id": "ATL/MIA - Bot 1",
-      "half": "bot",
-      "pitcher": "Chris Sale",
-      "batting_team": "Miami Marlins",
-      "pitching_team": "Atlanta Braves",
-      "model_prob": 0.2352,
-      "implied_prob": 0.274,
-      "ev": -0.0388,
-      "ev_category": "negative",
-      "dk_no_odds": 265
-    },
-    {
-      "game_id": "NYM/WSH - Bot 1",
-      "half": "bot",
-      "pitcher": "Zach Thornton",
-      "batting_team": "Washington Nationals",
-      "pitching_team": "New York Mets",
-      "model_prob": 0.2941,
-      "implied_prob": 0.3774,
-      "ev": -0.0833,
-      "ev_category": "negative",
-      "dk_no_odds": 165
-    },
     {
       "game_id": "TOR/NYY - Top 1",
       "half": "top",
       "pitcher": "Cam Schlittler",
       "batting_team": "Toronto Blue Jays",
       "pitching_team": "New York Yankees",
-      "model_prob": 0.2924,
-      "implied_prob": 0.2703,
-      "ev": 0.0221,
+      "model_prob": 0.2888,
+      "implied_prob": 0.274,
+      "ev": 0.0148,
       "ev_category": "marginal",
-      "dk_no_odds": 270
+      "dk_no_odds": 265
     },
     {
       "game_id": "TOR/NYY - Bot 1",
@@ -81,9 +21,9 @@
       "pitcher": "Trey Yesavage",
       "batting_team": "New York Yankees",
       "pitching_team": "Toronto Blue Jays",
-      "model_prob": 0.2811,
+      "model_prob": 0.2744,
       "implied_prob": 0.2817,
-      "ev": -0.0006,
+      "ev": -0.0073,
       "ev_category": "negative",
       "dk_no_odds": 255
     },
@@ -93,9 +33,9 @@
       "pitcher": "Michael Wacha",
       "batting_team": "Boston Red Sox",
       "pitching_team": "Kansas City Royals",
-      "model_prob": 0.3866,
+      "model_prob": 0.3812,
       "implied_prob": 0.4082,
-      "ev": -0.0216,
+      "ev": -0.027,
       "ev_category": "negative",
       "dk_no_odds": 145
     },
@@ -105,11 +45,35 @@
       "pitcher": "Connelly Early",
       "batting_team": "Kansas City Royals",
       "pitching_team": "Boston Red Sox",
-      "model_prob": 0.2778,
+      "model_prob": 0.2833,
       "implied_prob": 0.4167,
-      "ev": -0.1389,
+      "ev": -0.1334,
       "ev_category": "negative",
       "dk_no_odds": 140
+    },
+    {
+      "game_id": "MIL/CHC - Top 1",
+      "half": "top",
+      "pitcher": "Edward Cabrera",
+      "batting_team": "Milwaukee Brewers",
+      "pitching_team": "Chicago Cubs",
+      "model_prob": 0.2833,
+      "implied_prob": 0.3226,
+      "ev": -0.0393,
+      "ev_category": "negative",
+      "dk_no_odds": 210
+    },
+    {
+      "game_id": "MIL/CHC - Bot 1",
+      "half": "bot",
+      "pitcher": "Kyle Harrison",
+      "batting_team": "Chicago Cubs",
+      "pitching_team": "Milwaukee Brewers",
+      "model_prob": 0.3128,
+      "implied_prob": 0.2985,
+      "ev": 0.0143,
+      "ev_category": "marginal",
+      "dk_no_odds": 235
     },
     {
       "game_id": "PIT/STL - Top 1",
@@ -117,9 +81,9 @@
       "pitcher": "Michael McGreevy",
       "batting_team": "Pittsburgh Pirates",
       "pitching_team": "St. Louis Cardinals",
-      "model_prob": 0.3578,
+      "model_prob": 0.3637,
       "implied_prob": 0.4348,
-      "ev": -0.077,
+      "ev": -0.0711,
       "ev_category": "negative",
       "dk_no_odds": 130
     },
@@ -129,9 +93,9 @@
       "pitcher": "Carmen Mlodzinski",
       "batting_team": "St. Louis Cardinals",
       "pitching_team": "Pittsburgh Pirates",
-      "model_prob": 0.3192,
+      "model_prob": 0.317,
       "implied_prob": 0.4,
-      "ev": -0.0808,
+      "ev": -0.083,
       "ev_category": "negative",
       "dk_no_odds": 150
     },
@@ -141,9 +105,9 @@
       "pitcher": "Randy V\u00e1squez",
       "batting_team": "Los Angeles Dodgers",
       "pitching_team": "San Diego Padres",
-      "model_prob": 0.4478,
+      "model_prob": 0.4396,
       "implied_prob": 0.4255,
-      "ev": 0.0223,
+      "ev": 0.0141,
       "ev_category": "marginal",
       "dk_no_odds": 135
     },
@@ -153,11 +117,23 @@
       "pitcher": "Shohei Ohtani",
       "batting_team": "San Diego Padres",
       "pitching_team": "Los Angeles Dodgers",
-      "model_prob": 0.2782,
+      "model_prob": 0.2764,
       "implied_prob": 0.2564,
-      "ev": 0.0218,
+      "ev": 0.02,
       "ev_category": "marginal",
       "dk_no_odds": 290
+    },
+    {
+      "game_id": "ATH/LAA - Top 1",
+      "half": "top",
+      "pitcher": "Jack Kochanowicz",
+      "batting_team": "Athletics",
+      "pitching_team": "Los Angeles Angels",
+      "model_prob": 0.359,
+      "implied_prob": 0.4545,
+      "ev": -0.0955,
+      "ev_category": "negative",
+      "dk_no_odds": 120
     }
   ]
 }

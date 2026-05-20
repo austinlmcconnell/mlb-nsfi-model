@@ -1,0 +1,79 @@
+{
+  "date": "2026-05-20",
+  "generatedAt": "2026-05-20T18:04:41.395866",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "TEX/COL - Top 1",
+      "half": "top",
+      "pitcher": "Kyle Freeland",
+      "batting_team": "Texas Rangers",
+      "pitching_team": "Colorado Rockies",
+      "model_prob": 0.3303,
+      "implied_prob": 0.3846,
+      "ev": -0.0543,
+      "ev_category": "negative",
+      "dk_no_odds": 160
+    },
+    {
+      "game_id": "TEX/COL - Bot 1",
+      "half": "bot",
+      "pitcher": "Jack Leiter",
+      "batting_team": "Colorado Rockies",
+      "pitching_team": "Texas Rangers",
+      "model_prob": 0.3461,
+      "implied_prob": 0.3774,
+      "ev": -0.0313,
+      "ev_category": "negative",
+      "dk_no_odds": 165
+    },
+    {
+      "game_id": "SF/ARI - Top 1",
+      "half": "top",
+      "pitcher": "Merrill Kelly",
+      "batting_team": "San Francisco Giants",
+      "pitching_team": "Arizona Diamondbacks",
+      "model_prob": 0.415,
+      "implied_prob": 0.4444,
+      "ev": -0.0294,
+      "ev_category": "negative",
+      "dk_no_odds": 125
+    },
+    {
+      "game_id": "SF/ARI - Bot 1",
+      "half": "bot",
+      "pitcher": "Tyler Mahle",
+      "batting_team": "Arizona Diamondbacks",
+      "pitching_team": "San Francisco Giants",
+      "model_prob": 0.4046,
+      "implied_prob": 0.4651,
+      "ev": -0.0605,
+      "ev_category": "negative",
+      "dk_no_odds": 115
+    },
+    {
+      "game_id": "CWS/SEA - Top 1",
+      "half": "top",
+      "pitcher": "Emerson Hancock",
+      "batting_team": "Chicago White Sox",
+      "pitching_team": "Seattle Mariners",
+      "model_prob": 0.3544,
+      "implied_prob": 0.2817,
+      "ev": 0.0727,
+      "ev_category": "strong",
+      "dk_no_odds": 255
+    },
+    {
+      "game_id": "CWS/SEA - Bot 1",
+      "half": "bot",
+      "pitcher": "Sean Burke",
+      "batting_team": "Seattle Mariners",
+      "pitching_team": "Chicago White Sox",
+      "model_prob": 0.321,
+      "implied_prob": 0.3571,
+      "ev": -0.0361,
+      "ev_category": "negative",
+      "dk_no_odds": 180
+    }
+  ]
+}

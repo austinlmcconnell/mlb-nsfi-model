@@ -1,6 +1,6 @@
 {
   "date": "2026-05-21",
-  "generatedAt": "2026-05-21T20:18:41.376005",
+  "generatedAt": "2026-05-21T22:51:31.553170",
   "simulations": 10000,
   "predictions": [
     {
@@ -9,35 +9,11 @@
       "pitcher": "Dustin May",
       "batting_team": "Pittsburgh Pirates",
       "pitching_team": "St. Louis Cardinals",
-      "model_prob": 0.265,
+      "model_prob": 0.2498,
       "implied_prob": 0.3636,
-      "ev": -0.0986,
+      "ev": -0.1138,
       "ev_category": "negative",
       "dk_no_odds": 175
-    },
-    {
-      "game_id": "ATL/MIA - Top 1",
-      "half": "top",
-      "pitcher": "Sandy Alcantara",
-      "batting_team": "Atlanta Braves",
-      "pitching_team": "Miami Marlins",
-      "model_prob": 0.3918,
-      "implied_prob": 0.3846,
-      "ev": 0.0072,
-      "ev_category": "marginal",
-      "dk_no_odds": 160
-    },
-    {
-      "game_id": "ATL/MIA - Bot 1",
-      "half": "bot",
-      "pitcher": "Spencer Strider",
-      "batting_team": "Miami Marlins",
-      "pitching_team": "Atlanta Braves",
-      "model_prob": 0.3294,
-      "implied_prob": 0.4255,
-      "ev": -0.0961,
-      "ev_category": "negative",
-      "dk_no_odds": 135
     },
     {
       "game_id": "TOR/NYY - Top 1",
@@ -45,9 +21,9 @@
       "pitcher": "Carlos Rod\u00f3n",
       "batting_team": "Toronto Blue Jays",
       "pitching_team": "New York Yankees",
-      "model_prob": 0.3135,
+      "model_prob": 0.3215,
       "implied_prob": 0.339,
-      "ev": -0.0255,
+      "ev": -0.0175,
       "ev_category": "negative",
       "dk_no_odds": 195
     },
@@ -57,11 +33,23 @@
       "pitcher": "Braydon Fisher",
       "batting_team": "New York Yankees",
       "pitching_team": "Toronto Blue Jays",
-      "model_prob": 0.2246,
+      "model_prob": 0.2334,
       "implied_prob": 0.3279,
-      "ev": -0.1033,
+      "ev": -0.0945,
       "ev_category": "negative",
       "dk_no_odds": 205
+    },
+    {
+      "game_id": "ATH/LAA - Top 1",
+      "half": "top",
+      "pitcher": "Jos\u00e9 Soriano",
+      "batting_team": "Athletics",
+      "pitching_team": "Los Angeles Angels",
+      "model_prob": 0.3057,
+      "implied_prob": 0.303,
+      "ev": 0.0027,
+      "ev_category": "marginal",
+      "dk_no_odds": 230
     }
   ]
 }

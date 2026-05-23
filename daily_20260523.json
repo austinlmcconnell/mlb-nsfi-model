@@ -1,6 +1,6 @@
 {
   "date": "2026-05-23",
-  "fetchedAt": "2026-05-23T04:24:42.777332+00:00",
+  "fetchedAt": "2026-05-23T07:32:46.293116+00:00",
   "games": [
     {
       "gamePk": 824518,
@@ -368,9 +368,9 @@
         "teamBatting": "San Francisco Giants",
         "teamPitching": "Chicago White Sox",
         "pitcher": {
-          "name": "Erick Fedde",
-          "id": 607200,
-          "pitchHand": "R"
+          "name": "Bryan Hudson",
+          "id": 663542,
+          "pitchHand": "L"
         },
         "lineup": [],
         "gameId": "CWS/SF - Bot 1"
@@ -378,10 +378,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 125,
+            "yesOdds": -175,
+            "impliedNSFI": 0.4444,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": -115,
+            "yesOdds": -120,
+            "impliedNSFI": 0.5349,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -472,10 +480,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 115,
+            "yesOdds": -155,
+            "impliedNSFI": 0.4651,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 210,
+            "yesOdds": -300,
+            "impliedNSFI": 0.3226,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -762,10 +778,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 150,
+            "yesOdds": -205,
+            "impliedNSFI": 0.4,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": -105,
+            "yesOdds": -130,
+            "impliedNSFI": 0.5122,
+            "source": "draftkings_nash"
           }
         }
       }

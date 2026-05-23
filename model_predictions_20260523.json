@@ -1,0 +1,103 @@
+{
+  "date": "2026-05-23",
+  "generatedAt": "2026-05-23T16:31:13.594061",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "STL/CIN - Top 1",
+      "half": "top",
+      "pitcher": "Chris Paddack",
+      "batting_team": "St. Louis Cardinals",
+      "pitching_team": "Cincinnati Reds",
+      "model_prob": 0.3737,
+      "implied_prob": 0.4444,
+      "ev": -0.0707,
+      "ev_category": "negative",
+      "dk_no_odds": 125
+    },
+    {
+      "game_id": "STL/CIN - Bot 1",
+      "half": "bot",
+      "pitcher": "Andre Pallante",
+      "batting_team": "Cincinnati Reds",
+      "pitching_team": "St. Louis Cardinals",
+      "model_prob": 0.3248,
+      "implied_prob": 0.3571,
+      "ev": -0.0323,
+      "ev_category": "negative",
+      "dk_no_odds": 180
+    },
+    {
+      "game_id": "HOU/CHC - Top 1",
+      "half": "top",
+      "pitcher": "Colin Rea",
+      "batting_team": "Houston Astros",
+      "pitching_team": "Chicago Cubs",
+      "model_prob": 0.3671,
+      "implied_prob": 0.4545,
+      "ev": -0.0874,
+      "ev_category": "negative",
+      "dk_no_odds": 120
+    },
+    {
+      "game_id": "HOU/CHC - Bot 1",
+      "half": "bot",
+      "pitcher": "Kai-Wei Teng",
+      "batting_team": "Chicago Cubs",
+      "pitching_team": "Houston Astros",
+      "model_prob": 0.2987,
+      "implied_prob": 0.3448,
+      "ev": -0.0461,
+      "ev_category": "negative",
+      "dk_no_odds": 190
+    },
+    {
+      "game_id": "PIT/TOR - Top 1",
+      "half": "top",
+      "pitcher": "Patrick Corbin",
+      "batting_team": "Pittsburgh Pirates",
+      "pitching_team": "Toronto Blue Jays",
+      "model_prob": 0.3189,
+      "implied_prob": 0.4167,
+      "ev": -0.0978,
+      "ev_category": "negative",
+      "dk_no_odds": 140
+    },
+    {
+      "game_id": "PIT/TOR - Bot 1",
+      "half": "bot",
+      "pitcher": "Paul Skenes",
+      "batting_team": "Toronto Blue Jays",
+      "pitching_team": "Pittsburgh Pirates",
+      "model_prob": 0.2802,
+      "implied_prob": 0.2817,
+      "ev": -0.0015,
+      "ev_category": "negative",
+      "dk_no_odds": 255
+    },
+    {
+      "game_id": "MIN/BOS - Top 1",
+      "half": "top",
+      "pitcher": "Jovani Mor\u00e1n",
+      "batting_team": "Minnesota Twins",
+      "pitching_team": "Boston Red Sox",
+      "model_prob": 0.2275,
+      "implied_prob": 0.4651,
+      "ev": -0.2376,
+      "ev_category": "negative",
+      "dk_no_odds": 115
+    },
+    {
+      "game_id": "MIN/BOS - Bot 1",
+      "half": "bot",
+      "pitcher": "Taj Bradley",
+      "batting_team": "Boston Red Sox",
+      "pitching_team": "Minnesota Twins",
+      "model_prob": 0.3068,
+      "implied_prob": 0.2817,
+      "ev": 0.0251,
+      "ev_category": "marginal",
+      "dk_no_odds": 255
+    }
+  ]
+}

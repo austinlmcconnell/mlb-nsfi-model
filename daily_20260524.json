@@ -1,6 +1,6 @@
 {
   "date": "2026-05-24",
-  "fetchedAt": "2026-05-24T04:48:16.761217+00:00",
+  "fetchedAt": "2026-05-24T07:49:53.411443+00:00",
   "games": [
     {
       "gamePk": 822813,
@@ -649,10 +649,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 190,
+            "yesOdds": -270,
+            "impliedNSFI": 0.3448,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": -135,
+            "yesOdds": 100,
+            "impliedNSFI": 0.5745,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -776,9 +784,9 @@
         "teamBatting": "Los Angeles Angels",
         "teamPitching": "Texas Rangers",
         "pitcher": {
-          "name": "TBD",
-          "id": null,
-          "pitchHand": "R"
+          "name": "MacKenzie Gore",
+          "id": 669022,
+          "pitchHand": "L"
         },
         "lineup": [],
         "gameId": "TEX/LAA - Bot 1"
@@ -786,10 +794,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 295,
+            "yesOdds": -450,
+            "impliedNSFI": 0.2532,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 340,
+            "yesOdds": -550,
+            "impliedNSFI": 0.2273,
+            "source": "draftkings_nash"
           }
         }
       }

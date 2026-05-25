@@ -1,0 +1,151 @@
+{
+  "date": "2026-05-25",
+  "generatedAt": "2026-05-25T17:19:41.160474",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "CHC/PIT - Top 1",
+      "half": "top",
+      "pitcher": "Carmen Mlodzinski",
+      "batting_team": "Chicago Cubs",
+      "pitching_team": "Pittsburgh Pirates",
+      "model_prob": 0.3358,
+      "implied_prob": 0.3125,
+      "ev": 0.0233,
+      "ev_category": "marginal",
+      "dk_no_odds": 220
+    },
+    {
+      "game_id": "CHC/PIT - Bot 1",
+      "half": "bot",
+      "pitcher": "Ben Brown",
+      "batting_team": "Pittsburgh Pirates",
+      "pitching_team": "Chicago Cubs",
+      "model_prob": 0.2401,
+      "implied_prob": 0.3077,
+      "ev": -0.0676,
+      "ev_category": "negative",
+      "dk_no_odds": 225
+    },
+    {
+      "game_id": "TB/BAL - Top 1",
+      "half": "top",
+      "pitcher": "Kyle Bradish",
+      "batting_team": "Tampa Bay Rays",
+      "pitching_team": "Baltimore Orioles",
+      "model_prob": 0.2179,
+      "implied_prob": 0.3077,
+      "ev": -0.0898,
+      "ev_category": "negative",
+      "dk_no_odds": 225
+    },
+    {
+      "game_id": "TB/BAL - Bot 1",
+      "half": "bot",
+      "pitcher": "Shane McClanahan",
+      "batting_team": "Baltimore Orioles",
+      "pitching_team": "Tampa Bay Rays",
+      "model_prob": 0.2977,
+      "implied_prob": 0.3226,
+      "ev": -0.0249,
+      "ev_category": "negative",
+      "dk_no_odds": 210
+    },
+    {
+      "game_id": "MIN/CWS - Top 1",
+      "half": "top",
+      "pitcher": "Anthony Kay",
+      "batting_team": "Minnesota Twins",
+      "pitching_team": "Chicago White Sox",
+      "model_prob": 0.356,
+      "implied_prob": 0.4348,
+      "ev": -0.0788,
+      "ev_category": "negative",
+      "dk_no_odds": 130
+    },
+    {
+      "game_id": "MIN/CWS - Bot 1",
+      "half": "bot",
+      "pitcher": "Zebby Matthews",
+      "batting_team": "Chicago White Sox",
+      "pitching_team": "Minnesota Twins",
+      "model_prob": 0.278,
+      "implied_prob": 0.2857,
+      "ev": -0.0077,
+      "ev_category": "negative",
+      "dk_no_odds": 250
+    },
+    {
+      "game_id": "STL/MIL - Top 1",
+      "half": "top",
+      "pitcher": "Jacob Misiorowski",
+      "batting_team": "St. Louis Cardinals",
+      "pitching_team": "Milwaukee Brewers",
+      "model_prob": 0.2327,
+      "implied_prob": 0.2532,
+      "ev": -0.0205,
+      "ev_category": "negative",
+      "dk_no_odds": 295
+    },
+    {
+      "game_id": "STL/MIL - Bot 1",
+      "half": "bot",
+      "pitcher": "Matthew Liberatore",
+      "batting_team": "Milwaukee Brewers",
+      "pitching_team": "St. Louis Cardinals",
+      "model_prob": 0.3389,
+      "implied_prob": 0.3774,
+      "ev": -0.0385,
+      "ev_category": "negative",
+      "dk_no_odds": 165
+    },
+    {
+      "game_id": "NYY/KC - Top 1",
+      "half": "top",
+      "pitcher": "Michael Wacha",
+      "batting_team": "New York Yankees",
+      "pitching_team": "Kansas City Royals",
+      "model_prob": 0.3712,
+      "implied_prob": 0.3509,
+      "ev": 0.0203,
+      "ev_category": "marginal",
+      "dk_no_odds": 185
+    },
+    {
+      "game_id": "NYY/KC - Bot 1",
+      "half": "bot",
+      "pitcher": "Will Warren",
+      "batting_team": "Kansas City Royals",
+      "pitching_team": "New York Yankees",
+      "model_prob": 0.3396,
+      "implied_prob": 0.4545,
+      "ev": -0.1149,
+      "ev_category": "negative",
+      "dk_no_odds": 120
+    },
+    {
+      "game_id": "CIN/NYM - Top 1",
+      "half": "top",
+      "pitcher": "Nolan McLean",
+      "batting_team": "Cincinnati Reds",
+      "pitching_team": "New York Mets",
+      "model_prob": 0.2169,
+      "implied_prob": 0.2532,
+      "ev": -0.0363,
+      "ev_category": "negative",
+      "dk_no_odds": 295
+    },
+    {
+      "game_id": "CIN/NYM - Bot 1",
+      "half": "bot",
+      "pitcher": "Nick Lodolo",
+      "batting_team": "New York Mets",
+      "pitching_team": "Cincinnati Reds",
+      "model_prob": 0.3482,
+      "implied_prob": 0.3448,
+      "ev": 0.0034,
+      "ev_category": "marginal",
+      "dk_no_odds": 190
+    }
+  ]
+}

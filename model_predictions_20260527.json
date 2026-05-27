@@ -1,91 +1,19 @@
 {
   "date": "2026-05-27",
-  "generatedAt": "2026-05-27T20:32:35.422275",
+  "generatedAt": "2026-05-27T22:57:07.485430",
   "simulations": 10000,
   "predictions": [
-    {
-      "game_id": "LAA/DET - Top 1",
-      "half": "top",
-      "pitcher": "Casey Mize",
-      "batting_team": "Los Angeles Angels",
-      "pitching_team": "Detroit Tigers",
-      "model_prob": 0.2964,
-      "implied_prob": 0.3175,
-      "ev": -0.0211,
-      "ev_category": "negative",
-      "dk_no_odds": 215
-    },
-    {
-      "game_id": "LAA/DET - Bot 1",
-      "half": "bot",
-      "pitcher": "Jos\u00e9 Soriano",
-      "batting_team": "Detroit Tigers",
-      "pitching_team": "Los Angeles Angels",
-      "model_prob": 0.3083,
-      "implied_prob": 0.3279,
-      "ev": -0.0196,
-      "ev_category": "negative",
-      "dk_no_odds": 205
-    },
-    {
-      "game_id": "CHC/PIT - Top 1",
-      "half": "top",
-      "pitcher": "Bubba Chandler",
-      "batting_team": "Chicago Cubs",
-      "pitching_team": "Pittsburgh Pirates",
-      "model_prob": 0.3508,
-      "implied_prob": 0.3175,
-      "ev": 0.0333,
-      "ev_category": "marginal",
-      "dk_no_odds": 215
-    },
-    {
-      "game_id": "CHC/PIT - Bot 1",
-      "half": "bot",
-      "pitcher": "Jameson Taillon",
-      "batting_team": "Pittsburgh Pirates",
-      "pitching_team": "Chicago Cubs",
-      "model_prob": 0.332,
-      "implied_prob": 0.3774,
-      "ev": -0.0454,
-      "ev_category": "negative",
-      "dk_no_odds": 165
-    },
-    {
-      "game_id": "ATL/BOS - Top 1",
-      "half": "top",
-      "pitcher": "Connelly Early",
-      "batting_team": "Atlanta Braves",
-      "pitching_team": "Boston Red Sox",
-      "model_prob": 0.1991,
-      "implied_prob": 0.3448,
-      "ev": -0.1457,
-      "ev_category": "negative",
-      "dk_no_odds": 190
-    },
-    {
-      "game_id": "ATL/BOS - Bot 1",
-      "half": "bot",
-      "pitcher": "Bryce Elder",
-      "batting_team": "Boston Red Sox",
-      "pitching_team": "Atlanta Braves",
-      "model_prob": 0.3337,
-      "implied_prob": 0.4,
-      "ev": -0.0663,
-      "ev_category": "negative",
-      "dk_no_odds": 150
-    },
     {
       "game_id": "CIN/NYM - Top 1",
       "half": "top",
       "pitcher": "Huascar Brazob\u00e1n",
       "batting_team": "Cincinnati Reds",
       "pitching_team": "New York Mets",
-      "model_prob": 0.2867,
-      "implied_prob": 0.303,
-      "ev": -0.0163,
+      "model_prob": 0.2855,
+      "implied_prob": 0.3077,
+      "ev": -0.0222,
       "ev_category": "negative",
-      "dk_no_odds": 230
+      "dk_no_odds": 225
     },
     {
       "game_id": "CIN/NYM - Bot 1",
@@ -93,9 +21,9 @@
       "pitcher": "Andrew Abbott",
       "batting_team": "New York Mets",
       "pitching_team": "Cincinnati Reds",
-      "model_prob": 0.3543,
+      "model_prob": 0.3595,
       "implied_prob": 0.4444,
-      "ev": -0.0901,
+      "ev": -0.0849,
       "ev_category": "negative",
       "dk_no_odds": 125
     },
@@ -105,11 +33,11 @@
       "pitcher": "David Sandlin",
       "batting_team": "Minnesota Twins",
       "pitching_team": "Chicago White Sox",
-      "model_prob": 0.3151,
-      "implied_prob": 0.3774,
-      "ev": -0.0623,
+      "model_prob": 0.3047,
+      "implied_prob": 0.3846,
+      "ev": -0.0799,
       "ev_category": "negative",
-      "dk_no_odds": 165
+      "dk_no_odds": 160
     },
     {
       "game_id": "MIN/CWS - Bot 1",
@@ -117,11 +45,59 @@
       "pitcher": "Connor Prielipp",
       "batting_team": "Chicago White Sox",
       "pitching_team": "Minnesota Twins",
-      "model_prob": 0.3472,
+      "model_prob": 0.3417,
       "implied_prob": 0.2985,
-      "ev": 0.0487,
+      "ev": 0.0432,
       "ev_category": "marginal",
       "dk_no_odds": 235
+    },
+    {
+      "game_id": "NYY/KC - Top 1",
+      "half": "top",
+      "pitcher": "Noah Cameron",
+      "batting_team": "New York Yankees",
+      "pitching_team": "Kansas City Royals",
+      "model_prob": 0.3751,
+      "implied_prob": 0.3571,
+      "ev": 0.018,
+      "ev_category": "marginal",
+      "dk_no_odds": 180
+    },
+    {
+      "game_id": "NYY/KC - Bot 1",
+      "half": "bot",
+      "pitcher": "Gerrit Cole",
+      "batting_team": "Kansas City Royals",
+      "pitching_team": "New York Yankees",
+      "model_prob": 0.3731,
+      "implied_prob": 0.5,
+      "ev": -0.1269,
+      "ev_category": "negative",
+      "dk_no_odds": 100
+    },
+    {
+      "game_id": "HOU/TEX - Top 1",
+      "half": "top",
+      "pitcher": "Jacob deGrom",
+      "batting_team": "Houston Astros",
+      "pitching_team": "Texas Rangers",
+      "model_prob": 0.2825,
+      "implied_prob": 0.2703,
+      "ev": 0.0122,
+      "ev_category": "marginal",
+      "dk_no_odds": 270
+    },
+    {
+      "game_id": "HOU/TEX - Bot 1",
+      "half": "bot",
+      "pitcher": "Mike Burrows",
+      "batting_team": "Texas Rangers",
+      "pitching_team": "Houston Astros",
+      "model_prob": 0.315,
+      "implied_prob": 0.3846,
+      "ev": -0.0696,
+      "ev_category": "negative",
+      "dk_no_odds": 160
     }
   ]
 }

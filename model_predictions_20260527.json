@@ -1,0 +1,67 @@
+{
+  "date": "2026-05-27",
+  "generatedAt": "2026-05-27T18:09:02.343990",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "SEA/ATH - Bot 1",
+      "half": "bot",
+      "pitcher": "Logan Gilbert",
+      "batting_team": "Athletics",
+      "pitching_team": "Seattle Mariners",
+      "model_prob": 0.2383,
+      "implied_prob": 0.3077,
+      "ev": -0.0694,
+      "ev_category": "negative",
+      "dk_no_odds": 225
+    },
+    {
+      "game_id": "ARI/SF - Top 1",
+      "half": "top",
+      "pitcher": "Trevor McDonald",
+      "batting_team": "Arizona Diamondbacks",
+      "pitching_team": "San Francisco Giants",
+      "model_prob": 0.3544,
+      "implied_prob": 0.4082,
+      "ev": -0.0538,
+      "ev_category": "negative",
+      "dk_no_odds": 145
+    },
+    {
+      "game_id": "ARI/SF - Bot 1",
+      "half": "bot",
+      "pitcher": "Michael Soroka",
+      "batting_team": "San Francisco Giants",
+      "pitching_team": "Arizona Diamondbacks",
+      "model_prob": 0.3311,
+      "implied_prob": 0.3448,
+      "ev": -0.0137,
+      "ev_category": "negative",
+      "dk_no_odds": 190
+    },
+    {
+      "game_id": "PHI/SD - Top 1",
+      "half": "top",
+      "pitcher": "Walker Buehler",
+      "batting_team": "Philadelphia Phillies",
+      "pitching_team": "San Diego Padres",
+      "model_prob": 0.3935,
+      "implied_prob": 0.3922,
+      "ev": 0.0013,
+      "ev_category": "marginal",
+      "dk_no_odds": 155
+    },
+    {
+      "game_id": "PHI/SD - Bot 1",
+      "half": "bot",
+      "pitcher": "Cristopher S\u00e1nchez",
+      "batting_team": "San Diego Padres",
+      "pitching_team": "Philadelphia Phillies",
+      "model_prob": 0.3228,
+      "implied_prob": 0.339,
+      "ev": -0.0162,
+      "ev_category": "negative",
+      "dk_no_odds": 195
+    }
+  ]
+}

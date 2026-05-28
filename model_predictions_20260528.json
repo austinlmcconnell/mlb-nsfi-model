@@ -1,31 +1,67 @@
 {
   "date": "2026-05-28",
-  "generatedAt": "2026-05-28T20:41:26.382764",
+  "generatedAt": "2026-05-28T22:56:30.270467",
   "simulations": 10000,
   "predictions": [
     {
-      "game_id": "TOR/BAL - Top 1",
+      "game_id": "LAA/DET - Top 1",
       "half": "top",
-      "pitcher": "Chris Bassitt",
-      "batting_team": "Toronto Blue Jays",
-      "pitching_team": "Baltimore Orioles",
-      "model_prob": 0.3484,
-      "implied_prob": 0.4545,
-      "ev": -0.1061,
+      "pitcher": "Jack Flaherty",
+      "batting_team": "Los Angeles Angels",
+      "pitching_team": "Detroit Tigers",
+      "model_prob": 0.2312,
+      "implied_prob": 0.3448,
+      "ev": -0.1136,
       "ev_category": "negative",
-      "dk_no_odds": 120
+      "dk_no_odds": 190
     },
     {
-      "game_id": "TOR/BAL - Bot 1",
+      "game_id": "LAA/DET - Bot 1",
       "half": "bot",
-      "pitcher": "Patrick Corbin",
-      "batting_team": "Baltimore Orioles",
-      "pitching_team": "Toronto Blue Jays",
-      "model_prob": 0.3197,
-      "implied_prob": 0.4545,
-      "ev": -0.1348,
+      "pitcher": "Grayson Rodriguez",
+      "batting_team": "Detroit Tigers",
+      "pitching_team": "Los Angeles Angels",
+      "model_prob": 0.295,
+      "implied_prob": 0.4167,
+      "ev": -0.1217,
       "ev_category": "negative",
-      "dk_no_odds": 120
+      "dk_no_odds": 140
+    },
+    {
+      "game_id": "MIN/CWS - Top 1",
+      "half": "top",
+      "pitcher": "Davis Martin",
+      "batting_team": "Minnesota Twins",
+      "pitching_team": "Chicago White Sox",
+      "model_prob": 0.3701,
+      "implied_prob": 0.4651,
+      "ev": -0.095,
+      "ev_category": "negative",
+      "dk_no_odds": 115
+    },
+    {
+      "game_id": "HOU/TEX - Top 1",
+      "half": "top",
+      "pitcher": "Nathan Eovaldi",
+      "batting_team": "Houston Astros",
+      "pitching_team": "Texas Rangers",
+      "model_prob": 0.3096,
+      "implied_prob": 0.3636,
+      "ev": -0.054,
+      "ev_category": "negative",
+      "dk_no_odds": 175
+    },
+    {
+      "game_id": "HOU/TEX - Bot 1",
+      "half": "bot",
+      "pitcher": "Spencer Arrighetti",
+      "batting_team": "Texas Rangers",
+      "pitching_team": "Houston Astros",
+      "model_prob": 0.3485,
+      "implied_prob": 0.3333,
+      "ev": 0.0152,
+      "ev_category": "marginal",
+      "dk_no_odds": 200
     }
   ]
 }

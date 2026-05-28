@@ -1,0 +1,31 @@
+{
+  "date": "2026-05-28",
+  "generatedAt": "2026-05-28T18:21:58.537087",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "ATL/BOS - Top 1",
+      "half": "top",
+      "pitcher": "Payton Tolle",
+      "batting_team": "Atlanta Braves",
+      "pitching_team": "Boston Red Sox",
+      "model_prob": 0.2778,
+      "implied_prob": 0.3125,
+      "ev": -0.0347,
+      "ev_category": "negative",
+      "dk_no_odds": 220
+    },
+    {
+      "game_id": "ATL/BOS - Bot 1",
+      "half": "bot",
+      "pitcher": "Chris Sale",
+      "batting_team": "Boston Red Sox",
+      "pitching_team": "Atlanta Braves",
+      "model_prob": 0.2455,
+      "implied_prob": 0.2174,
+      "ev": 0.0281,
+      "ev_category": "marginal",
+      "dk_no_odds": 360
+    }
+  ]
+}

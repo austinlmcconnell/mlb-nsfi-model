@@ -1,0 +1,31 @@
+{
+  "date": "2026-05-30",
+  "generatedAt": "2026-05-30T16:32:57.858402",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "DET/CWS - Top 1",
+      "half": "top",
+      "pitcher": "Anthony Kay",
+      "batting_team": "Detroit Tigers",
+      "pitching_team": "Chicago White Sox",
+      "model_prob": 0.2889,
+      "implied_prob": 0.4082,
+      "ev": -0.1193,
+      "ev_category": "negative",
+      "dk_no_odds": 145
+    },
+    {
+      "game_id": "DET/CWS - Bot 1",
+      "half": "bot",
+      "pitcher": "Framber Valdez",
+      "batting_team": "Chicago White Sox",
+      "pitching_team": "Detroit Tigers",
+      "model_prob": 0.3219,
+      "implied_prob": 0.3922,
+      "ev": -0.0703,
+      "ev_category": "negative",
+      "dk_no_odds": 155
+    }
+  ]
+}

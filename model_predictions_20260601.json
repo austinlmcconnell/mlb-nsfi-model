@@ -1,6 +1,6 @@
 {
   "date": "2026-06-01",
-  "generatedAt": "2026-06-01T20:00:01.312470",
+  "generatedAt": "2026-06-01T21:47:48.764168",
   "simulations": 10000,
   "predictions": [
     {
@@ -9,9 +9,9 @@
       "pitcher": "Griffin Jax",
       "batting_team": "Detroit Tigers",
       "pitching_team": "Tampa Bay Rays",
-      "model_prob": 0.191,
+      "model_prob": 0.1966,
       "implied_prob": 0.2597,
-      "ev": -0.0687,
+      "ev": -0.0631,
       "ev_category": "negative",
       "dk_no_odds": 285
     },
@@ -21,9 +21,9 @@
       "pitcher": "Ty Madden",
       "batting_team": "Tampa Bay Rays",
       "pitching_team": "Detroit Tigers",
-      "model_prob": 0.3269,
+      "model_prob": 0.3202,
       "implied_prob": 0.3774,
-      "ev": -0.0505,
+      "ev": -0.0572,
       "ev_category": "negative",
       "dk_no_odds": 165
     },
@@ -33,9 +33,9 @@
       "pitcher": "Sandy Alcantara",
       "batting_team": "Washington Nationals",
       "pitching_team": "Miami Marlins",
-      "model_prob": 0.3611,
+      "model_prob": 0.3579,
       "implied_prob": 0.4,
-      "ev": -0.0389,
+      "ev": -0.0421,
       "ev_category": "negative",
       "dk_no_odds": 150
     },
@@ -45,9 +45,9 @@
       "pitcher": "Lyon Richardson",
       "batting_team": "Kansas City Royals",
       "pitching_team": "Cincinnati Reds",
-      "model_prob": 0.3897,
+      "model_prob": 0.3912,
       "implied_prob": 0.4348,
-      "ev": -0.0451,
+      "ev": -0.0436,
       "ev_category": "negative",
       "dk_no_odds": 130
     },
@@ -57,11 +57,59 @@
       "pitcher": "Luinder Avila",
       "batting_team": "Cincinnati Reds",
       "pitching_team": "Kansas City Royals",
-      "model_prob": 0.231,
+      "model_prob": 0.2319,
       "implied_prob": 0.274,
-      "ev": -0.043,
+      "ev": -0.0421,
       "ev_category": "negative",
       "dk_no_odds": 265
+    },
+    {
+      "game_id": "CWS/MIN - Top 1",
+      "half": "top",
+      "pitcher": "Joe Ryan",
+      "batting_team": "Chicago White Sox",
+      "pitching_team": "Minnesota Twins",
+      "model_prob": 0.3039,
+      "implied_prob": 0.2632,
+      "ev": 0.0407,
+      "ev_category": "marginal",
+      "dk_no_odds": 280
+    },
+    {
+      "game_id": "CWS/MIN - Bot 1",
+      "half": "bot",
+      "pitcher": "David Sandlin",
+      "batting_team": "Minnesota Twins",
+      "pitching_team": "Chicago White Sox",
+      "model_prob": 0.3149,
+      "implied_prob": 0.3571,
+      "ev": -0.0422,
+      "ev_category": "negative",
+      "dk_no_odds": 180
+    },
+    {
+      "game_id": "TEX/STL - Top 1",
+      "half": "top",
+      "pitcher": "Michael McGreevy",
+      "batting_team": "Texas Rangers",
+      "pitching_team": "St. Louis Cardinals",
+      "model_prob": 0.4035,
+      "implied_prob": 0.4545,
+      "ev": -0.051,
+      "ev_category": "negative",
+      "dk_no_odds": 120
+    },
+    {
+      "game_id": "TEX/STL - Bot 1",
+      "half": "bot",
+      "pitcher": "Jacob deGrom",
+      "batting_team": "St. Louis Cardinals",
+      "pitching_team": "Texas Rangers",
+      "model_prob": 0.2909,
+      "implied_prob": 0.303,
+      "ev": -0.0121,
+      "ev_category": "negative",
+      "dk_no_odds": 230
     }
   ]
 }

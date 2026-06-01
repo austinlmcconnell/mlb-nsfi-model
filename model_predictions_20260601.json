@@ -1,0 +1,67 @@
+{
+  "date": "2026-06-01",
+  "generatedAt": "2026-06-01T20:00:01.312470",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "DET/TB - Top 1",
+      "half": "top",
+      "pitcher": "Griffin Jax",
+      "batting_team": "Detroit Tigers",
+      "pitching_team": "Tampa Bay Rays",
+      "model_prob": 0.191,
+      "implied_prob": 0.2597,
+      "ev": -0.0687,
+      "ev_category": "negative",
+      "dk_no_odds": 285
+    },
+    {
+      "game_id": "DET/TB - Bot 1",
+      "half": "bot",
+      "pitcher": "Ty Madden",
+      "batting_team": "Tampa Bay Rays",
+      "pitching_team": "Detroit Tigers",
+      "model_prob": 0.3269,
+      "implied_prob": 0.3774,
+      "ev": -0.0505,
+      "ev_category": "negative",
+      "dk_no_odds": 165
+    },
+    {
+      "game_id": "MIA/WSH - Bot 1",
+      "half": "bot",
+      "pitcher": "Sandy Alcantara",
+      "batting_team": "Washington Nationals",
+      "pitching_team": "Miami Marlins",
+      "model_prob": 0.3611,
+      "implied_prob": 0.4,
+      "ev": -0.0389,
+      "ev_category": "negative",
+      "dk_no_odds": 150
+    },
+    {
+      "game_id": "KC/CIN - Top 1",
+      "half": "top",
+      "pitcher": "Lyon Richardson",
+      "batting_team": "Kansas City Royals",
+      "pitching_team": "Cincinnati Reds",
+      "model_prob": 0.3897,
+      "implied_prob": 0.4348,
+      "ev": -0.0451,
+      "ev_category": "negative",
+      "dk_no_odds": 130
+    },
+    {
+      "game_id": "KC/CIN - Bot 1",
+      "half": "bot",
+      "pitcher": "Luinder Avila",
+      "batting_team": "Cincinnati Reds",
+      "pitching_team": "Kansas City Royals",
+      "model_prob": 0.231,
+      "implied_prob": 0.274,
+      "ev": -0.043,
+      "ev_category": "negative",
+      "dk_no_odds": 265
+    }
+  ]
+}

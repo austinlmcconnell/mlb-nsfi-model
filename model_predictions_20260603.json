@@ -1,0 +1,55 @@
+{
+  "date": "2026-06-03",
+  "generatedAt": "2026-06-03T19:03:52.788863",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "NYM/SEA - Top 1",
+      "half": "top",
+      "pitcher": "George Kirby",
+      "batting_team": "New York Mets",
+      "pitching_team": "Seattle Mariners",
+      "model_prob": 0.2863,
+      "implied_prob": 0.3704,
+      "ev": -0.0841,
+      "ev_category": "negative",
+      "dk_no_odds": 170
+    },
+    {
+      "game_id": "NYM/SEA - Bot 1",
+      "half": "bot",
+      "pitcher": "Freddy Peralta",
+      "batting_team": "Seattle Mariners",
+      "pitching_team": "New York Mets",
+      "model_prob": 0.2952,
+      "implied_prob": 0.3226,
+      "ev": -0.0274,
+      "ev_category": "negative",
+      "dk_no_odds": 210
+    },
+    {
+      "game_id": "KC/CIN - Top 1",
+      "half": "top",
+      "pitcher": "Chase Burns",
+      "batting_team": "Kansas City Royals",
+      "pitching_team": "Cincinnati Reds",
+      "model_prob": 0.2202,
+      "implied_prob": 0.2632,
+      "ev": -0.043,
+      "ev_category": "negative",
+      "dk_no_odds": 280
+    },
+    {
+      "game_id": "KC/CIN - Bot 1",
+      "half": "bot",
+      "pitcher": "Stephen Kolek",
+      "batting_team": "Cincinnati Reds",
+      "pitching_team": "Kansas City Royals",
+      "model_prob": 0.3434,
+      "implied_prob": 0.3846,
+      "ev": -0.0412,
+      "ev_category": "negative",
+      "dk_no_odds": 160
+    }
+  ]
+}

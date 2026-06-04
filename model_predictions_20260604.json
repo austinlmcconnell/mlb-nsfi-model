@@ -1,0 +1,31 @@
+{
+  "date": "2026-06-04",
+  "generatedAt": "2026-06-04T17:58:31.372747",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "SF/MIL - Top 1",
+      "half": "top",
+      "pitcher": "Coleman Crow",
+      "batting_team": "San Francisco Giants",
+      "pitching_team": "Milwaukee Brewers",
+      "model_prob": 0.353,
+      "implied_prob": 0.4,
+      "ev": -0.047,
+      "ev_category": "negative",
+      "dk_no_odds": 150
+    },
+    {
+      "game_id": "SF/MIL - Bot 1",
+      "half": "bot",
+      "pitcher": "Adrian Houser",
+      "batting_team": "Milwaukee Brewers",
+      "pitching_team": "San Francisco Giants",
+      "model_prob": 0.3499,
+      "implied_prob": 0.4082,
+      "ev": -0.0583,
+      "ev_category": "negative",
+      "dk_no_odds": 145
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "date": "2026-06-05",
+  "generatedAt": "2026-06-05T17:27:36.517154",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "SF/CHC - Top 1",
+      "half": "top",
+      "pitcher": "Edward Cabrera",
+      "batting_team": "San Francisco Giants",
+      "pitching_team": "Chicago Cubs",
+      "model_prob": 0.3134,
+      "implied_prob": 0.3175,
+      "ev": -0.0041,
+      "ev_category": "negative",
+      "dk_no_odds": 215
+    },
+    {
+      "game_id": "SF/CHC - Bot 1",
+      "half": "bot",
+      "pitcher": "Robbie Ray",
+      "batting_team": "Chicago Cubs",
+      "pitching_team": "San Francisco Giants",
+      "model_prob": 0.3337,
+      "implied_prob": 0.3774,
+      "ev": -0.0437,
+      "ev_category": "negative",
+      "dk_no_odds": 165
+    }
+  ]
+}

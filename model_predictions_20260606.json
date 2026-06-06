@@ -1,0 +1,127 @@
+{
+  "date": "2026-06-06",
+  "generatedAt": "2026-06-06T16:37:31.187290",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "SEA/DET - Top 1",
+      "half": "top",
+      "pitcher": "Keider Montero",
+      "batting_team": "Seattle Mariners",
+      "pitching_team": "Detroit Tigers",
+      "model_prob": 0.3841,
+      "implied_prob": 0.4651,
+      "ev": -0.081,
+      "ev_category": "negative",
+      "dk_no_odds": 115
+    },
+    {
+      "game_id": "SEA/DET - Bot 1",
+      "half": "bot",
+      "pitcher": "Bryce Miller",
+      "batting_team": "Detroit Tigers",
+      "pitching_team": "Seattle Mariners",
+      "model_prob": 0.3534,
+      "implied_prob": 0.3571,
+      "ev": -0.0037,
+      "ev_category": "negative",
+      "dk_no_odds": 180
+    },
+    {
+      "game_id": "KC/MIN - Top 1",
+      "half": "top",
+      "pitcher": "Joe Ryan",
+      "batting_team": "Kansas City Royals",
+      "pitching_team": "Minnesota Twins",
+      "model_prob": 0.3189,
+      "implied_prob": 0.2778,
+      "ev": 0.0411,
+      "ev_category": "marginal",
+      "dk_no_odds": 260
+    },
+    {
+      "game_id": "KC/MIN - Bot 1",
+      "half": "bot",
+      "pitcher": "Luinder Avila",
+      "batting_team": "Minnesota Twins",
+      "pitching_team": "Kansas City Royals",
+      "model_prob": 0.314,
+      "implied_prob": 0.3704,
+      "ev": -0.0564,
+      "ev_category": "negative",
+      "dk_no_odds": 170
+    },
+    {
+      "game_id": "CIN/STL - Top 1",
+      "half": "top",
+      "pitcher": "Matthew Liberatore",
+      "batting_team": "Cincinnati Reds",
+      "pitching_team": "St. Louis Cardinals",
+      "model_prob": 0.3432,
+      "implied_prob": 0.339,
+      "ev": 0.0042,
+      "ev_category": "marginal",
+      "dk_no_odds": 195
+    },
+    {
+      "game_id": "CIN/STL - Bot 1",
+      "half": "bot",
+      "pitcher": "Nick Lodolo",
+      "batting_team": "St. Louis Cardinals",
+      "pitching_team": "Cincinnati Reds",
+      "model_prob": 0.3145,
+      "implied_prob": 0.3448,
+      "ev": -0.0303,
+      "ev_category": "negative",
+      "dk_no_odds": 190
+    },
+    {
+      "game_id": "SF/CHC - Top 1",
+      "half": "top",
+      "pitcher": "Ben Brown",
+      "batting_team": "San Francisco Giants",
+      "pitching_team": "Chicago Cubs",
+      "model_prob": 0.2932,
+      "implied_prob": 0.2941,
+      "ev": -0.0009,
+      "ev_category": "negative",
+      "dk_no_odds": 240
+    },
+    {
+      "game_id": "SF/CHC - Bot 1",
+      "half": "bot",
+      "pitcher": "Landen Roupp",
+      "batting_team": "Chicago Cubs",
+      "pitching_team": "San Francisco Giants",
+      "model_prob": 0.351,
+      "implied_prob": 0.274,
+      "ev": 0.077,
+      "ev_category": "strong",
+      "dk_no_odds": 265
+    },
+    {
+      "game_id": "BAL/TOR - Top 1",
+      "half": "top",
+      "pitcher": "Braydon Fisher",
+      "batting_team": "Baltimore Orioles",
+      "pitching_team": "Toronto Blue Jays",
+      "model_prob": 0.2488,
+      "implied_prob": 0.3279,
+      "ev": -0.0791,
+      "ev_category": "negative",
+      "dk_no_odds": 205
+    },
+    {
+      "game_id": "BAL/TOR - Bot 1",
+      "half": "bot",
+      "pitcher": "Kyle Bradish",
+      "batting_team": "Toronto Blue Jays",
+      "pitching_team": "Baltimore Orioles",
+      "model_prob": 0.2386,
+      "implied_prob": 0.3922,
+      "ev": -0.1536,
+      "ev_category": "negative",
+      "dk_no_odds": 155
+    }
+  ]
+}

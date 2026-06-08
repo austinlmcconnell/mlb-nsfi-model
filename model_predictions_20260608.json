@@ -1,89 +1,17 @@
 {
   "date": "2026-06-08",
-  "generatedAt": "2026-06-08T20:38:05.155852",
+  "generatedAt": "2026-06-08T22:57:28.591156",
   "simulations": 10000,
   "predictions": [
-    {
-      "game_id": "SEA/BAL - Top 1",
-      "half": "top",
-      "pitcher": "Trey Gibson",
-      "batting_team": "Seattle Mariners",
-      "pitching_team": "Baltimore Orioles",
-      "model_prob": 0.3446,
-      "implied_prob": 0.4444,
-      "ev": -0.0998,
-      "ev_category": "negative",
-      "dk_no_odds": 125
-    },
-    {
-      "game_id": "SEA/BAL - Bot 1",
-      "half": "bot",
-      "pitcher": "Emerson Hancock",
-      "batting_team": "Baltimore Orioles",
-      "pitching_team": "Seattle Mariners",
-      "model_prob": 0.3365,
-      "implied_prob": 0.3226,
-      "ev": 0.0139,
-      "ev_category": "marginal",
-      "dk_no_odds": 210
-    },
-    {
-      "game_id": "BOS/TB - Top 1",
-      "half": "top",
-      "pitcher": "Ian Seymour",
-      "batting_team": "Boston Red Sox",
-      "pitching_team": "Tampa Bay Rays",
-      "model_prob": 0.301,
-      "implied_prob": 0.3175,
-      "ev": -0.0165,
-      "ev_category": "negative",
-      "dk_no_odds": 215
-    },
-    {
-      "game_id": "BOS/TB - Bot 1",
-      "half": "bot",
-      "pitcher": "Connelly Early",
-      "batting_team": "Tampa Bay Rays",
-      "pitching_team": "Boston Red Sox",
-      "model_prob": 0.2498,
-      "implied_prob": 0.3226,
-      "ev": -0.0728,
-      "ev_category": "negative",
-      "dk_no_odds": 210
-    },
-    {
-      "game_id": "NYY/CLE - Top 1",
-      "half": "top",
-      "pitcher": "Gavin Williams",
-      "batting_team": "New York Yankees",
-      "pitching_team": "Cleveland Guardians",
-      "model_prob": 0.3108,
-      "implied_prob": 0.2857,
-      "ev": 0.0251,
-      "ev_category": "marginal",
-      "dk_no_odds": 250
-    },
-    {
-      "game_id": "NYY/CLE - Bot 1",
-      "half": "bot",
-      "pitcher": "Will Warren",
-      "batting_team": "Cleveland Guardians",
-      "pitching_team": "New York Yankees",
-      "model_prob": 0.3486,
-      "implied_prob": 0.3704,
-      "ev": -0.0218,
-      "ev_category": "negative",
-      "dk_no_odds": 170
-    },
     {
       "game_id": "PHI/TOR - Top 1",
       "half": "top",
       "pitcher": "Patrick Corbin",
       "batting_team": "Philadelphia Phillies",
       "pitching_team": "Toronto Blue Jays",
-      "model_prob": 0.3065,
+      "model_prob": 0.3073,
       "implied_prob": 0.4082,
-      "ev": -0.1017,
+      "ev": -0.1009,
       "ev_category": "negative",
       "dk_no_odds": 145
     },
@@ -93,11 +21,71 @@
       "pitcher": "Cristopher S\u00e1nchez",
       "batting_team": "Toronto Blue Jays",
       "pitching_team": "Philadelphia Phillies",
-      "model_prob": 0.3197,
-      "implied_prob": 0.3509,
-      "ev": -0.0312,
+      "model_prob": 0.3122,
+      "implied_prob": 0.3571,
+      "ev": -0.0449,
       "ev_category": "negative",
-      "dk_no_odds": 185
+      "dk_no_odds": 180
+    },
+    {
+      "game_id": "HOU/LAA - Top 1",
+      "half": "top",
+      "pitcher": "Grayson Rodriguez",
+      "batting_team": "Houston Astros",
+      "pitching_team": "Los Angeles Angels",
+      "model_prob": 0.3282,
+      "implied_prob": 0.339,
+      "ev": -0.0108,
+      "ev_category": "negative",
+      "dk_no_odds": 195
+    },
+    {
+      "game_id": "HOU/LAA - Bot 1",
+      "half": "bot",
+      "pitcher": "Spencer Arrighetti",
+      "batting_team": "Los Angeles Angels",
+      "pitching_team": "Houston Astros",
+      "model_prob": 0.2842,
+      "implied_prob": 0.2899,
+      "ev": -0.0057,
+      "ev_category": "negative",
+      "dk_no_odds": 245
+    },
+    {
+      "game_id": "CIN/SD - Top 1",
+      "half": "top",
+      "pitcher": "Walker Buehler",
+      "batting_team": "Cincinnati Reds",
+      "pitching_team": "San Diego Padres",
+      "model_prob": 0.3309,
+      "implied_prob": 0.3704,
+      "ev": -0.0395,
+      "ev_category": "negative",
+      "dk_no_odds": 170
+    },
+    {
+      "game_id": "CIN/SD - Bot 1",
+      "half": "bot",
+      "pitcher": "Andrew Abbott",
+      "batting_team": "San Diego Padres",
+      "pitching_team": "Cincinnati Reds",
+      "model_prob": 0.3734,
+      "implied_prob": 0.4167,
+      "ev": -0.0433,
+      "ev_category": "negative",
+      "dk_no_odds": 140
+    },
+    {
+      "game_id": "MIL/ATH - Bot 1",
+      "half": "bot",
+      "pitcher": "Kyle Harrison",
+      "batting_team": "Athletics",
+      "pitching_team": "Milwaukee Brewers",
+      "model_prob": 0.2347,
+      "implied_prob": 0.2174,
+      "ev": 0.0173,
+      "ev_category": "marginal",
+      "dk_no_odds": 360
     }
   ]
 }

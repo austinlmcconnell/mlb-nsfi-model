@@ -1,6 +1,6 @@
 {
   "date": "2026-06-10",
-  "fetchedAt": "2026-06-10T04:56:24.841576+00:00",
+  "fetchedAt": "2026-06-10T08:48:36.513245+00:00",
   "games": [
     {
       "gamePk": 822970,
@@ -139,7 +139,11 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 215,
+            "yesOdds": -310,
+            "impliedNSFI": 0.3175,
+            "source": "draftkings_nash"
           },
           "bot": {
             "oddsPosted": false
@@ -182,10 +186,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 235,
+            "yesOdds": -340,
+            "impliedNSFI": 0.2985,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 140,
+            "yesOdds": -190,
+            "impliedNSFI": 0.4167,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -327,10 +339,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 150,
+            "yesOdds": -205,
+            "impliedNSFI": 0.4,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 140,
+            "yesOdds": -190,
+            "impliedNSFI": 0.4167,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -370,10 +390,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 130,
+            "yesOdds": -180,
+            "impliedNSFI": 0.4348,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 110,
+            "yesOdds": -150,
+            "impliedNSFI": 0.4762,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -574,9 +602,9 @@
           },
           "bot": {
             "oddsPosted": true,
-            "noOdds": 360,
+            "noOdds": 350,
             "yesOdds": -575,
-            "impliedNSFI": 0.2174,
+            "impliedNSFI": 0.2222,
             "source": "draftkings_nash"
           }
         }
@@ -619,14 +647,14 @@
           "top": {
             "oddsPosted": true,
             "noOdds": 125,
-            "yesOdds": -170,
+            "yesOdds": -165,
             "impliedNSFI": 0.4444,
             "source": "draftkings_nash"
           },
           "bot": {
             "oddsPosted": true,
             "noOdds": 175,
-            "yesOdds": -245,
+            "yesOdds": -240,
             "impliedNSFI": 0.3636,
             "source": "draftkings_nash"
           }
@@ -658,8 +686,8 @@
         "teamBatting": "Athletics",
         "teamPitching": "Milwaukee Brewers",
         "pitcher": {
-          "name": "TBD",
-          "id": null,
+          "name": "Brandon Sproat",
+          "id": 687075,
           "pitchHand": "R"
         },
         "lineup": [],

@@ -1,0 +1,43 @@
+{
+  "date": "2026-06-10",
+  "generatedAt": "2026-06-10T18:12:14.542152",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "WSH/SF - Top 1",
+      "half": "top",
+      "pitcher": "Robbie Ray",
+      "batting_team": "Washington Nationals",
+      "pitching_team": "San Francisco Giants",
+      "model_prob": 0.2823,
+      "implied_prob": 0.3175,
+      "ev": -0.0352,
+      "ev_category": "negative",
+      "dk_no_odds": 215
+    },
+    {
+      "game_id": "CIN/SD - Top 1",
+      "half": "top",
+      "pitcher": "Michael King",
+      "batting_team": "Cincinnati Reds",
+      "pitching_team": "San Diego Padres",
+      "model_prob": 0.2769,
+      "implied_prob": 0.3077,
+      "ev": -0.0308,
+      "ev_category": "negative",
+      "dk_no_odds": 225
+    },
+    {
+      "game_id": "CIN/SD - Bot 1",
+      "half": "bot",
+      "pitcher": "Brady Singer",
+      "batting_team": "San Diego Padres",
+      "pitching_team": "Cincinnati Reds",
+      "model_prob": 0.3474,
+      "implied_prob": 0.4167,
+      "ev": -0.0693,
+      "ev_category": "negative",
+      "dk_no_odds": 140
+    }
+  ]
+}

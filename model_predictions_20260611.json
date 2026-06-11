@@ -1,0 +1,55 @@
+{
+  "date": "2026-06-11",
+  "generatedAt": "2026-06-11T18:29:29.676627",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "TEX/KC - Top 1",
+      "half": "top",
+      "pitcher": "Michael Wacha",
+      "batting_team": "Texas Rangers",
+      "pitching_team": "Kansas City Royals",
+      "model_prob": 0.356,
+      "implied_prob": 0.3922,
+      "ev": -0.0362,
+      "ev_category": "negative",
+      "dk_no_odds": 155
+    },
+    {
+      "game_id": "TEX/KC - Bot 1",
+      "half": "bot",
+      "pitcher": "Kumar Rocker",
+      "batting_team": "Kansas City Royals",
+      "pitching_team": "Texas Rangers",
+      "model_prob": 0.3667,
+      "implied_prob": 0.4444,
+      "ev": -0.0777,
+      "ev_category": "negative",
+      "dk_no_odds": 125
+    },
+    {
+      "game_id": "CHC/COL - Top 1",
+      "half": "top",
+      "pitcher": "Ryan Feltner",
+      "batting_team": "Chicago Cubs",
+      "pitching_team": "Colorado Rockies",
+      "model_prob": 0.3631,
+      "implied_prob": 0.4167,
+      "ev": -0.0536,
+      "ev_category": "negative",
+      "dk_no_odds": 140
+    },
+    {
+      "game_id": "CHC/COL - Bot 1",
+      "half": "bot",
+      "pitcher": "Edward Cabrera",
+      "batting_team": "Colorado Rockies",
+      "pitching_team": "Chicago Cubs",
+      "model_prob": 0.2848,
+      "implied_prob": 0.303,
+      "ev": -0.0182,
+      "ev_category": "negative",
+      "dk_no_odds": 230
+    }
+  ]
+}

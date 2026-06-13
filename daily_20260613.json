@@ -1,6 +1,6 @@
 {
   "date": "2026-06-13",
-  "fetchedAt": "2026-06-13T04:59:35.098062+00:00",
+  "fetchedAt": "2026-06-13T08:20:37.412857+00:00",
   "games": [
     {
       "gamePk": 823694,
@@ -39,7 +39,7 @@
           "top": {
             "oddsPosted": true,
             "noOdds": 225,
-            "yesOdds": -320,
+            "yesOdds": -330,
             "impliedNSFI": 0.3077,
             "source": "draftkings_nash"
           },
@@ -97,7 +97,7 @@
           "bot": {
             "oddsPosted": true,
             "noOdds": 190,
-            "yesOdds": -270,
+            "yesOdds": -265,
             "impliedNSFI": 0.3448,
             "source": "draftkings_nash"
           }
@@ -237,10 +237,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 185,
+            "yesOdds": -260,
+            "impliedNSFI": 0.3509,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 215,
+            "yesOdds": -310,
+            "impliedNSFI": 0.3175,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -332,9 +340,9 @@
         "draftkings": {
           "top": {
             "oddsPosted": true,
-            "noOdds": 170,
-            "yesOdds": -235,
-            "impliedNSFI": 0.3704,
+            "noOdds": 175,
+            "yesOdds": -245,
+            "impliedNSFI": 0.3636,
             "source": "draftkings_nash"
           },
           "bot": {
@@ -383,9 +391,9 @@
         "draftkings": {
           "top": {
             "oddsPosted": true,
-            "noOdds": 190,
+            "noOdds": 195,
             "yesOdds": -270,
-            "impliedNSFI": 0.3448,
+            "impliedNSFI": 0.339,
             "source": "draftkings_nash"
           },
           "bot": {
@@ -616,8 +624,8 @@
         "teamBatting": "Colorado Rockies",
         "teamPitching": "Athletics",
         "pitcher": {
-          "name": "TBD",
-          "id": null,
+          "name": "Joey Estes",
+          "id": 683155,
           "pitchHand": "R"
         },
         "lineup": [],
@@ -640,7 +648,11 @@
             "oddsPosted": false
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 155,
+            "yesOdds": -215,
+            "impliedNSFI": 0.3922,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -731,10 +743,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 180,
+            "yesOdds": -250,
+            "impliedNSFI": 0.3571,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 300,
+            "yesOdds": -450,
+            "impliedNSFI": 0.25,
+            "source": "draftkings_nash"
           }
         }
       }

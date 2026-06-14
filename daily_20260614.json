@@ -1,6 +1,6 @@
 {
   "date": "2026-06-14",
-  "fetchedAt": "2026-06-14T05:15:07.405594+00:00",
+  "fetchedAt": "2026-06-14T08:40:12.192868+00:00",
   "games": [
     {
       "gamePk": 823368,
@@ -289,15 +289,15 @@
         "draftkings": {
           "top": {
             "oddsPosted": true,
-            "noOdds": 260,
+            "noOdds": 255,
             "yesOdds": -380,
-            "impliedNSFI": 0.2778,
+            "impliedNSFI": 0.2817,
             "source": "draftkings_nash"
           },
           "bot": {
             "oddsPosted": true,
             "noOdds": 150,
-            "yesOdds": -210,
+            "yesOdds": -205,
             "impliedNSFI": 0.4,
             "source": "draftkings_nash"
           }
@@ -347,9 +347,9 @@
           },
           "bot": {
             "oddsPosted": true,
-            "noOdds": 135,
+            "noOdds": 140,
             "yesOdds": -190,
-            "impliedNSFI": 0.4255,
+            "impliedNSFI": 0.4167,
             "source": "draftkings_nash"
           }
         }
@@ -631,9 +631,9 @@
         "teamBatting": "San Francisco Giants",
         "teamPitching": "Chicago Cubs",
         "pitcher": {
-          "name": "Colin Rea",
-          "id": 607067,
-          "pitchHand": "R"
+          "name": "Ryan Rolison",
+          "id": 669020,
+          "pitchHand": "L"
         },
         "lineup": [],
         "gameId": "CHC/SF - Bot 1"
@@ -682,8 +682,8 @@
         "teamBatting": "Los Angeles Angels",
         "teamPitching": "Tampa Bay Rays",
         "pitcher": {
-          "name": "TBD",
-          "id": null,
+          "name": "Casey Legumina",
+          "id": 668984,
           "pitchHand": "R"
         },
         "lineup": [],
@@ -692,10 +692,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 185,
+            "yesOdds": -260,
+            "impliedNSFI": 0.3509,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 265,
+            "yesOdds": -400,
+            "impliedNSFI": 0.274,
+            "source": "draftkings_nash"
           }
         }
       }

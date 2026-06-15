@@ -1,0 +1,460 @@
+{
+  "date": "2026-06-15",
+  "fetchedAt": "2026-06-15T05:36:18.330541+00:00",
+  "games": [
+    {
+      "gamePk": 823452,
+      "gameTimeUTC": "2026-06-15T22:40:00Z",
+      "gameTimeET": "6:40 PM ET",
+      "lineupDropET": "3:10 PM ET",
+      "lineupComplete": false,
+      "homeTeam": "Philadelphia Phillies",
+      "awayTeam": "Miami Marlins",
+      "venue": "Citizens Bank Park",
+      "ballparkKey": "Phillies",
+      "topInning": {
+        "teamBatting": "Miami Marlins",
+        "teamPitching": "Philadelphia Phillies",
+        "pitcher": {
+          "name": "Zack Wheeler",
+          "id": 554430,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "MIA/PHI - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "Philadelphia Phillies",
+        "teamPitching": "Miami Marlins",
+        "pitcher": {
+          "name": "Ryan Gusto",
+          "id": 687473,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "MIA/PHI - Bot 1"
+      },
+      "odds": {
+        "draftkings": {
+          "top": {
+            "oddsPosted": true,
+            "noOdds": 225,
+            "yesOdds": -330,
+            "impliedNSFI": 0.3077,
+            "source": "draftkings_nash"
+          },
+          "bot": {
+            "oddsPosted": true,
+            "noOdds": 175,
+            "yesOdds": -245,
+            "impliedNSFI": 0.3636,
+            "source": "draftkings_nash"
+          }
+        }
+      }
+    },
+    {
+      "gamePk": 822724,
+      "gameTimeUTC": "2026-06-15T22:45:00Z",
+      "gameTimeET": "6:45 PM ET",
+      "lineupDropET": "3:15 PM ET",
+      "lineupComplete": false,
+      "homeTeam": "Washington Nationals",
+      "awayTeam": "Kansas City Royals",
+      "venue": "Nationals Park",
+      "ballparkKey": "Nationals",
+      "topInning": {
+        "teamBatting": "Kansas City Royals",
+        "teamPitching": "Washington Nationals",
+        "pitcher": {
+          "name": "Andrew Alvarez",
+          "id": 674841,
+          "pitchHand": "L"
+        },
+        "lineup": [],
+        "gameId": "KC/WSH - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "Washington Nationals",
+        "teamPitching": "Kansas City Royals",
+        "pitcher": {
+          "name": "Mitch Spence",
+          "id": 687765,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "KC/WSH - Bot 1"
+      },
+      "odds": {
+        "draftkings": {
+          "top": {
+            "oddsPosted": false
+          },
+          "bot": {
+            "oddsPosted": false
+          }
+        }
+      }
+    },
+    {
+      "gamePk": 824505,
+      "gameTimeUTC": "2026-06-15T23:10:00Z",
+      "gameTimeET": "7:10 PM ET",
+      "lineupDropET": "3:40 PM ET",
+      "lineupComplete": false,
+      "homeTeam": "Cincinnati Reds",
+      "awayTeam": "New York Mets",
+      "venue": "Great American Ball Park",
+      "ballparkKey": "Reds",
+      "topInning": {
+        "teamBatting": "New York Mets",
+        "teamPitching": "Cincinnati Reds",
+        "pitcher": {
+          "name": "Chase Burns",
+          "id": 695505,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "NYM/CIN - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "Cincinnati Reds",
+        "teamPitching": "New York Mets",
+        "pitcher": {
+          "name": "Tobias Myers",
+          "id": 668964,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "NYM/CIN - Bot 1"
+      },
+      "odds": {
+        "draftkings": {
+          "top": {
+            "oddsPosted": true,
+            "noOdds": 290,
+            "yesOdds": -450,
+            "impliedNSFI": 0.2564,
+            "source": "draftkings_nash"
+          },
+          "bot": {
+            "oddsPosted": true,
+            "noOdds": 175,
+            "yesOdds": -245,
+            "impliedNSFI": 0.3636,
+            "source": "draftkings_nash"
+          }
+        }
+      }
+    },
+    {
+      "gamePk": 823046,
+      "gameTimeUTC": "2026-06-15T23:45:00Z",
+      "gameTimeET": "7:45 PM ET",
+      "lineupDropET": "4:15 PM ET",
+      "lineupComplete": false,
+      "homeTeam": "St. Louis Cardinals",
+      "awayTeam": "San Diego Padres",
+      "venue": "Busch Stadium",
+      "ballparkKey": "Cardinals",
+      "topInning": {
+        "teamBatting": "San Diego Padres",
+        "teamPitching": "St. Louis Cardinals",
+        "pitcher": {
+          "name": "Dustin May",
+          "id": 669160,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "SD/STL - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "St. Louis Cardinals",
+        "teamPitching": "San Diego Padres",
+        "pitcher": {
+          "name": "TBD",
+          "id": null,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "SD/STL - Bot 1"
+      },
+      "odds": {
+        "draftkings": {
+          "top": {
+            "oddsPosted": true,
+            "noOdds": 200,
+            "yesOdds": -285,
+            "impliedNSFI": 0.3333,
+            "source": "draftkings_nash"
+          },
+          "bot": {
+            "oddsPosted": true,
+            "noOdds": 105,
+            "yesOdds": -145,
+            "impliedNSFI": 0.4878,
+            "source": "draftkings_nash"
+          }
+        }
+      }
+    },
+    {
+      "gamePk": 824666,
+      "gameTimeUTC": "2026-06-16T00:05:00Z",
+      "gameTimeET": "8:05 PM ET",
+      "lineupDropET": "4:35 PM ET",
+      "lineupComplete": false,
+      "homeTeam": "Chicago Cubs",
+      "awayTeam": "Colorado Rockies",
+      "venue": "Wrigley Field",
+      "ballparkKey": "Cubs",
+      "topInning": {
+        "teamBatting": "Colorado Rockies",
+        "teamPitching": "Chicago Cubs",
+        "pitcher": {
+          "name": "Shota Imanaga",
+          "id": 684007,
+          "pitchHand": "L"
+        },
+        "lineup": [],
+        "gameId": "COL/CHC - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "Chicago Cubs",
+        "teamPitching": "Colorado Rockies",
+        "pitcher": {
+          "name": "Michael Lorenzen",
+          "id": 547179,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "COL/CHC - Bot 1"
+      },
+      "odds": {
+        "draftkings": {
+          "top": {
+            "oddsPosted": false
+          },
+          "bot": {
+            "oddsPosted": false
+          }
+        }
+      }
+    },
+    {
+      "gamePk": 822887,
+      "gameTimeUTC": "2026-06-16T00:05:00Z",
+      "gameTimeET": "8:05 PM ET",
+      "lineupDropET": "4:35 PM ET",
+      "lineupComplete": false,
+      "homeTeam": "Texas Rangers",
+      "awayTeam": "Minnesota Twins",
+      "venue": "Globe Life Field",
+      "ballparkKey": "Rangers",
+      "topInning": {
+        "teamBatting": "Minnesota Twins",
+        "teamPitching": "Texas Rangers",
+        "pitcher": {
+          "name": "MacKenzie Gore",
+          "id": 669022,
+          "pitchHand": "L"
+        },
+        "lineup": [],
+        "gameId": "MIN/TEX - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "Texas Rangers",
+        "teamPitching": "Minnesota Twins",
+        "pitcher": {
+          "name": "TBD",
+          "id": null,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "MIN/TEX - Bot 1"
+      },
+      "odds": {
+        "draftkings": {
+          "top": {
+            "oddsPosted": false
+          },
+          "bot": {
+            "oddsPosted": false
+          }
+        }
+      }
+    },
+    {
+      "gamePk": 824181,
+      "gameTimeUTC": "2026-06-16T00:10:00Z",
+      "gameTimeET": "8:10 PM ET",
+      "lineupDropET": "4:40 PM ET",
+      "lineupComplete": false,
+      "homeTeam": "Houston Astros",
+      "awayTeam": "Detroit Tigers",
+      "venue": "Daikin Park",
+      "ballparkKey": "Astros",
+      "topInning": {
+        "teamBatting": "Detroit Tigers",
+        "teamPitching": "Houston Astros",
+        "pitcher": {
+          "name": "Kai-Wei Teng",
+          "id": 678906,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "DET/HOU - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "Houston Astros",
+        "teamPitching": "Detroit Tigers",
+        "pitcher": {
+          "name": "Troy Melton",
+          "id": 675512,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "DET/HOU - Bot 1"
+      },
+      "odds": {
+        "draftkings": {
+          "top": {
+            "oddsPosted": false
+          },
+          "bot": {
+            "oddsPosted": false
+          }
+        }
+      }
+    },
+    {
+      "gamePk": 825071,
+      "gameTimeUTC": "2026-06-16T01:40:00Z",
+      "gameTimeET": "9:40 PM ET",
+      "lineupDropET": "6:10 PM ET",
+      "lineupComplete": false,
+      "homeTeam": "Arizona Diamondbacks",
+      "awayTeam": "Los Angeles Angels",
+      "venue": "Chase Field",
+      "ballparkKey": "Diamondbacks",
+      "topInning": {
+        "teamBatting": "Los Angeles Angels",
+        "teamPitching": "Arizona Diamondbacks",
+        "pitcher": {
+          "name": "Ryne Nelson",
+          "id": 669194,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "LAA/ARI - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "Arizona Diamondbacks",
+        "teamPitching": "Los Angeles Angels",
+        "pitcher": {
+          "name": "Walbert Ure\u00f1a",
+          "id": 700712,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "LAA/ARI - Bot 1"
+      },
+      "odds": {
+        "draftkings": {
+          "top": {
+            "oddsPosted": false
+          },
+          "bot": {
+            "oddsPosted": false
+          }
+        }
+      }
+    },
+    {
+      "gamePk": 824993,
+      "gameTimeUTC": "2026-06-16T01:40:00Z",
+      "gameTimeET": "9:40 PM ET",
+      "lineupDropET": "6:10 PM ET",
+      "lineupComplete": false,
+      "homeTeam": "Athletics",
+      "awayTeam": "Pittsburgh Pirates",
+      "venue": "Sutter Health Park",
+      "ballparkKey": "Athletics",
+      "topInning": {
+        "teamBatting": "Pittsburgh Pirates",
+        "teamPitching": "Athletics",
+        "pitcher": {
+          "name": "J.T. Ginn",
+          "id": 669372,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "PIT/ATH - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "Athletics",
+        "teamPitching": "Pittsburgh Pirates",
+        "pitcher": {
+          "name": "Jared Jones",
+          "id": 683003,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "PIT/ATH - Bot 1"
+      },
+      "odds": {
+        "draftkings": {
+          "top": {
+            "oddsPosted": false
+          },
+          "bot": {
+            "oddsPosted": false
+          }
+        }
+      }
+    },
+    {
+      "gamePk": 823938,
+      "gameTimeUTC": "2026-06-16T02:10:00Z",
+      "gameTimeET": "10:10 PM ET",
+      "lineupDropET": "6:40 PM ET",
+      "lineupComplete": false,
+      "homeTeam": "Los Angeles Dodgers",
+      "awayTeam": "Tampa Bay Rays",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "ballparkKey": "Dodgers",
+      "topInning": {
+        "teamBatting": "Tampa Bay Rays",
+        "teamPitching": "Los Angeles Dodgers",
+        "pitcher": {
+          "name": "Eric Lauer",
+          "id": 641778,
+          "pitchHand": "L"
+        },
+        "lineup": [],
+        "gameId": "TB/LAD - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "Los Angeles Dodgers",
+        "teamPitching": "Tampa Bay Rays",
+        "pitcher": {
+          "name": "Nick Martinez",
+          "id": 607259,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "TB/LAD - Bot 1"
+      },
+      "odds": {
+        "draftkings": {
+          "top": {
+            "oddsPosted": false
+          },
+          "bot": {
+            "oddsPosted": false
+          }
+        }
+      }
+    }
+  ]
+}

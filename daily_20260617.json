@@ -1,6 +1,6 @@
 {
   "date": "2026-06-17",
-  "fetchedAt": "2026-06-17T05:24:10.997941+00:00",
+  "fetchedAt": "2026-06-17T09:29:09.301564+00:00",
   "games": [
     {
       "gamePk": 824503,
@@ -37,18 +37,10 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": true,
-            "noOdds": 170,
-            "yesOdds": -235,
-            "impliedNSFI": 0.3704,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           },
           "bot": {
-            "oddsPosted": true,
-            "noOdds": 300,
-            "yesOdds": -475,
-            "impliedNSFI": 0.25,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           }
         }
       }
@@ -91,11 +83,7 @@
             "oddsPosted": false
           },
           "bot": {
-            "oddsPosted": true,
-            "noOdds": 165,
-            "yesOdds": -230,
-            "impliedNSFI": 0.3774,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           }
         }
       }
@@ -135,18 +123,10 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": true,
-            "noOdds": 135,
-            "yesOdds": -185,
-            "impliedNSFI": 0.4255,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           },
           "bot": {
-            "oddsPosted": true,
-            "noOdds": 220,
-            "yesOdds": -320,
-            "impliedNSFI": 0.3125,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           }
         }
       }
@@ -156,7 +136,7 @@
       "gameTimeUTC": "2026-06-17T18:05:00Z",
       "gameTimeET": "2:05 PM ET",
       "lineupDropET": "10:35 AM ET",
-      "lineupComplete": true,
+      "lineupComplete": false,
       "homeTeam": "Atlanta Braves",
       "awayTeam": "San Francisco Giants",
       "venue": "Truist Park",
@@ -169,62 +149,7 @@
           "id": 656550,
           "pitchHand": "R"
         },
-        "lineup": [
-          {
-            "name": "Luis Arraez",
-            "id": 650333,
-            "batSide": "L",
-            "position": "2B"
-          },
-          {
-            "name": "Bryce Eldridge",
-            "id": 805811,
-            "batSide": "L",
-            "position": "DH"
-          },
-          {
-            "name": "Matt Chapman",
-            "id": 656305,
-            "batSide": "R",
-            "position": "3B"
-          },
-          {
-            "name": "Rafael Devers",
-            "id": 646240,
-            "batSide": "L",
-            "position": "1B"
-          },
-          {
-            "name": "Jung Hoo Lee",
-            "id": 808982,
-            "batSide": "L",
-            "position": "RF"
-          },
-          {
-            "name": "Willy Adames",
-            "id": 642715,
-            "batSide": "R",
-            "position": "SS"
-          },
-          {
-            "name": "Casey Schmitt",
-            "id": 669477,
-            "batSide": "R",
-            "position": "LF"
-          },
-          {
-            "name": "Drew Gilbert",
-            "id": 687551,
-            "batSide": "L",
-            "position": "CF"
-          },
-          {
-            "name": "Daniel Susac",
-            "id": 691740,
-            "batSide": "R",
-            "position": "C"
-          }
-        ],
+        "lineup": [],
         "gameId": "SF/ATL - Top 1"
       },
       "botInning": {
@@ -235,62 +160,7 @@
           "id": 605288,
           "pitchHand": "R"
         },
-        "lineup": [
-          {
-            "name": "Drake Baldwin",
-            "id": 686948,
-            "batSide": "L",
-            "position": "C"
-          },
-          {
-            "name": "Michael Harris II",
-            "id": 671739,
-            "batSide": "L",
-            "position": "CF"
-          },
-          {
-            "name": "Matt Olson",
-            "id": 621566,
-            "batSide": "L",
-            "position": "1B"
-          },
-          {
-            "name": "Ozzie Albies",
-            "id": 645277,
-            "batSide": "S",
-            "position": "2B"
-          },
-          {
-            "name": "Dominic Smith",
-            "id": 642086,
-            "batSide": "L",
-            "position": "DH"
-          },
-          {
-            "name": "Mauricio Dub\u00f3n",
-            "id": 643289,
-            "batSide": "R",
-            "position": "LF"
-          },
-          {
-            "name": "Austin Riley",
-            "id": 663586,
-            "batSide": "R",
-            "position": "3B"
-          },
-          {
-            "name": "Mike Yastrzemski",
-            "id": 573262,
-            "batSide": "L",
-            "position": "RF"
-          },
-          {
-            "name": "Ha-Seong Kim",
-            "id": 673490,
-            "batSide": "R",
-            "position": "SS"
-          }
-        ],
+        "lineup": [],
         "gameId": "SF/ATL - Bot 1"
       },
       "odds": {
@@ -339,18 +209,10 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": true,
-            "noOdds": 190,
-            "yesOdds": -265,
-            "impliedNSFI": 0.3448,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           },
           "bot": {
-            "oddsPosted": true,
-            "noOdds": 150,
-            "yesOdds": -205,
-            "impliedNSFI": 0.4,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           }
         }
       }
@@ -433,18 +295,10 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": true,
-            "noOdds": 260,
-            "yesOdds": -380,
-            "impliedNSFI": 0.2778,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           },
           "bot": {
-            "oddsPosted": true,
-            "noOdds": 150,
-            "yesOdds": -205,
-            "impliedNSFI": 0.4,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           }
         }
       }
@@ -484,18 +338,10 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": true,
-            "noOdds": 190,
-            "yesOdds": -265,
-            "impliedNSFI": 0.3448,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           },
           "bot": {
-            "oddsPosted": true,
-            "noOdds": -105,
-            "yesOdds": -130,
-            "impliedNSFI": 0.5122,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           }
         }
       }
@@ -535,18 +381,10 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": true,
-            "noOdds": 115,
-            "yesOdds": -155,
-            "impliedNSFI": 0.4651,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           },
           "bot": {
-            "oddsPosted": true,
-            "noOdds": 130,
-            "yesOdds": -180,
-            "impliedNSFI": 0.4348,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           }
         }
       }
@@ -680,18 +518,10 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": true,
-            "noOdds": 160,
-            "yesOdds": -220,
-            "impliedNSFI": 0.3846,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           },
           "bot": {
-            "oddsPosted": true,
-            "noOdds": 330,
-            "yesOdds": -525,
-            "impliedNSFI": 0.2326,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           }
         }
       }
@@ -731,18 +561,10 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": true,
-            "noOdds": 115,
-            "yesOdds": -160,
-            "impliedNSFI": 0.4651,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           },
           "bot": {
-            "oddsPosted": true,
-            "noOdds": 120,
-            "yesOdds": -160,
-            "impliedNSFI": 0.4545,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           }
         }
       }
@@ -785,11 +607,7 @@
             "oddsPosted": false
           },
           "bot": {
-            "oddsPosted": true,
-            "noOdds": 210,
-            "yesOdds": -295,
-            "impliedNSFI": 0.3226,
-            "source": "draftkings_nash"
+            "oddsPosted": false
           }
         }
       }

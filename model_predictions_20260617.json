@@ -1,0 +1,103 @@
+{
+  "date": "2026-06-17",
+  "generatedAt": "2026-06-17T18:01:01.683645",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "DET/HOU - Top 1",
+      "half": "top",
+      "pitcher": "Peter Lambert",
+      "batting_team": "Detroit Tigers",
+      "pitching_team": "Houston Astros",
+      "model_prob": 0.2887,
+      "implied_prob": 0.3279,
+      "ev": -0.0392,
+      "ev_category": "negative",
+      "dk_no_odds": 205
+    },
+    {
+      "game_id": "DET/HOU - Bot 1",
+      "half": "bot",
+      "pitcher": "Casey Mize",
+      "batting_team": "Houston Astros",
+      "pitching_team": "Detroit Tigers",
+      "model_prob": 0.3352,
+      "implied_prob": 0.4,
+      "ev": -0.0648,
+      "ev_category": "negative",
+      "dk_no_odds": 150
+    },
+    {
+      "game_id": "SD/STL - Top 1",
+      "half": "top",
+      "pitcher": "Kyle Leahy",
+      "batting_team": "San Diego Padres",
+      "pitching_team": "St. Louis Cardinals",
+      "model_prob": 0.4111,
+      "implied_prob": 0.3704,
+      "ev": 0.0407,
+      "ev_category": "marginal",
+      "dk_no_odds": 170
+    },
+    {
+      "game_id": "SD/STL - Bot 1",
+      "half": "bot",
+      "pitcher": "Bradgley Rodriguez",
+      "batting_team": "St. Louis Cardinals",
+      "pitching_team": "San Diego Padres",
+      "model_prob": 0.2648,
+      "implied_prob": 0.3846,
+      "ev": -0.1198,
+      "ev_category": "negative",
+      "dk_no_odds": 160
+    },
+    {
+      "game_id": "TB/LAD - Top 1",
+      "half": "top",
+      "pitcher": "Shohei Ohtani",
+      "batting_team": "Tampa Bay Rays",
+      "pitching_team": "Los Angeles Dodgers",
+      "model_prob": 0.2236,
+      "implied_prob": 0.2778,
+      "ev": -0.0542,
+      "ev_category": "negative",
+      "dk_no_odds": 260
+    },
+    {
+      "game_id": "TB/LAD - Bot 1",
+      "half": "bot",
+      "pitcher": "Shane McClanahan",
+      "batting_team": "Los Angeles Dodgers",
+      "pitching_team": "Tampa Bay Rays",
+      "model_prob": 0.3587,
+      "implied_prob": 0.4255,
+      "ev": -0.0668,
+      "ev_category": "negative",
+      "dk_no_odds": 135
+    },
+    {
+      "game_id": "LAA/ARI - Top 1",
+      "half": "top",
+      "pitcher": "Eduardo Rodriguez",
+      "batting_team": "Los Angeles Angels",
+      "pitching_team": "Arizona Diamondbacks",
+      "model_prob": 0.2311,
+      "implied_prob": 0.3509,
+      "ev": -0.1198,
+      "ev_category": "negative",
+      "dk_no_odds": 185
+    },
+    {
+      "game_id": "LAA/ARI - Bot 1",
+      "half": "bot",
+      "pitcher": "Sam Aldegheri",
+      "batting_team": "Arizona Diamondbacks",
+      "pitching_team": "Los Angeles Angels",
+      "model_prob": 0.4158,
+      "implied_prob": 0.5122,
+      "ev": -0.0964,
+      "ev_category": "negative",
+      "dk_no_odds": -105
+    }
+  ]
+}

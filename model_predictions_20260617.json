@@ -1,6 +1,6 @@
 {
   "date": "2026-06-17",
-  "generatedAt": "2026-06-17T20:35:04.688877",
+  "generatedAt": "2026-06-17T22:59:07.026729",
   "simulations": 10000,
   "predictions": [
     {
@@ -9,11 +9,23 @@
       "pitcher": "Nolan McLean",
       "batting_team": "Cincinnati Reds",
       "pitching_team": "New York Mets",
-      "model_prob": 0.2352,
+      "model_prob": 0.2402,
       "implied_prob": 0.303,
-      "ev": -0.0678,
+      "ev": -0.0628,
       "ev_category": "negative",
       "dk_no_odds": 230
+    },
+    {
+      "game_id": "KC/WSH - Bot 1",
+      "half": "bot",
+      "pitcher": "Luinder Avila",
+      "batting_team": "Washington Nationals",
+      "pitching_team": "Kansas City Royals",
+      "model_prob": 0.2744,
+      "implied_prob": 0.3571,
+      "ev": -0.0827,
+      "ev_category": "negative",
+      "dk_no_odds": 180
     },
     {
       "game_id": "MIA/PHI - Top 1",
@@ -21,9 +33,9 @@
       "pitcher": "Andrew Painter",
       "batting_team": "Miami Marlins",
       "pitching_team": "Philadelphia Phillies",
-      "model_prob": 0.3528,
+      "model_prob": 0.3518,
       "implied_prob": 0.3636,
-      "ev": -0.0108,
+      "ev": -0.0118,
       "ev_category": "negative",
       "dk_no_odds": 175
     },
@@ -33,11 +45,11 @@
       "pitcher": "Grant Holmes",
       "batting_team": "San Francisco Giants",
       "pitching_team": "Atlanta Braves",
-      "model_prob": 0.3012,
-      "implied_prob": 0.3774,
-      "ev": -0.0762,
+      "model_prob": 0.3004,
+      "implied_prob": 0.3922,
+      "ev": -0.0918,
       "ev_category": "negative",
-      "dk_no_odds": 165
+      "dk_no_odds": 155
     },
     {
       "game_id": "SF/ATL - Bot 1",
@@ -45,11 +57,23 @@
       "pitcher": "Adrian Houser",
       "batting_team": "Atlanta Braves",
       "pitching_team": "San Francisco Giants",
-      "model_prob": 0.4016,
-      "implied_prob": 0.4878,
-      "ev": -0.0862,
+      "model_prob": 0.4032,
+      "implied_prob": 0.4651,
+      "ev": -0.0619,
       "ev_category": "negative",
-      "dk_no_odds": 105
+      "dk_no_odds": 115
+    },
+    {
+      "game_id": "SD/STL - Top 1",
+      "half": "top",
+      "pitcher": "Kyle Leahy",
+      "batting_team": "San Diego Padres",
+      "pitching_team": "St. Louis Cardinals",
+      "model_prob": 0.4171,
+      "implied_prob": 0.3704,
+      "ev": 0.0467,
+      "ev_category": "marginal",
+      "dk_no_odds": 170
     },
     {
       "game_id": "TOR/BOS - Top 1",
@@ -57,9 +81,9 @@
       "pitcher": "Jake Bennett",
       "batting_team": "Toronto Blue Jays",
       "pitching_team": "Boston Red Sox",
-      "model_prob": 0.3629,
+      "model_prob": 0.3616,
       "implied_prob": 0.4255,
-      "ev": -0.0626,
+      "ev": -0.0639,
       "ev_category": "negative",
       "dk_no_odds": 135
     },
@@ -69,9 +93,9 @@
       "pitcher": "Braydon Fisher",
       "batting_team": "Boston Red Sox",
       "pitching_team": "Toronto Blue Jays",
-      "model_prob": 0.2351,
+      "model_prob": 0.2327,
       "implied_prob": 0.3333,
-      "ev": -0.0982,
+      "ev": -0.1006,
       "ev_category": "negative",
       "dk_no_odds": 200
     },
@@ -81,9 +105,9 @@
       "pitcher": "Carlos Rod\u00f3n",
       "batting_team": "Chicago White Sox",
       "pitching_team": "New York Yankees",
-      "model_prob": 0.3153,
+      "model_prob": 0.2947,
       "implied_prob": 0.3226,
-      "ev": -0.0073,
+      "ev": -0.0279,
       "ev_category": "negative",
       "dk_no_odds": 210
     },
@@ -93,11 +117,107 @@
       "pitcher": "Anthony Kay",
       "batting_team": "New York Yankees",
       "pitching_team": "Chicago White Sox",
-      "model_prob": 0.3595,
+      "model_prob": 0.3553,
       "implied_prob": 0.4167,
-      "ev": -0.0572,
+      "ev": -0.0614,
       "ev_category": "negative",
       "dk_no_odds": 140
+    },
+    {
+      "game_id": "SF/ATL - Top 1",
+      "half": "top",
+      "pitcher": "JR Ritchie",
+      "batting_team": "San Francisco Giants",
+      "pitching_team": "Atlanta Braves",
+      "model_prob": 0.3102,
+      "implied_prob": 0.3922,
+      "ev": -0.082,
+      "ev_category": "negative",
+      "dk_no_odds": 155
+    },
+    {
+      "game_id": "SF/ATL - Bot 1",
+      "half": "bot",
+      "pitcher": "Carson Whisenhunt",
+      "batting_team": "Atlanta Braves",
+      "pitching_team": "San Francisco Giants",
+      "model_prob": 0.4034,
+      "implied_prob": 0.4651,
+      "ev": -0.0617,
+      "ev_category": "negative",
+      "dk_no_odds": 115
+    },
+    {
+      "game_id": "CLE/MIL - Top 1",
+      "half": "top",
+      "pitcher": "Brandon Sproat",
+      "batting_team": "Cleveland Guardians",
+      "pitching_team": "Milwaukee Brewers",
+      "model_prob": 0.3008,
+      "implied_prob": 0.3333,
+      "ev": -0.0325,
+      "ev_category": "negative",
+      "dk_no_odds": 200
+    },
+    {
+      "game_id": "CLE/MIL - Bot 1",
+      "half": "bot",
+      "pitcher": "Gavin Williams",
+      "batting_team": "Milwaukee Brewers",
+      "pitching_team": "Cleveland Guardians",
+      "model_prob": 0.2865,
+      "implied_prob": 0.2381,
+      "ev": 0.0484,
+      "ev_category": "marginal",
+      "dk_no_odds": 320
+    },
+    {
+      "game_id": "COL/CHC - Top 1",
+      "half": "top",
+      "pitcher": "Javier Assad",
+      "batting_team": "Colorado Rockies",
+      "pitching_team": "Chicago Cubs",
+      "model_prob": 0.4032,
+      "implied_prob": 0.4878,
+      "ev": -0.0846,
+      "ev_category": "negative",
+      "dk_no_odds": 105
+    },
+    {
+      "game_id": "COL/CHC - Bot 1",
+      "half": "bot",
+      "pitcher": "Sean Sullivan",
+      "batting_team": "Chicago Cubs",
+      "pitching_team": "Colorado Rockies",
+      "model_prob": 0.3291,
+      "implied_prob": 0.4167,
+      "ev": -0.0876,
+      "ev_category": "negative",
+      "dk_no_odds": 140
+    },
+    {
+      "game_id": "BAL/SEA - Top 1",
+      "half": "top",
+      "pitcher": "George Kirby",
+      "batting_team": "Baltimore Orioles",
+      "pitching_team": "Seattle Mariners",
+      "model_prob": 0.2865,
+      "implied_prob": 0.3509,
+      "ev": -0.0644,
+      "ev_category": "negative",
+      "dk_no_odds": 185
+    },
+    {
+      "game_id": "BAL/SEA - Bot 1",
+      "half": "bot",
+      "pitcher": "Kyle Bradish",
+      "batting_team": "Seattle Mariners",
+      "pitching_team": "Baltimore Orioles",
+      "model_prob": 0.193,
+      "implied_prob": 0.303,
+      "ev": -0.11,
+      "ev_category": "negative",
+      "dk_no_odds": 230
     }
   ]
 }

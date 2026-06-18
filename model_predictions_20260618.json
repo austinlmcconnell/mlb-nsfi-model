@@ -1,55 +1,79 @@
 {
   "date": "2026-06-18",
-  "generatedAt": "2026-06-18T18:13:43.905525",
+  "generatedAt": "2026-06-18T20:42:52.110671",
   "simulations": 10000,
   "predictions": [
     {
-      "game_id": "MIN/TEX - Top 1",
+      "game_id": "NYM/PHI - Top 1",
       "half": "top",
-      "pitcher": "Jack Leiter",
-      "batting_team": "Minnesota Twins",
-      "pitching_team": "Texas Rangers",
-      "model_prob": 0.3094,
-      "implied_prob": 0.2985,
-      "ev": 0.0109,
+      "pitcher": "Aaron Nola",
+      "batting_team": "New York Mets",
+      "pitching_team": "Philadelphia Phillies",
+      "model_prob": 0.3054,
+      "implied_prob": 0.3636,
+      "ev": -0.0582,
+      "ev_category": "negative",
+      "dk_no_odds": 175
+    },
+    {
+      "game_id": "NYM/PHI - Bot 1",
+      "half": "bot",
+      "pitcher": "Sean Manaea",
+      "batting_team": "Philadelphia Phillies",
+      "pitching_team": "New York Mets",
+      "model_prob": 0.2819,
+      "implied_prob": 0.2857,
+      "ev": -0.0038,
+      "ev_category": "negative",
+      "dk_no_odds": 250
+    },
+    {
+      "game_id": "CWS/NYY - Top 1",
+      "half": "top",
+      "pitcher": "Ryan Weathers",
+      "batting_team": "Chicago White Sox",
+      "pitching_team": "New York Yankees",
+      "model_prob": 0.3478,
+      "implied_prob": 0.3448,
+      "ev": 0.003,
       "ev_category": "marginal",
-      "dk_no_odds": 235
+      "dk_no_odds": 190
     },
     {
-      "game_id": "MIN/TEX - Bot 1",
+      "game_id": "CWS/NYY - Bot 1",
       "half": "bot",
-      "pitcher": "Joe Ryan",
-      "batting_team": "Texas Rangers",
-      "pitching_team": "Minnesota Twins",
-      "model_prob": 0.2624,
-      "implied_prob": 0.2941,
-      "ev": -0.0317,
-      "ev_category": "negative",
-      "dk_no_odds": 240
-    },
-    {
-      "game_id": "BAL/SEA - Top 1",
-      "half": "top",
-      "pitcher": "Bryan Woo",
-      "batting_team": "Baltimore Orioles",
-      "pitching_team": "Seattle Mariners",
-      "model_prob": 0.2997,
-      "implied_prob": 0.3279,
-      "ev": -0.0282,
-      "ev_category": "negative",
-      "dk_no_odds": 205
-    },
-    {
-      "game_id": "BAL/SEA - Bot 1",
-      "half": "bot",
-      "pitcher": "Shane Baz",
-      "batting_team": "Seattle Mariners",
-      "pitching_team": "Baltimore Orioles",
-      "model_prob": 0.266,
+      "pitcher": "Bryan Hudson",
+      "batting_team": "New York Yankees",
+      "pitching_team": "Chicago White Sox",
+      "model_prob": 0.3123,
       "implied_prob": 0.3922,
-      "ev": -0.1262,
+      "ev": -0.0799,
       "ev_category": "negative",
       "dk_no_odds": 155
+    },
+    {
+      "game_id": "STL/KC - Top 1",
+      "half": "top",
+      "pitcher": "Noah Cameron",
+      "batting_team": "St. Louis Cardinals",
+      "pitching_team": "Kansas City Royals",
+      "model_prob": 0.3577,
+      "implied_prob": 0.3571,
+      "ev": 0.0006,
+      "ev_category": "marginal",
+      "dk_no_odds": 180
+    },
+    {
+      "game_id": "STL/KC - Bot 1",
+      "half": "bot",
+      "pitcher": "Matthew Liberatore",
+      "batting_team": "Kansas City Royals",
+      "pitching_team": "St. Louis Cardinals",
+      "model_prob": 0.3683,
+      "implied_prob": 0.3704,
+      "ev": -0.0021,
+      "ev_category": "negative",
+      "dk_no_odds": 170
     }
   ]
 }

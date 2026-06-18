@@ -1,0 +1,55 @@
+{
+  "date": "2026-06-18",
+  "generatedAt": "2026-06-18T18:13:43.905525",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "MIN/TEX - Top 1",
+      "half": "top",
+      "pitcher": "Jack Leiter",
+      "batting_team": "Minnesota Twins",
+      "pitching_team": "Texas Rangers",
+      "model_prob": 0.3094,
+      "implied_prob": 0.2985,
+      "ev": 0.0109,
+      "ev_category": "marginal",
+      "dk_no_odds": 235
+    },
+    {
+      "game_id": "MIN/TEX - Bot 1",
+      "half": "bot",
+      "pitcher": "Joe Ryan",
+      "batting_team": "Texas Rangers",
+      "pitching_team": "Minnesota Twins",
+      "model_prob": 0.2624,
+      "implied_prob": 0.2941,
+      "ev": -0.0317,
+      "ev_category": "negative",
+      "dk_no_odds": 240
+    },
+    {
+      "game_id": "BAL/SEA - Top 1",
+      "half": "top",
+      "pitcher": "Bryan Woo",
+      "batting_team": "Baltimore Orioles",
+      "pitching_team": "Seattle Mariners",
+      "model_prob": 0.2997,
+      "implied_prob": 0.3279,
+      "ev": -0.0282,
+      "ev_category": "negative",
+      "dk_no_odds": 205
+    },
+    {
+      "game_id": "BAL/SEA - Bot 1",
+      "half": "bot",
+      "pitcher": "Shane Baz",
+      "batting_team": "Seattle Mariners",
+      "pitching_team": "Baltimore Orioles",
+      "model_prob": 0.266,
+      "implied_prob": 0.3922,
+      "ev": -0.1262,
+      "ev_category": "negative",
+      "dk_no_odds": 155
+    }
+  ]
+}

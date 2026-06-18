@@ -1,55 +1,79 @@
 {
   "date": "2026-06-18",
-  "generatedAt": "2026-06-18T20:42:52.110671",
+  "generatedAt": "2026-06-18T23:18:50.097726",
   "simulations": 10000,
   "predictions": [
     {
-      "game_id": "NYM/PHI - Top 1",
+      "game_id": "TOR/BOS - Top 1",
       "half": "top",
-      "pitcher": "Aaron Nola",
-      "batting_team": "New York Mets",
-      "pitching_team": "Philadelphia Phillies",
-      "model_prob": 0.3054,
-      "implied_prob": 0.3636,
-      "ev": -0.0582,
+      "pitcher": "Sonny Gray",
+      "batting_team": "Toronto Blue Jays",
+      "pitching_team": "Boston Red Sox",
+      "model_prob": 0.3152,
+      "implied_prob": 0.3175,
+      "ev": -0.0023,
       "ev_category": "negative",
-      "dk_no_odds": 175
+      "dk_no_odds": 215
     },
     {
-      "game_id": "NYM/PHI - Bot 1",
+      "game_id": "CLE/MIL - Bot 1",
       "half": "bot",
-      "pitcher": "Sean Manaea",
-      "batting_team": "Philadelphia Phillies",
-      "pitching_team": "New York Mets",
-      "model_prob": 0.2819,
-      "implied_prob": 0.2857,
-      "ev": -0.0038,
+      "pitcher": "Parker Messick",
+      "batting_team": "Milwaukee Brewers",
+      "pitching_team": "Cleveland Guardians",
+      "model_prob": 0.3011,
+      "implied_prob": 0.4167,
+      "ev": -0.1156,
       "ev_category": "negative",
-      "dk_no_odds": 250
+      "dk_no_odds": 140
     },
     {
-      "game_id": "CWS/NYY - Top 1",
+      "game_id": "MIN/TEX - Top 1",
       "half": "top",
-      "pitcher": "Ryan Weathers",
-      "batting_team": "Chicago White Sox",
-      "pitching_team": "New York Yankees",
-      "model_prob": 0.3478,
-      "implied_prob": 0.3448,
-      "ev": 0.003,
-      "ev_category": "marginal",
-      "dk_no_odds": 190
+      "pitcher": "Jack Leiter",
+      "batting_team": "Minnesota Twins",
+      "pitching_team": "Texas Rangers",
+      "model_prob": 0.3024,
+      "implied_prob": 0.2326,
+      "ev": 0.0698,
+      "ev_category": "strong",
+      "dk_no_odds": 330
     },
     {
-      "game_id": "CWS/NYY - Bot 1",
+      "game_id": "MIN/TEX - Bot 1",
       "half": "bot",
-      "pitcher": "Bryan Hudson",
-      "batting_team": "New York Yankees",
-      "pitching_team": "Chicago White Sox",
-      "model_prob": 0.3123,
-      "implied_prob": 0.3922,
-      "ev": -0.0799,
+      "pitcher": "Joe Ryan",
+      "batting_team": "Texas Rangers",
+      "pitching_team": "Minnesota Twins",
+      "model_prob": 0.2696,
+      "implied_prob": 0.4444,
+      "ev": -0.1748,
       "ev_category": "negative",
-      "dk_no_odds": 155
+      "dk_no_odds": 125
+    },
+    {
+      "game_id": "BAL/SEA - Top 1",
+      "half": "top",
+      "pitcher": "Bryan Woo",
+      "batting_team": "Baltimore Orioles",
+      "pitching_team": "Seattle Mariners",
+      "model_prob": 0.3025,
+      "implied_prob": 0.3125,
+      "ev": -0.01,
+      "ev_category": "negative",
+      "dk_no_odds": 220
+    },
+    {
+      "game_id": "BAL/SEA - Bot 1",
+      "half": "bot",
+      "pitcher": "Shane Baz",
+      "batting_team": "Seattle Mariners",
+      "pitching_team": "Baltimore Orioles",
+      "model_prob": 0.2693,
+      "implied_prob": 0.4762,
+      "ev": -0.2069,
+      "ev_category": "negative",
+      "dk_no_odds": 110
     },
     {
       "game_id": "STL/KC - Top 1",
@@ -57,10 +81,10 @@
       "pitcher": "Noah Cameron",
       "batting_team": "St. Louis Cardinals",
       "pitching_team": "Kansas City Royals",
-      "model_prob": 0.3577,
+      "model_prob": 0.3498,
       "implied_prob": 0.3571,
-      "ev": 0.0006,
-      "ev_category": "marginal",
+      "ev": -0.0073,
+      "ev_category": "negative",
       "dk_no_odds": 180
     },
     {
@@ -69,11 +93,11 @@
       "pitcher": "Matthew Liberatore",
       "batting_team": "Kansas City Royals",
       "pitching_team": "St. Louis Cardinals",
-      "model_prob": 0.3683,
-      "implied_prob": 0.3704,
-      "ev": -0.0021,
-      "ev_category": "negative",
-      "dk_no_odds": 170
+      "model_prob": 0.3743,
+      "implied_prob": 0.3509,
+      "ev": 0.0234,
+      "ev_category": "marginal",
+      "dk_no_odds": 185
     }
   ]
 }

@@ -1,0 +1,31 @@
+{
+  "date": "2026-06-19",
+  "generatedAt": "2026-06-19T17:29:14.476516",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "TOR/CHC - Top 1",
+      "half": "top",
+      "pitcher": "Ben Brown",
+      "batting_team": "Toronto Blue Jays",
+      "pitching_team": "Chicago Cubs",
+      "model_prob": 0.3052,
+      "implied_prob": 0.3509,
+      "ev": -0.0457,
+      "ev_category": "negative",
+      "dk_no_odds": 185
+    },
+    {
+      "game_id": "TOR/CHC - Bot 1",
+      "half": "bot",
+      "pitcher": "Kevin Gausman",
+      "batting_team": "Chicago Cubs",
+      "pitching_team": "Toronto Blue Jays",
+      "model_prob": 0.3264,
+      "implied_prob": 0.2857,
+      "ev": 0.0407,
+      "ev_category": "marginal",
+      "dk_no_odds": 250
+    }
+  ]
+}

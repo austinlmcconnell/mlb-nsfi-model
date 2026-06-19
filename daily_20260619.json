@@ -1,13 +1,13 @@
 {
   "date": "2026-06-19",
-  "fetchedAt": "2026-06-19T09:27:45.630392+00:00",
+  "fetchedAt": "2026-06-19T17:29:13.402240+00:00",
   "games": [
     {
       "gamePk": 824663,
       "gameTimeUTC": "2026-06-19T18:20:00Z",
       "gameTimeET": "2:20 PM ET",
       "lineupDropET": "10:50 AM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "Chicago Cubs",
       "awayTeam": "Toronto Blue Jays",
       "venue": "Wrigley Field",
@@ -20,7 +20,62 @@
           "id": 676962,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "George Springer",
+            "id": 543807,
+            "batSide": "R",
+            "position": "DH"
+          },
+          {
+            "name": "Vladimir Guerrero Jr.",
+            "id": 665489,
+            "batSide": "R",
+            "position": "1B"
+          },
+          {
+            "name": "Jes\u00fas S\u00e1nchez",
+            "id": 660821,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Yohendrick Pi\u00f1ango",
+            "id": 682818,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Alejandro Kirk",
+            "id": 672386,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Nathan Lukes",
+            "id": 664770,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Kazuma Okamoto",
+            "id": 672960,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Davis Schneider",
+            "id": 676914,
+            "batSide": "R",
+            "position": "2B"
+          },
+          {
+            "name": "Andr\u00e9s Gim\u00e9nez",
+            "id": 665926,
+            "batSide": "L",
+            "position": "SS"
+          }
+        ],
         "gameId": "TOR/CHC - Top 1"
       },
       "botInning": {
@@ -31,23 +86,78 @@
           "id": 592332,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Pete Crow-Armstrong",
+            "id": 691718,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Alex Bregman",
+            "id": 608324,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Michael Busch",
+            "id": 683737,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Seiya Suzuki",
+            "id": 673548,
+            "batSide": "R",
+            "position": "DH"
+          },
+          {
+            "name": "Ian Happ",
+            "id": 664023,
+            "batSide": "S",
+            "position": "LF"
+          },
+          {
+            "name": "Matt Shaw",
+            "id": 807713,
+            "batSide": "R",
+            "position": "RF"
+          },
+          {
+            "name": "Nico Hoerner",
+            "id": 663538,
+            "batSide": "R",
+            "position": "2B"
+          },
+          {
+            "name": "Carson Kelly",
+            "id": 608348,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Dansby Swanson",
+            "id": 621020,
+            "batSide": "R",
+            "position": "SS"
+          }
+        ],
         "gameId": "TOR/CHC - Bot 1"
       },
       "odds": {
         "draftkings": {
           "top": {
             "oddsPosted": true,
-            "noOdds": 165,
-            "yesOdds": -230,
-            "impliedNSFI": 0.3774,
+            "noOdds": 185,
+            "yesOdds": -260,
+            "impliedNSFI": 0.3509,
             "source": "draftkings_nash"
           },
           "bot": {
             "oddsPosted": true,
-            "noOdds": 220,
-            "yesOdds": -320,
-            "impliedNSFI": 0.3125,
+            "noOdds": 250,
+            "yesOdds": -370,
+            "impliedNSFI": 0.2857,
             "source": "draftkings_nash"
           }
         }
@@ -89,9 +199,9 @@
         "draftkings": {
           "top": {
             "oddsPosted": true,
-            "noOdds": 300,
+            "noOdds": 295,
             "yesOdds": -450,
-            "impliedNSFI": 0.25,
+            "impliedNSFI": 0.2532,
             "source": "draftkings_nash"
           },
           "bot": {
@@ -147,9 +257,9 @@
           },
           "bot": {
             "oddsPosted": true,
-            "noOdds": 130,
-            "yesOdds": -180,
-            "impliedNSFI": 0.4348,
+            "noOdds": 135,
+            "yesOdds": -185,
+            "impliedNSFI": 0.4255,
             "source": "draftkings_nash"
           }
         }
@@ -191,9 +301,9 @@
         "draftkings": {
           "top": {
             "oddsPosted": true,
-            "noOdds": 210,
-            "yesOdds": -300,
-            "impliedNSFI": 0.3226,
+            "noOdds": 215,
+            "yesOdds": -310,
+            "impliedNSFI": 0.3175,
             "source": "draftkings_nash"
           },
           "bot": {
@@ -216,8 +326,8 @@
         "teamBatting": "San Francisco Giants",
         "teamPitching": "Miami Marlins",
         "pitcher": {
-          "name": "TBD",
-          "id": null,
+          "name": "Lake Bachar",
+          "id": 669199,
           "pitchHand": "R"
         },
         "lineup": [],
@@ -282,15 +392,15 @@
           "top": {
             "oddsPosted": true,
             "noOdds": 145,
-            "yesOdds": -195,
+            "yesOdds": -200,
             "impliedNSFI": 0.4082,
             "source": "draftkings_nash"
           },
           "bot": {
             "oddsPosted": true,
-            "noOdds": 330,
-            "yesOdds": -525,
-            "impliedNSFI": 0.2326,
+            "noOdds": 390,
+            "yesOdds": -650,
+            "impliedNSFI": 0.2041,
             "source": "draftkings_nash"
           }
         }
@@ -434,9 +544,9 @@
         "draftkings": {
           "top": {
             "oddsPosted": true,
-            "noOdds": 130,
-            "yesOdds": -175,
-            "impliedNSFI": 0.4348,
+            "noOdds": 125,
+            "yesOdds": -170,
+            "impliedNSFI": 0.4444,
             "source": "draftkings_nash"
           },
           "bot": {
@@ -493,7 +603,7 @@
           "bot": {
             "oddsPosted": true,
             "noOdds": 190,
-            "yesOdds": -265,
+            "yesOdds": -270,
             "impliedNSFI": 0.3448,
             "source": "draftkings_nash"
           }
@@ -591,7 +701,7 @@
           "bot": {
             "oddsPosted": true,
             "noOdds": 125,
-            "yesOdds": -175,
+            "yesOdds": -170,
             "impliedNSFI": 0.4444,
             "source": "draftkings_nash"
           }
@@ -634,9 +744,9 @@
         "draftkings": {
           "top": {
             "oddsPosted": true,
-            "noOdds": 190,
+            "noOdds": 195,
             "yesOdds": -270,
-            "impliedNSFI": 0.3448,
+            "impliedNSFI": 0.339,
             "source": "draftkings_nash"
           },
           "bot": {
@@ -685,16 +795,16 @@
         "draftkings": {
           "top": {
             "oddsPosted": true,
-            "noOdds": 220,
-            "yesOdds": -320,
-            "impliedNSFI": 0.3125,
+            "noOdds": 215,
+            "yesOdds": -310,
+            "impliedNSFI": 0.3175,
             "source": "draftkings_nash"
           },
           "bot": {
             "oddsPosted": true,
-            "noOdds": 215,
+            "noOdds": 210,
             "yesOdds": -300,
-            "impliedNSFI": 0.3175,
+            "impliedNSFI": 0.3226,
             "source": "draftkings_nash"
           }
         }

@@ -1,6 +1,6 @@
 {
   "date": "2026-06-20",
-  "fetchedAt": "2026-06-20T04:50:10.910366+00:00",
+  "fetchedAt": "2026-06-20T08:21:09.411398+00:00",
   "games": [
     {
       "gamePk": 824263,
@@ -449,9 +449,9 @@
           },
           "bot": {
             "oddsPosted": true,
-            "noOdds": 260,
-            "yesOdds": -390,
-            "impliedNSFI": 0.2778,
+            "noOdds": 265,
+            "yesOdds": -400,
+            "impliedNSFI": 0.274,
             "source": "draftkings_nash"
           }
         }
@@ -533,8 +533,8 @@
         "teamBatting": "Athletics",
         "teamPitching": "Los Angeles Angels",
         "pitcher": {
-          "name": "TBD",
-          "id": null,
+          "name": "Walbert Ure\u00f1a",
+          "id": 700712,
           "pitchHand": "R"
         },
         "lineup": [],
@@ -586,10 +586,18 @@
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 210,
+            "yesOdds": -300,
+            "impliedNSFI": 0.3226,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 105,
+            "yesOdds": -140,
+            "impliedNSFI": 0.4878,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -637,9 +645,9 @@
           },
           "bot": {
             "oddsPosted": true,
-            "noOdds": 205,
+            "noOdds": 210,
             "yesOdds": -295,
-            "impliedNSFI": 0.3279,
+            "impliedNSFI": 0.3226,
             "source": "draftkings_nash"
           }
         }

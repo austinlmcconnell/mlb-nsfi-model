@@ -1,19 +1,91 @@
 {
   "date": "2026-06-21",
-  "generatedAt": "2026-06-21T20:10:56.663498",
+  "generatedAt": "2026-06-21T22:44:09.991023",
   "simulations": 10000,
   "predictions": [
     {
-      "game_id": "BOS/SEA - Top 1",
+      "game_id": "WSH/TB - Top 1",
       "half": "top",
-      "pitcher": "Logan Gilbert",
-      "batting_team": "Boston Red Sox",
-      "pitching_team": "Seattle Mariners",
-      "model_prob": 0.2258,
-      "implied_prob": 0.2564,
-      "ev": -0.0306,
+      "pitcher": "Nick Martinez",
+      "batting_team": "Washington Nationals",
+      "pitching_team": "Tampa Bay Rays",
+      "model_prob": 0.3345,
+      "implied_prob": 0.2703,
+      "ev": 0.0642,
+      "ev_category": "strong",
+      "dk_no_odds": 270
+    },
+    {
+      "game_id": "CWS/DET - Bot 1",
+      "half": "bot",
+      "pitcher": "Davis Martin",
+      "batting_team": "Detroit Tigers",
+      "pitching_team": "Chicago White Sox",
+      "model_prob": 0.3531,
+      "implied_prob": 0.3509,
+      "ev": 0.0022,
+      "ev_category": "marginal",
+      "dk_no_odds": 185
+    },
+    {
+      "game_id": "SF/MIA - Top 1",
+      "half": "top",
+      "pitcher": "Ryan Gusto",
+      "batting_team": "San Francisco Giants",
+      "pitching_team": "Miami Marlins",
+      "model_prob": 0.3183,
+      "implied_prob": 0.4167,
+      "ev": -0.0984,
       "ev_category": "negative",
-      "dk_no_odds": 290
+      "dk_no_odds": 140
+    },
+    {
+      "game_id": "CLE/HOU - Bot 1",
+      "half": "bot",
+      "pitcher": "Slade Cecconi",
+      "batting_team": "Houston Astros",
+      "pitching_team": "Cleveland Guardians",
+      "model_prob": 0.3662,
+      "implied_prob": 0.2632,
+      "ev": 0.103,
+      "ev_category": "strong",
+      "dk_no_odds": 280
+    },
+    {
+      "game_id": "STL/KC - Top 1",
+      "half": "top",
+      "pitcher": "Stephen Kolek",
+      "batting_team": "St. Louis Cardinals",
+      "pitching_team": "Kansas City Royals",
+      "model_prob": 0.3999,
+      "implied_prob": 0.4878,
+      "ev": -0.0879,
+      "ev_category": "negative",
+      "dk_no_odds": 105
+    },
+    {
+      "game_id": "SD/TEX - Top 1",
+      "half": "top",
+      "pitcher": "Nathan Eovaldi",
+      "batting_team": "San Diego Padres",
+      "pitching_team": "Texas Rangers",
+      "model_prob": 0.3776,
+      "implied_prob": 0.3704,
+      "ev": 0.0072,
+      "ev_category": "marginal",
+      "dk_no_odds": 170
+    },
+    {
+      "game_id": "PIT/COL - Top 1",
+      "half": "top",
+      "pitcher": "Michael Lorenzen",
+      "batting_team": "Pittsburgh Pirates",
+      "pitching_team": "Colorado Rockies",
+      "model_prob": 0.3121,
+      "implied_prob": 0.4082,
+      "ev": -0.0961,
+      "ev_category": "negative",
+      "dk_no_odds": 145
     },
     {
       "game_id": "BOS/SEA - Bot 1",
@@ -21,11 +93,11 @@
       "pitcher": "Payton Tolle",
       "batting_team": "Seattle Mariners",
       "pitching_team": "Boston Red Sox",
-      "model_prob": 0.272,
-      "implied_prob": 0.303,
-      "ev": -0.031,
+      "model_prob": 0.2788,
+      "implied_prob": 0.4651,
+      "ev": -0.1863,
       "ev_category": "negative",
-      "dk_no_odds": 230
+      "dk_no_odds": 115
     },
     {
       "game_id": "NYM/PHI - Top 1",
@@ -33,9 +105,9 @@
       "pitcher": "Zack Wheeler",
       "batting_team": "New York Mets",
       "pitching_team": "Philadelphia Phillies",
-      "model_prob": 0.2457,
+      "model_prob": 0.244,
       "implied_prob": 0.274,
-      "ev": -0.0283,
+      "ev": -0.03,
       "ev_category": "negative",
       "dk_no_odds": 265
     },
@@ -45,9 +117,9 @@
       "pitcher": "David Peterson",
       "batting_team": "Philadelphia Phillies",
       "pitching_team": "New York Mets",
-      "model_prob": 0.3044,
+      "model_prob": 0.2978,
       "implied_prob": 0.3571,
-      "ev": -0.0527,
+      "ev": -0.0593,
       "ev_category": "negative",
       "dk_no_odds": 180
     }

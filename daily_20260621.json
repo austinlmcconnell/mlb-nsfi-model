@@ -1,13 +1,13 @@
 {
   "date": "2026-06-21",
-  "fetchedAt": "2026-06-21T08:57:13.137164+00:00",
+  "fetchedAt": "2026-06-21T16:59:15.298747+00:00",
   "games": [
     {
       "gamePk": 823531,
       "gameTimeUTC": "2026-06-21T17:35:00Z",
       "gameTimeET": "1:35 PM ET",
       "lineupDropET": "10:05 AM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "New York Yankees",
       "awayTeam": "Cincinnati Reds",
       "venue": "Yankee Stadium",
@@ -20,7 +20,62 @@
           "id": 695684,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Blake Dunn",
+            "id": 694362,
+            "batSide": "R",
+            "position": "CF"
+          },
+          {
+            "name": "JJ Bleday",
+            "id": 668709,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Sal Stewart",
+            "id": 701398,
+            "batSide": "R",
+            "position": "1B"
+          },
+          {
+            "name": "Nathaniel Lowe",
+            "id": 663993,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Spencer Steer",
+            "id": 668715,
+            "batSide": "R",
+            "position": "2B"
+          },
+          {
+            "name": "Eugenio Su\u00e1rez",
+            "id": 553993,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Noelvi Marte",
+            "id": 682622,
+            "batSide": "R",
+            "position": "RF"
+          },
+          {
+            "name": "Tyler Stephenson",
+            "id": 663886,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Edwin Arroyo",
+            "id": 695490,
+            "batSide": "S",
+            "position": "SS"
+          }
+        ],
         "gameId": "CIN/NYY - Top 1"
       },
       "botInning": {
@@ -31,23 +86,78 @@
           "id": 695505,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Ben Rice",
+            "id": 700250,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Jasson Dom\u00ednguez",
+            "id": 691176,
+            "batSide": "S",
+            "position": "RF"
+          },
+          {
+            "name": "Cody Bellinger",
+            "id": 641355,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Spencer Jones",
+            "id": 682987,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Jazz Chisholm Jr.",
+            "id": 665862,
+            "batSide": "L",
+            "position": "2B"
+          },
+          {
+            "name": "Jos\u00e9 Caballero",
+            "id": 676609,
+            "batSide": "R",
+            "position": "LF"
+          },
+          {
+            "name": "Ryan McMahon",
+            "id": 641857,
+            "batSide": "L",
+            "position": "3B"
+          },
+          {
+            "name": "Austin Wells",
+            "id": 669224,
+            "batSide": "L",
+            "position": "C"
+          },
+          {
+            "name": "Anthony Volpe",
+            "id": 683011,
+            "batSide": "R",
+            "position": "SS"
+          }
+        ],
         "gameId": "CIN/NYY - Bot 1"
       },
       "odds": {
         "draftkings": {
           "top": {
             "oddsPosted": true,
-            "noOdds": 210,
-            "yesOdds": -300,
-            "impliedNSFI": 0.3226,
+            "noOdds": 135,
+            "yesOdds": -185,
+            "impliedNSFI": 0.4255,
             "source": "draftkings_nash"
           },
           "bot": {
             "oddsPosted": true,
-            "noOdds": 300,
-            "yesOdds": -475,
-            "impliedNSFI": 0.25,
+            "noOdds": 330,
+            "yesOdds": -525,
+            "impliedNSFI": 0.2326,
             "source": "draftkings_nash"
           }
         }
@@ -58,7 +168,7 @@
       "gameTimeUTC": "2026-06-21T17:35:00Z",
       "gameTimeET": "1:35 PM ET",
       "lineupDropET": "10:05 AM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "Atlanta Braves",
       "awayTeam": "Milwaukee Brewers",
       "venue": "Truist Park",
@@ -71,7 +181,62 @@
           "id": 693821,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Christian Yelich",
+            "id": 592885,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Jackson Chourio",
+            "id": 694192,
+            "batSide": "R",
+            "position": "LF"
+          },
+          {
+            "name": "Brice Turang",
+            "id": 668930,
+            "batSide": "L",
+            "position": "2B"
+          },
+          {
+            "name": "William Contreras",
+            "id": 661388,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Jake Bauers",
+            "id": 641343,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Garrett Mitchell",
+            "id": 669003,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Sal Frelick",
+            "id": 686217,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Cooper Pratt",
+            "id": 806198,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "David Hamilton",
+            "id": 666152,
+            "batSide": "L",
+            "position": "3B"
+          }
+        ],
         "gameId": "MIL/ATL - Top 1"
       },
       "botInning": {
@@ -82,23 +247,78 @@
           "id": 688107,
           "pitchHand": "L"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Mauricio Dub\u00f3n",
+            "id": 643289,
+            "batSide": "R",
+            "position": "LF"
+          },
+          {
+            "name": "Drake Baldwin",
+            "id": 686948,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Ozzie Albies",
+            "id": 645277,
+            "batSide": "S",
+            "position": "2B"
+          },
+          {
+            "name": "Matt Olson",
+            "id": 621566,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Michael Harris II",
+            "id": 671739,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Austin Riley",
+            "id": 663586,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Joey Bart",
+            "id": 663698,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Eli White",
+            "id": 642201,
+            "batSide": "R",
+            "position": "RF"
+          },
+          {
+            "name": "Ha-Seong Kim",
+            "id": 673490,
+            "batSide": "R",
+            "position": "SS"
+          }
+        ],
         "gameId": "MIL/ATL - Bot 1"
       },
       "odds": {
         "draftkings": {
           "top": {
             "oddsPosted": true,
-            "noOdds": 140,
-            "yesOdds": -195,
-            "impliedNSFI": 0.4167,
+            "noOdds": 145,
+            "yesOdds": -200,
+            "impliedNSFI": 0.4082,
             "source": "draftkings_nash"
           },
           "bot": {
             "oddsPosted": true,
-            "noOdds": 120,
-            "yesOdds": -160,
-            "impliedNSFI": 0.4545,
+            "noOdds": 110,
+            "yesOdds": -155,
+            "impliedNSFI": 0.4762,
             "source": "draftkings_nash"
           }
         }
@@ -109,7 +329,7 @@
       "gameTimeUTC": "2026-06-21T17:40:00Z",
       "gameTimeET": "1:40 PM ET",
       "lineupDropET": "10:10 AM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "Tampa Bay Rays",
       "awayTeam": "Washington Nationals",
       "venue": "Tropicana Field",
@@ -122,7 +342,62 @@
           "id": 607259,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "James Wood",
+            "id": 695578,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Luis Garc\u00eda Jr.",
+            "id": 671277,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Curtis Mead",
+            "id": 678554,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "CJ Abrams",
+            "id": 682928,
+            "batSide": "L",
+            "position": "SS"
+          },
+          {
+            "name": "Daylen Lile",
+            "id": 695734,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Dylan Crews",
+            "id": 686611,
+            "batSide": "R",
+            "position": "CF"
+          },
+          {
+            "name": "Jos\u00e9 Tena",
+            "id": 677588,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Drew Millas",
+            "id": 686452,
+            "batSide": "S",
+            "position": "C"
+          },
+          {
+            "name": "Nasim Nu\u00f1ez",
+            "id": 683083,
+            "batSide": "S",
+            "position": "2B"
+          }
+        ],
         "gameId": "WSH/TB - Top 1"
       },
       "botInning": {
@@ -133,16 +408,71 @@
           "id": 674841,
           "pitchHand": "L"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Yandy D\u00edaz",
+            "id": 650490,
+            "batSide": "R",
+            "position": "DH"
+          },
+          {
+            "name": "Jonny DeLuca",
+            "id": 676356,
+            "batSide": "R",
+            "position": "CF"
+          },
+          {
+            "name": "Jonathan Aranda",
+            "id": 666018,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Junior Caminero",
+            "id": 691406,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Ryan Vilade",
+            "id": 668723,
+            "batSide": "R",
+            "position": "RF"
+          },
+          {
+            "name": "Ben Williamson",
+            "id": 810938,
+            "batSide": "R",
+            "position": "2B"
+          },
+          {
+            "name": "Chandler Simpson",
+            "id": 802415,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Nick Fortes",
+            "id": 663743,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Taylor Walls",
+            "id": 670764,
+            "batSide": "S",
+            "position": "SS"
+          }
+        ],
         "gameId": "WSH/TB - Bot 1"
       },
       "odds": {
         "draftkings": {
           "top": {
             "oddsPosted": true,
-            "noOdds": 105,
+            "noOdds": 110,
             "yesOdds": -145,
-            "impliedNSFI": 0.4878,
+            "impliedNSFI": 0.4762,
             "source": "draftkings_nash"
           },
           "bot": {
@@ -156,7 +486,7 @@
       "gameTimeUTC": "2026-06-21T17:40:00Z",
       "gameTimeET": "1:40 PM ET",
       "lineupDropET": "10:10 AM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "Detroit Tigers",
       "awayTeam": "Chicago White Sox",
       "venue": "Comerica Park",
@@ -169,7 +499,62 @@
           "id": 672456,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Sam Antonacci",
+            "id": 803011,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Andrew Benintendi",
+            "id": 643217,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Colson Montgomery",
+            "id": 695657,
+            "batSide": "L",
+            "position": "3B"
+          },
+          {
+            "name": "Chase Meidroth",
+            "id": 805367,
+            "batSide": "R",
+            "position": "2B"
+          },
+          {
+            "name": "Braden Montgomery",
+            "id": 695731,
+            "batSide": "S",
+            "position": "RF"
+          },
+          {
+            "name": "Jacob Gonzalez",
+            "id": 694378,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Edgar Quero",
+            "id": 700337,
+            "batSide": "S",
+            "position": "C"
+          },
+          {
+            "name": "Tristan Peters",
+            "id": 671976,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Luisangel Acu\u00f1a",
+            "id": 682668,
+            "batSide": "R",
+            "position": "SS"
+          }
+        ],
         "gameId": "CWS/DET - Top 1"
       },
       "botInning": {
@@ -180,23 +565,78 @@
           "id": 663436,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Kevin McGonigle",
+            "id": 805808,
+            "batSide": "L",
+            "position": "SS"
+          },
+          {
+            "name": "Dillon Dingler",
+            "id": 693307,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Kerry Carpenter",
+            "id": 681481,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Riley Greene",
+            "id": 682985,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Spencer Torkelson",
+            "id": 679529,
+            "batSide": "R",
+            "position": "1B"
+          },
+          {
+            "name": "Colt Keith",
+            "id": 690993,
+            "batSide": "L",
+            "position": "3B"
+          },
+          {
+            "name": "James Outman",
+            "id": 681546,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Trei Cruz",
+            "id": 669360,
+            "batSide": "S",
+            "position": "LF"
+          },
+          {
+            "name": "Zach McKinstry",
+            "id": 656716,
+            "batSide": "L",
+            "position": "2B"
+          }
+        ],
         "gameId": "CWS/DET - Bot 1"
       },
       "odds": {
         "draftkings": {
           "top": {
             "oddsPosted": true,
-            "noOdds": 120,
-            "yesOdds": -160,
-            "impliedNSFI": 0.4545,
+            "noOdds": 135,
+            "yesOdds": -185,
+            "impliedNSFI": 0.4255,
             "source": "draftkings_nash"
           },
           "bot": {
             "oddsPosted": true,
-            "noOdds": 245,
-            "yesOdds": -360,
-            "impliedNSFI": 0.2899,
+            "noOdds": 215,
+            "yesOdds": -310,
+            "impliedNSFI": 0.3175,
             "source": "draftkings_nash"
           }
         }
@@ -220,7 +660,62 @@
           "id": 687473,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Luis Arraez",
+            "id": 650333,
+            "batSide": "L",
+            "position": "2B"
+          },
+          {
+            "name": "Bryce Eldridge",
+            "id": 805811,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Casey Schmitt",
+            "id": 669477,
+            "batSide": "R",
+            "position": "LF"
+          },
+          {
+            "name": "Rafael Devers",
+            "id": 646240,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Jung Hoo Lee",
+            "id": 808982,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Willy Adames",
+            "id": 642715,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "Matt Chapman",
+            "id": 656305,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Drew Gilbert",
+            "id": 687551,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Daniel Susac",
+            "id": 691740,
+            "batSide": "R",
+            "position": "C"
+          }
+        ],
         "gameId": "SF/MIA - Top 1"
       },
       "botInning": {
@@ -238,16 +733,16 @@
         "draftkings": {
           "top": {
             "oddsPosted": true,
-            "noOdds": 140,
-            "yesOdds": -195,
-            "impliedNSFI": 0.4167,
+            "noOdds": 125,
+            "yesOdds": -170,
+            "impliedNSFI": 0.4444,
             "source": "draftkings_nash"
           },
           "bot": {
             "oddsPosted": true,
-            "noOdds": 135,
-            "yesOdds": -185,
-            "impliedNSFI": 0.4255,
+            "noOdds": 140,
+            "yesOdds": -190,
+            "impliedNSFI": 0.4167,
             "source": "draftkings_nash"
           }
         }
@@ -258,7 +753,7 @@
       "gameTimeUTC": "2026-06-21T18:10:00Z",
       "gameTimeET": "2:10 PM ET",
       "lineupDropET": "10:40 AM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "Houston Astros",
       "awayTeam": "Cleveland Guardians",
       "venue": "Daikin Park",
@@ -271,7 +766,62 @@
           "id": 678906,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Travis Bazzana",
+            "id": 683953,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Kyle Manzardo",
+            "id": 700932,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Brayan Rocchio",
+            "id": 677587,
+            "batSide": "S",
+            "position": "SS"
+          },
+          {
+            "name": "Gabriel Arias",
+            "id": 672356,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Daniel Schneemann",
+            "id": 682177,
+            "batSide": "L",
+            "position": "2B"
+          },
+          {
+            "name": "Kahlil Watson",
+            "id": 696135,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Steven Kwan",
+            "id": 680757,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Patrick Bailey",
+            "id": 672275,
+            "batSide": "S",
+            "position": "C"
+          },
+          {
+            "name": "Petey Halpin",
+            "id": 690984,
+            "batSide": "L",
+            "position": "CF"
+          }
+        ],
         "gameId": "CLE/HOU - Top 1"
       },
       "botInning": {
@@ -282,7 +832,62 @@
           "id": 677944,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Jeremy Pe\u00f1a",
+            "id": 665161,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "Yordan Alvarez",
+            "id": 670541,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Christian Walker",
+            "id": 572233,
+            "batSide": "R",
+            "position": "1B"
+          },
+          {
+            "name": "Isaac Paredes",
+            "id": 670623,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Jose Altuve",
+            "id": 514888,
+            "batSide": "R",
+            "position": "DH"
+          },
+          {
+            "name": "Joey Loperfido",
+            "id": 694388,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Cam Smith",
+            "id": 701358,
+            "batSide": "R",
+            "position": "RF"
+          },
+          {
+            "name": "Raynel Delgado",
+            "id": 669384,
+            "batSide": "L",
+            "position": "2B"
+          },
+          {
+            "name": "Christian V\u00e1zquez",
+            "id": 543877,
+            "batSide": "R",
+            "position": "C"
+          }
+        ],
         "gameId": "CLE/HOU - Bot 1"
       },
       "odds": {
@@ -290,7 +895,7 @@
           "top": {
             "oddsPosted": true,
             "noOdds": 225,
-            "yesOdds": -330,
+            "yesOdds": -320,
             "impliedNSFI": 0.3077,
             "source": "draftkings_nash"
           },
@@ -309,7 +914,7 @@
       "gameTimeUTC": "2026-06-21T18:10:00Z",
       "gameTimeET": "2:10 PM ET",
       "lineupDropET": "10:40 AM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "Kansas City Royals",
       "awayTeam": "St. Louis Cardinals",
       "venue": "Kauffman Stadium",
@@ -322,7 +927,62 @@
           "id": 663568,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "JJ Wetherholt",
+            "id": 802139,
+            "batSide": "L",
+            "position": "2B"
+          },
+          {
+            "name": "Iv\u00e1n Herrera",
+            "id": 671056,
+            "batSide": "R",
+            "position": "DH"
+          },
+          {
+            "name": "Alec Burleson",
+            "id": 676475,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Jordan Walker",
+            "id": 691023,
+            "batSide": "R",
+            "position": "RF"
+          },
+          {
+            "name": "Lars Nootbaar",
+            "id": 663457,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Masyn Winn",
+            "id": 691026,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "Jimmy Crooks",
+            "id": 699625,
+            "batSide": "L",
+            "position": "C"
+          },
+          {
+            "name": "Blaze Jordan",
+            "id": 691458,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Nathan Church",
+            "id": 701675,
+            "batSide": "L",
+            "position": "CF"
+          }
+        ],
         "gameId": "STL/KC - Top 1"
       },
       "botInning": {
@@ -333,7 +993,62 @@
           "id": 669160,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Carter Jensen",
+            "id": 695600,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Maikel Garcia",
+            "id": 672580,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "Jac Caglianone",
+            "id": 695506,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Salvador Perez",
+            "id": 521692,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Michael Massey",
+            "id": 686681,
+            "batSide": "L",
+            "position": "2B"
+          },
+          {
+            "name": "Lane Thomas",
+            "id": 657041,
+            "batSide": "R",
+            "position": "RF"
+          },
+          {
+            "name": "Kameron Misner",
+            "id": 670224,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Nick Loftin",
+            "id": 679845,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Isaac Collins",
+            "id": 686555,
+            "batSide": "S",
+            "position": "LF"
+          }
+        ],
         "gameId": "STL/KC - Bot 1"
       },
       "odds": {
@@ -341,66 +1056,15 @@
           "top": {
             "oddsPosted": true,
             "noOdds": 105,
-            "yesOdds": -145,
+            "yesOdds": -140,
             "impliedNSFI": 0.4878,
             "source": "draftkings_nash"
           },
           "bot": {
             "oddsPosted": true,
-            "noOdds": 180,
-            "yesOdds": -250,
-            "impliedNSFI": 0.3571,
-            "source": "draftkings_nash"
-          }
-        }
-      }
-    },
-    {
-      "gamePk": 824664,
-      "gameTimeUTC": "2026-06-21T18:20:00Z",
-      "gameTimeET": "2:20 PM ET",
-      "lineupDropET": "10:50 AM ET",
-      "lineupComplete": false,
-      "homeTeam": "Chicago Cubs",
-      "awayTeam": "Toronto Blue Jays",
-      "venue": "Wrigley Field",
-      "ballparkKey": "Cubs",
-      "topInning": {
-        "teamBatting": "Toronto Blue Jays",
-        "teamPitching": "Chicago Cubs",
-        "pitcher": {
-          "name": "Shota Imanaga",
-          "id": 684007,
-          "pitchHand": "L"
-        },
-        "lineup": [],
-        "gameId": "TOR/CHC - Top 1"
-      },
-      "botInning": {
-        "teamBatting": "Chicago Cubs",
-        "teamPitching": "Toronto Blue Jays",
-        "pitcher": {
-          "name": "Dylan Cease",
-          "id": 656302,
-          "pitchHand": "R"
-        },
-        "lineup": [],
-        "gameId": "TOR/CHC - Bot 1"
-      },
-      "odds": {
-        "draftkings": {
-          "top": {
-            "oddsPosted": true,
-            "noOdds": 185,
-            "yesOdds": -260,
-            "impliedNSFI": 0.3509,
-            "source": "draftkings_nash"
-          },
-          "bot": {
-            "oddsPosted": true,
-            "noOdds": 400,
-            "yesOdds": -700,
-            "impliedNSFI": 0.2,
+            "noOdds": 175,
+            "yesOdds": -245,
+            "impliedNSFI": 0.3636,
             "source": "draftkings_nash"
           }
         }
@@ -411,7 +1075,7 @@
       "gameTimeUTC": "2026-06-21T18:35:00Z",
       "gameTimeET": "2:35 PM ET",
       "lineupDropET": "11:05 AM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "Texas Rangers",
       "awayTeam": "San Diego Padres",
       "venue": "Globe Life Field",
@@ -424,34 +1088,144 @@
           "id": 543135,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Samad Taylor",
+            "id": 669392,
+            "batSide": "R",
+            "position": "RF"
+          },
+          {
+            "name": "Jackson Merrill",
+            "id": 701538,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Manny Machado",
+            "id": 592518,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Gavin Sheets",
+            "id": 657757,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Will Wagner",
+            "id": 695238,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Xander Bogaerts",
+            "id": 593428,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "Ty France",
+            "id": 664034,
+            "batSide": "R",
+            "position": "1B"
+          },
+          {
+            "name": "Sung-Mun Song",
+            "id": 823550,
+            "batSide": "L",
+            "position": "2B"
+          },
+          {
+            "name": "Rodolfo Dur\u00e1n",
+            "id": 660710,
+            "batSide": "R",
+            "position": "C"
+          }
+        ],
         "gameId": "SD/TEX - Top 1"
       },
       "botInning": {
         "teamBatting": "Texas Rangers",
         "teamPitching": "San Diego Padres",
         "pitcher": {
-          "name": "TBD",
-          "id": null,
-          "pitchHand": "R"
+          "name": "Wandy Peralta",
+          "id": 593974,
+          "pitchHand": "L"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Wyatt Langford",
+            "id": 694671,
+            "batSide": "R",
+            "position": "CF"
+          },
+          {
+            "name": "Josh Jung",
+            "id": 673962,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Brandon Nimmo",
+            "id": 607043,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Jake Burger",
+            "id": 669394,
+            "batSide": "R",
+            "position": "1B"
+          },
+          {
+            "name": "Joc Pederson",
+            "id": 592626,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Ezequiel Duran",
+            "id": 677649,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "Alejandro Osuna",
+            "id": 696030,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Kyle Higashioka",
+            "id": 543309,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Nicky Lopez",
+            "id": 670032,
+            "batSide": "L",
+            "position": "2B"
+          }
+        ],
         "gameId": "SD/TEX - Bot 1"
       },
       "odds": {
         "draftkings": {
           "top": {
             "oddsPosted": true,
-            "noOdds": 155,
-            "yesOdds": -215,
-            "impliedNSFI": 0.3922,
+            "noOdds": 235,
+            "yesOdds": -340,
+            "impliedNSFI": 0.2985,
             "source": "draftkings_nash"
           },
           "bot": {
             "oddsPosted": true,
-            "noOdds": 135,
-            "yesOdds": -180,
-            "impliedNSFI": 0.4255,
+            "noOdds": 150,
+            "yesOdds": -210,
+            "impliedNSFI": 0.4,
             "source": "draftkings_nash"
           }
         }
@@ -462,7 +1236,7 @@
       "gameTimeUTC": "2026-06-21T19:10:00Z",
       "gameTimeET": "3:10 PM ET",
       "lineupDropET": "11:40 AM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "Colorado Rockies",
       "awayTeam": "Pittsburgh Pirates",
       "venue": "Coors Field",
@@ -475,7 +1249,62 @@
           "id": 547179,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Spencer Horwitz",
+            "id": 687462,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Brandon Lowe",
+            "id": 664040,
+            "batSide": "L",
+            "position": "2B"
+          },
+          {
+            "name": "Bryan Reynolds",
+            "id": 668804,
+            "batSide": "S",
+            "position": "DH"
+          },
+          {
+            "name": "Ryan O'Hearn",
+            "id": 656811,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Nick Gonzales",
+            "id": 693304,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Endy Rodr\u00edguez",
+            "id": 682848,
+            "batSide": "S",
+            "position": "C"
+          },
+          {
+            "name": "Tyler Callihan",
+            "id": 682997,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Jake Mangum",
+            "id": 663968,
+            "batSide": "S",
+            "position": "CF"
+          },
+          {
+            "name": "Jared Triolo",
+            "id": 669707,
+            "batSide": "R",
+            "position": "SS"
+          }
+        ],
         "gameId": "PIT/COL - Top 1"
       },
       "botInning": {
@@ -486,7 +1315,62 @@
           "id": 683003,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Jake McCarthy",
+            "id": 664983,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Willi Castro",
+            "id": 650489,
+            "batSide": "S",
+            "position": "SS"
+          },
+          {
+            "name": "TJ Rumfield",
+            "id": 681198,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Tyler Freeman",
+            "id": 671289,
+            "batSide": "R",
+            "position": "RF"
+          },
+          {
+            "name": "Cole Carrigg",
+            "id": 694249,
+            "batSide": "S",
+            "position": "CF"
+          },
+          {
+            "name": "Edouard Julien",
+            "id": 666397,
+            "batSide": "L",
+            "position": "2B"
+          },
+          {
+            "name": "Sterlin Thompson",
+            "id": 694514,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Kyle Karros",
+            "id": 691720,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Brett Sullivan",
+            "id": 664954,
+            "batSide": "L",
+            "position": "C"
+          }
+        ],
         "gameId": "PIT/COL - Bot 1"
       },
       "odds": {
@@ -494,15 +1378,15 @@
           "top": {
             "oddsPosted": true,
             "noOdds": 155,
-            "yesOdds": -210,
+            "yesOdds": -215,
             "impliedNSFI": 0.3922,
             "source": "draftkings_nash"
           },
           "bot": {
             "oddsPosted": true,
-            "noOdds": 180,
-            "yesOdds": -255,
-            "impliedNSFI": 0.3571,
+            "noOdds": 170,
+            "yesOdds": -240,
+            "impliedNSFI": 0.3704,
             "source": "draftkings_nash"
           }
         }
@@ -513,7 +1397,7 @@
       "gameTimeUTC": "2026-06-21T19:15:00Z",
       "gameTimeET": "3:15 PM ET",
       "lineupDropET": "11:45 AM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "Arizona Diamondbacks",
       "awayTeam": "Minnesota Twins",
       "venue": "Chase Field",
@@ -526,7 +1410,62 @@
           "id": 703615,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Trevor Larnach",
+            "id": 663616,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Byron Buxton",
+            "id": 621439,
+            "batSide": "R",
+            "position": "DH"
+          },
+          {
+            "name": "Kody Clemens",
+            "id": 665019,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Royce Lewis",
+            "id": 668904,
+            "batSide": "R",
+            "position": "1B"
+          },
+          {
+            "name": "Brooks Lee",
+            "id": 686797,
+            "batSide": "S",
+            "position": "3B"
+          },
+          {
+            "name": "Luke Keaschall",
+            "id": 807712,
+            "batSide": "R",
+            "position": "2B"
+          },
+          {
+            "name": "Ryan Kreidler",
+            "id": 668952,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "Kyler Fedko",
+            "id": 693459,
+            "batSide": "R",
+            "position": "CF"
+          },
+          {
+            "name": "Alex Jackson",
+            "id": 656577,
+            "batSide": "R",
+            "position": "C"
+          }
+        ],
         "gameId": "MIN/ARI - Top 1"
       },
       "botInning": {
@@ -537,16 +1476,79 @@
           "id": 702474,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Ketel Marte",
+            "id": 606466,
+            "batSide": "S",
+            "position": "2B"
+          },
+          {
+            "name": "Geraldo Perdomo",
+            "id": 672695,
+            "batSide": "S",
+            "position": "SS"
+          },
+          {
+            "name": "Corbin Carroll",
+            "id": 682998,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Gabriel Moreno",
+            "id": 672515,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Pavin Smith",
+            "id": 656976,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Nolan Arenado",
+            "id": 571448,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Ildemaro Vargas",
+            "id": 545121,
+            "batSide": "S",
+            "position": "1B"
+          },
+          {
+            "name": "Jorge Barrosa",
+            "id": 678489,
+            "batSide": "S",
+            "position": "CF"
+          },
+          {
+            "name": "Tommy Troy",
+            "id": 694371,
+            "batSide": "R",
+            "position": "LF"
+          }
+        ],
         "gameId": "MIN/ARI - Bot 1"
       },
       "odds": {
         "draftkings": {
           "top": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 180,
+            "yesOdds": -255,
+            "impliedNSFI": 0.3571,
+            "source": "draftkings_nash"
           },
           "bot": {
-            "oddsPosted": false
+            "oddsPosted": true,
+            "noOdds": 100,
+            "yesOdds": -140,
+            "impliedNSFI": 0.5,
+            "source": "draftkings_nash"
           }
         }
       }
@@ -580,7 +1582,62 @@
           "id": 672282,
           "pitchHand": "L"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Zack Gelof",
+            "id": 680869,
+            "batSide": "R",
+            "position": "2B"
+          },
+          {
+            "name": "Nick Kurtz",
+            "id": 701762,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Jacob Wilson",
+            "id": 805779,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "Tyler Soderstrom",
+            "id": 691016,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Jonah Heim",
+            "id": 641680,
+            "batSide": "S",
+            "position": "C"
+          },
+          {
+            "name": "Joey Meneses",
+            "id": 608841,
+            "batSide": "R",
+            "position": "DH"
+          },
+          {
+            "name": "Colby Thomas",
+            "id": 687515,
+            "batSide": "R",
+            "position": "RF"
+          },
+          {
+            "name": "Henry Bolte",
+            "id": 703607,
+            "batSide": "R",
+            "position": "CF"
+          },
+          {
+            "name": "Max Muncy",
+            "id": 691777,
+            "batSide": "R",
+            "position": "3B"
+          }
+        ],
         "gameId": "LAA/ATH - Bot 1"
       },
       "odds": {
@@ -590,9 +1647,9 @@
           },
           "bot": {
             "oddsPosted": true,
-            "noOdds": 340,
+            "noOdds": 350,
             "yesOdds": -550,
-            "impliedNSFI": 0.2273,
+            "impliedNSFI": 0.2222,
             "source": "draftkings_nash"
           }
         }
@@ -641,9 +1698,9 @@
           },
           "bot": {
             "oddsPosted": true,
-            "noOdds": 105,
-            "yesOdds": -140,
-            "impliedNSFI": 0.4878,
+            "noOdds": 110,
+            "yesOdds": -145,
+            "impliedNSFI": 0.4762,
             "source": "draftkings_nash"
           }
         }
@@ -747,6 +1804,49 @@
             "yesOdds": -235,
             "impliedNSFI": 0.3704,
             "source": "draftkings_nash"
+          }
+        }
+      }
+    },
+    {
+      "gamePk": 824664,
+      "gameTimeUTC": "2026-06-21T18:20:00Z",
+      "gameTimeET": "2:20 PM ET",
+      "lineupDropET": "10:50 AM ET",
+      "lineupComplete": false,
+      "homeTeam": "Chicago Cubs",
+      "awayTeam": "Toronto Blue Jays",
+      "venue": "Wrigley Field",
+      "ballparkKey": "Cubs",
+      "topInning": {
+        "teamBatting": "Toronto Blue Jays",
+        "teamPitching": "Chicago Cubs",
+        "pitcher": {
+          "name": "Shota Imanaga",
+          "id": 684007,
+          "pitchHand": "L"
+        },
+        "lineup": [],
+        "gameId": "TOR/CHC - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "Chicago Cubs",
+        "teamPitching": "Toronto Blue Jays",
+        "pitcher": {
+          "name": "Dylan Cease",
+          "id": 656302,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "TOR/CHC - Bot 1"
+      },
+      "odds": {
+        "draftkings": {
+          "top": {
+            "oddsPosted": false
+          },
+          "bot": {
+            "oddsPosted": false
           }
         }
       }

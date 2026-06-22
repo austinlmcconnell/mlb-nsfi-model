@@ -1,0 +1,31 @@
+{
+  "date": "2026-06-22",
+  "generatedAt": "2026-06-22T18:55:16.559995",
+  "simulations": 10000,
+  "predictions": [
+    {
+      "game_id": "KC/TB - Top 1",
+      "half": "top",
+      "pitcher": "Drew Rasmussen",
+      "batting_team": "Kansas City Royals",
+      "pitching_team": "Tampa Bay Rays",
+      "model_prob": 0.3705,
+      "implied_prob": 0.2817,
+      "ev": 0.0888,
+      "ev_category": "strong",
+      "dk_no_odds": 255
+    },
+    {
+      "game_id": "KC/TB - Bot 1",
+      "half": "bot",
+      "pitcher": "Michael Wacha",
+      "batting_team": "Tampa Bay Rays",
+      "pitching_team": "Kansas City Royals",
+      "model_prob": 0.3645,
+      "implied_prob": 0.4878,
+      "ev": -0.1233,
+      "ev_category": "negative",
+      "dk_no_odds": 105
+    }
+  ]
+}

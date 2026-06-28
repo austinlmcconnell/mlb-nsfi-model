@@ -1,6 +1,6 @@
 {
   "date": "2026-06-28",
-  "fetchedAt": "2026-06-28T16:40:43.800759+00:00",
+  "fetchedAt": "2026-06-28T19:52:17.877232+00:00",
   "games": [
     {
       "gamePk": 824821,
@@ -1613,7 +1613,7 @@
       "gameTimeUTC": "2026-06-28T19:15:00Z",
       "gameTimeET": "3:15 PM ET",
       "lineupDropET": "11:45 AM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "Los Angeles Angels",
       "awayTeam": "Athletics",
       "venue": "Angel Stadium",
@@ -1626,7 +1626,62 @@
           "id": 691951,
           "pitchHand": "L"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Henry Bolte",
+            "id": 703607,
+            "batSide": "R",
+            "position": "CF"
+          },
+          {
+            "name": "Joey Meneses",
+            "id": 608841,
+            "batSide": "R",
+            "position": "1B"
+          },
+          {
+            "name": "Shea Langeliers",
+            "id": 669127,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Jonah Heim",
+            "id": 641680,
+            "batSide": "S",
+            "position": "DH"
+          },
+          {
+            "name": "Colby Thomas",
+            "id": 687515,
+            "batSide": "R",
+            "position": "LF"
+          },
+          {
+            "name": "Lawrence Butler",
+            "id": 671732,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Max Muncy",
+            "id": 691777,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Jeff McNeil",
+            "id": 643446,
+            "batSide": "L",
+            "position": "2B"
+          },
+          {
+            "name": "Alika Williams",
+            "id": 675961,
+            "batSide": "R",
+            "position": "SS"
+          }
+        ],
         "gameId": "ATH/LAA - Top 1"
       },
       "botInning": {
@@ -1704,7 +1759,7 @@
       "gameTimeUTC": "2026-06-28T20:05:00Z",
       "gameTimeET": "4:05 PM ET",
       "lineupDropET": "12:35 PM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "San Francisco Giants",
       "awayTeam": "Atlanta Braves",
       "venue": "Oracle Park",
@@ -1717,7 +1772,62 @@
           "id": 592662,
           "pitchHand": "L"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Mauricio Dub\u00f3n",
+            "id": 643289,
+            "batSide": "R",
+            "position": "LF"
+          },
+          {
+            "name": "Michael Harris II",
+            "id": 671739,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Ozzie Albies",
+            "id": 645277,
+            "batSide": "S",
+            "position": "2B"
+          },
+          {
+            "name": "Matt Olson",
+            "id": 621566,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Drake Baldwin",
+            "id": 686948,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Austin Riley",
+            "id": 663586,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Joey Bart",
+            "id": 663698,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Eli White",
+            "id": 642201,
+            "batSide": "R",
+            "position": "RF"
+          },
+          {
+            "name": "Ha-Seong Kim",
+            "id": 673490,
+            "batSide": "R",
+            "position": "SS"
+          }
+        ],
         "gameId": "ATL/SF - Top 1"
       },
       "botInning": {
@@ -1728,7 +1838,62 @@
           "id": 519242,
           "pitchHand": "L"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Matt Chapman",
+            "id": 656305,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Luis Arraez",
+            "id": 650333,
+            "batSide": "L",
+            "position": "2B"
+          },
+          {
+            "name": "Heliot Ramos",
+            "id": 671218,
+            "batSide": "R",
+            "position": "DH"
+          },
+          {
+            "name": "Rafael Devers",
+            "id": 646240,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Willy Adames",
+            "id": 642715,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "Victor Bericoto",
+            "id": 682674,
+            "batSide": "R",
+            "position": "LF"
+          },
+          {
+            "name": "Jung Hoo Lee",
+            "id": 808982,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Eric Haase",
+            "id": 606992,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Jonah Cox",
+            "id": 813841,
+            "batSide": "R",
+            "position": "CF"
+          }
+        ],
         "gameId": "ATL/SF - Bot 1"
       },
       "odds": {
@@ -1740,7 +1905,7 @@
       "gameTimeUTC": "2026-06-28T20:10:00Z",
       "gameTimeET": "4:10 PM ET",
       "lineupDropET": "12:40 PM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "San Diego Padres",
       "awayTeam": "Los Angeles Dodgers",
       "venue": "Petco Park",
@@ -1753,7 +1918,62 @@
           "id": 650633,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Shohei Ohtani",
+            "id": 660271,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Andy Pages",
+            "id": 681624,
+            "batSide": "R",
+            "position": "CF"
+          },
+          {
+            "name": "Freddie Freeman",
+            "id": 518692,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Mookie Betts",
+            "id": 605141,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "Max Muncy",
+            "id": 571970,
+            "batSide": "L",
+            "position": "3B"
+          },
+          {
+            "name": "Tommy Edman",
+            "id": 669242,
+            "batSide": "S",
+            "position": "LF"
+          },
+          {
+            "name": "Kyle Tucker",
+            "id": 663656,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Alex Freeland",
+            "id": 690976,
+            "batSide": "S",
+            "position": "2B"
+          },
+          {
+            "name": "Chuckie Robinson",
+            "id": 642020,
+            "batSide": "R",
+            "position": "C"
+          }
+        ],
         "gameId": "LAD/SD - Top 1"
       },
       "botInning": {
@@ -1764,7 +1984,62 @@
           "id": 686218,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Fernando Tatis Jr.",
+            "id": 665487,
+            "batSide": "R",
+            "position": "RF"
+          },
+          {
+            "name": "Samad Taylor",
+            "id": 669392,
+            "batSide": "R",
+            "position": "LF"
+          },
+          {
+            "name": "Jackson Merrill",
+            "id": 701538,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Manny Machado",
+            "id": 592518,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Gavin Sheets",
+            "id": 657757,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Xander Bogaerts",
+            "id": 593428,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "Miguel Andujar",
+            "id": 609280,
+            "batSide": "R",
+            "position": "DH"
+          },
+          {
+            "name": "Sung-Mun Song",
+            "id": 823550,
+            "batSide": "L",
+            "position": "2B"
+          },
+          {
+            "name": "Rodolfo Dur\u00e1n",
+            "id": 660710,
+            "batSide": "R",
+            "position": "C"
+          }
+        ],
         "gameId": "LAD/SD - Bot 1"
       },
       "odds": {

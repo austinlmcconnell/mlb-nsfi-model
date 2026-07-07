@@ -1,13 +1,13 @@
 {
   "date": "2026-07-07",
-  "fetchedAt": "2026-07-07T08:22:58.127855+00:00",
+  "fetchedAt": "2026-07-07T17:30:39.103905+00:00",
   "games": [
     {
       "gamePk": 823062,
       "gameTimeUTC": "2026-07-07T18:15:00Z",
       "gameTimeET": "2:15 PM ET",
       "lineupDropET": "10:45 AM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "St. Louis Cardinals",
       "awayTeam": "Milwaukee Brewers",
       "venue": "Busch Stadium",
@@ -16,11 +16,66 @@
         "teamBatting": "Milwaukee Brewers",
         "teamPitching": "St. Louis Cardinals",
         "pitcher": {
-          "name": "TBD",
-          "id": null,
+          "name": "Matt Svanson",
+          "id": 694335,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Christian Yelich",
+            "id": 592885,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Jackson Chourio",
+            "id": 694192,
+            "batSide": "R",
+            "position": "LF"
+          },
+          {
+            "name": "Brice Turang",
+            "id": 668930,
+            "batSide": "L",
+            "position": "2B"
+          },
+          {
+            "name": "William Contreras",
+            "id": 661388,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Jake Bauers",
+            "id": 641343,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Garrett Mitchell",
+            "id": 669003,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Sal Frelick",
+            "id": 686217,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Cooper Pratt",
+            "id": 806198,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "Joey Ortiz",
+            "id": 687401,
+            "batSide": "R",
+            "position": "3B"
+          }
+        ],
         "gameId": "MIL/STL - Top 1"
       },
       "botInning": {
@@ -31,7 +86,62 @@
           "id": 694819,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "JJ Wetherholt",
+            "id": 802139,
+            "batSide": "L",
+            "position": "SS"
+          },
+          {
+            "name": "Iv\u00e1n Herrera",
+            "id": 671056,
+            "batSide": "R",
+            "position": "DH"
+          },
+          {
+            "name": "Alec Burleson",
+            "id": 676475,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Jordan Walker",
+            "id": 691023,
+            "batSide": "R",
+            "position": "RF"
+          },
+          {
+            "name": "Lars Nootbaar",
+            "id": 663457,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Bryan Torres",
+            "id": 663494,
+            "batSide": "L",
+            "position": "2B"
+          },
+          {
+            "name": "Nathan Church",
+            "id": 701675,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Jos\u00e9 Ferm\u00edn",
+            "id": 665877,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Jimmy Crooks",
+            "id": 699625,
+            "batSide": "L",
+            "position": "C"
+          }
+        ],
         "gameId": "MIL/STL - Bot 1"
       },
       "odds": {
@@ -52,8 +162,8 @@
         "teamBatting": "Milwaukee Brewers",
         "teamPitching": "St. Louis Cardinals",
         "pitcher": {
-          "name": "TBD",
-          "id": null,
+          "name": "Hunter Dobbins",
+          "id": 690928,
           "pitchHand": "R"
         },
         "lineup": [],
@@ -63,9 +173,9 @@
         "teamBatting": "St. Louis Cardinals",
         "teamPitching": "Milwaukee Brewers",
         "pitcher": {
-          "name": "TBD",
-          "id": null,
-          "pitchHand": "R"
+          "name": "Robert Gasser",
+          "id": 688107,
+          "pitchHand": "L"
         },
         "lineup": [],
         "gameId": "MIL/STL - Bot 1"
@@ -351,8 +461,8 @@
         "teamBatting": "Cincinnati Reds",
         "teamPitching": "Philadelphia Phillies",
         "pitcher": {
-          "name": "TBD",
-          "id": null,
+          "name": "Zack Wheeler",
+          "id": 554430,
           "pitchHand": "R"
         },
         "lineup": [],
@@ -531,8 +641,8 @@
         "teamBatting": "San Francisco Giants",
         "teamPitching": "Toronto Blue Jays",
         "pitcher": {
-          "name": "TBD",
-          "id": null,
+          "name": "Spencer Miles",
+          "id": 693686,
           "pitchHand": "R"
         },
         "lineup": [],

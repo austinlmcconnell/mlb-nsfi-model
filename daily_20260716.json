@@ -1,0 +1,42 @@
+{
+  "date": "2026-07-16",
+  "fetchedAt": "2026-07-16T03:46:13.545304+00:00",
+  "games": [
+    {
+      "gamePk": 823440,
+      "gameTimeUTC": "2026-07-16T23:10:00Z",
+      "gameTimeET": "7:10 PM ET",
+      "lineupDropET": "3:40 PM ET",
+      "lineupComplete": false,
+      "homeTeam": "Philadelphia Phillies",
+      "awayTeam": "New York Mets",
+      "venue": "Citizens Bank Park",
+      "ballparkKey": "Phillies",
+      "topInning": {
+        "teamBatting": "New York Mets",
+        "teamPitching": "Philadelphia Phillies",
+        "pitcher": {
+          "name": "Aaron Nola",
+          "id": 605400,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "NYM/PHI - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "Philadelphia Phillies",
+        "teamPitching": "New York Mets",
+        "pitcher": {
+          "name": "Christian Scott",
+          "id": 681035,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "NYM/PHI - Bot 1"
+      },
+      "odds": {
+        "draftkings": null
+      }
+    }
+  ]
+}

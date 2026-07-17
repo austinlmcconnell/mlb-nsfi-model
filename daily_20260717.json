@@ -1,13 +1,13 @@
 {
   "date": "2026-07-17",
-  "fetchedAt": "2026-07-17T07:15:31.792251+00:00",
+  "fetchedAt": "2026-07-17T16:38:29.265375+00:00",
   "games": [
     {
       "gamePk": 824766,
       "gameTimeUTC": "2026-07-17T17:35:00Z",
       "gameTimeET": "1:35 PM ET",
       "lineupDropET": "10:05 AM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "Boston Red Sox",
       "awayTeam": "Tampa Bay Rays",
       "venue": "Fenway Park",
@@ -20,7 +20,62 @@
           "id": 687562,
           "pitchHand": "L"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Yandy D\u00edaz",
+            "id": 650490,
+            "batSide": "R",
+            "position": "DH"
+          },
+          {
+            "name": "Jonathan Aranda",
+            "id": 666018,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Junior Caminero",
+            "id": 691406,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Ryan Vilade",
+            "id": 668723,
+            "batSide": "R",
+            "position": "RF"
+          },
+          {
+            "name": "Jonny DeLuca",
+            "id": 676356,
+            "batSide": "R",
+            "position": "CF"
+          },
+          {
+            "name": "Chandler Simpson",
+            "id": 802415,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Ben Williamson",
+            "id": 810938,
+            "batSide": "R",
+            "position": "2B"
+          },
+          {
+            "name": "Taylor Walls",
+            "id": 670764,
+            "batSide": "S",
+            "position": "SS"
+          },
+          {
+            "name": "Nick Fortes",
+            "id": 663743,
+            "batSide": "R",
+            "position": "C"
+          }
+        ],
         "gameId": "TB/BOS - Top 1"
       },
       "botInning": {
@@ -31,7 +86,62 @@
           "id": 643377,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Anthony Seigler",
+            "id": 678011,
+            "batSide": "S",
+            "position": "2B"
+          },
+          {
+            "name": "Ceddanne Rafaela",
+            "id": 678882,
+            "batSide": "R",
+            "position": "CF"
+          },
+          {
+            "name": "Wilyer Abreu",
+            "id": 677800,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Caleb Durbin",
+            "id": 702332,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Masataka Yoshida",
+            "id": 807799,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Romy Gonzalez",
+            "id": 663853,
+            "batSide": "R",
+            "position": "1B"
+          },
+          {
+            "name": "Jarren Duran",
+            "id": 680776,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Carlos Narv\u00e1ez",
+            "id": 665966,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Tsung-Che Cheng",
+            "id": 691907,
+            "batSide": "L",
+            "position": "SS"
+          }
+        ],
         "gameId": "TB/BOS - Bot 1"
       },
       "odds": {
@@ -495,8 +605,8 @@
         "teamBatting": "Arizona Diamondbacks",
         "teamPitching": "St. Louis Cardinals",
         "pitcher": {
-          "name": "TBD",
-          "id": null,
+          "name": "Michael McGreevy",
+          "id": 700241,
           "pitchHand": "R"
         },
         "lineup": [],

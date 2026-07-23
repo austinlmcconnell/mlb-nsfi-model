@@ -1,6 +1,6 @@
 {
   "date": "2026-07-23",
-  "fetchedAt": "2026-07-23T16:52:50.836439+00:00",
+  "fetchedAt": "2026-07-23T19:53:54.031308+00:00",
   "games": [
     {
       "gamePk": 824893,
@@ -317,13 +317,13 @@
             "name": "Yandy D\u00edaz",
             "id": 650490,
             "batSide": "R",
-            "position": "1B"
+            "position": "DH"
           },
           {
             "name": "Jonathan Aranda",
             "id": 666018,
             "batSide": "L",
-            "position": "DH"
+            "position": "1B"
           },
           {
             "name": "Junior Caminero",
@@ -445,7 +445,7 @@
       "gameTimeUTC": "2026-07-23T21:15:00Z",
       "gameTimeET": "5:15 PM ET",
       "lineupDropET": "1:45 PM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "St. Louis Cardinals",
       "awayTeam": "Arizona Diamondbacks",
       "venue": "Busch Stadium",
@@ -458,7 +458,62 @@
           "id": 700241,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Ketel Marte",
+            "id": 606466,
+            "batSide": "S",
+            "position": "2B"
+          },
+          {
+            "name": "Corbin Carroll",
+            "id": 682998,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Geraldo Perdomo",
+            "id": 672695,
+            "batSide": "S",
+            "position": "SS"
+          },
+          {
+            "name": "Gabriel Moreno",
+            "id": 672515,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Max Kepler",
+            "id": 596146,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Tim Tawa",
+            "id": 694374,
+            "batSide": "R",
+            "position": "1B"
+          },
+          {
+            "name": "Adrian Del Castillo",
+            "id": 680728,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Ildemaro Vargas",
+            "id": 545121,
+            "batSide": "S",
+            "position": "3B"
+          },
+          {
+            "name": "Ryan Waldschmidt",
+            "id": 814439,
+            "batSide": "R",
+            "position": "CF"
+          }
+        ],
         "gameId": "ARI/STL - Top 1"
       },
       "botInning": {
@@ -469,7 +524,62 @@
           "id": 694297,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "JJ Wetherholt",
+            "id": 802139,
+            "batSide": "L",
+            "position": "2B"
+          },
+          {
+            "name": "Jordan Walker",
+            "id": 691023,
+            "batSide": "R",
+            "position": "RF"
+          },
+          {
+            "name": "Alec Burleson",
+            "id": 676475,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Lars Nootbaar",
+            "id": 663457,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Masyn Winn",
+            "id": 691026,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "Jos\u00e9 Ferm\u00edn",
+            "id": 665877,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Nathan Church",
+            "id": 701675,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Blaze Jordan",
+            "id": 691458,
+            "batSide": "R",
+            "position": "1B"
+          },
+          {
+            "name": "Jimmy Crooks",
+            "id": 699625,
+            "batSide": "L",
+            "position": "C"
+          }
+        ],
         "gameId": "ARI/STL - Bot 1"
       },
       "odds": {
@@ -481,7 +591,7 @@
       "gameTimeUTC": "2026-07-23T22:40:00Z",
       "gameTimeET": "6:40 PM ET",
       "lineupDropET": "3:10 PM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "Detroit Tigers",
       "awayTeam": "Kansas City Royals",
       "venue": "Comerica Park",
@@ -494,7 +604,62 @@
           "id": 675512,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Carter Jensen",
+            "id": 695600,
+            "batSide": "L",
+            "position": "C"
+          },
+          {
+            "name": "Lane Thomas",
+            "id": 657041,
+            "batSide": "R",
+            "position": "CF"
+          },
+          {
+            "name": "Vinnie Pasquantino",
+            "id": 686469,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Salvador Perez",
+            "id": 521692,
+            "batSide": "R",
+            "position": "DH"
+          },
+          {
+            "name": "Michael Massey",
+            "id": 686681,
+            "batSide": "L",
+            "position": "2B"
+          },
+          {
+            "name": "Isaac Collins",
+            "id": 686555,
+            "batSide": "S",
+            "position": "LF"
+          },
+          {
+            "name": "Josh Rojas",
+            "id": 668942,
+            "batSide": "L",
+            "position": "3B"
+          },
+          {
+            "name": "Nick Loftin",
+            "id": 679845,
+            "batSide": "R",
+            "position": "RF"
+          },
+          {
+            "name": "Andrew Velazquez",
+            "id": 623205,
+            "batSide": "S",
+            "position": "SS"
+          }
+        ],
         "gameId": "KC/DET - Top 1"
       },
       "botInning": {
@@ -505,7 +670,62 @@
           "id": 677976,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Kevin McGonigle",
+            "id": 805808,
+            "batSide": "L",
+            "position": "SS"
+          },
+          {
+            "name": "Gleyber Torres",
+            "id": 650402,
+            "batSide": "R",
+            "position": "2B"
+          },
+          {
+            "name": "Colt Keith",
+            "id": 690993,
+            "batSide": "L",
+            "position": "3B"
+          },
+          {
+            "name": "Riley Greene",
+            "id": 682985,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Dillon Dingler",
+            "id": 693307,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Kerry Carpenter",
+            "id": 681481,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Spencer Torkelson",
+            "id": 679529,
+            "batSide": "R",
+            "position": "1B"
+          },
+          {
+            "name": "Zach McKinstry",
+            "id": 656716,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "James Outman",
+            "id": 681546,
+            "batSide": "L",
+            "position": "CF"
+          }
+        ],
         "gameId": "KC/DET - Bot 1"
       },
       "odds": {

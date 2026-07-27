@@ -1,13 +1,13 @@
 {
   "date": "2026-07-27",
-  "fetchedAt": "2026-07-27T08:30:09.366578+00:00",
+  "fetchedAt": "2026-07-27T17:14:35.534300+00:00",
   "games": [
     {
       "gamePk": 822868,
       "gameTimeUTC": "2026-07-27T18:35:00Z",
       "gameTimeET": "2:35 PM ET",
       "lineupDropET": "11:05 AM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "Texas Rangers",
       "awayTeam": "Seattle Mariners",
       "venue": "Globe Life Field",
@@ -20,7 +20,62 @@
           "id": 677958,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Cole Young",
+            "id": 702284,
+            "batSide": "L",
+            "position": "2B"
+          },
+          {
+            "name": "Julio Rodr\u00edguez",
+            "id": 677594,
+            "batSide": "R",
+            "position": "DH"
+          },
+          {
+            "name": "Dominic Canzone",
+            "id": 686527,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Randy Arozarena",
+            "id": 668227,
+            "batSide": "R",
+            "position": "LF"
+          },
+          {
+            "name": "Josh Naylor",
+            "id": 647304,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Luke Raley",
+            "id": 670042,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Mitch Garver",
+            "id": 641598,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "J.P. Crawford",
+            "id": 641487,
+            "batSide": "L",
+            "position": "3B"
+          },
+          {
+            "name": "Colt Emerson",
+            "id": 806068,
+            "batSide": "L",
+            "position": "SS"
+          }
+        ],
         "gameId": "SEA/TEX - Top 1"
       },
       "botInning": {
@@ -31,7 +86,62 @@
           "id": 669923,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Joc Pederson",
+            "id": 592626,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Wyatt Langford",
+            "id": 694671,
+            "batSide": "R",
+            "position": "LF"
+          },
+          {
+            "name": "Ezequiel Duran",
+            "id": 677649,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "Brandon Nimmo",
+            "id": 607043,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Evan Carter",
+            "id": 694497,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Jake Burger",
+            "id": 669394,
+            "batSide": "R",
+            "position": "1B"
+          },
+          {
+            "name": "Nicky Lopez",
+            "id": 670032,
+            "batSide": "L",
+            "position": "2B"
+          },
+          {
+            "name": "Josh Smith",
+            "id": 669701,
+            "batSide": "L",
+            "position": "3B"
+          },
+          {
+            "name": "Elias D\u00edaz",
+            "id": 553869,
+            "batSide": "R",
+            "position": "C"
+          }
+        ],
         "gameId": "SEA/TEX - Bot 1"
       },
       "odds": {
@@ -160,9 +270,9 @@
         "teamBatting": "Toronto Blue Jays",
         "teamPitching": "Washington Nationals",
         "pitcher": {
-          "name": "Andrew Alvarez",
-          "id": 674841,
-          "pitchHand": "L"
+          "name": "Eddy Yean",
+          "id": 678868,
+          "pitchHand": "R"
         },
         "lineup": [],
         "gameId": "TOR/WSH - Top 1"

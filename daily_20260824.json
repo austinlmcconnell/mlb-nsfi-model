@@ -1,6 +1,6 @@
 {
   "date": "2026-08-24",
-  "fetchedAt": "2026-08-24T16:01:32.827197+00:00",
+  "fetchedAt": "2026-08-24T19:09:07.519911+00:00",
   "games": [
     {
       "gamePk": 824235,
@@ -31,7 +31,62 @@
           "id": 656876,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Colt Keith",
+            "id": 690993,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Hao-Yu Lee",
+            "id": 701678,
+            "batSide": "R",
+            "position": "2B"
+          },
+          {
+            "name": "Kevin McGonigle",
+            "id": 805808,
+            "batSide": "L",
+            "position": "3B"
+          },
+          {
+            "name": "Dillon Dingler",
+            "id": 693307,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Brett Callahan",
+            "id": 814430,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Zach McKinstry",
+            "id": 656716,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Spencer Torkelson",
+            "id": 679529,
+            "batSide": "R",
+            "position": "1B"
+          },
+          {
+            "name": "Max Clark",
+            "id": 703601,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Javier B\u00e1ez",
+            "id": 595879,
+            "batSide": "R",
+            "position": "SS"
+          }
+        ],
         "gameId": "TB/DET - Bot 1"
       },
       "odds": {
@@ -56,7 +111,62 @@
           "id": 645261,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Nick Sogard",
+            "id": 686765,
+            "batSide": "S",
+            "position": "SS"
+          },
+          {
+            "name": "Ceddanne Rafaela",
+            "id": 678882,
+            "batSide": "R",
+            "position": "CF"
+          },
+          {
+            "name": "Wilyer Abreu",
+            "id": 677800,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Willson Contreras",
+            "id": 575929,
+            "batSide": "R",
+            "position": "1B"
+          },
+          {
+            "name": "Adley Rutschman",
+            "id": 668939,
+            "batSide": "S",
+            "position": "C"
+          },
+          {
+            "name": "Caleb Durbin",
+            "id": 702332,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Jarren Duran",
+            "id": 680776,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Mickey Gasper",
+            "id": 681508,
+            "batSide": "S",
+            "position": "DH"
+          },
+          {
+            "name": "Anthony Seigler",
+            "id": 678011,
+            "batSide": "S",
+            "position": "2B"
+          }
+        ],
         "gameId": "BOS/MIA - Top 1"
       },
       "botInning": {
@@ -340,9 +450,9 @@
         "teamBatting": "Cincinnati Reds",
         "teamPitching": "San Francisco Giants",
         "pitcher": {
-          "name": "TBD",
-          "id": null,
-          "pitchHand": "R"
+          "name": "Carson Whisenhunt",
+          "id": 687931,
+          "pitchHand": "L"
         },
         "lineup": [],
         "gameId": "CIN/SF - Top 1"

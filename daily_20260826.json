@@ -1,13 +1,13 @@
 {
   "date": "2026-08-26",
-  "fetchedAt": "2026-08-26T05:33:12.051609+00:00",
+  "fetchedAt": "2026-08-26T16:35:40.088813+00:00",
   "games": [
     {
       "gamePk": 824234,
       "gameTimeUTC": "2026-08-26T17:10:00Z",
       "gameTimeET": "1:10 PM ET",
       "lineupDropET": "9:40 AM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "Detroit Tigers",
       "awayTeam": "Tampa Bay Rays",
       "venue": "Comerica Park",
@@ -20,7 +20,62 @@
           "id": 675512,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Yandy D\u00edaz",
+            "id": 650490,
+            "batSide": "R",
+            "position": "DH"
+          },
+          {
+            "name": "Jonathan Aranda",
+            "id": 666018,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Junior Caminero",
+            "id": 691406,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Liam Hicks",
+            "id": 689414,
+            "batSide": "L",
+            "position": "C"
+          },
+          {
+            "name": "Chandler Simpson",
+            "id": 802415,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Jonny DeLuca",
+            "id": 676356,
+            "batSide": "R",
+            "position": "RF"
+          },
+          {
+            "name": "Richie Palacios",
+            "id": 680700,
+            "batSide": "L",
+            "position": "2B"
+          },
+          {
+            "name": "Jorge Mateo",
+            "id": 622761,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "Cedric Mullins",
+            "id": 656775,
+            "batSide": "L",
+            "position": "CF"
+          }
+        ],
         "gameId": "TB/DET - Top 1"
       },
       "botInning": {
@@ -31,7 +86,62 @@
           "id": 642547,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Brett Callahan",
+            "id": 814430,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Kevin McGonigle",
+            "id": 805808,
+            "batSide": "L",
+            "position": "SS"
+          },
+          {
+            "name": "Gleyber Torres",
+            "id": 650402,
+            "batSide": "R",
+            "position": "2B"
+          },
+          {
+            "name": "Colt Keith",
+            "id": 690993,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Dillon Dingler",
+            "id": 693307,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Zach McKinstry",
+            "id": 656716,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Spencer Torkelson",
+            "id": 679529,
+            "batSide": "R",
+            "position": "1B"
+          },
+          {
+            "name": "Max Clark",
+            "id": 703601,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Hao-Yu Lee",
+            "id": 701678,
+            "batSide": "R",
+            "position": "3B"
+          }
+        ],
         "gameId": "TB/DET - Bot 1"
       },
       "odds": {
@@ -304,8 +414,8 @@
         "teamBatting": "Houston Astros",
         "teamPitching": "New York Yankees",
         "pitcher": {
-          "name": "TBD",
-          "id": null,
+          "name": "Elmer Rodr\u00edguez",
+          "id": 695684,
           "pitchHand": "R"
         },
         "lineup": [],

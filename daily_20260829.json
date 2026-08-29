@@ -1,6 +1,6 @@
 {
   "date": "2026-08-29",
-  "fetchedAt": "2026-08-29T18:42:46.235188+00:00",
+  "fetchedAt": "2026-08-29T21:03:14.105176+00:00",
   "games": [
     {
       "gamePk": 823539,
@@ -166,16 +166,71 @@
           "id": 608331,
           "pitchHand": "L"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Jahmai Jones",
+            "id": 663330,
+            "batSide": "R",
+            "position": "DH"
+          },
+          {
+            "name": "Ceddanne Rafaela",
+            "id": 678882,
+            "batSide": "R",
+            "position": "CF"
+          },
+          {
+            "name": "Wilyer Abreu",
+            "id": 677800,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Willson Contreras",
+            "id": 575929,
+            "batSide": "R",
+            "position": "1B"
+          },
+          {
+            "name": "Caleb Durbin",
+            "id": 702332,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Andruw Monasterio",
+            "id": 655316,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "Nick Sogard",
+            "id": 686765,
+            "batSide": "S",
+            "position": "2B"
+          },
+          {
+            "name": "Connor Wong",
+            "id": 657136,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Eli White",
+            "id": 642201,
+            "batSide": "R",
+            "position": "LF"
+          }
+        ],
         "gameId": "BOS/NYY - Top 1"
       },
       "botInning": {
         "teamBatting": "New York Yankees",
         "teamPitching": "Boston Red Sox",
         "pitcher": {
-          "name": "TBD",
-          "id": null,
-          "pitchHand": "R"
+          "name": "Alec Gamboa",
+          "id": 687941,
+          "pitchHand": "L"
         },
         "lineup": [],
         "gameId": "BOS/NYY - Bot 1"
@@ -919,7 +974,7 @@
       "gameTimeUTC": "2026-08-29T20:05:00Z",
       "gameTimeET": "4:05 PM ET",
       "lineupDropET": "12:35 PM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "San Francisco Giants",
       "awayTeam": "Arizona Diamondbacks",
       "venue": "Oracle Park",
@@ -932,7 +987,62 @@
           "id": 683363,
           "pitchHand": "L"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Ildemaro Vargas",
+            "id": 545121,
+            "batSide": "S",
+            "position": "2B"
+          },
+          {
+            "name": "Corbin Carroll",
+            "id": 682998,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Gabriel Moreno",
+            "id": 672515,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Geraldo Perdomo",
+            "id": 672695,
+            "batSide": "S",
+            "position": "SS"
+          },
+          {
+            "name": "Nolan Arenado",
+            "id": 571448,
+            "batSide": "R",
+            "position": "DH"
+          },
+          {
+            "name": "Tim Tawa",
+            "id": 694374,
+            "batSide": "R",
+            "position": "1B"
+          },
+          {
+            "name": "Jose Fernandez",
+            "id": 699912,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Jordan Lawlar",
+            "id": 691783,
+            "batSide": "R",
+            "position": "CF"
+          },
+          {
+            "name": "Ryan Waldschmidt",
+            "id": 814439,
+            "batSide": "R",
+            "position": "LF"
+          }
+        ],
         "gameId": "ARI/SF - Top 1"
       },
       "botInning": {
@@ -1776,7 +1886,7 @@
       "gameTimeUTC": "2026-08-29T23:15:00Z",
       "gameTimeET": "7:15 PM ET",
       "lineupDropET": "3:45 PM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "Milwaukee Brewers",
       "awayTeam": "Texas Rangers",
       "venue": "American Family Field",
@@ -1789,7 +1899,62 @@
           "id": 675660,
           "pitchHand": "L"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Justin Foscue",
+            "id": 679822,
+            "batSide": "R",
+            "position": "2B"
+          },
+          {
+            "name": "Corey Seager",
+            "id": 608369,
+            "batSide": "L",
+            "position": "SS"
+          },
+          {
+            "name": "Wyatt Langford",
+            "id": 694671,
+            "batSide": "R",
+            "position": "LF"
+          },
+          {
+            "name": "Brandon Nimmo",
+            "id": 607043,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Ezequiel Duran",
+            "id": 677649,
+            "batSide": "R",
+            "position": "CF"
+          },
+          {
+            "name": "Jake Burger",
+            "id": 669394,
+            "batSide": "R",
+            "position": "1B"
+          },
+          {
+            "name": "Danny Jansen",
+            "id": 643376,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Logan O'Hoppe",
+            "id": 681351,
+            "batSide": "R",
+            "position": "DH"
+          },
+          {
+            "name": "Cody Freeman",
+            "id": 683227,
+            "batSide": "R",
+            "position": "3B"
+          }
+        ],
         "gameId": "TEX/MIL - Top 1"
       },
       "botInning": {
@@ -1800,7 +1965,62 @@
           "id": 615698,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Brice Turang",
+            "id": 668930,
+            "batSide": "L",
+            "position": "2B"
+          },
+          {
+            "name": "Jackson Chourio",
+            "id": 694192,
+            "batSide": "R",
+            "position": "LF"
+          },
+          {
+            "name": "Jake Bauers",
+            "id": 641343,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "William Contreras",
+            "id": 661388,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Garrett Mitchell",
+            "id": 669003,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Christian Yelich",
+            "id": 592885,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Luis Lara",
+            "id": 800325,
+            "batSide": "S",
+            "position": "RF"
+          },
+          {
+            "name": "Cooper Pratt",
+            "id": 806198,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "David Hamilton",
+            "id": 666152,
+            "batSide": "L",
+            "position": "3B"
+          }
+        ],
         "gameId": "TEX/MIL - Bot 1"
       },
       "odds": {

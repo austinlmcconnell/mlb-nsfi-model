@@ -1,6 +1,6 @@
 {
   "date": "2026-08-30",
-  "fetchedAt": "2026-08-30T18:40:44.724241+00:00",
+  "fetchedAt": "2026-08-30T21:19:29.517658+00:00",
   "games": [
     {
       "gamePk": 822688,
@@ -1905,7 +1905,7 @@
       "gameTimeUTC": "2026-08-30T23:20:00Z",
       "gameTimeET": "7:20 PM ET",
       "lineupDropET": "3:50 PM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "Chicago Cubs",
       "awayTeam": "Cincinnati Reds",
       "venue": "Wrigley Field",
@@ -1918,7 +1918,62 @@
           "id": 684007,
           "pitchHand": "L"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Dane Myers",
+            "id": 667472,
+            "batSide": "R",
+            "position": "CF"
+          },
+          {
+            "name": "Elly De La Cruz",
+            "id": 682829,
+            "batSide": "S",
+            "position": "SS"
+          },
+          {
+            "name": "Sal Stewart",
+            "id": 701398,
+            "batSide": "R",
+            "position": "1B"
+          },
+          {
+            "name": "Tyler Stephenson",
+            "id": 663886,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Eugenio Su\u00e1rez",
+            "id": 553993,
+            "batSide": "R",
+            "position": "DH"
+          },
+          {
+            "name": "JJ Bleday",
+            "id": 668709,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Matt McLain",
+            "id": 680574,
+            "batSide": "R",
+            "position": "2B"
+          },
+          {
+            "name": "H\u00e9ctor Rodr\u00edguez",
+            "id": 699302,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Edwin Arroyo",
+            "id": 695490,
+            "batSide": "S",
+            "position": "3B"
+          }
+        ],
         "gameId": "CIN/CHC - Top 1"
       },
       "botInning": {
@@ -1929,7 +1984,62 @@
           "id": 695505,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Pete Crow-Armstrong",
+            "id": 691718,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Seiya Suzuki",
+            "id": 673548,
+            "batSide": "R",
+            "position": "RF"
+          },
+          {
+            "name": "Michael Busch",
+            "id": 683737,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Alex Bregman",
+            "id": 608324,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Ian Happ",
+            "id": 664023,
+            "batSide": "S",
+            "position": "LF"
+          },
+          {
+            "name": "Nico Hoerner",
+            "id": 663538,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "Pedro Ram\u00edrez",
+            "id": 699393,
+            "batSide": "S",
+            "position": "2B"
+          },
+          {
+            "name": "Michael Conforto",
+            "id": 624424,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Miguel Amaya",
+            "id": 665804,
+            "batSide": "R",
+            "position": "C"
+          }
+        ],
         "gameId": "CIN/CHC - Bot 1"
       },
       "odds": {

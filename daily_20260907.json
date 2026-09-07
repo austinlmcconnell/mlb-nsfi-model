@@ -1,6 +1,6 @@
 {
   "date": "2026-09-07",
-  "fetchedAt": "2026-09-07T19:17:15.997904+00:00",
+  "fetchedAt": "2026-09-07T21:39:02.327982+00:00",
   "games": [
     {
       "gamePk": 823415,
@@ -1029,7 +1029,7 @@
       "gameTimeUTC": "2026-09-07T21:10:00Z",
       "gameTimeET": "5:10 PM ET",
       "lineupDropET": "1:40 PM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "San Diego Padres",
       "awayTeam": "Washington Nationals",
       "venue": "Petco Park",
@@ -1042,7 +1042,62 @@
           "id": 601713,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "James Wood",
+            "id": 695578,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Abimelec Ortiz",
+            "id": 694673,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Dylan Crews",
+            "id": 686611,
+            "batSide": "R",
+            "position": "LF"
+          },
+          {
+            "name": "CJ Abrams",
+            "id": 682928,
+            "batSide": "L",
+            "position": "SS"
+          },
+          {
+            "name": "Brady House",
+            "id": 691781,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Daylen Lile",
+            "id": 695734,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Keibert Ruiz",
+            "id": 660688,
+            "batSide": "S",
+            "position": "C"
+          },
+          {
+            "name": "Jorbit Vivas",
+            "id": 678391,
+            "batSide": "L",
+            "position": "2B"
+          },
+          {
+            "name": "Jacob Young",
+            "id": 696285,
+            "batSide": "R",
+            "position": "CF"
+          }
+        ],
         "gameId": "WSH/SD - Top 1"
       },
       "botInning": {
@@ -1120,7 +1175,7 @@
       "gameTimeUTC": "2026-09-08T00:10:00Z",
       "gameTimeET": "8:10 PM ET",
       "lineupDropET": "4:40 PM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "San Francisco Giants",
       "awayTeam": "St. Louis Cardinals",
       "venue": "Oracle Park",
@@ -1133,7 +1188,62 @@
           "id": 657277,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Bryan Torres",
+            "id": 663494,
+            "batSide": "L",
+            "position": "2B"
+          },
+          {
+            "name": "Iv\u00e1n Herrera",
+            "id": 671056,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Alec Burleson",
+            "id": 676475,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Jordan Walker",
+            "id": 691023,
+            "batSide": "R",
+            "position": "RF"
+          },
+          {
+            "name": "Leo Bernal",
+            "id": 699024,
+            "batSide": "S",
+            "position": "DH"
+          },
+          {
+            "name": "Nolan Gorman",
+            "id": 669357,
+            "batSide": "L",
+            "position": "3B"
+          },
+          {
+            "name": "Joshua B\u00e1ez",
+            "id": 695491,
+            "batSide": "R",
+            "position": "LF"
+          },
+          {
+            "name": "Thomas Saggese",
+            "id": 695336,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "Nathan Church",
+            "id": 701675,
+            "batSide": "L",
+            "position": "CF"
+          }
+        ],
         "gameId": "STL/SF - Top 1"
       },
       "botInning": {
@@ -1144,7 +1254,62 @@
           "id": 700241,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Turner Hill",
+            "id": 806367,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Rafael Devers",
+            "id": 646240,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Bryce Eldridge",
+            "id": 805811,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Jonah Cox",
+            "id": 813841,
+            "batSide": "R",
+            "position": "CF"
+          },
+          {
+            "name": "Jung Hoo Lee",
+            "id": 808982,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Osleivis Basabe",
+            "id": 678545,
+            "batSide": "R",
+            "position": "2B"
+          },
+          {
+            "name": "Andrew Knizner",
+            "id": 668800,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Shay Whitcomb",
+            "id": 694376,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Christian Koss",
+            "id": 683766,
+            "batSide": "R",
+            "position": "SS"
+          }
+        ],
         "gameId": "STL/SF - Bot 1"
       },
       "odds": {
@@ -1169,7 +1334,62 @@
           "id": null,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "H\u00e9ctor Rodr\u00edguez",
+            "id": 699302,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Elly De La Cruz",
+            "id": 682829,
+            "batSide": "S",
+            "position": "SS"
+          },
+          {
+            "name": "Sal Stewart",
+            "id": 701398,
+            "batSide": "R",
+            "position": "1B"
+          },
+          {
+            "name": "JJ Bleday",
+            "id": 668709,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Tyler Stephenson",
+            "id": 663886,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Eugenio Su\u00e1rez",
+            "id": 553993,
+            "batSide": "R",
+            "position": "DH"
+          },
+          {
+            "name": "Matt McLain",
+            "id": 680574,
+            "batSide": "R",
+            "position": "2B"
+          },
+          {
+            "name": "Carlos Jorge",
+            "id": 699115,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Ke'Bryan Hayes",
+            "id": 663647,
+            "batSide": "R",
+            "position": "3B"
+          }
+        ],
         "gameId": "CIN/LAD - Top 1"
       },
       "botInning": {

@@ -1,6 +1,6 @@
 {
   "date": "2026-09-09",
-  "fetchedAt": "2026-09-09T21:03:16.360119+00:00",
+  "fetchedAt": "2026-09-09T23:27:34.312305+00:00",
   "games": [
     {
       "gamePk": 824226,
@@ -737,7 +737,7 @@
       "gameTimeUTC": "2026-09-09T22:35:00Z",
       "gameTimeET": "6:35 PM ET",
       "lineupDropET": "3:05 PM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "Baltimore Orioles",
       "awayTeam": "Cleveland Guardians",
       "venue": "Oriole Park at Camden Yards",
@@ -816,7 +816,62 @@
           "id": 656492,
           "pitchHand": "L"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Dylan Beavers",
+            "id": 687637,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Pete Alonso",
+            "id": 624413,
+            "batSide": "R",
+            "position": "1B"
+          },
+          {
+            "name": "Coby Mayo",
+            "id": 691723,
+            "batSide": "R",
+            "position": "DH"
+          },
+          {
+            "name": "Christian Encarnacion-Strand",
+            "id": 687952,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Jackson Holliday",
+            "id": 702616,
+            "batSide": "L",
+            "position": "SS"
+          },
+          {
+            "name": "Rece Hinds",
+            "id": 677956,
+            "batSide": "R",
+            "position": "CF"
+          },
+          {
+            "name": "Jeremiah Jackson",
+            "id": 669236,
+            "batSide": "R",
+            "position": "2B"
+          },
+          {
+            "name": "Leody Taveras",
+            "id": 665750,
+            "batSide": "S",
+            "position": "RF"
+          },
+          {
+            "name": "Carlos Narv\u00e1ez",
+            "id": 665966,
+            "batSide": "R",
+            "position": "C"
+          }
+        ],
         "gameId": "CLE/BAL - Bot 1"
       },
       "odds": {
@@ -1996,7 +2051,7 @@
       "gameTimeUTC": "2026-09-10T02:10:00Z",
       "gameTimeET": "10:10 PM ET",
       "lineupDropET": "6:40 PM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "Los Angeles Dodgers",
       "awayTeam": "Cincinnati Reds",
       "venue": "UNIQLO Field at Dodger Stadium",
@@ -2009,7 +2064,62 @@
           "id": 808967,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Carlos Jorge",
+            "id": 699115,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Elly De La Cruz",
+            "id": 682829,
+            "batSide": "S",
+            "position": "SS"
+          },
+          {
+            "name": "Sal Stewart",
+            "id": 701398,
+            "batSide": "R",
+            "position": "1B"
+          },
+          {
+            "name": "JJ Bleday",
+            "id": 668709,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "H\u00e9ctor Rodr\u00edguez",
+            "id": 699302,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Juan Brito",
+            "id": 682877,
+            "batSide": "S",
+            "position": "2B"
+          },
+          {
+            "name": "Will Banfield",
+            "id": 677943,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "TJ Friedl",
+            "id": 670770,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Ke'Bryan Hayes",
+            "id": 663647,
+            "batSide": "R",
+            "position": "3B"
+          }
+        ],
         "gameId": "CIN/LAD - Top 1"
       },
       "botInning": {
@@ -2020,7 +2130,62 @@
           "id": 695076,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Tommy Edman",
+            "id": 669242,
+            "batSide": "S",
+            "position": "CF"
+          },
+          {
+            "name": "Will Smith",
+            "id": 669257,
+            "batSide": "R",
+            "position": "DH"
+          },
+          {
+            "name": "Mookie Betts",
+            "id": 605141,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "Max Muncy",
+            "id": 571970,
+            "batSide": "L",
+            "position": "3B"
+          },
+          {
+            "name": "Teoscar Hern\u00e1ndez",
+            "id": 606192,
+            "batSide": "R",
+            "position": "LF"
+          },
+          {
+            "name": "Kyle Tucker",
+            "id": 663656,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Hunter Feduccia",
+            "id": 676439,
+            "batSide": "L",
+            "position": "C"
+          },
+          {
+            "name": "Alex Freeland",
+            "id": 690976,
+            "batSide": "S",
+            "position": "2B"
+          },
+          {
+            "name": "Enrique Hern\u00e1ndez",
+            "id": 571771,
+            "batSide": "R",
+            "position": "1B"
+          }
+        ],
         "gameId": "CIN/LAD - Bot 1"
       },
       "odds": {

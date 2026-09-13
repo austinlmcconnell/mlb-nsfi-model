@@ -1,6 +1,6 @@
 {
   "date": "2026-09-13",
-  "fetchedAt": "2026-09-13T18:15:59.858165+00:00",
+  "fetchedAt": "2026-09-13T21:00:09.447658+00:00",
   "games": [
     {
       "gamePk": 824225,
@@ -2051,7 +2051,7 @@
       "gameTimeUTC": "2026-09-13T23:20:00Z",
       "gameTimeET": "7:20 PM ET",
       "lineupDropET": "3:50 PM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "San Francisco Giants",
       "awayTeam": "San Diego Padres",
       "venue": "Oracle Park",
@@ -2064,7 +2064,62 @@
           "id": 657277,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Fernando Tatis Jr.",
+            "id": 665487,
+            "batSide": "R",
+            "position": "2B"
+          },
+          {
+            "name": "Dustin Harris",
+            "id": 687957,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Manny Machado",
+            "id": 592518,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Luis Campusano",
+            "id": 669134,
+            "batSide": "R",
+            "position": "DH"
+          },
+          {
+            "name": "Jackson Merrill",
+            "id": 701538,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Xander Bogaerts",
+            "id": 593428,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "Jake Cronenworth",
+            "id": 630105,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Samad Taylor",
+            "id": 669392,
+            "batSide": "R",
+            "position": "LF"
+          },
+          {
+            "name": "Ethan Salas",
+            "id": 806956,
+            "batSide": "L",
+            "position": "C"
+          }
+        ],
         "gameId": "SD/SF - Top 1"
       },
       "botInning": {
@@ -2075,7 +2130,62 @@
           "id": 601713,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Drew Gilbert",
+            "id": 687551,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Jung Hoo Lee",
+            "id": 808982,
+            "batSide": "L",
+            "position": "RF"
+          },
+          {
+            "name": "Bryce Eldridge",
+            "id": 805811,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Jonah Cox",
+            "id": 813841,
+            "batSide": "R",
+            "position": "CF"
+          },
+          {
+            "name": "Scott Bandura",
+            "id": 814154,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Shay Whitcomb",
+            "id": 694376,
+            "batSide": "R",
+            "position": "2B"
+          },
+          {
+            "name": "Andrew Knizner",
+            "id": 668800,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Brett Harris",
+            "id": 695391,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Christian Koss",
+            "id": 683766,
+            "batSide": "R",
+            "position": "SS"
+          }
+        ],
         "gameId": "SD/SF - Bot 1"
       },
       "odds": {

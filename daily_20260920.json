@@ -1,6 +1,6 @@
 {
   "date": "2026-09-20",
-  "fetchedAt": "2026-09-20T18:14:12.627447+00:00",
+  "fetchedAt": "2026-09-20T20:58:05.122499+00:00",
   "games": [
     {
       "gamePk": 823570,
@@ -2051,7 +2051,7 @@
       "gameTimeUTC": "2026-09-20T23:20:00Z",
       "gameTimeET": "7:20 PM ET",
       "lineupDropET": "3:50 PM ET",
-      "lineupComplete": false,
+      "lineupComplete": true,
       "homeTeam": "Baltimore Orioles",
       "awayTeam": "Milwaukee Brewers",
       "venue": "Oriole Park at Camden Yards",
@@ -2064,7 +2064,62 @@
           "id": 687064,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Jackson Chourio",
+            "id": 694192,
+            "batSide": "R",
+            "position": "LF"
+          },
+          {
+            "name": "Brice Turang",
+            "id": 668930,
+            "batSide": "L",
+            "position": "2B"
+          },
+          {
+            "name": "William Contreras",
+            "id": 661388,
+            "batSide": "R",
+            "position": "C"
+          },
+          {
+            "name": "Jake Bauers",
+            "id": 641343,
+            "batSide": "L",
+            "position": "1B"
+          },
+          {
+            "name": "Joey Ortiz",
+            "id": 687401,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Christian Yelich",
+            "id": 592885,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Cooper Pratt",
+            "id": 806198,
+            "batSide": "R",
+            "position": "SS"
+          },
+          {
+            "name": "Garrett Mitchell",
+            "id": 669003,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Sal Frelick",
+            "id": 686217,
+            "batSide": "L",
+            "position": "RF"
+          }
+        ],
         "gameId": "MIL/BAL - Top 1"
       },
       "botInning": {
@@ -2075,7 +2130,62 @@
           "id": 694819,
           "pitchHand": "R"
         },
-        "lineup": [],
+        "lineup": [
+          {
+            "name": "Dylan Beavers",
+            "id": 687637,
+            "batSide": "L",
+            "position": "LF"
+          },
+          {
+            "name": "Pete Alonso",
+            "id": 624413,
+            "batSide": "R",
+            "position": "1B"
+          },
+          {
+            "name": "Gunnar Henderson",
+            "id": 683002,
+            "batSide": "L",
+            "position": "SS"
+          },
+          {
+            "name": "Coby Mayo",
+            "id": 691723,
+            "batSide": "R",
+            "position": "3B"
+          },
+          {
+            "name": "Samuel Basallo",
+            "id": 694212,
+            "batSide": "L",
+            "position": "DH"
+          },
+          {
+            "name": "Jeremiah Jackson",
+            "id": 669236,
+            "batSide": "R",
+            "position": "2B"
+          },
+          {
+            "name": "Colton Cowser",
+            "id": 681297,
+            "batSide": "L",
+            "position": "CF"
+          },
+          {
+            "name": "Leody Taveras",
+            "id": 665750,
+            "batSide": "S",
+            "position": "RF"
+          },
+          {
+            "name": "Carlos Narv\u00e1ez",
+            "id": 665966,
+            "batSide": "R",
+            "position": "C"
+          }
+        ],
         "gameId": "MIL/BAL - Bot 1"
       },
       "odds": {

@@ -1,6 +1,6 @@
 {
   "date": "2026-09-25",
-  "fetchedAt": "2026-09-25T05:11:16.858274+00:00",
+  "fetchedAt": "2026-09-25T10:00:56.886953+00:00",
   "games": [
     {
       "gamePk": 824703,
@@ -75,46 +75,10 @@
       }
     },
     {
-      "gamePk": 823489,
+      "gamePk": 823491,
       "gameTimeUTC": "2026-09-25T20:05:00Z",
       "gameTimeET": "4:05 PM ET",
       "lineupDropET": "12:35 PM ET",
-      "lineupComplete": false,
-      "homeTeam": "New York Yankees",
-      "awayTeam": "Baltimore Orioles",
-      "venue": "Yankee Stadium",
-      "ballparkKey": "Yankees",
-      "topInning": {
-        "teamBatting": "Baltimore Orioles",
-        "teamPitching": "New York Yankees",
-        "pitcher": {
-          "name": "Brendan Beck",
-          "id": 694341,
-          "pitchHand": "R"
-        },
-        "lineup": [],
-        "gameId": "BAL/NYY - Top 1"
-      },
-      "botInning": {
-        "teamBatting": "New York Yankees",
-        "teamPitching": "Baltimore Orioles",
-        "pitcher": {
-          "name": "Trevor Rogers",
-          "id": 669432,
-          "pitchHand": "L"
-        },
-        "lineup": [],
-        "gameId": "BAL/NYY - Bot 1"
-      },
-      "odds": {
-        "draftkings": null
-      }
-    },
-    {
-      "gamePk": 823491,
-      "gameTimeUTC": "2026-09-25T20:10:00Z",
-      "gameTimeET": "4:10 PM ET",
-      "lineupDropET": "12:40 PM ET",
       "lineupComplete": false,
       "homeTeam": "New York Yankees",
       "awayTeam": "Baltimore Orioles",
@@ -138,6 +102,42 @@
           "name": "Brandon Young",
           "id": 687064,
           "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "BAL/NYY - Bot 1"
+      },
+      "odds": {
+        "draftkings": null
+      }
+    },
+    {
+      "gamePk": 823489,
+      "gameTimeUTC": "2026-09-25T20:10:00Z",
+      "gameTimeET": "4:10 PM ET",
+      "lineupDropET": "12:40 PM ET",
+      "lineupComplete": false,
+      "homeTeam": "New York Yankees",
+      "awayTeam": "Baltimore Orioles",
+      "venue": "Yankee Stadium",
+      "ballparkKey": "Yankees",
+      "topInning": {
+        "teamBatting": "Baltimore Orioles",
+        "teamPitching": "New York Yankees",
+        "pitcher": {
+          "name": "Brendan Beck",
+          "id": 694341,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "BAL/NYY - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "New York Yankees",
+        "teamPitching": "Baltimore Orioles",
+        "pitcher": {
+          "name": "Trevor Rogers",
+          "id": 669432,
+          "pitchHand": "L"
         },
         "lineup": [],
         "gameId": "BAL/NYY - Bot 1"
@@ -495,8 +495,8 @@
         "teamBatting": "Athletics",
         "teamPitching": "Houston Astros",
         "pitcher": {
-          "name": "TBD",
-          "id": null,
+          "name": "Hunter Brown",
+          "id": 686613,
           "pitchHand": "R"
         },
         "lineup": [],

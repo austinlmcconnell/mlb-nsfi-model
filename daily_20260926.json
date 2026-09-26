@@ -1,7 +1,43 @@
 {
   "date": "2026-09-26",
-  "fetchedAt": "2026-09-26T00:02:10.593346+00:00",
+  "fetchedAt": "2026-09-26T05:16:41.454559+00:00",
   "games": [
+    {
+      "gamePk": 822678,
+      "gameTimeUTC": "2026-09-26T16:35:00Z",
+      "gameTimeET": "12:35 PM ET",
+      "lineupDropET": "9:05 AM ET",
+      "lineupComplete": false,
+      "homeTeam": "Washington Nationals",
+      "awayTeam": "New York Mets",
+      "venue": "Nationals Park",
+      "ballparkKey": "Nationals",
+      "topInning": {
+        "teamBatting": "New York Mets",
+        "teamPitching": "Washington Nationals",
+        "pitcher": {
+          "name": "Connelly Early",
+          "id": 813349,
+          "pitchHand": "L"
+        },
+        "lineup": [],
+        "gameId": "NYM/WSH - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "Washington Nationals",
+        "teamPitching": "New York Mets",
+        "pitcher": {
+          "name": "Jonah Tong",
+          "id": 804636,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "NYM/WSH - Bot 1"
+      },
+      "odds": {
+        "draftkings": null
+      }
+    },
     {
       "gamePk": 824219,
       "gameTimeUTC": "2026-09-26T17:10:00Z",
@@ -27,8 +63,8 @@
         "teamBatting": "Detroit Tigers",
         "teamPitching": "Pittsburgh Pirates",
         "pitcher": {
-          "name": "TBD",
-          "id": null,
+          "name": "Kirby Yates",
+          "id": 489446,
           "pitchHand": "R"
         },
         "lineup": [],
@@ -69,42 +105,6 @@
         },
         "lineup": [],
         "gameId": "CIN/TOR - Bot 1"
-      },
-      "odds": {
-        "draftkings": null
-      }
-    },
-    {
-      "gamePk": 822678,
-      "gameTimeUTC": "2026-09-26T20:05:00Z",
-      "gameTimeET": "4:05 PM ET",
-      "lineupDropET": "12:35 PM ET",
-      "lineupComplete": false,
-      "homeTeam": "Washington Nationals",
-      "awayTeam": "New York Mets",
-      "venue": "Nationals Park",
-      "ballparkKey": "Nationals",
-      "topInning": {
-        "teamBatting": "New York Mets",
-        "teamPitching": "Washington Nationals",
-        "pitcher": {
-          "name": "Connelly Early",
-          "id": 813349,
-          "pitchHand": "L"
-        },
-        "lineup": [],
-        "gameId": "NYM/WSH - Top 1"
-      },
-      "botInning": {
-        "teamBatting": "Washington Nationals",
-        "teamPitching": "New York Mets",
-        "pitcher": {
-          "name": "Jonah Tong",
-          "id": 804636,
-          "pitchHand": "R"
-        },
-        "lineup": [],
-        "gameId": "NYM/WSH - Bot 1"
       },
       "odds": {
         "draftkings": null
@@ -171,8 +171,8 @@
         "teamBatting": "Minnesota Twins",
         "teamPitching": "Texas Rangers",
         "pitcher": {
-          "name": "TBD",
-          "id": null,
+          "name": "Nathan Eovaldi",
+          "id": 543135,
           "pitchHand": "R"
         },
         "lineup": [],
@@ -196,8 +196,8 @@
         "teamBatting": "Atlanta Braves",
         "teamPitching": "Miami Marlins",
         "pitcher": {
-          "name": "TBD",
-          "id": null,
+          "name": "Jack Ralston",
+          "id": 667652,
           "pitchHand": "R"
         },
         "lineup": [],
@@ -207,9 +207,9 @@
         "teamBatting": "Miami Marlins",
         "teamPitching": "Atlanta Braves",
         "pitcher": {
-          "name": "TBD",
-          "id": null,
-          "pitchHand": "R"
+          "name": "Brent Suter",
+          "id": 608718,
+          "pitchHand": "L"
         },
         "lineup": [],
         "gameId": "ATL/MIA - Bot 1"
@@ -412,8 +412,8 @@
         "teamBatting": "Houston Astros",
         "teamPitching": "Athletics",
         "pitcher": {
-          "name": "TBD",
-          "id": null,
+          "name": "Jack Perkins",
+          "id": 678022,
           "pitchHand": "R"
         },
         "lineup": [],
@@ -423,8 +423,8 @@
         "teamBatting": "Athletics",
         "teamPitching": "Houston Astros",
         "pitcher": {
-          "name": "TBD",
-          "id": null,
+          "name": "Hayden Wesneski",
+          "id": 669713,
           "pitchHand": "R"
         },
         "lineup": [],

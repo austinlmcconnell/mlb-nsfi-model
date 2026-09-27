@@ -1,6 +1,6 @@
 {
   "date": "2026-09-27",
-  "fetchedAt": "2026-09-27T19:06:46.661262+00:00",
+  "fetchedAt": "2026-09-27T21:30:15.360430+00:00",
   "games": [
     {
       "gamePk": 822679,
@@ -143,97 +143,6 @@
           }
         ],
         "gameId": "NYM/WSH - Bot 1"
-      },
-      "odds": {
-        "draftkings": null
-      }
-    },
-    {
-      "gamePk": 823490,
-      "gameTimeUTC": "2026-09-27T17:05:00Z",
-      "gameTimeET": "1:05 PM ET",
-      "lineupDropET": "9:35 AM ET",
-      "lineupComplete": false,
-      "homeTeam": "New York Yankees",
-      "awayTeam": "Baltimore Orioles",
-      "venue": "Yankee Stadium",
-      "ballparkKey": "Yankees",
-      "topInning": {
-        "teamBatting": "Baltimore Orioles",
-        "teamPitching": "New York Yankees",
-        "pitcher": {
-          "name": "Elmer Rodr\u00edguez",
-          "id": 695684,
-          "pitchHand": "R"
-        },
-        "lineup": [
-          {
-            "name": "Dylan Beavers",
-            "id": 687637,
-            "batSide": "L",
-            "position": "LF"
-          },
-          {
-            "name": "Pete Alonso",
-            "id": 624413,
-            "batSide": "R",
-            "position": "1B"
-          },
-          {
-            "name": "Gunnar Henderson",
-            "id": 683002,
-            "batSide": "L",
-            "position": "SS"
-          },
-          {
-            "name": "Coby Mayo",
-            "id": 691723,
-            "batSide": "R",
-            "position": "DH"
-          },
-          {
-            "name": "Christian Encarnacion-Strand",
-            "id": 687952,
-            "batSide": "R",
-            "position": "3B"
-          },
-          {
-            "name": "Colton Cowser",
-            "id": 681297,
-            "batSide": "L",
-            "position": "CF"
-          },
-          {
-            "name": "Jeremiah Jackson",
-            "id": 669236,
-            "batSide": "R",
-            "position": "2B"
-          },
-          {
-            "name": "Heston Kjerstad",
-            "id": 677008,
-            "batSide": "L",
-            "position": "RF"
-          },
-          {
-            "name": "Carlos Narv\u00e1ez",
-            "id": 665966,
-            "batSide": "R",
-            "position": "C"
-          }
-        ],
-        "gameId": "BAL/NYY - Top 1"
-      },
-      "botInning": {
-        "teamBatting": "New York Yankees",
-        "teamPitching": "Baltimore Orioles",
-        "pitcher": {
-          "name": "Shane Baz",
-          "id": 669358,
-          "pitchHand": "R"
-        },
-        "lineup": [],
-        "gameId": "BAL/NYY - Bot 1"
       },
       "odds": {
         "draftkings": null
@@ -2132,6 +2041,42 @@
           }
         ],
         "gameId": "STL/MIL - Bot 1"
+      },
+      "odds": {
+        "draftkings": null
+      }
+    },
+    {
+      "gamePk": 823490,
+      "gameTimeUTC": "2026-09-27T17:05:00Z",
+      "gameTimeET": "1:05 PM ET",
+      "lineupDropET": "9:35 AM ET",
+      "lineupComplete": false,
+      "homeTeam": "New York Yankees",
+      "awayTeam": "Baltimore Orioles",
+      "venue": "Yankee Stadium",
+      "ballparkKey": "Yankees",
+      "topInning": {
+        "teamBatting": "Baltimore Orioles",
+        "teamPitching": "New York Yankees",
+        "pitcher": {
+          "name": "Elmer Rodr\u00edguez",
+          "id": 695684,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "BAL/NYY - Top 1"
+      },
+      "botInning": {
+        "teamBatting": "New York Yankees",
+        "teamPitching": "Baltimore Orioles",
+        "pitcher": {
+          "name": "Shane Baz",
+          "id": 669358,
+          "pitchHand": "R"
+        },
+        "lineup": [],
+        "gameId": "BAL/NYY - Bot 1"
       },
       "odds": {
         "draftkings": null
